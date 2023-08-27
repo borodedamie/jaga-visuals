@@ -15,11 +15,10 @@ const Header = () => {
         </div>
       </div>
       <div className="text-center md:text-left">
-        <span className="text-[blue] font-bold text-[44px] leading-11">
-          Creativity never goes<br/>
-          out of style
-        </span>
-        <p className="text-[22px] font-bold pt-10">
+        <h2 className="text-[blue] w-[19rem] md:w-[30rem] font-bold text-[36px] md:text-[44px] leading-11">
+          Creativity never goes out of style
+        </h2>
+        <p className="text-[22px] font-bold pt-10 w-[19rem] md:w-[30rem]">
           We’re a creative design agency based in Dubai that crafts beautiful
           and original websites for brands who{" "}
           <span className="text-[blue]">refuse to blend in.</span>
