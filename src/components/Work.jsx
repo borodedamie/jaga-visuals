@@ -4,7 +4,7 @@ const Work = () => {
   return (
     <div className="bg-[#1c1b1b] mt-20 py-[9rem]">
       <div className="mx-10 flex flex-col md:flex-row gap-[7rem] md:mx-60 items-center">
-        <div className="text-[white] flex flex-col font-black text-[138px]">
+        <div className="text-[white] flex flex-col font-{black} text-[138px]">
           <div className="flex gap-[5rem]">
             <span>W</span>
             <span>O</span>
