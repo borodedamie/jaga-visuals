@@ -1,23 +1,23 @@
-import { useState } from "react";
-import "../src/css/main.css"
-import Nav from "./components/Nav";
-import Header from "./components/Header";
-import Shape1 from "./components/Shape1";
-import Shape2 from "./components/Shape2";
-import Work from "./components/Work";
-import Clients from "./components/Clients";
-import Footer from "./components/Footer";
+import React from "react";
+import "../src/css/main.css";
+import Works from "./pages/Works";
+import Contact from "./pages/Contact";
+import Home1 from "./pages/Home1";
+import Career from "./pages/Career";
+import Services from "./pages/Services"
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 function App() {
   return (
-    <>
-      <Nav />
-      <Header/>
-      <Shape1/>
-      <Shape2/>
-      <Work/>
-      <Clients/>
-      <Footer/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" index element={<Home1 />} />
+        <Route path="/works" element={<Works />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="career" element={<Career />} />
+        <Route path="services" element={<Services />} />
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 

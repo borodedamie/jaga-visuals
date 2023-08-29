@@ -7,9 +7,9 @@ const Clients = () => {
         Our Clients
       </h1>
 
-      <div className="flex flex-col mx-auto">
+      <div className="flex flex-col mx-5 md:mx-[11rem]">
         <h2 className="font-bold text-[38px] pb-[1rem]">Latest Articles</h2>
-        <div className="flex flex-col pb-5 md:flex-row gap-5 justify-between">
+        <div className="flex flex-col pb-5 md:flex-row justify-center gap-20">
           <div className="border bg-[black] h-[17rem] w-full md:w-[20rem]"></div>
           <div className="border bg-[black] h-[17rem] w-full md:w-[20rem]"></div>
           <div className="border bg-[black] h-[17rem] w-full md:w-[20rem]"></div>

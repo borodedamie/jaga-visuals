@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="mx-10 md:mx-40 gap-[60px] flex flex-col pb-20 md:flex-row items-center justify-around">
+    <div className=" gap-[60px] flex flex-col pb-20 md:flex-row items-center justify-center">
       <div className="text-[blue] flex flex-col font-black text-[138px]">
         <div className="flex gap-[5rem]">
           <span>I</span>
