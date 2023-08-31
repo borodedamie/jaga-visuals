@@ -10,7 +10,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="flex flex-col md:flex-row items-left md:items-center mx-0 md:mx-20 justify-between pt-[2em] gap-20 relative">
+    <nav className="flex mb-0 md:mb-10 flex-col md:flex-row items-left md:items-center mx-0 md:mx-20 justify-between pt-[2em] gap-20 relative">
       <div className="flex justify-between items-center mx-10">
         <p className="text-[20px] pb-[1em] md:pb-0 font-bold leading-[19.36px]">Logo</p>
         <div

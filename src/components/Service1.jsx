@@ -50,7 +50,7 @@ const Service1 = () => {
               <h2 key={index} className="text-[35px] w-[20rem] font-bold text-[#26316c]">
                 {data1.title}
               </h2>
-              <p className="text-[18px] w-[20rem] md:w-[24.5rem] font-bold text-[grey] leading-10 py-5">{data1.paragraph}</p>
+              <p key={index} className="text-[18px] w-[20rem] md:w-[24.5rem] font-bold text-[grey] leading-10 py-5">{data1.paragraph}</p>
               <Button />
             </div>
             <div className="bg-[grey] w-[22rem] md:w-[25rem] h-[20rem] rounded-2xl"></div>
