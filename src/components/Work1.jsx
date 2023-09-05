@@ -3,7 +3,7 @@ import React from "react";
 const Work1 = () => {
   return (
     <div className="gap-[60px] flex flex-col pb-20 md:flex-row items-center justify-center">
-      <div className="text-[blue] flex flex-col font-black text-[138px]">
+      <div className="text-[blue] flex flex-col font-black text-[110px]">
         <div className="flex gap-[5rem]">
           <span>W</span>
           <span>O</span>
@@ -14,7 +14,7 @@ const Work1 = () => {
           <span>K</span>
         </div>
       </div>
-      <div className="text-center md:text-left w-[22rem] md:w-[26.5rem] ">
+      <div className="text-left w-[22rem] md:w-[26.5rem] ">
         <h2 className="text-[#3b3b70] font-bold text-[30px] md:text-[35px] leading-11">
           We are experts in bringing brands to life digitally. 
         </h2>

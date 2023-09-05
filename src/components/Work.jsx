@@ -4,7 +4,7 @@ const Work = () => {
   return (
     <div className="bg-[#1c1b1b] mt-20 py-[9rem]">
       <div className="mx-10 flex flex-col md:flex-row gap-[7rem] md:mx-60 items-center justify-center">
-        <div className="text-[white] flex flex-col font-bold text-[138px]">
+        <div className="text-[white] flex flex-col font-bold text-[120px]">
           <div className="flex gap-[5rem]">
             <span>W</span>
             <span>O</span>
@@ -14,12 +14,12 @@ const Work = () => {
             <span>K</span>
           </div>
         </div>
-        <div className="text-[#63bbca] w-[20rem] flex flex-col font-black text-[50px] text-center md:text-left">
+        <div className="text-[#63bbca] w-[22rem] md:w-[20rem] flex flex-col font-black text-[50px] text-left">
           <h2>Shit-hot work for hot-shot brands</h2>
         </div>
       </div>
       <div className="flex flex-col justify-around items-center">
-        <div className="flex flex-col md:flex-row justify-center items-center gap-20">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-10">
         <div className="my-20 md:my-0">
             <div className="border bg-[white] h-[25rem] w-full md:w-[22rem]"></div>
             <div className="text-[white]">
@@ -37,7 +37,7 @@ const Work = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row jjustify-center items-center gap-20 py-20">
+        <div className="flex flex-col md:flex-row jjustify-center items-center gap-10 py-20">
           <div className="my-20 md:my-0">
             <div className="border bg-[white] h-[25rem] md:h-[20rem] w-full md:w-[22rem]"> </div>
             <div className="text-[white]">

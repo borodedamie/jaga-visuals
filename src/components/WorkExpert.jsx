@@ -4,7 +4,7 @@ const WorkExpert = () => {
   return (
     <div>
       <div className="flex flex-col justify-around items-center">
-      <div className="flex flex-col md:flex-row justify-center items-center gap-20">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-10">
           <div className="my-20 md:my-0">
             <div className="border bg-[black] h-[25rem] w-full md:w-[22rem]"></div>
             <div className="text-[black]">
@@ -32,7 +32,7 @@ const WorkExpert = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row jjustify-center items-center gap-20 py-20">
+        <div className="flex flex-col md:flex-row jjustify-center items-center gap-10 py-20">
           <div className="my-20 md:my-0">
             <div className="border bg-[black] h-[25rem] md:h-[20rem] w-full md:w-[22rem]">
               {" "}
@@ -61,7 +61,7 @@ const WorkExpert = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row jjustify-center items-center gap-20 py-20">
+        <div className="flex flex-col md:flex-row jjustify-center items-center gap-10 py-20">
           <div className="my-20 md:my-0">
             <div className="border bg-[black] h-[25rem] w-full md:w-[22rem]"></div>
             <div className="text-[black]">
@@ -89,7 +89,7 @@ const WorkExpert = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row jjustify-center items-center gap-20 py-20">
+        <div className="flex flex-col md:flex-row jjustify-center items-center gap-10 py-20">
           <div className="my-20 md:my-0">
             <div className="border bg-[black] h-[25rem] md:h-[20rem] w-full md:w-[22rem]">
               {" "}

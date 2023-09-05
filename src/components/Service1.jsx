@@ -5,7 +5,7 @@ const Service1 = () => {
   return (
     <>
     <div className="gap-[60px] flex flex-col pb-20 md:flex-row items-center md:items-center justify-center">
-        <div className="text-[blue] flex flex-col font-black text-[80px]">
+        <div className="text-[blue] flex flex-col font-black text-[70px]">
           <div className="flex gap-[2rem]">
             <span>S</span>
             <span>E</span>
@@ -20,7 +20,7 @@ const Service1 = () => {
             <span>S</span>
           </div>
         </div>
-        <div className="flex flex-col text-center items-start md:text-left w-[25rem] md:w-[30rem] " >
+        <div className="flex flex-col items-start text-left w-[25rem] md:w-[30rem] " >
           <p className="text-[23px] font-bold pt-10 text-[grey]">
             Crafting{" "}
             <span className="text-[blue]">standout websites and branding</span>{" "}
