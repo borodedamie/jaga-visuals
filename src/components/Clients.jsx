@@ -2,7 +2,7 @@ import React from "react";
 
 const Clients = () => {
   return (
-    <div className="mx-10 mb-20"> 
+    <div className="px-5 mb-20"> 
       <h1 className="text-left my-20 md:text-center font-extrabold text-[55px]">
         Our Clients
       </h1>
