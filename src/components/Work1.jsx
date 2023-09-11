@@ -9,7 +9,7 @@ const Work1 = () => {
     <div className="w-full gap-[60px] flex flex-col pb-20 md:flex-row items-center justify-center">
       <div className="text-[blue] flex flex-col font-black text-[110px]">
         <motion.div variants={fadeIn("right", 0.5)}
-        viewport={{ once: true, amount: 0.7 }}
+        viewport={{ amount: 0.7 }}
         initial="hidden"
         whileInView={"show"} 
         className="flex gap-[5rem]">

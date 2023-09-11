@@ -1,6 +1,4 @@
-export const data =[
-
-    
+export const data =[ 
     {
         title:'Creative Design',
         paragraph:'Bring your brand to life online with a bespoke website that boosts engagement and brings a return on creativity.'
@@ -25,4 +23,74 @@ export const data =[
         title:'Social Media Management',
         paragraph:'JAGA VISUALS combines strategic direction with creative design to build a unique brand identity that your customers want to be a part of.'
      },
+]
+
+export const file = [
+    
+    {
+    title:'ART DIRECTION | BRANDING',
+    paragraph:'Autoflex Logistics Inc',
+    sentence:'We fully branded a pioneering healthcare concept in the US',
+},
+{
+    title:'ART DIRECTION | BRANDING',
+    paragraph:'Autoflex Logistics Inc',
+    sentence:'We fully branded a pioneering healthcare concept in the US',
+},
+{
+    title:'ART DIRECTION | BRANDING',
+    paragraph:'Autoflex Logistics Inc',
+    sentence:'We fully branded a pioneering healthcare concept in the US',
+},
+{
+    title:'ART DIRECTION | BRANDING',
+    paragraph:'Autoflex Logistics Inc',
+    sentence:'We fully branded a pioneering healthcare concept in the US',
+},
+{
+    title:'ART DIRECTION | BRANDING',
+    paragraph:'Autoflex Logistics Inc',
+    sentence:'We fully branded a pioneering healthcare concept in the US',
+},
+{
+    title:'ART DIRECTION | BRANDING',
+    paragraph:'Autoflex Logistics Inc',
+    sentence:'We fully branded a pioneering healthcare concept in the US',
+},
+{
+    title:'ART DIRECTION | BRANDING',
+    paragraph:'Autoflex Logistics Inc',
+    sentence:'We fully branded a pioneering healthcare concept in the US',
+},
+{
+    title:'ART DIRECTION | BRANDING',
+    paragraph:'Autoflex Logistics Inc',
+    sentence:'We fully branded a pioneering healthcare concept in the US',
+},
+]
+
+export const expert = [
+    
+    {
+    title:'ART DIRECTION | BRANDING',
+    paragraph:'Autoflex Logistics Inc',
+    sentence:'We fully branded a pioneering healthcare concept in the US',
+},
+{
+    title:'ART DIRECTION | BRANDING',
+    paragraph:'Autoflex Logistics Inc',
+    sentence:'We fully branded a pioneering healthcare concept in the US',
+},
+{
+    title:'ART DIRECTION | BRANDING',
+    paragraph:'Autoflex Logistics Inc',
+    sentence:'We fully branded a pioneering healthcare concept in the US',
+},
+{
+    title:'ART DIRECTION | BRANDING',
+    paragraph:'Autoflex Logistics Inc',
+    sentence:'We fully branded a pioneering healthcare concept in the US',
+},
+
+
 ]

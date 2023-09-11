@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from 'framer-motion';
 import { fadeIn } from './variants';
+import { expert } from "../assets/data";
+
 const Work = () => {
   return (
     <div>
@@ -21,83 +23,41 @@ const Work = () => {
           </div>
         </div>
 
-        <div
-          
-          className="flex flex-col justify-around items-center"
-        >
-          <motion.div 
-          variants={fadeIn("up", 0.5)}
-          viewport={{ once: true, amount: 0.7 }}
-          initial="hidden"
-          whileInView={"show"} 
-          className="flex w-full flex-col md:flex-row justify-center px-5 gap-10">
-            <div className="my-20 md:my-0">
-              <div className="border bg-[white] h-[25rem] w-full md:w-[22rem]"></div>
-              <div className="text-[white]">
-                <h2 className="text-[#63bbca] text-[14px] leading-10">
-                  ART DIRECTION | BRANDING
-                </h2>
-                <h1 className="text-[24px] font-bold leading-10">
-                  Autoflex Logistics Inc
-                </h1>
-                <p className="text-[14px] w-[18rem]">
-                  We fully branded a pioneering healthcare concept in the US
-                </p>
-              </div>
-            </div>
-            <div>
-              <div className="border bg-[white] h-[25rem] md:h-[20rem] w-full md:w-[22rem]"></div>
-              <div className="text-[white]">
-                <h2 className="text-[#63bbca] text-[14px] leading-10">
-                  ART DIRECTION | MOTION GRAPHICS
-                </h2>
-                <h1 className="text-[24px] font-bold leading-10">DOF Dubai</h1>
-                <p className="text-[14px] w-[18rem]">
-                  We fully branded a pioneering healthcare concept in the US
-                </p>
-              </div>
-            </div>
-          </motion.div>
+        <div className="grid grid-cols-1 md:grid-cols-2 w-full md:w-[60%] justify-center items-center mx-auto">
+      {expert.map((expert1, index) => {
+        return (
           <motion.div
-          variants={fadeIn("up", 0.5)}
-          viewport={{ once: true, amount: 0.7 }}
-          initial="hidden"
-          whileInView={"show"}  
-           className="flex w-full flex-col md:flex-row justify-center px-5 gap-10 py-20">
-            <div 
-            className="my-20 md:my-0">
+            variants={fadeIn("right", 0.5)}
+            viewport={{ amount: 0.7 }}
+            initial="hidden"
+            whileInView={"show"}
+            className="flex flex-col justify-around px-5"
+          >
+            <div className="" key={expert1.id}>
               <div className="border bg-[white] h-[25rem] md:h-[20rem] w-full md:w-[22rem]">
                 {" "}
               </div>
               <div className="text-[white]">
                 {" "}
-                <h2 className="text-[#63bbca] text-[14px] leading-10">
-                  ART DIRECTION | MOTION GRAPHICS
+                <h2
+                  key={index}
+                  className="text-[#63bbca] text-[14px] leading-10"
+                >
+                  {expert1.title}
                 </h2>
-                <h1 className="text-[24px] font-bold leading-10">
-                  Jumia Pay Ap
+                <h1 key={index} className="text-[24px] font-bold leading-10">
+                  {" "}
+                  {expert1.paragraph}
                 </h1>
-                <p className="text-[14px] w-[18rem]">
-                  We fully branded a pioneering healthcare concept in the US
-                </p>
-              </div>
-            </div>
-            <div>
-              <div className="border bg-[white] h-[25rem] w-full md:w-[22rem]"></div>
-              <div className="text-[white]">
-                <h2 className="text-[#63bbca] text-[14px] leading-10">
-                  ART DIRECTION | SOCIAL MEDIA
-                </h2>
-                <h1 className="text-[24px] font-bold leading-10">
-                  Foret Dubai
-                </h1>
-                <p className="text-[14px] w-[18rem]">
-                  We fully branded a pioneering healthcare concept in the US
+                <p key={index} className="text-[14px] w-[18rem]">
+                  {expert1.sentence}{" "}
                 </p>
               </div>
             </div>
           </motion.div>
-        </div>
+        );
+      })}
+    </div>
       </div>
     </div>
   );
