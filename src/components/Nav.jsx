@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { BiMenuAltRight } from "react-icons/bi";
 import { ImCancelCircle } from "react-icons/im";
-
+import logo from '../assets/logo.jpg';
 const Nav = () => {
   const [navbar, setNavbar] = useState(false);
   const handleToggle = () => {
@@ -15,7 +15,7 @@ const Nav = () => {
         <NavLink  
           to="/"
         >
-          Logo
+          <img className="w-[5rem] h-[5rem]" src={logo} alt="Logo" ></img>
         </NavLink>
         <div
           onClick={handleToggle}

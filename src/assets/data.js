@@ -1,3 +1,8 @@
+import logic from '../assets/logic.jpg'
+import dubai from '../assets/dubai.jpg'
+import jumia from '../assets/jumia1.jpg'
+import foret1 from '../assets/foret1.jpg'
+
 export const data =[ 
     {
         title:'Creative Design',
@@ -73,21 +78,25 @@ export const expert = [
     
     {
     title:'ART DIRECTION | BRANDING',
+    wallpaper: logic,
     paragraph:'Autoflex Logistics Inc',
     sentence:'We fully branded a pioneering healthcare concept in the US',
 },
 {
     title:'ART DIRECTION | BRANDING',
+    wallpaper: dubai,
     paragraph:'Autoflex Logistics Inc',
     sentence:'We fully branded a pioneering healthcare concept in the US',
 },
 {
     title:'ART DIRECTION | BRANDING',
+    wallpaper: jumia,
     paragraph:'Autoflex Logistics Inc',
     sentence:'We fully branded a pioneering healthcare concept in the US',
 },
 {
     title:'ART DIRECTION | BRANDING',
+    wallpaper: foret1,
     paragraph:'Autoflex Logistics Inc',
     sentence:'We fully branded a pioneering healthcare concept in the US',
 },
