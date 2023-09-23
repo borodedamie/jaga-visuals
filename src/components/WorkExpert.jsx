@@ -3,16 +3,16 @@ import { motion } from "framer-motion";
 import { fadeOut } from "./variants";
 import logic from "../assets/logic.jpg";
 import dubai from "../assets/dubai.jpg";
-import jumia from "../assets/jumia1.jpg";
-import foret1 from "../assets/foret1.jpg";
-import nagaad1 from "../assets/nagaad1.jpg";
-import speak from "../assets/speak.jpg";
+import jumia from "../assets/jumia1.webp";
+import foret1 from "../assets/foret1.webp";
+import nagaad1 from "../assets/nagaad1.webp";
+import speak from "../assets/speak.webp";
 
 const WorkExpert = () => {
   const scrollRef = useRef(null);
 
   return (
-    <div className="mb-[2rem]">
+    <div className="mb-[10rem] ">
       <div ref={scrollRef}>
         {" "}
         <div className="flex flex-col md:flex-row gap-10 justify-center md:items-center px-5">
@@ -24,7 +24,7 @@ const WorkExpert = () => {
                   viewport={{ amount: 0.7 }}
                   initial="hidden"
                   whileInView={"show"}
-                  className="flex flex-col  h-[25rem] w-full md:w-[22rem]"
+                  className="flex flex-col h-[36rem] w-full md:w-[32rem]"
                   src={logic}
                 ></motion.img>
               </div>
@@ -49,7 +49,7 @@ const WorkExpert = () => {
                 viewport={{ amount: 0.7 }}
                 initial="hidden"
                 whileInView={"show"}
-                className="flex flex-col  h-[25rem] md:h-[20rem] w-full md:w-[22rem]"
+                className="flex flex-col h-[28rem] w-full md:w-[32rem]"
                 src={dubai}
               ></motion.img>
             </div>
@@ -79,7 +79,7 @@ const WorkExpert = () => {
                   viewport={{ amount: 0.7 }}
                   initial="hidden"
                   whileInView={"show"}
-                  className="flex flex-col  h-[25rem] md:h-[20rem] w-full md:w-[22rem]"
+                  className="flex flex-col h-[28rem] w-full md:w-[32rem]"
                   src={jumia}
                 ></motion.img>
               </div>
@@ -104,7 +104,7 @@ const WorkExpert = () => {
                 viewport={{ amount: 0.7 }}
                 initial="hidden"
                 whileInView={"show"}
-                className="flex flex-col  h-[25rem] w-full md:w-[22rem]"
+                className="flex flex-col h-[36rem] w-full md:w-[32rem]"
                 src={foret1}
               ></motion.img>
             </div>
@@ -134,7 +134,7 @@ const WorkExpert = () => {
                   viewport={{ amount: 0.7 }}
                   initial="hidden"
                   whileInView={"show"}
-                  className="flex flex-col  h-[25rem] w-full md:w-[22rem]"
+                  className="flex flex-col h-[36rem] w-full md:w-[32rem]"
                   src={speak}
                 ></motion.img>
               </div>
@@ -159,7 +159,7 @@ const WorkExpert = () => {
                 viewport={{ amount: 0.7 }}
                 initial="hidden"
                 whileInView={"show"}
-                className="flex flex-col  h-[25rem] md:h-[20rem] w-full md:w-[22rem]"
+                className="flex flex-col h-[28rem] w-full md:w-[32rem]"
                 src={nagaad1}
               ></motion.img>
             </div>
@@ -189,7 +189,7 @@ const WorkExpert = () => {
                   viewport={{ amount: 0.7 }}
                   initial="hidden"
                   whileInView={"show"}
-                  className="flex flex-col  h-[25rem] md:h-[20rem] w-full md:w-[22rem]"
+                  className="flex flex-col h-[28rem] w-full md:w-[32rem]"
                   src={jumia}
                 ></motion.img>
               </div>
@@ -214,7 +214,7 @@ const WorkExpert = () => {
                 viewport={{ amount: 0.7 }}
                 initial="hidden"
                 whileInView={"show"}
-                className="flex flex-col  h-[25rem] w-full md:w-[22rem]"
+                className="flex flex-col h-[36rem] w-full md:w-[32rem]"
                 src={foret1}
               ></motion.img>
             </div>

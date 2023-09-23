@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import { fadeOut, fadeIn } from "./variants";
 import logic from "../assets/logic.jpg";
 import dubai from "../assets/dubai.jpg";
-import jumia from "../assets/jumia1.jpg";
-import foret1 from "../assets/foret1.jpg";
+import jumia from "../assets/jumia1.webp";
+import foret1 from "../assets/foret1.webp";
 const Work = () => {
   const scrollRef = useRef(null);
   return (
@@ -16,13 +16,13 @@ const Work = () => {
               <span>W</span>
               <span>O</span>
             </div>
-            <div className="flex gap-[9rem]">
+            <div className="flex gap-[8rem]">
               <span>R</span>
               <span>K</span>
             </div>
           </div>
-          <div className="text-[#63bbca] w-[22rem] md:w-[20rem] flex flex-col font-black text-[50px] text-left">
-            <h2>Shit-hot work for hot-shot brands</h2>
+          <div className="w-[22rem] md:w-[20rem] flex flex-col font-black text-[50px] text-left">
+            <h2 className="text-[#0dfff6] ">Shit-hot work for hot-shot brands</h2>
           </div>
         </div>
         <div ref={scrollRef}>
@@ -37,9 +37,7 @@ const Work = () => {
                   viewport={{ amount: 0.7 }}
                   initial="hidden"
                   whileInView={"show"} 
-                  
-                  className="flex flex-col  h-[25rem] w-full md:w-[22rem]"
-                
+                  className="flex flex-col h-[36rem] w-full md:w-[32rem]"
                     src={logic}
                   ></motion.img>
                 </div>
@@ -65,7 +63,7 @@ const Work = () => {
                   viewport={{ amount: 0.7 }}
                   initial="hidden"
                   whileInView={"show"} 
-                  className="flex flex-col  h-[25rem] md:h-[20rem] w-full md:w-[22rem]"
+                  className="flex flex-col h-[28rem] w-full md:w-[32rem]"
                   src={dubai}
                 ></motion.img>
               </div>
@@ -96,9 +94,7 @@ const Work = () => {
                   viewport={{ amount: 0.7 }}
                   initial="hidden"
                   whileInView={"show"} 
-                  
-                  className="flex flex-col  h-[25rem] md:h-[20rem] w-full md:w-[22rem]"
-                
+                  className="flex flex-col h-[28rem] w-full md:w-[32rem]"
                     src={jumia}
                   ></motion.img>
                 </div>
@@ -124,7 +120,7 @@ const Work = () => {
                   viewport={{ amount: 0.7 }}
                   initial="hidden"
                   whileInView={"show"} 
-                  className="flex flex-col  h-[25rem] w-full md:w-[22rem]"
+                  className="flex flex-col h-[36rem] w-full md:w-[32rem]"
                   src={foret1}
                 ></motion.img>
               </div>

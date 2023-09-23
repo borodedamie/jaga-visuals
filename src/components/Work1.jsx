@@ -18,10 +18,11 @@ const Work1 = () => {
         </motion.div>
 
         <motion.div
-         variants={fadeIn("right", 0.5)}
-        viewport={{ once: true, amount: 0.7 }}
+        variants={fadeIn("right", 0.5)}
+        viewport={{ amount: 0.7 }}
         initial="hidden"
-        whileInView={"show"}  className="flex gap-[8rem]">
+        whileInView={"show"} 
+        className="flex gap-[8rem]">
           <span>R</span>
           <span>K</span>
         </motion.div>

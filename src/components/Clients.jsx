@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
+import { motion } from "framer-motion";
+import { fadeOut } from "./variants";
 import jva from '../assets/damage.jpg'
 import premium from '../assets/premium.jpg'
 import client from '../assets/clients.jpg'
@@ -13,23 +15,31 @@ import nagaad from '../assets/Nagaad.png'
 import one from '../assets/one.png'
 
 const Clients = () => {
+  const scrollRef = useRef(null);
+
   return (
-    <div className="px-5  mb-20"> 
+    <div className="px-5 mt-[13rem]  mb-20"> 
       <h1 className="text-left my-20 md:text-center font-extrabold text-[55px]">
         Our Clients
       </h1>
-<div className="grid px-0 md:px-20 grid-cols-2 md:grid-cols-4 gap-4">
-<img className="w-[10rem] h-[10rem]" src={fortune}></img>
-<img className="w-[10rem] h-[10rem]" src={Auto}></img>
-<img className="w-[10rem] h-[10rem]" src={foret}></img>
-<img className="w-[10rem] h-[10rem]" src={livevend}></img>
-<img className="w-[10rem] h-[10rem]" src={kitchen}></img>
-<img className="w-[10rem] h-[10rem]" src={jumia}></img>
-<img className="w-[10rem] h-[10rem]" src={wavy}></img>
-<img className="w-[10rem] h-[10rem]" src={nagaad}></img>
-<img className="w-[10rem] h-[10rem]" src={one}></img>
+<motion.div
+variants={fadeOut("bottom", 0.2)}
+viewport={{ amount: 0.7 }}
+initial="hidden"
+whileInView={"show"}
 
-</div>
+className="grid w-full md:w-[70%] px-0 mb-[13rem] items-center justify-center mx-auto md:px-20 grid-cols-2 md:grid-cols-4 gap-4">
+<img className="w-[7rem] h-[7rem]" src={wavy}></img>
+<img className="w-[7rem] h-[7rem]" src={one}></img>
+<img className="w-[7rem] h-[7rem]" src={foret}></img>
+<img className="w-[7rem] h-[7rem]" src={jumia}></img>
+<img className="w-[7rem] h-[7rem]" src={kitchen}></img>
+<img className="w-[7rem] h-[7rem]" src={Auto}></img>
+<img className="w-[7rem] h-[7rem]" src={livevend}></img>
+<img className="w-[7rem] h-[7rem]" src={nagaad}></img>
+<img className="w-[7rem] h-[7rem]" src={fortune}></img>
+
+</motion.div>
         <div className="flex flex-col pb-5 md:flex-row justify-center items-end gap-20">
           <div className="flex w-full md:w-[20rem] flex-col">
           <h2 className="font-bold text-[38px] pb-[1rem]">Latest Articles</h2>
@@ -45,7 +55,7 @@ const Clients = () => {
 
           </div>
         </div>
-        <button className="text-center items-center flex mx-auto rounded-2xl font-medium h-[2rem] text-[blue] p-5 border-[blue] border-[2px]">VIEW ALL BLOG POSTS</button>
+        <button className="text-center mb-[13rem] items-center flex mx-auto rounded-2xl font-medium h-[2rem] text-[blue] p-5 border-[blue] border-[2px]">VIEW ALL BLOG POSTS</button>
       </div>
   );
 };

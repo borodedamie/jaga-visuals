@@ -1,7 +1,7 @@
 import logic from '../assets/logic.jpg'
 import dubai from '../assets/dubai.jpg'
-import jumia from '../assets/jumia1.jpg'
-import foret1 from '../assets/foret1.jpg'
+import jumia from '../assets/jumia1.webp'
+import foret1 from '../assets/foret1.webp'
 
 export const data =[ 
     {

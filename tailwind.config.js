@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'hero': "url('.././src/assets/bg.webp')",
+      },
+      
       transitionProperty: {
         'height': '60vh',
       }

@@ -72,6 +72,7 @@ const Service1 = () => {
           </div>
         </div>
       </div>
+      <div className="mb-[17rem] ">
       {data.map((data1, index) => {
         return (
           <motion.div 
@@ -99,6 +100,7 @@ const Service1 = () => {
           </motion.div>
         );
       })}
+      </div>
     </>
   );
 };
