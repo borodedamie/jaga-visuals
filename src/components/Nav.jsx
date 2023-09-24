@@ -10,7 +10,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="flex mb-0 w-full md:mb-[4rem] flex-col md:flex-row items-left md:items-center md:px-[2rem] justify-between pt-[2em] gap-20">
+    <nav className="flex mb-0 w-full md:mb-[4rem] flex-col md:flex-row items-left md:items-center md:px-[4rem] justify-between pt-[2em] gap-20">
       <div className="flex justify-between items-center mx-10">
         <NavLink  
           to="/"
