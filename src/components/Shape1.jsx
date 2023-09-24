@@ -1,9 +1,10 @@
 import React from "react";
 import ReactPlayer from "react-player";
+import hero from "../assets/bg.webp";
 
 const Shape1 = () => {
   return (
-    <div className="h-[37rem] lg:h-screen py-[7rem] md:py-0 mt-10 flex-none md:flex flex-col md:flex-row md:max-w-[100%] md:gap-20 justify-center text-left items-center bg-[url('./src/assets/bg.webp')]">
+    <div style={{backgroundImage: `url(${hero})`}} className="h-[37rem] lg:h-screen py-[7rem] md:py-0 mt-10 flex-none md:flex flex-col md:flex-row md:max-w-[100%] md:gap-20 justify-center text-left items-center bg-cover bg-center">
       <div className="rounded-3xl h-[23rem] mx-auto md:mx-0 w-[20rem] md:w-[20rem] bg-white">
         {/* <ReactPlayer
 light={true}
