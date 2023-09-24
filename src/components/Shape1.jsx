@@ -3,7 +3,7 @@ import ReactPlayer from "react-player";
 
 const Shape1 = () => {
   return (
-    <div className="h-[37rem] lg:h-screen py-[7rem] md:py-0 mt-10 flex-none md:flex flex-col md:flex-row md:max-w-[100%] md:gap-20 justify-center text-left items-center bg-hero">
+    <div className="h-[37rem] lg:h-screen py-[7rem] md:py-0 mt-10 flex-none md:flex flex-col md:flex-row md:max-w-[100%] md:gap-20 justify-center text-left items-center bg-[url('./src/assets/bg.webp')]">
       <div className="rounded-3xl h-[23rem] mx-auto md:mx-0 w-[20rem] md:w-[20rem] bg-white">
         {/* <ReactPlayer
 light={true}
