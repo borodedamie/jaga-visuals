@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero': "url('.././src/assets/bg.webp')",
+        'hero': "url('./src/assets/bg.webp')",
       },
       
       transitionProperty: {
