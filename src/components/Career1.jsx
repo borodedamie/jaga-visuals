@@ -21,7 +21,7 @@ const Career1 = () => {
            variants={fadeIn("right", 0.5)}
         viewport={{ once: true, amount: 0.7 }}
         initial="hidden"
-        whileInView={"show"}  className="flex gap-[5rem]">
+        whileInView={"show"}  className="flex gap-[6rem]">
             <span>I</span>
             <span>N</span>
           </motion.div>

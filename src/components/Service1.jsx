@@ -90,13 +90,15 @@ const Service1 = () => {
               </h2>
               <p
                 key={index}
-                className="text-[18px] w-full md:w-[24.5rem] font-bold text-[grey] leading-10 py-5"
+                className="text-[18px] w-full md:w-[24.5rem] font-bold text-[grey] leading-8 py-5"
               >
                 {data1.paragraph}
               </p>
               <Button />
+              
             </div>
-            <div className="bg-[grey] w-full md:w-[25rem] h-[20rem] rounded-2xl"></div>
+            <img src={data1.design} className="w-full md:w-[25rem] h-[20rem] rounded-2xl"/>
+
           </motion.div>
         );
       })}

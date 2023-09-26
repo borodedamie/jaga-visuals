@@ -13,6 +13,7 @@ import jumia from '../assets/Jumia.png'
 import wavy from '../assets/Wavy.png'
 import nagaad from '../assets/Nagaad.png'
 import one from '../assets/one.png'
+import immerse from '../assets/immerse.png'
 
 const Clients = () => {
   const scrollRef = useRef(null);
@@ -28,11 +29,13 @@ viewport={{ amount: 0.7 }}
 initial="hidden"
 whileInView={"show"}
 
-className="grid w-full md:w-[70%] px-0 mb-[13rem] items-center justify-center mx-auto md:px-20 grid-cols-2 md:grid-cols-4 gap-4">
+className="grid w-full md:w-[70%] px-0 mb-[13rem] items-center justify-center mx-auto md:px-20 grid-cols-2 md:grid-cols-5 gap-8">
 <img className="w-[7rem] h-[7rem]" src={wavy}></img>
 <img className="w-[7rem] h-[7rem]" src={one}></img>
-<img className="w-[7rem] h-[7rem]" src={foret}></img>
+<img className="w-[7rem] h-[2rem]" src={immerse}></img>
+
 <img className="w-[7rem] h-[7rem]" src={jumia}></img>
+<img className="w-[7rem] h-[7rem]" src={foret}></img>
 <img className="w-[7rem] h-[7rem]" src={kitchen}></img>
 <img className="w-[7rem] h-[7rem]" src={Auto}></img>
 <img className="w-[7rem] h-[7rem]" src={livevend}></img>

@@ -43,7 +43,7 @@ const Work = () => {
                 </div>
                 <div className="text-[white]">
                   {" "}
-                  <h2 className="text-[#63bbca] text-[14px] leading-10">
+                  <h2 className="text-[#0dfff6]  text-[14px] leading-10">
                     ART DIRECTION | BRANDING{" "}
                   </h2>
                   <h1 className="text-[24px] font-bold leading-10">
@@ -69,7 +69,7 @@ const Work = () => {
               </div>
               <div className="text-[white]">
                 {" "}
-                <h2 className="text-[#63bbca] text-[14px] leading-10">
+                <h2 className="text-[#0dfff6]  text-[14px] leading-10">
                   ART DIRECTION | MOTION GRAPHICS{" "}
                 </h2>
                 <h1 className="text-[24px] font-bold leading-10">
@@ -100,7 +100,7 @@ const Work = () => {
                 </div>
                 <div className="text-[white]">
                   {" "}
-                  <h2 className="text-[#63bbca] text-[14px] leading-10">
+                  <h2 className="text-[#0dfff6]  text-[14px] leading-10">
                     ART DIRECTION | MOTION GRPAHICS{" "}
                   </h2>
                   <h1 className="text-[24px] font-bold leading-10">
@@ -126,7 +126,7 @@ const Work = () => {
               </div>
               <div className="text-[white]">
                 {" "}
-                <h2 className="text-[#63bbca] text-[14px] leading-10">
+                <h2 className="text-[#0dfff6]  text-[14px] leading-10">
                   ART DIRECTION | SOCIAL MEDIA{" "}
                 </h2>
                 <h1 className="text-[24px] font-bold leading-10">
