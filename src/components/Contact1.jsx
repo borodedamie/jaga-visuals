@@ -4,15 +4,16 @@ import { BiLogoFacebook } from "react-icons/bi";
 import { AiFillYoutube } from "react-icons/ai";
 const Contact1 = () => {
   return (
-    <div className="flex pt-[3rem] md:pt-0 md:mx-0 flex-col md:flex-row justify-center items-center md:items-start gap-[2rem] md:gap-[10rem]">
+    <div className="flex pt-[3rem] md:pt-0 flex-col md:flex-row justify-center items-center md:items-start gap-[2rem] md:gap-[10rem]">
       <div className="flex flex-col">
-        <div>
-          <h1 className="text-[blue] text-[35px] font-bold">
+      <div>
+          <h1 className="text-[blue] text-[35px] font-bold ">
             Let's create magic
-          </h1>
-          <p className="text-[25px] w-[25rem] md:w-[15rem] font-bold">
-            Let us help you get your project started.
+          </h1>{" "}
+          <p className="text-[25px] font-bold">
+          Let us help you get your <br/> project started.
           </p>
+          
         </div>
         <div>
           <h2 className="text-[25px] font-bold pt-10">Contact us</h2>
@@ -34,11 +35,10 @@ const Contact1 = () => {
         </div>
       </div>
       <hr class="hidden md:flex h-[24rem] bg-gray-200 border-2 dark:bg-gray-700"></hr>
-      {/* <div className="border-r-2 border-[grey] hidden"></div> */}
       <div className="flex flex-col">
         <h1 className="text-[blue] text-[35px] font-bold pb-7">Start your project</h1>
         <form className="flex flex-col ">
-          <div className="flex flex-row  gap-2 md:gap-[1rem] mb-3 ">
+          <div className="flex flex-col md:flex-row gap-2 md:gap-[1rem] mb-3">
           <input className="border-b-2 font-medium border-[#5b5959] leading-10" placeholder="First Name"></input>
           <input className="border-b-2  font-medium border-[#5b5959] leading-10" placeholder="Last Name"></input>
           </div>

@@ -8,10 +8,8 @@ const Shape1 = () => {
       style={{ backgroundImage: `url(${hero})` }}
       className="h-[37rem] lg:h-screen py-[7rem] md:py-0 mt-10 flex-none md:flex flex-col md:flex-row md:max-w-[100%] md:gap-20 justify-center text-left items-center bg-cover bg-center"
     >
-      <div className=" rounded-3xl h-[23rem] mx-auto md:mx-0 w-[20rem]">
+      <div className="rounded-3xl h-[23rem] mx-auto md:mx-0 w-[20rem]">
         <ReactPlayer
-          light={true}
-          controls={true}
           url={"https://youtu.be/xcL_y9h3QiI"}
           width="20rem"
           height="23rem"
