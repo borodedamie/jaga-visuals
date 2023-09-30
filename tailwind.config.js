@@ -5,12 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        // 'custom': "url('.././src/assets/bg.webp')",
-        // 'custom1': "url('.././src/assets/heroImage.webp')",
-        // 'custom2': "url('.././src/assets/picturess.webp')",
-        // 'custom3': "url('.././src/assets/chains.webp')",
-
+      transitionProperty: {
+        'height': '60vh',
+        "safelist": 'animate-[fade-in-up_1s_ease-in-out]',
+        'transform': 'translateY(-50%)'
       }
     },
   },
