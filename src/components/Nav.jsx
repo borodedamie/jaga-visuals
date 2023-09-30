@@ -67,41 +67,41 @@ const Nav = () => {
 
   return (
     <nav 
-    // className={`flex mb-0 w-full md:mb-[4rem] flex-col md:flex-row items-left md:items-center justify-between gap-0 ${
       className={`top-0 z-10 flex flex-row justify-between 
         ${
           navbar
-            ? "top-0 pl-10 mx-0 bg-[blue] absolute transform h-fit transition-safelist w-full duration-1000 ease-in-out flex flex-col justify-start items-start text-[white] "
-            : "top-[-100%] items-center flex flex-row  text-[black] gap-[1.5rem] justify-center"
+            ? "top-0  pl-10 mx-0 bg-[blue] absolute transform transition-safelist w-full duration-1000 ease-in-out flex flex-col justify-start items-start text-[white] "
+            : "top-[-1000px] items-center flex flex-row  text-[black] gap-[1.5rem] justify-center"
         }`}
     >
       <div className="flex justify-between items-center">
         <NavLink to="/">
           <img 
           className={`flex 
-          ${navbar ? "hidden" : "flex  pl-10 pt-10 w-[8rem] h-[8rem] "}`}
+          ${navbar ? "hidden" : "flex pl-10 pt-10 w-[8rem] h-[8rem] "}`}
            src={logo} alt="Logo"></img>
         </NavLink>
       </div>
       <ul
-        className={`flex flex-row gap-10   ${navbar ? "flex-col pl-5 pt-0 md:pt-5" : "items-center"}`}
+        className={`flex flex-row   ${navbar ? "flex-col pl-5 h-[100vh] pt-0 md:pt-5  " : "items-center gap-10 "}`}
       >
-        <li className={`mt-[5rem] md:mt-0 md:pb-0 font-bold  ${navbar ? "flex transition-all delay-100  duration-200 ease-in-out text-[50px] hover:text-[black]" : "hidden md:flex text-[30px] "}`}>
+        <li onClick={handleToggle} className={`mt-[5rem] md:mt-0 md:pb-0 font-bold  ${navbar ? "flex transition-all delay-100 pt-[3rem] md:pt-[5rem] duration-200 ease-in-out text-[50px] hover:text-[black]" : "hidden md:flex text-[30px] "}`}>
           
           <NavLink to="/works">Work</NavLink>
         </li>
         <li
+        onClick={handleToggle}
           className={`text-[40px] md:pb-0 font-bold 
         ${navbar ? "flex text-[50px] hover:text-[black] transition-all duration-300 ease-in-out delay-150" : "hidden text-[20px]"}`}
         >
           <NavLink to="/services">Services</NavLink>
         </li>
 
-        <li className={` md:pb-0 font-bold 
+        <li onClick={handleToggle} className={` md:pb-0 font-bold 
         ${navbar ? "flex text-[50px] hover:text-[black] transition-all duration-500 ease-in-out delay-200" : "hidden text-[20px]"}`}>
           <NavLink to="/career">Career</NavLink>
         </li>
-        <li className={` md:pb-0 font-bold  
+        <li onClick={handleToggle} className={` md:pb-0 font-bold  
         ${navbar ? "flex text-[50px] hover:text-[black] transition-all duration-500 ease-in-out delay-200" : "hidden text-[20px]"}`}>
           <NavLink to="/agency">Agency</NavLink>
         </li>
