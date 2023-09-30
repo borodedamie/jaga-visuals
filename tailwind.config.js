@@ -7,6 +7,8 @@ module.exports = {
     extend: {
       transitionProperty: {
         'height': '60vh',
+        "safelist": 'animate-[fade-in-up_1s_ease-in-out]',
+        'transform': 'translateY(-50%)'
       }
     },
   },

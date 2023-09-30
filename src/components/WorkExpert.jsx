@@ -2,11 +2,20 @@ import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { fadeOut } from "./variants";
 import logic from "../assets/logic.jpg";
+import logic1 from "../assets/logic-mobile.jpg";
 import dubai from "../assets/dubai.jpg";
+import dubai1 from "../assets/DOP-dubai-mobile.jpg";
+import foret11 from "../assets/foret-mobile.jpg";
+import nagaad11 from "../assets/Nagaad-Organics.jpg";
+import jumia1 from "../assets/jumia-mobile.jpg";
 import jumia from "../assets/jumia1.webp";
 import foret1 from "../assets/foret1.webp";
 import nagaad1 from "../assets/nagaad1.webp";
 import speak from "../assets/speak.webp";
+import speak1 from "../assets/wavy-beauty-mobile.jpg";
+import HO from "../assets/HO-GAS-mobile.jpg";
+import { NavLink } from "react-router-dom";
+import oneO from "../assets/101-Properties-mobile.jpg";
 
 const WorkExpert = () => {
   const scrollRef = useRef(null);
@@ -15,7 +24,7 @@ const WorkExpert = () => {
     <div className="mb-[10rem] ">
       <div ref={scrollRef}>
         {" "}
-        <div className="flex flex-col md:flex-row gap-10 justify-center md:items-center px-5">
+        <div className="flex flex-col md:flex-row gap-[5rem] justify-center md:items-center px-5">
           <div>
             <div className="w-full">
               <div>
@@ -24,8 +33,11 @@ const WorkExpert = () => {
                   viewport={{ amount: 0.7 }}
                   initial="hidden"
                   whileInView={"show"}
-                  className="flex flex-col h-[36rem] w-full md:w-[32rem]"
+                  className="flex flex-col w-[32rem]"
                   src={logic}
+                  sizes="(max-width: 600px) 480px,
+         800px"
+                  srcSet={logic1}
                 ></motion.img>
               </div>
               <div className="text-[black]">
@@ -34,7 +46,7 @@ const WorkExpert = () => {
                   ART DIRECTION | BRANDING{" "}
                 </h2>
                 <h1 className="text-[24px] font-bold leading-10">
-                  Autoflex Logistics Inc
+                  <NavLink to="/logisticsbrief">Autoflex Logistics Inc</NavLink>
                 </h1>
                 <p className="text-[14px] w-[18rem]">
                   We fully branded a pioneering healthcare concept in the US
@@ -49,8 +61,11 @@ const WorkExpert = () => {
                 viewport={{ amount: 0.7 }}
                 initial="hidden"
                 whileInView={"show"}
-                className="flex flex-col h-[28rem] w-full md:w-[32rem]"
+                className="flex flex-col w-[32rem] md:h-[26rem]"
                 src={dubai}
+                sizes="(max-width: 600px) 480px,
+         800px"
+                srcSet={dubai1}
               ></motion.img>
             </div>
             <div className="text-[black]">
@@ -59,7 +74,7 @@ const WorkExpert = () => {
                 ART DIRECTION | MOTION GRAPHICS{" "}
               </h2>
               <h1 className="text-[24px] font-bold leading-10">
-                DOF Dubai 
+                <NavLink to="/dofbrief">DOF Dubai </NavLink>
               </h1>
               <p className="text-[14px] w-[18rem]">
                 We fully branded a pioneering healthcare concept in the US
@@ -70,7 +85,7 @@ const WorkExpert = () => {
       </div>
       <div ref={scrollRef}>
         {" "}
-        <div className="flex flex-col md:flex-row gap-10 justify-center md:items-center px-5">
+        <div className="flex flex-col md:flex-row gap-[5rem] justify-center md:items-center px-5">
           <div>
             <div className="w-full">
               <div>
@@ -79,7 +94,10 @@ const WorkExpert = () => {
                   viewport={{ amount: 0.7 }}
                   initial="hidden"
                   whileInView={"show"}
-                  className="flex flex-col h-[28rem] w-full md:w-[32rem]"
+                  className="flex flex-col w-[32rem] md:h-[26rem]"
+                  sizes="(max-width: 600px) 480px,
+           800px"
+                  srcSet={jumia1}
                   src={jumia}
                 ></motion.img>
               </div>
@@ -89,7 +107,7 @@ const WorkExpert = () => {
                   ART DIRECTION | MOTION GRAPHICS{" "}
                 </h2>
                 <h1 className="text-[24px] font-bold leading-10">
-                  Jumia Pay App
+                  <NavLink to="/jumiabrief">Jumia Pay App</NavLink>
                 </h1>
                 <p className="text-[14px] w-[18rem]">
                   We fully branded a pioneering healthcare concept in the US
@@ -104,8 +122,11 @@ const WorkExpert = () => {
                 viewport={{ amount: 0.7 }}
                 initial="hidden"
                 whileInView={"show"}
-                className="flex flex-col h-[36rem] w-full md:w-[32rem]"
                 src={foret1}
+                className="flex flex-col w-[32rem]"
+                sizes="(max-width: 600px) 480px,
+         800px"
+                srcSet={foret11}
               ></motion.img>
             </div>
             <div className="text-[black]">
@@ -114,7 +135,7 @@ const WorkExpert = () => {
                 ART DIRECTION | SOCIAL MEDIA{" "}
               </h2>
               <h1 className="text-[24px] font-bold leading-10">
-                Foret Dubai
+                <NavLink to="/foretbrief">Foret Dubai</NavLink>
               </h1>
               <p className="text-[14px] w-[18rem]">
                 We fully branded a pioneering healthcare concept in the US
@@ -125,7 +146,7 @@ const WorkExpert = () => {
       </div>
       <div ref={scrollRef}>
         {" "}
-        <div className="flex flex-col md:flex-row gap-10 justify-center md:items-center px-5">
+        <div className="flex flex-col md:flex-row gap-[5rem] justify-center md:items-center px-5">
           <div>
             <div className="w-full">
               <div>
@@ -134,8 +155,11 @@ const WorkExpert = () => {
                   viewport={{ amount: 0.7 }}
                   initial="hidden"
                   whileInView={"show"}
-                  className="flex flex-col h-[36rem] w-full md:w-[32rem]"
                   src={speak}
+                  className="flex flex-col w-[32rem]"
+                  sizes="(max-width: 600px) 480px,
+         800px"
+                  srcSet={speak1}
                 ></motion.img>
               </div>
               <div className="text-[black]">
@@ -144,7 +168,7 @@ const WorkExpert = () => {
                   ART DIRECTION | MOTION GRAPHICS{" "}
                 </h2>
                 <h1 className="text-[24px] font-bold leading-10">
-                  Wavy Beauty Inc
+                  <NavLink to="/wavybrief">Wavy Beauty Inc</NavLink>
                 </h1>
                 <p className="text-[14px] w-[18rem]">
                   We fully branded a pioneering healthcare concept in the US
@@ -159,8 +183,11 @@ const WorkExpert = () => {
                 viewport={{ amount: 0.7 }}
                 initial="hidden"
                 whileInView={"show"}
-                className="flex flex-col h-[28rem] w-full md:w-[32rem]"
                 src={nagaad1}
+                className="flex flex-col w-[32rem] md:h-[26rem]"
+                sizes="(max-width: 600px) 480px,
+         800px"
+                srcSet={nagaad11}
               ></motion.img>
             </div>
             <div className="text-[black]">
@@ -169,7 +196,7 @@ const WorkExpert = () => {
                 ART DIRECTION | MOTION GRAPHICS{" "}
               </h2>
               <h1 className="text-[24px] font-bold leading-10">
-                Nagaad Organics
+                <NavLink to="/nagaadbrief">Nagaad Organics</NavLink>
               </h1>
               <p className="text-[14px] w-[18rem]">
                 We fully branded a pioneering healthcare concept in the US
@@ -180,7 +207,7 @@ const WorkExpert = () => {
       </div>
       <div ref={scrollRef}>
         {" "}
-        <div className="flex flex-col md:flex-row gap-10 justify-center md:items-center px-5">
+        <div className="flex flex-col md:flex-row gap-[5rem] justify-center md:items-center px-5">
           <div>
             <div className="w-full">
               <div>
@@ -189,8 +216,10 @@ const WorkExpert = () => {
                   viewport={{ amount: 0.7 }}
                   initial="hidden"
                   whileInView={"show"}
-                  className="flex flex-col h-[28rem] w-full md:w-[32rem]"
-                  src={jumia}
+                  src={oneO}
+                  className="flex flex-col w-[32rem] md:h-[26rem]"
+                  sizes="(max-width: 600px) 480px,
+         800px"
                 ></motion.img>
               </div>
               <div className="text-[black]">
@@ -199,7 +228,7 @@ const WorkExpert = () => {
                   ART DIRECTION | MOTION GRAPHICS{" "}
                 </h2>
                 <h1 className="text-[24px] font-bold leading-10">
-                  101 Premium Properties
+                  <NavLink to="/onebrief">101 Premium Properties</NavLink>
                 </h1>
                 <p className="text-[14px] w-[18rem]">
                   We fully branded a pioneering healthcare concept in the US
@@ -214,8 +243,11 @@ const WorkExpert = () => {
                 viewport={{ amount: 0.7 }}
                 initial="hidden"
                 whileInView={"show"}
-                className="flex flex-col h-[36rem] w-full md:w-[32rem]"
-                src={foret1}
+                src={HO}
+                className="flex flex-col w-[32rem]"
+                sizes="(max-width: 600px) 480px,
+         800px"
+                srcSet={HO}
               ></motion.img>
             </div>
             <div className="text-[black]">
@@ -224,7 +256,7 @@ const WorkExpert = () => {
                 ART DIRECTION | SOCIAL MEDIA{" "}
               </h2>
               <h1 className="text-[24px] font-bold leading-10">
-                HO Gas
+                <NavLink to="/hobrief">HO Gas</NavLink>
               </h1>
               <p className="text-[14px] w-[18rem]">
                 We fully branded a pioneering healthcare concept in the US

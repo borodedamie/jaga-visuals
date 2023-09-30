@@ -32,7 +32,7 @@ whileInView={"show"}
 className="grid w-full md:w-[70%] px-0 mb-[13rem] items-center justify-center mx-auto md:px-20 grid-cols-2 md:grid-cols-5 gap-8">
 <img className="w-[7rem] h-[7rem]" src={wavy}></img>
 <img className="w-[7rem] h-[7rem]" src={one}></img>
-<img className="w-[7rem] h-[2rem]" src={immerse}></img>
+<img className="w-[7rem] h-[1rem]" src={immerse}></img>
 
 <img className="w-[7rem] h-[7rem]" src={jumia}></img>
 <img className="w-[7rem] h-[7rem]" src={foret}></img>
