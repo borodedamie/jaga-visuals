@@ -4,7 +4,7 @@ import { fadeOut } from "./variants";
 import logic from "../assets/logic.jpg";
 import logic1 from "../assets/logic-mobile.jpg";
 import dubai from "../assets/dubai.jpg";
-import dubai1 from "../assets/DOP-dubai-mobile.jpg";
+import dubai1 from "../assets/DOP-Dubai-mobile.jpg";
 import foret11 from "../assets/foret-mobile.jpg";
 import nagaad11 from "../assets/Nagaad-Organics.jpg";
 import jumia1 from "../assets/jumia-mobile.jpg";
