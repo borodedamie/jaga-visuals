@@ -74,7 +74,9 @@ const Work = () => {
                 <h2 className="text-[#0dfff6]  text-[14px] leading-10">
                   ART DIRECTION | MOTION GRAPHICS{" "}
                 </h2>
+                <h1 className="text-[24px] font-bold leading-10">
                 <NavLink to="/dofbrief">DOF Dubai </NavLink>
+                  </h1>
                 <p className="text-[14px] w-[18rem]">
                   We fully branded a pioneering healthcare concept in the US
                 </p>
