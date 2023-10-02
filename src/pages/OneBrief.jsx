@@ -1,14 +1,14 @@
 import React from 'react';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
-import BriefL from '../components/BriefL';
+import BriefOne from '../components/BriefOne';
 
 
 const OneBrief = () => {
   return (
     <div>
       <Nav/>
-      <BriefL/>
+      <BriefOne/>
       <Footer/>
     </div>
   );

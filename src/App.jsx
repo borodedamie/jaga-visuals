@@ -8,6 +8,7 @@ import Services from "./pages/Services"
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Agency from "./pages/Agency";
 import DOFBrief from "./pages/DOFBrief";
+import ScrollToTop from "./components/ScrollToTop";
 import ForetBrief from "./pages/ForetBrief";
 import WavyBrief from "./pages/WavyBrief";
 import NagaadBrief from "./pages/NagaadBrief";
@@ -18,6 +19,7 @@ import LogisticsBrief from "./pages/LogisticsBrief";
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <Routes>
         <Route path="/" index element={<Home1 />} />
         <Route path="/works" element={<Works />} />

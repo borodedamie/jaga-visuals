@@ -139,7 +139,7 @@ const Work = () => {
         </div>
         <NavLink to="/works">
           {" "}
-          <button className="mt-[7rem] text-center items-center flex mx-auto rounded-2xl font-medium h-[2rem] text-[white] p-5 border-[white] border-[2px]">
+          <button className="mt-[7rem] text-center items-center flex mx-auto rounded-full hover:bg-white hover:text-black font-medium h-[2rem] text-[white] p-5 border-[white] border-[2px]">
             VIEW ALL WORKS
           </button>
         </NavLink>

@@ -8,7 +8,7 @@ const LogisticsBrief = () => {
   return (
     <div>
       <Nav/>
-      <BriefL/>
+      {/* <BriefL/> */}
       <Footer/>
     </div>
   );

@@ -1,14 +1,14 @@
 import React from 'react';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
-import BriefL from '../components/BriefL';
+import BriefHO from '../components/BriefHO';
 
 
 const HOBrief = () => {
   return (
     <div>
       <Nav/>
-      <BriefL/>
+      <BriefHO/>
       <Footer/>
     </div>
   );

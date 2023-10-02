@@ -39,7 +39,7 @@ const Related = () => {
                   ART DIRECTION | MOTION GRAPHICS{" "}
                 </h2>
                 <h1 className="text-[24px] font-bold leading-10">
-                  Jumia Pay App
+                <NavLink to="/jumiabrief">Jumia Pay App</NavLink>
                 </h1>
                 <p className="text-[14px] w-[18rem]">
                   We fully branded a pioneering healthcare concept in the US
@@ -70,7 +70,10 @@ const Related = () => {
               <h2 className="text-[blue] font-bold text-[14px] leading-10">
                 ART DIRECTION | SOCIAL MEDIA{" "}
               </h2>
-              <h1 className="text-[24px] font-bold leading-10">Foret Dubai</h1>
+              <h1 className="text-[24px] font-bold leading-10">
+              <NavLink to="/foretbrief">Foret Dubai</NavLink>
+ 
+              </h1>
               <p className="text-[14px] w-[18rem]">
                 We fully branded a pioneering healthcare concept in the US
               </p>
@@ -82,8 +85,8 @@ const Related = () => {
           <hr className="border-3 h-[4rem] w-1 bg-[#7979cf]" />
           <div className="flex flex-row items-center justify-center">
           <NavLink to="/contact">
-      <button className=" text-center mt-5 items-center flex rounded-full font-medium h-[2rem] text-[white] p-5 border-[blue] bg-[blue] border-[2px]">
-      START YOUR PROJECT
+      <button className=" text-center mt-5 items-center text-[12px] md:text-[15px]  flex rounded-full font-medium h-[2rem] text-[white] p-5 border-[blue] bg-[blue] border-[2px]">
+      START PROJECT
           </button>
           </NavLink>
       </div>

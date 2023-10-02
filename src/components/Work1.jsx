@@ -33,7 +33,7 @@ const Work1 = () => {
         variants={sentence}
         initial="hidden"
         animate="visible"
-        className="text-[#3b3b70] font-bold text-[30px] md:text-[35px] leading-11">
+        className="text-[#3b3b70] font-bold text-[30px] md:text-[35px] leading-10">
           {line1.split("").map((char,index) => {
             return(
               <motion.span key={char + "-" + index} variants={letter}>
