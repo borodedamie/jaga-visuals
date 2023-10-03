@@ -77,18 +77,17 @@ const Related = () => {
             </div>
           </div>
         </div>
-        <div className="flex py-20 flex-row items-center gap-10 justify-center">
+        <div className="flex pt-20 pb-40 flex-row items-center gap-10 justify-center">
           <h2 className="text-[blue] font-bold text-[30px]">Don't be Shy</h2>
           <hr className="border-3 h-[4rem] w-1 bg-[#7979cf]" />
           <div className="flex flex-row items-center justify-center">
-          <NavLink to="/contact">
-      <button className=" text-center mt-5 items-center flex rounded-full font-medium h-[2rem] text-[white] p-5 border-[blue] bg-[blue] border-[2px]">
-      START YOUR PROJECT
-          </button>
-          </NavLink>
-      </div>
-           
+            <NavLink to="/contact">
+              <button className=" text-center mt-5 items-center flex rounded-full font-medium h-[2rem] text-[white] p-5 border-[blue] bg-[blue] border-[2px]">
+                START YOUR PROJECT
+              </button>
+            </NavLink>
           </div>
+        </div>
       </div>
     </div>
   );

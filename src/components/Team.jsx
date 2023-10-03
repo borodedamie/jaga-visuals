@@ -22,7 +22,7 @@ const Team = () => {
             </h2>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-10 px-20 py-20 justify-center items-center">
+        <div className="flex flex-col md:flex-row gap-10 px-20 pt-20 pb-40 justify-center items-center">
           <div className="border rounded-2xl h-[20rem] w-[18rem] bg-[white]"></div>
           <div className="border rounded-2xl h-[20rem] w-[18rem] bg-[white]"></div>
           <div className="border rounded-2xl h-[20rem] w-[18rem] bg-[white]"></div>

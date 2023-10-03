@@ -4,7 +4,7 @@ import Related from "./Related";
 const BriefL = () => {
   return (
     <div className="px-5 md:px-20 ">
-      <div className="flex flex-col justify-around gap-5 w-full px-5 md:px-20 ">
+      <div className="flex flex-col justify-around gap-5 w-full p-20 md:px-20 ">
       <h2 className="font-bold text-[75px] text-[blue]">The Brief</h2>
       <div className="flex items-end justify-end">
         <p className="flex items-end text-left font-medium text-[30px] w-[50rem]">
