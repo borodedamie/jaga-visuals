@@ -28,11 +28,10 @@ const BriefJ = () => {
         </div>
       </div>
       <div className="flex flex-col gap-5 md:gap-10 px-5 md:px-20 py-20 items-center">
-        {urls1.map((urls2, index1) => {
+        {urls1.map((urls2, c) => {
           return (
-            <div key={urls2.id} className="border rounded-2xl ">
+            <div key={c} className="border rounded-2xl ">
               <ReactPlayer
-                key={index1}
                 playing={currentVideo === urls2.url22}
                 onPause={handleVideoPause}
                 onPlay={() => handleVideoPlay(urls2.url22)}

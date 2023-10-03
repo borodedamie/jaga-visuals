@@ -20,11 +20,11 @@ const BriefDOF = () => {
     </div>
     <div className="flex flex-col gap-5 md:gap-10 px-5 md:px-20 py-20 items-center">
       
-      {urlsDOF.map((urlD, index) => {
+      {urlsDOF.map((urlD, b) => {
         return (
-          <div key={urlD.id}>
+          <div key={b}>
            
-            <iframe className="rounded-3xl h-[20rem] w-[20rem] md:w-[47rem] md:h-[28rem] border" key={index} src={urlD.urlH}   />
+            <iframe className="rounded-3xl h-[20rem] w-[20rem] md:w-[47rem] md:h-[28rem] border" src={urlD.urlH}   />
           </div>
         );
       })}

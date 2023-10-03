@@ -28,11 +28,10 @@ const BriefHO = () => {
         </div>
       </div>
       <div className="flex flex-col gap-5 md:gap-10 px-5 md:px-20 py-20 items-center">
-        {urlsHO.map((url2, index) => {
+        {urlsHO.map((url2, f) => {
           return (
-            <div key={url2.id} className="border rounded-2xl ">
+            <div key={f} className="border rounded-2xl ">
               <ReactPlayer
-                key={index}
                 url={url2.urlH}
                 playing={currentVideo === url2.urlH}
                 onPause={handleVideoPause}

@@ -73,7 +73,7 @@ const Service1 = () => {
         </div>
       </div>
       <div className="mb-[17rem] ">
-      {data.map((data1, index) => {
+      {data.map((data1, s) => {
         return (
           <motion.div 
           variants={fadeIn("right", 0.5)}
@@ -81,15 +81,15 @@ const Service1 = () => {
           initial="hidden"
           whileInView={"show"}
           className="flex flex-col md:flex-row mx-5 md:mx-20 justify-center gap-20 items-center my-20">
-            <div className="" key={data1.id}>
+            <div className="" key={s}>
               <h2
-                key={index}
+                
                 className="text-[35px] w-full font-bold text-[#26316c]"
               >
                 {data1.title}
               </h2>
               <p
-                key={index}
+                
                 className="text-[18px] w-full md:w-[24.5rem] font-bold text-[grey] leading-8 py-5"
               >
                 {data1.paragraph}

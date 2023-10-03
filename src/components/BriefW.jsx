@@ -29,11 +29,10 @@ const BriefW = () => {
     </div>
     <div className="flex flex-col gap-5 md:gap-10 px-5 md:px-20 py-20 items-center">
       
-      {urls.map((url1, index) => {
+      {urls.map((url1, d) => {
         return (
-          <div key={url1.id} className="border rounded-2xl ">
+          <div key={d} className="border rounded-2xl ">
             <ReactPlayer
-            key={index}
               url={url1.url22}
               playing={currentVideo === url1.url22}
               onPause={handleVideoPause}
