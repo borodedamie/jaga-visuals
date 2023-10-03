@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 const Shape2 = () => {
   return (
-    <div className="flex flex-col justify-center items-center py-10 mt-[30rem] md:mt-0 mx-auto md:mx-0 px-5 md:px-[10rem]">
+    <div className="w-fit flex flex-col justify-center items-center py-20 mt-[30rem] md:mt-0 mx-auto md:mx-0 px-5 md:px-[10rem]">
       <motion.h2
         animate={{ opacity: 1, scale: 1 }}
         transition={{

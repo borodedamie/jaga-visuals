@@ -7,7 +7,7 @@ const Service1 = () => {
   const line1 = "standout websites and branding ";
   return (
     <>
-      <div className="gap-[60px] flex flex-col pb-20 md:flex-row items-center md:items-center justify-center">
+      <div className="gap-[60px] flex flex-col py-20 md:flex-row items-center md:items-center justify-center">
         <div className="text-[blue] flex flex-col font-black text-[70px]">
           <motion.div
             variants={fadeIn("right", 0.5)}

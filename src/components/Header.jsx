@@ -1,12 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { sentence,letter,fadeIn } from "./variants";
+
 const Header = () => {
 
   const line1 = "Creativity never goes"
   const line2 = "out of style"
+
   return (
-    <div className="px-5 gap-[60px] flex flex-col pb-20 md:flex-row items-center justify-center">
+    <div className="px-5 gap-[60px] flex flex-col py-20 md:flex-row items-center justify-center">
       <div className="text-[blue] flex flex-col font-black text-[110px]">
         <motion.div
          variants={fadeIn("right", 0.5)}
@@ -49,7 +51,7 @@ const Header = () => {
           })}
         </motion.h2>
         <p className="text-[22px] font-bold pt-10 w-full md:w-[30rem]">
-          We’re a creative design agency based in Dubai that crafts beautiful
+          We're a creative design agency based in Dubai that crafts beautiful
           and original websites for brands who{" "}
           <span className="text-[blue]">refuse to blend in.</span>
         </p>

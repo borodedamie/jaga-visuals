@@ -6,6 +6,7 @@ import Shape2 from '../components/Shape2';
 import Work from '../components/Work'
 import Clients from '../components/Clients'
 import Footer from '../components/Footer'
+
 const Home1 = () => {
   return (
     <div>

@@ -1,12 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { sentence, letter, fadeIn } from "./variants";
+
 const Career1 = () => {
   const line1 = "Be part of a great team,";
   const line2 = "but work from anywhere";
   return (
     <div className="px-5 ">
-      <div className="gap-[60px] flex flex-col pb-20 md:flex-row items-center justify-center">
+      <div className="gap-[60px] flex flex-col py-20 md:flex-row items-center justify-center">
         <div  className="text-[blue] flex flex-col font-black text-[110px]">
           <motion.div variants={fadeIn("right", 0.5)}
         viewport={{ once: true, amount: 0.7 }}

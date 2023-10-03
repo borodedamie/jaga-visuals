@@ -6,7 +6,7 @@ const Agency1 = () => {
   const line2 = "piece";
   return (
     <div className="">
-      <div className="px-5 w-full gap-[60px] flex flex-col pb-20 md:flex-row items-center justify-center">
+      <div className="px-5 w-full gap-[60px] flex flex-col py-20 md:flex-row items-center justify-center">
         <div className="text-[blue] flex flex-col font-black text-[110px]">
           <motion.div
             variants={fadeIn("right", 0.5)}
