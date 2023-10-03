@@ -33,7 +33,7 @@ const Contact1 = () => {
           </div>
         </div>
       </div>
-      <hr class="hidden lg:flex h-[24rem] bg-gray-200 border-2 dark:bg-gray-700"></hr>
+      <hr className="hidden lg:flex h-[24rem] bg-gray-200 border-2 dark:bg-gray-700"></hr>
       <div className="flex flex-col">
         <h1 className="text-[blue] text-[35px] font-bold pb-7">
           Start your project
