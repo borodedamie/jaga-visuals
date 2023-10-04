@@ -23,7 +23,7 @@ const Artists = () => {
         deserunt maxime veniam at inventore, error mollitia dolor?
       </p>
       <div className="flex flex-row items-start justify-start">
-      <button className=" text-center mt-5 items-center flex rounded-2xl font-medium h-[2rem] text-[blue] p-5 border-[blue] border-[2px]">
+      <button className=" text-center hover:text-[white] hover:bg-[blue]  mt-5 items-center flex rounded-2xl font-medium h-[2rem] text-[blue] p-5 border-[blue] border-[2px]">
             VIEW ALL WORKS
           </button>
       </div>

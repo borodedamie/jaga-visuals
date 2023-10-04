@@ -34,23 +34,27 @@ const Work = () => {
           <div className="flex flex-col md:flex-row gap-10 justify-center md:items-center px-10">
             <div>
               <div className="w-full">
-                <div>
-                  <motion.img
-                    variants={fadeOut("bottom", 0.5)}
-                    viewport={{ amount: 0.7 }}
-                    initial="hidden"
-                    whileInView={"show"}
-                    className="flex flex-col h-[36rem] w-full md:w-[32rem]"
-                    src={logic}
-                  ></motion.img>
+                <div className="opacity-100 hover:opacity-75 ">
+                  <NavLink to="/logisticsbrief">
+                    <motion.img
+                      variants={fadeOut("bottom", 0.5)}
+                      viewport={{ amount: 0.7 }}
+                      initial="hidden"
+                      whileInView={"show"}
+                      className="flex flex-col h-[36rem] w-full md:w-[32rem]"
+                      src={logic}
+                    ></motion.img>
+                  </NavLink>
                 </div>
                 <div className="text-[white]">
                   {" "}
                   <h2 className="text-[#0dfff6]  text-[14px] leading-10">
                     ART DIRECTION | BRANDING{" "}
                   </h2>
-                  <h1 className="text-[24px] font-bold leading-10">
-                  <NavLink to="/logisticsbrief">Autoflex Logistics Inc</NavLink>
+                  <h1 className="text-[24px] hover:text-[#0dfff6] font-bold leading-10">
+                    <NavLink to="/logisticsbrief">
+                      Autoflex Logistics Inc
+                    </NavLink>
                   </h1>
                   <p className="text-[14px] w-[18rem]">
                     We fully branded a pioneering healthcare concept in the US
@@ -59,24 +63,26 @@ const Work = () => {
               </div>
             </div>
             <div className="">
-              <div>
-                <motion.img
-                  variants={fadeOut("bottom", 0.5)}
-                  viewport={{ amount: 0.7 }}
-                  initial="hidden"
-                  whileInView={"show"}
-                  className="flex flex-col h-[28rem] w-full md:w-[32rem]"
-                  src={dubai}
-                ></motion.img>
+              <div className="opacity-100 hover:opacity-75">
+                <NavLink to="/dofbrief">
+                  <motion.img
+                    variants={fadeOut("bottom", 0.5)}
+                    viewport={{ amount: 0.7 }}
+                    initial="hidden"
+                    whileInView={"show"}
+                    className="flex flex-col h-[28rem] w-full md:w-[32rem]"
+                    src={dubai}
+                  ></motion.img>{" "}
+                </NavLink>
               </div>
               <div className="text-[white]">
                 {" "}
                 <h2 className="text-[#0dfff6]  text-[14px] leading-10">
                   ART DIRECTION | MOTION GRAPHICS{" "}
                 </h2>
-                <h1 className="text-[24px] font-bold leading-10">
-                <NavLink to="/dofbrief">DOF Dubai </NavLink>
-                  </h1>
+                <h1 className="text-[24px] hover:text-[#0dfff6] font-bold leading-10">
+                  <NavLink to="/dofbrief">DOF Dubai </NavLink>
+                </h1>
                 <p className="text-[14px] w-[18rem]">
                   We fully branded a pioneering healthcare concept in the US
                 </p>
@@ -89,8 +95,9 @@ const Work = () => {
           <div className="flex flex-col md:flex-row gap-10 justify-center md:items-center px-10">
             <div>
               <div className="w-full">
-                <div>
-                  <motion.img
+                <div className="opacity-100 hover:opacity-75 ">
+                <NavLink to="/jumiabrief">
+                <motion.img
                     variants={fadeOut("bottom", 0.5)}
                     viewport={{ amount: 0.7 }}
                     initial="hidden"
@@ -98,14 +105,17 @@ const Work = () => {
                     className="flex flex-col h-[28rem] w-full md:w-[32rem]"
                     src={jumia}
                   ></motion.img>
+                </NavLink>
+
+                  
                 </div>
                 <div className="text-[white]">
                   {" "}
                   <h2 className="text-[#0dfff6]  text-[14px] leading-10">
                     ART DIRECTION | MOTION GRPAHICS{" "}
                   </h2>
-                  <h1 className="text-[24px] font-bold leading-10">
-                  <NavLink to="/jumiabrief">Jumia Pay App</NavLink>
+                  <h1 className="text-[24px] hover:text-[#0dfff6] font-bold leading-10">
+                    <NavLink to="/jumiabrief">Jumia Pay App</NavLink>
                   </h1>
                   <p className="text-[14px] w-[18rem]">
                     We fully branded a pioneering healthcare concept in the US
@@ -114,23 +124,25 @@ const Work = () => {
               </div>
             </div>
             <div className="">
-              <div>
-                <motion.img
+              <div className="opacity-100 hover:opacity-75 ">
+              <NavLink to="/foretbrief"> <motion.img
                   variants={fadeOut("bottom", 0.5)}
                   viewport={{ amount: 0.7 }}
                   initial="hidden"
                   whileInView={"show"}
                   className="flex flex-col h-[36rem] w-full md:w-[32rem]"
                   src={foret1}
-                ></motion.img>
+                ></motion.img></NavLink>
+
+               
               </div>
               <div className="text-[white]">
                 {" "}
                 <h2 className="text-[#0dfff6]  text-[14px] leading-10">
                   ART DIRECTION | SOCIAL MEDIA{" "}
                 </h2>
-                <h1 className="text-[24px] font-bold leading-10">
-                <NavLink to="/foretbrief">Foret Dubai</NavLink>
+                <h1 className="text-[24px] hover:text-[#0dfff6] font-bold leading-10">
+                  <NavLink to="/foretbrief">Foret Dubai</NavLink>
                 </h1>
                 <p className="text-[14px] w-[18rem]">
                   We fully branded a pioneering healthcare concept in the US

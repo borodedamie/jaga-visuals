@@ -66,7 +66,7 @@ const Contact1 = () => {
           <div className="flex flex-row justify-end">
             <button
               type="submit"
-              className="border-[2px] items-center cursor-pointer font-bold w-[10rem] h-[2.5rem] flex text-[14px] text-center justify-center rounded-[2rem] border-[blue]"
+              className="border-[2px] hover:text-[white] hover:bg-[blue]  items-center cursor-pointer font-bold w-[10rem] h-[2.5rem] flex text-[14px] text-center justify-center rounded-[2rem] border-[blue]"
             >
               SUBMIT
             </button>
