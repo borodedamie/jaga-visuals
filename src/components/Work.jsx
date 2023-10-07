@@ -6,6 +6,7 @@ import dubai from "../assets/dubai.jpg";
 import jumia from "../assets/jumia1.webp";
 import foret1 from "../assets/foret1.webp";
 import { NavLink } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Work = () => {
   const scrollRef = useRef(null);
@@ -36,14 +37,17 @@ const Work = () => {
               <div className="w-full">
                 <div className="opacity-100 hover:opacity-75 ">
                   <NavLink to="/logisticsbrief">
-                    <motion.img
+                    <motion.div
                       variants={fadeOut("bottom", 0.5)}
                       viewport={{ amount: 0.7 }}
                       initial="hidden"
                       whileInView={"show"}
-                      className="flex flex-col h-[36rem] w-full md:w-[32rem]"
-                      src={logic}
-                    ></motion.img>
+                    >
+                      <LazyLoadImage
+                        className="flex flex-col h-[36rem] w-full md:w-[32rem]"
+                        src={logic}
+                      />
+                    </motion.div>
                   </NavLink>
                 </div>
                 <div className="text-[white]">
@@ -65,14 +69,18 @@ const Work = () => {
             <div className="">
               <div className="opacity-100 hover:opacity-75">
                 <NavLink to="/dofbrief">
-                  <motion.img
+                  <motion.div
                     variants={fadeOut("bottom", 0.5)}
                     viewport={{ amount: 0.7 }}
                     initial="hidden"
                     whileInView={"show"}
-                    className="flex flex-col h-[28rem] w-full md:w-[32rem]"
-                    src={dubai}
-                  ></motion.img>{" "}
+                  >
+                    <LazyLoadImage
+                      alt="Dubai"
+                      className="flex flex-col h-[28rem] w-full md:w-[32rem]"
+                      src={dubai}
+                    />{" "}
+                  </motion.div>
                 </NavLink>
               </div>
               <div className="text-[white]">
@@ -96,18 +104,20 @@ const Work = () => {
             <div>
               <div className="w-full">
                 <div className="opacity-100 hover:opacity-75 ">
-                <NavLink to="/jumiabrief">
-                <motion.img
-                    variants={fadeOut("bottom", 0.5)}
-                    viewport={{ amount: 0.7 }}
-                    initial="hidden"
-                    whileInView={"show"}
-                    className="flex flex-col h-[28rem] w-full md:w-[32rem]"
-                    src={jumia}
-                  ></motion.img>
-                </NavLink>
-
-                  
+                  <NavLink to="/jumiabrief">
+                    <motion.div
+                      variants={fadeOut("bottom", 0.5)}
+                      viewport={{ amount: 0.7 }}
+                      initial="hidden"
+                      whileInView={"show"}
+                    >
+                      <LazyLoadImage
+                        alt="Jumia"
+                        className="flex flex-col h-[28rem] w-full md:w-[32rem]"
+                        src={jumia}
+                      />
+                    </motion.div>
+                  </NavLink>
                 </div>
                 <div className="text-[white]">
                   {" "}
@@ -125,16 +135,24 @@ const Work = () => {
             </div>
             <div className="">
               <div className="opacity-100 hover:opacity-75 ">
-              <NavLink to="/foretbrief"> <motion.img
-                  variants={fadeOut("bottom", 0.5)}
-                  viewport={{ amount: 0.7 }}
-                  initial="hidden"
-                  whileInView={"show"}
-                  className="flex flex-col h-[36rem] w-full md:w-[32rem]"
-                  src={foret1}
-                ></motion.img></NavLink>
-
-               
+                <NavLink to="/foretbrief">
+                  {" "}
+                  <motion.div
+                    variants={fadeOut("bottom", 0.5)}
+                    viewport={{ amount: 0.7 }}
+                    initial="hidden"
+                    whileInView={"show"}
+                  >
+                    <LazyLoadImage
+                      variants={fadeOut("bottom", 0.5)}
+                      viewport={{ amount: 0.7 }}
+                      initial="hidden"
+                      whileInView={"show"}
+                      className="flex flex-col h-[36rem] w-full md:w-[32rem]"
+                      src={foret1}
+                    />
+                  </motion.div>
+                </NavLink>
               </div>
               <div className="text-[white]">
                 {" "}

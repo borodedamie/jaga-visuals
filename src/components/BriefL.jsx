@@ -1,5 +1,6 @@
 import React from "react";
 import { imagesL } from "../assets/data";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const BriefL = () => {
   return (
@@ -22,8 +23,8 @@ const BriefL = () => {
       {imagesL.map((imagesL1, g) => {
         return (
           <div key={g} className="flex flex-col md:flex-row gap-5 md:gap-10 ">
-            <img className="w-[20rem] h-[20rem]" src={imagesL1.one}/>
-            <img className="w-[20rem] h-[20rem]" src={imagesL1.two}/>
+            <LazyLoadImage className="w-[20rem] h-[20rem]" src={imagesL1.one}/>
+            <LazyLoadImage className="w-[20rem] h-[20rem]" src={imagesL1.two}/>
 
           </div>
         );

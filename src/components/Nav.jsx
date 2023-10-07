@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { BiMenuAltRight } from "react-icons/bi";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { ImCancelCircle } from "react-icons/im";
 import logo from "../assets/logo.jpg";
 const Nav = () => {
@@ -22,10 +23,10 @@ const Nav = () => {
     >
       <div className="flex justify-between items-center">
         <NavLink to="/">
-          <img 
+          <LazyLoadImage 
           className={`flex 
           ${navbar ? "hidden" : "flex pl-10 pt-10 w-[8rem] h-[8rem] "}`}
-           src={logo} alt="Logo"></img>
+           src={logo} alt="Logo"/>
         </NavLink>
       </div>
       <ul

@@ -1,5 +1,7 @@
 import React from "react";
 import damage from '../assets/damage.jpg'
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 const Team = () => {
   return (
     <div>
@@ -28,7 +30,7 @@ const Team = () => {
           <div className="border rounded-2xl h-[20rem] w-[18rem] bg-[white]"></div>
         </div>
 
-        <img className="w-full" src={damage}/>
+        <LazyLoadImage className="w-full" src={damage}  alt="Herosection"/>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import { data } from "../assets/data";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import Button from "./Button";
 import { motion } from "framer-motion";
 import { sentence, letter, fadeIn } from "./variants";
@@ -38,7 +39,6 @@ const Service1 = () => {
         <div className="flex flex-col px-5 items-center md:items-start text-left w-full justify-center md:w-[30rem] ">
           <p className="text-[23px] font-bold pt-10 text-[grey]">
             Crafting{" "}
-            {/* <span className="text-[blue]">standout websites and branding</span>{" "} */}
             <motion.span
               variants={sentence}
               initial="hidden"
@@ -97,7 +97,7 @@ const Service1 = () => {
               <Button />
               
             </div>
-            <img src={data1.design} className="w-full md:w-[25rem] h-[20rem] rounded-2xl"/>
+            <LazyLoadImage src={data1.design} className="w-full md:w-[25rem] h-[20rem] rounded-2xl"/>
 
           </motion.div>
         );
