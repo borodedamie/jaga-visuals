@@ -1,14 +1,14 @@
 import React from 'react';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
-import BriefL from '../components/BriefL';
+import BriefW from '../components/BriefW';
 
 
 const WavyBrief = () => {
   return (
     <div>
       <Nav/>
-      <BriefL/>
+      <BriefW/>
       <Footer/>
     </div>
   );

@@ -1,31 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { sentence, letter, fadeIn } from "./variants";
+import join1 from "../assets/join.png";
 
 const Career1 = () => {
   const line1 = "Be part of a great team,";
   const line2 = "but work from anywhere";
   return (
-    <div className="px-5 ">
-      <div className="gap-[60px] flex flex-col py-20 md:flex-row items-center justify-center">
-        <div  className="text-[blue] flex flex-col font-black text-[110px]">
-          <motion.div variants={fadeIn("right", 0.5)}
-        viewport={{ once: true, amount: 0.7 }}
-        initial="hidden"
-        whileInView={"show"} 
-        className="flex gap-[5rem]">
-            <span>J</span>
-            <span>O</span>
-          </motion.div>
-
-          <motion.div
-           variants={fadeIn("right", 0.5)}
-        viewport={{ once: true, amount: 0.7 }}
-        initial="hidden"
-        whileInView={"show"}  className="flex gap-[5rem] md:gap-[6rem]">
-            <span>I</span>
-            <span>N</span>
-          </motion.div>
+    <div className="px-5 pb-20">
+      <div className="gap-[60px] flex flex-col md:flex-row items-center justify-center">
+      <div className="w-fit h-fit md:w-[20rem] lg:w-[30rem] flex flex-col">
+          <img src={join1} alt="join1" />
         </div>
         <div className="text-left w-full justify-center items-center md:w-[20rem] ">
           <motion.h2

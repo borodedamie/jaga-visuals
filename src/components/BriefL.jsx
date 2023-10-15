@@ -1,5 +1,6 @@
 import React from "react";
-import Related from "./Related";
+import { imagesL } from "../assets/data";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const BriefL = () => {
   return (
@@ -18,14 +19,17 @@ const BriefL = () => {
       </div>
       
       <div className="flex flex-col gap-5 md:gap-10 px-5 md:px-20 py-20 items-center">
-        <div className="border rounded-2xl h-[20rem] w-[20rem] py-10 md:w-[40rem] bg-[grey]"></div>
-        <div className="border rounded-2xl h-[20rem] w-[20rem] py-10  md:w-[40rem] bg-[grey]"></div>
-        <div className="border rounded-2xl h-[20rem] w-[20rem] py-10  md:w-[40rem] bg-[grey]"></div>
-        <div className="border rounded-2xl h-[20rem] w-[20rem] py-10  md:w-[40rem] bg-[grey]"></div>
-        <div className="border rounded-2xl h-[20rem] w-[20rem] py-10  md:w-[40rem] bg-[grey]"></div>
-      </div>{" "}
-      {/* <Related/> */}
-      <Related/>
+      
+      {imagesL.map((imagesL1, g) => {
+        return (
+          <div key={g} className="flex flex-col md:flex-row gap-5 md:gap-10 ">
+            <LazyLoadImage className="w-[20rem] h-[20rem]" src={imagesL1.one}/>
+            <LazyLoadImage className="w-[20rem] h-[20rem]" src={imagesL1.two}/>
+
+          </div>
+        );
+      })}
+    </div>
     </div>
   );
 };

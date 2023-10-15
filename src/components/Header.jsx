@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { sentence,letter,fadeIn } from "./variants";
+import idea1 from "../assets/idea.png";
 
 const Header = () => {
 
@@ -8,27 +9,11 @@ const Header = () => {
   const line2 = "out of style"
 
   return (
-    <div className="px-5 gap-[60px] flex flex-col py-20 md:flex-row items-center justify-center">
-      <div className="text-[blue] flex flex-col font-black text-[110px]">
-        <motion.div
-         variants={fadeIn("right", 0.5)}
-        viewport={{ once: true, amount: 0.7 }}
-        initial="hidden"
-        whileInView={"show"}  className="flex gap-[5rem]">
-          <span>I</span>
-          <span>D</span>
-        </motion.div>
-
-        <motion.div variants={fadeIn("right", 0.5)}
-        viewport={{ once: true, amount: 0.7 }}
-        initial="hidden"
-        whileInView={"show"} 
-        className="flex gap-[4rem]">
-          <span>E</span>
-          <span>A</span>
-        </motion.div>
-      </div>
-      <div className="text-left md:text-left">
+    <div className="px-5 pb-20 gap-[60px] flex flex-col md:flex-row items-center justify-center">
+      <div className="w-fit h-fit md:w-[35rem] md:h-[30rem] lg:w-[35rem] lg:h-[40rem] pt-10 flex flex-col font-black">
+          <img src={idea1} alt='idea1'/>
+        </div>
+      <div className="text-center md:text-left">
         <motion.h2
         variants={sentence}
         initial="hidden"

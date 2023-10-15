@@ -33,7 +33,7 @@ const Contact1 = () => {
           </div>
         </div>
       </div>
-      <hr class="hidden lg:flex h-[24rem] bg-gray-200 border-2 dark:bg-gray-700"></hr>
+      <hr className="hidden lg:flex h-[24rem] bg-gray-200 border-2 dark:bg-gray-700"></hr>
       <div className="flex flex-col">
         <h1 className="text-[blue] text-[35px] font-bold pb-7">
           Start your project
@@ -66,7 +66,7 @@ const Contact1 = () => {
           <div className="flex flex-row justify-end">
             <button
               type="submit"
-              className="border-[2px] items-center cursor-pointer font-bold w-[10rem] h-[2.5rem] flex text-[14px] text-center justify-center rounded-[2rem] border-[blue]"
+              className="border-[2px] hover:text-[white] hover:bg-[blue]  items-center cursor-pointer font-bold w-[10rem] h-[2.5rem] flex text-[14px] text-center justify-center rounded-[2rem] border-[blue]"
             >
               SUBMIT
             </button>

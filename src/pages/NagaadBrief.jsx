@@ -8,7 +8,7 @@ const NagaadBrief = () => {
   return (
     <div>
       <Nav/>
-      <BriefL/>
+      {/* <BriefL/> */}
       <Footer/>
     </div>
   );

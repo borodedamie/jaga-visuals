@@ -1,14 +1,14 @@
 import React from 'react';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
-import BriefL from '../components/BriefL';
+import BriefJ from '../components/BriefJ';
 
 
 const JumiaBrief = () => {
   return (
     <div>
       <Nav/>
-      <BriefL/>
+      <BriefJ/>
       <Footer/>
     </div>
   );

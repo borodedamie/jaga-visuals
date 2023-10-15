@@ -1,36 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
+import agency1 from "../assets/agency.png";
+
 import { sentence, letter, fadeIn } from "./variants";
 const Agency1 = () => {
   const line1 = "Proudly signing every";
   const line2 = "piece";
   return (
-    <div className="">
-      <div className="px-5 w-full gap-[60px] flex flex-col py-20 md:flex-row items-center justify-center">
-        <div className="text-[blue] flex flex-col font-black text-[110px]">
-          <motion.div
-            variants={fadeIn("right", 0.5)}
-            viewport={{ amount: 0.7 }}
-            initial="hidden"
-            whileInView={"show"}
-            className="flex gap-[5rem]"
-          >
-            <span>A</span>
-            <span>G</span>
-            <span>E</span>
-          </motion.div>
-
-          <motion.div
-            variants={fadeIn("right", 0.5)}
-            viewport={{ amount: 0.7 }}
-            initial="hidden"
-            whileInView={"show"}
-            className="flex gap-[5rem]"
-          >
-            <span>N</span>
-            <span>C</span>
-            <span>Y</span>
-          </motion.div>
+    <div className="my-10 pb-20">
+      <div className="px-5 w-full gap-[60px] flex flex-col md:flex-row items-center justify-center">
+        <div className="w-fit h-fit md:w-[20rem] lg:w-[35rem] flex flex-col">
+          <img src={agency1} alt="agency1" />
         </div>
         <div className="text-left w-full flex flex-col md:w-[26.5rem] ">
           <motion.h2
