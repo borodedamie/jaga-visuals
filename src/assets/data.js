@@ -5,6 +5,9 @@ import foret1 from "../assets/foret1.webp";
 import creative from "../assets/creative.jpg";
 import branding from "../assets/branding.jpg";
 import web from "../assets/web.jpg";
+import webdev from "../assets/web1.jpg";
+
+import director from '../assets/director.jpg'
 import motion from "../assets/motion.gif";
 import dofvideo from '../assets/dof1video.mp4'
 import onee from '../assets/onee.jpg'
@@ -250,4 +253,28 @@ export const imagesF = [
     two: sixth1,
 
   }
+];
+
+export const carousel = [
+  {
+    one: director,
+    name: "Jeffrey Ighagha",
+    title:'Design Director'
+
+  },
+  
+  
+  {
+    one: webdev,
+    name: "Onaopemipo Oluborode",
+    title:'Software Developer'
+
+  },
+  {
+    one: webdev,
+    name: "Adewale Fayiga",
+    title:'Copywriter'
+  },
+  
+  
 ];

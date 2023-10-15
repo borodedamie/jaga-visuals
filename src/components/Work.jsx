@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { fadeOut, fadeIn } from "./variants";
-import logic from "../assets/logic.jpg";
+import logic from "../assets/Autoflex-Logistics-01-01.jpg";
 import dubai from "../assets/dubai.jpg";
 import jumia from "../assets/jumia1.webp";
 import foret1 from "../assets/foret1.webp";
@@ -24,7 +24,7 @@ const Work = () => {
               <span>K</span>
             </div>
           </div>
-          <div className="w-[22rem] md:w-[20rem] flex flex-col font-black text-[50px] text-left">
+          <div className="w-[22rem] md:w-[20rem] flex flex-col font-black text-[50px] text-center md:text-left">
             <h2 className="text-[#0dfff6] ">
               Shit-hot work for hot-shot brands
             </h2>
@@ -34,26 +34,26 @@ const Work = () => {
           {" "}
           <div className="flex flex-col md:flex-row gap-10 justify-center md:items-center px-10">
             <div>
-              <div className="w-full">
-                <div className="opacity-100 hover:opacity-75 ">
+              <div className="w-full ">
+                <div className="relative">
                   <NavLink to="/logisticsbrief">
                     <motion.div
-                      variants={fadeOut("bottom", 0.5)}
+                      variants={fadeIn("top", 0.5)}
                       viewport={{ amount: 0.7 }}
                       initial="hidden"
                       whileInView={"show"}
                     >
                       <LazyLoadImage
-                        className="flex flex-col h-[36rem] w-full md:w-[32rem]"
+                        className="flex inset-0 object-cover flex-col h-[30rem] md:h-[36rem] w-full md:w-[32rem] "
                         src={logic}
                       />
+                      <div className="inset-0 absolute hover:bg-blue-500 hover:bg-opacity-50 "></div>
                     </motion.div>
                   </NavLink>
                 </div>
-                <div className="text-[white]">
-                  {" "}
-                  <h2 className="text-[#0dfff6]  text-[14px] leading-10">
-                    ART DIRECTION | BRANDING{" "}
+                <div className="text-[white] mb-[4rem] md:mb-0">
+                  <h2 className="text-[#0dfff6] text-[14px] leading-10">
+                    ART DIRECTION | BRANDING
                   </h2>
                   <h1 className="text-[24px] hover:text-[#0dfff6] font-bold leading-10">
                     <NavLink to="/logisticsbrief">
@@ -67,7 +67,7 @@ const Work = () => {
               </div>
             </div>
             <div className="">
-              <div className="opacity-100 hover:opacity-75">
+              <div className="relative">
                 <NavLink to="/dofbrief">
                   <motion.div
                     variants={fadeOut("bottom", 0.5)}
@@ -77,13 +77,14 @@ const Work = () => {
                   >
                     <LazyLoadImage
                       alt="Dubai"
-                      className="flex flex-col h-[28rem] w-full md:w-[32rem]"
+                      className="flex inset-0 object-cover  flex-col h-[30rem] md:h-[28rem] w-full md:w-[32rem]"
                       src={dubai}
                     />{" "}
+                    <div className="inset-0 absolute hover:bg-blue-500 hover:bg-opacity-50 "></div>
                   </motion.div>
                 </NavLink>
               </div>
-              <div className="text-[white]">
+              <div className="text-[white] mb-[4rem] md:mb-0">
                 {" "}
                 <h2 className="text-[#0dfff6]  text-[14px] leading-10">
                   ART DIRECTION | MOTION GRAPHICS{" "}
@@ -101,9 +102,9 @@ const Work = () => {
         <div ref={scrollRef}>
           {" "}
           <div className="flex flex-col md:flex-row gap-10 justify-center md:items-center px-10">
-            <div>
+            <div className="">
               <div className="w-full">
-                <div className="opacity-100 hover:opacity-75 ">
+                <div className=" relative">
                   <NavLink to="/jumiabrief">
                     <motion.div
                       variants={fadeOut("bottom", 0.5)}
@@ -113,13 +114,14 @@ const Work = () => {
                     >
                       <LazyLoadImage
                         alt="Jumia"
-                        className="flex flex-col h-[28rem] w-full md:w-[32rem]"
+                        className="flex inset-0 object-cover  flex-col h-[30rem] md:h-[28rem] w-full md:w-[32rem]"
                         src={jumia}
                       />
+                      <div className="inset-0 absolute hover:bg-blue-500 hover:bg-opacity-50 "></div>
                     </motion.div>
                   </NavLink>
                 </div>
-                <div className="text-[white]">
+                <div className="text-[white] mb-[4rem] md:mb-0">
                   {" "}
                   <h2 className="text-[#0dfff6]  text-[14px] leading-10">
                     ART DIRECTION | MOTION GRPAHICS{" "}
@@ -134,7 +136,7 @@ const Work = () => {
               </div>
             </div>
             <div className="">
-              <div className="opacity-100 hover:opacity-75 ">
+              <div className=" relative">
                 <NavLink to="/foretbrief">
                   {" "}
                   <motion.div
@@ -148,13 +150,14 @@ const Work = () => {
                       viewport={{ amount: 0.7 }}
                       initial="hidden"
                       whileInView={"show"}
-                      className="flex flex-col h-[36rem] w-full md:w-[32rem]"
+                      className="flex inset-0 object-cover  flex-col h-[30rem] md:h-[36rem] w-full md:w-[32rem]"
                       src={foret1}
                     />
+                    <div className="inset-0 absolute hover:bg-blue-500 hover:bg-opacity-50 "></div>
                   </motion.div>
                 </NavLink>
               </div>
-              <div className="text-[white]">
+              <div className="text-[white] mb-[4rem] md:mb-0">
                 {" "}
                 <h2 className="text-[#0dfff6]  text-[14px] leading-10">
                   ART DIRECTION | SOCIAL MEDIA{" "}

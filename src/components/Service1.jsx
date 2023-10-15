@@ -3,38 +3,16 @@ import { data } from "../assets/data";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Button from "./Button";
 import { motion } from "framer-motion";
+import services2 from "../assets/services.png";
+
 import { sentence, letter, fadeIn } from "./variants";
 const Service1 = () => {
   const line1 = "standout websites and branding ";
   return (
     <>
-      <div className="gap-[60px] flex flex-col py-20 md:flex-row items-center md:items-center justify-center">
-        <div className="text-[blue] flex flex-col font-black text-[70px]">
-          <motion.div
-            variants={fadeIn("right", 0.5)}
-            viewport={{ once: true, amount: 0.7 }}
-            initial="hidden"
-            whileInView={"show"}
-            className="flex gap-[2rem]"
-          >
-            <span>S</span>
-            <span>E</span>
-            <span>R</span>
-            <span>V</span>
-          </motion.div>
-
-          <motion.div
-            variants={fadeIn("right", 0.5)}
-            viewport={{ once: true, amount: 0.7 }}
-            initial="hidden"
-            whileInView={"show"}
-            className="flex gap-[2.5rem]"
-          >
-            <span>I</span>
-            <span>C</span>
-            <span>E</span>
-            <span>S</span>
-          </motion.div>
+      <div className="pb-20 gap-[60px] flex flex-col md:flex-row items-center md:items-center justify-center">
+      <div className="w-fit h-fit md:w-[35rem] md:h-[20rem] flex flex-col">
+          <img src={services2} alt='services'/>
         </div>
         <div className="flex flex-col px-5 items-center md:items-start text-left w-full justify-center md:w-[30rem] ">
           <p className="text-[23px] font-bold pt-10 text-[grey]">
