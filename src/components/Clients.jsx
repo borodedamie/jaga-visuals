@@ -25,8 +25,8 @@ const Clients = () => {
         Our Clients
       </h1>
       <motion.div
-        variants={fadeOut("bottom", 0.5)}
-        viewport={{ amount: 0.7 }}
+        variants={fadeOut("bottom", 0.2)}
+        viewport={{ amount: 0.7, once: true }}
         initial="hidden"
         whileInView={"show"}
         className="grid md:w-[70%] px-0 mb-[13rem] items-center justify-center mx-auto md:px-20 grid-cols-2 md:grid-cols-5 gap-8"
@@ -60,7 +60,7 @@ const Clients = () => {
           <LazyLoadImage src={premium} />
         </div>
       </div>
-      <button className="mt-[2rem] text-center mb-[13rem] items-center flex mx-auto rounded-full font-medium h-[3rem] text-[blue] hover:bg-[blue] hover:text-[white] p-5 border-[blue] border-[2px]">
+      <button className="mt-[2rem] text-center mb-[13rem] items-center flex mx-auto rounded-full font-medium h-[3rem] text-[#0dfff6] hover:bg-[#0dfff6] hover:text-[white] p-5 border-[#0dfff6] border-[2px]">
         VIEW ALL BLOG POSTS
       </button>
     </div>
