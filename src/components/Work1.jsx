@@ -2,16 +2,18 @@ import React from "react";
 import { motion } from "framer-motion";
 import { sentence, letter, fadeIn } from "./variants";
 import work1 from "../assets/work.png";
+
 const Work1 = () => {
   const line1 = "We are experts in";
   const line2 = "bringing brands to life digitally";
+
   return (
-    <div className="px-5 pb-20">
-      <div className="w-full gap-[60px] flex flex-col md:flex-row items-center justify-center ">
-      <motion.div 
-      exit={{ x: "-100vh", opacity: 0 }}
-      className="w-fit h-fit md:w-[20rem] lg:w-[35rem] flex flex-col">
-    <img src={work1} alt='work1'/>
+    <div className="py-20">
+      <div className="gap-[150px] flex flex-col md:flex-row items-center justify-center ">
+        <motion.div
+          exit={{ x: "-100vh", opacity: 0 }}
+          className="w-fit h-fit md:w-[20rem] lg:w-[35rem] flex flex-col">
+          <img src={work1} alt='work1' style={{ maxWidth: 'none', width: '700px' }} />
         </motion.div>
         <div className="text-left w-full pt-10 justify-center items-center flex flex-col md:w-[26.5rem] ">
           <motion.h2

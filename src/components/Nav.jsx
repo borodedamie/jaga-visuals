@@ -7,6 +7,7 @@ import { BiLogoInstagram } from "react-icons/bi";
 import { BiLogoWhatsapp } from "react-icons/bi";
 import youtube from "../assets/youtube-01.png";
 import logo from "../assets/logo.jpg";
+
 const Nav = () => {
   const [navbar, setNavbar] = useState(false);
   const handleToggle = () => {
@@ -99,7 +100,8 @@ const Nav = () => {
         >
           <li
             onClick={handleToggle}
-            className={`mt-[5rem] md:mt-0 md:pb-0 font-bold  ${
+            className={`text-[#403e3e] mt-[5rem] md:mt-0 md:pb-0 font-bold hover:text-[#0dfff6]
+            ${
               navbar
                 ? "flex transition-all delay-100 pt-[3rem] md:pt-[5rem] duration-200 ease-in-out text-[50px] hover:text-[white]"
                 : "hidden md:flex text-[30px] "
@@ -150,7 +152,8 @@ const Nav = () => {
             <NavLink to="/agency">Agency</NavLink>
           </li>
           <li
-            className={` md:pb-0 font-bold ${
+            className={`text-[#403e3e] md:pb-0 font-bold hover:text-[#0dfff6]
+            ${
               navbar
                 ? "flex hover:text-[white] transition-all delay-250 duration-700 ease-in-out text-[50px]"
                 : "hidden md:flex text-[30px]"
@@ -162,7 +165,7 @@ const Nav = () => {
           <div className="flex flex-row justify-around gap-[30rem] w-full items-center"></div>
         </ul>
 
-        <div className="flex justify-between items-end flex-col pb-5">
+        <div className="flex justify-between items-end flex-col">
           <div
             onClick={handleToggle}
             className="flex flex-row justify-between text-[black] text-[40px] cursor-pointer "
@@ -171,9 +174,10 @@ const Nav = () => {
               <ImCancelCircle className="absolute top-10 right-3 transition-all duration-1000 ease-out text-[white] text-[55px]" />
             ) : (
               <BiMenuAltRight
-                className={`absolute pl-5 md:relative transition-all duration-1000 ease-in flex text-[40px] top-10 md:top-0 right-3 text-[black] ${
+                className={`absolute pl-5 md:relative transition-all duration-1000 ease-in flex text-[40px] top-20 md:top-0 right-10 text-[black] ${
                   navbar ? "hidden" : "flex w-[5rem] h-[5rem]"
                 }`}
+                style={{ color: '#403e3e' }}
               />
             )}
           </div>

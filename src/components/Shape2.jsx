@@ -1,9 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
+
 const Shape2 = () => {
   return (
-    <div className="w-fit flex flex-col justify-center items-center py-20 mt-[30rem] md:mt-0 mx-auto md:mx-0 px-5 md:px-[10rem]">
-      <motion.h2
+    <div className="flex flex-col py-[10rem] mt-[30rem] md:mt-0 mx-auto md:mx-0 px-5 md:px-[10rem]">
+      <motion.p
         animate={{ opacity: 1, scale: 1 }}
         transition={{
           duration: 5,
@@ -12,31 +13,31 @@ const Shape2 = () => {
         }}
         initial={{ opacity: 0, scale: 0.5 }}
         whileHover={{ scale: 1 }}
-        className="text-[blue] font-bold text-[38px] text-left leading-11 overflow-hidden w-full md:w-[42rem] py-10"
+        className="text-[#403e3e] font-bold text-[3rem] text-left leading-tight overflow-hidden md:w-[50rem] py-10"
       >
         Our creative digital agency designs and develops bespoke websites with
-        three things in mind
-      </motion.h2>
-      <div className="flex flex-col md:flex-row justify-center items-center gap-[10rem] pt-10">
+        <span className="text-[blue]"> three things in mind;</span>
+      </motion.p>
+      <div className="flex flex-col md:flex-row justify-center items-center gap-[5rem] pt-10">
         <div>
-          <h2 className="text-[#403e3e] text-[30px] font-extrabold">Beauty</h2>
-          <p className="text-[#464545] text-[18px] font-semibold w-full">
+          <h2 className="text-[#403e3e] text-[3rem] font-bold pb-[10px]">Beauty</h2>
+          <p className="text-[#464545] text-[18px] font-medium w-full">
             Developing stunning one-of-a-kind digital design that catches
-            people’s eye and brings your brand to life online.
+            people's eye and brings your brand to life online.
           </p>
         </div>
         <div>
-          <h2 className="text-[#403e3e] text-[30px] font-extrabold">
+          <h2 className="text-[#403e3e] text-[3rem] font-bold pb-[10px]">
             Thoughts
           </h2>
-          <p className="text-[#464545] text-[18px] font-semibold w-full">
+          <p className="text-[#464545] text-[18px] font-medium w-full">
             As a Design design agency, we love to deliver meaningful design that
             build trust with your target audience.
           </p>
         </div>
         <div>
-          <h2 className="text-[#403e3e] text-[30px] font-extrabold">Impacts</h2>
-          <p className="text-[#464545] text-[18px] font-semibold w-full">
+          <h2 className="text-[#403e3e] text-[3rem] font-bold pb-[10px]">Impacts</h2>
+          <p className="text-[#464545] text-[18px] font-medium w-full">
             Designing tailor made solutions that resonate with your customers
             and drives them to act.
           </p>

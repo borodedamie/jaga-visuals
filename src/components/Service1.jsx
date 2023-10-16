@@ -6,15 +6,17 @@ import { motion } from "framer-motion";
 import services2 from "../assets/services.png";
 
 import { sentence, letter, fadeIn } from "./variants";
+
 const Service1 = () => {
   const line1 = "standout websites and branding ";
+
   return (
     <>
-      <div className="pb-20 gap-[60px] flex flex-col md:flex-row items-center md:items-center justify-center">
-      <div className="w-fit h-fit md:w-[35rem] md:h-[20rem] flex flex-col">
-          <img src={services2} alt='services'/>
+      <div className="py-20 gap-[150px] flex flex-col md:flex-row md:items-center justify-center">
+        <div className="md:w-[35rem] md:h-[20rem] flex flex-col">
+          <img src={services2} alt='services' style={{ maxWidth: 'none', width: '700px' }} />
         </div>
-        <div className="flex flex-col px-5 items-center md:items-start text-left w-full justify-center md:w-[30rem] ">
+        <div className="flex flex-col items-center md:items-start text-left w-full justify-center md:w-[30rem] ">
           <p className="text-[23px] font-bold pt-10 text-[grey]">
             Crafting{" "}
             <motion.span
@@ -51,35 +53,35 @@ const Service1 = () => {
         </div>
       </div>
       <div className="mb-[17rem] ">
-      {data.map((data1, s) => {
-        return (
-          <motion.div 
-          variants={fadeIn("right", 0.5)}
-          viewport={{ once: true, amount: 0.7 }}
-          initial="hidden"
-          whileInView={"show"}
-          className="flex flex-col md:flex-row mx-5 md:mx-20 justify-center gap-20 items-center my-20">
-            <div className="" key={s}>
-              <h2
-                
-                className="text-[35px] w-full font-bold text-[#26316c]"
-              >
-                {data1.title}
-              </h2>
-              <p
-                
-                className="text-[18px] w-full md:w-[24.5rem] font-bold text-[grey] leading-8 py-5"
-              >
-                {data1.paragraph}
-              </p>
-              <Button />
-              
-            </div>
-            <LazyLoadImage src={data1.design} className="w-full md:w-[25rem] h-[20rem] rounded-2xl"/>
+        {data.map((data1, s) => {
+          return (
+            <motion.div
+              variants={fadeIn("right", 0.5)}
+              viewport={{ once: true, amount: 0.7 }}
+              initial="hidden"
+              whileInView={"show"}
+              className="flex flex-col md:flex-row mx-5 md:mx-20 justify-center gap-20 items-center my-20">
+              <div className="" key={s}>
+                <h2
 
-          </motion.div>
-        );
-      })}
+                  className="text-[35px] w-full font-bold text-[#26316c]"
+                >
+                  {data1.title}
+                </h2>
+                <p
+
+                  className="text-[18px] w-full md:w-[24.5rem] font-bold text-[grey] leading-8 py-5"
+                >
+                  {data1.paragraph}
+                </p>
+                <Button />
+
+              </div>
+              <LazyLoadImage src={data1.design} className="w-full md:w-[25rem] h-[20rem] rounded-2xl" />
+
+            </motion.div>
+          );
+        })}
       </div>
     </>
   );

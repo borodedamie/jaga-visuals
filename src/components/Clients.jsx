@@ -21,7 +21,7 @@ const Clients = () => {
 
   return (
     <div className="px-5 mt-[13rem]  mb-20">
-      <h1 className="text-left my-20 md:text-center font-extrabold text-[55px]">
+      <h1 className="text-[#403e3e] text-left my-20 md:text-center font-bold text-[60px]">
         Our Clients
       </h1>
       <motion.div
@@ -29,7 +29,7 @@ const Clients = () => {
         viewport={{ amount: 0.7 }}
         initial="hidden"
         whileInView={"show"}
-        className="grid w-full md:w-[70%] px-0 mb-[13rem] items-center justify-center mx-auto md:px-20 grid-cols-2 md:grid-cols-5 gap-8"
+        className="grid md:w-[70%] px-0 mb-[13rem] items-center justify-center mx-auto md:px-20 grid-cols-2 md:grid-cols-5 gap-8"
       >
         <LazyLoadImage className="w-[7rem] h-[7rem]" src={wavy} />
         <LazyLoadImage className="w-[7rem] h-[7rem]" src={one} />
@@ -47,20 +47,20 @@ const Clients = () => {
         <LazyLoadImage className="w-[7rem] h-[7rem]" src={fortune} />
       </motion.div>
       <div className="flex flex-col pb-5 md:flex-row justify-center items-end gap-20">
-        <div className="flex w-full md:w-[20rem] flex-col">
-          <h2 className="font-bold text-[38px] pb-[1rem]">Latest Articles</h2>
+        <div className="flex w-full md:w-[25rem] flex-col">
+          <h2 className="font-bold text-[38px] pb-[2rem] text-[#403e3e]">Latest Articles</h2>
           <div className="border bg-[black] h-fit">
             <LazyLoadImage src={jva} />
           </div>
         </div>
-        <div className="border bg-[black] h-fit w-full md:w-[20rem]">
+        <div className="border bg-[black] h-fit w-full md:w-[25rem]">
           <LazyLoadImage src={client} />
         </div>
-        <div className="border bg-[black] h-fit w-full md:w-[20rem]">
+        <div className="border bg-[black] h-fit w-full md:w-[25rem]">
           <LazyLoadImage src={premium} />
         </div>
       </div>
-      <button className="text-center mb-[13rem] items-center flex mx-auto rounded-2xl font-medium h-[2rem] text-[blue] hover:bg-[blue] hover:text-[white] p-5 border-[blue] border-[2px]">
+      <button className="mt-[2rem] text-center mb-[13rem] items-center flex mx-auto rounded-full font-medium h-[3rem] text-[blue] hover:bg-[blue] hover:text-[white] p-5 border-[blue] border-[2px]">
         VIEW ALL BLOG POSTS
       </button>
     </div>
