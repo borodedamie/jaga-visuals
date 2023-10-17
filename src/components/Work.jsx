@@ -94,7 +94,7 @@ const Work = () => {
                       alt="Dubai"
                       className="flex inset-0 object-cover  flex-col h-[30rem] md:h-[28rem] w-full md:w-[32rem]"
                       src={dubai}
-                      style={{ width: '80vw', height: '50vh' }}
+                      style={{ width: '50vw', height: '60vh' }}
                     />{" "}
                     <div className={`inset-0 absolute ${dofHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`}></div>
                   </motion.div>
@@ -117,7 +117,7 @@ const Work = () => {
         </div>
         <div ref={scrollRef}>
           {" "}
-          <div className="flex flex-col md:flex-row gap-[5%] justify-center md:items-center px-10">
+          <div className="flex flex-col md:flex-row gap-[5%] md:items-center">
             <div 
               onMouseEnter={() => setJumiaHover(true)}
               onMouseLeave={() => setJumiaHover(false)}
@@ -133,9 +133,9 @@ const Work = () => {
                     >
                       <LazyLoadImage
                         alt="Jumia"
-                        className="flex inset-0 object-cover  flex-col h-[30rem] md:h-[28rem] w-full md:w-[32rem]"
+                        className="flex inset-0 object-cover flex-col md:h-[28rem] md:w-[32rem]"
                         src={jumia}
-                        style={{ width: '80vw', height: '50vh' }}
+                        style={{ width: '50vw', height: '60vh' }}
                       />
                       <div className={`inset-0 absolute ${jumiaHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`} ></div>
                     </motion.div>
@@ -169,11 +169,9 @@ const Work = () => {
                     whileInView={"show"}
                   >
                     <LazyLoadImage
-                      variants={fadeOut("bottom", 0.5)}
-                      viewport={{ amount: 0.7 }}
                       initial="hidden"
                       whileInView={"show"}
-                      className="flex inset-0 object-cover  flex-col h-[30rem] md:h-[36rem] w-full md:w-[32rem]"
+                      className="flex inset-0 object-cover flex-col md:h-[36rem] w-full md:w-[32rem]"
                       src={foret1}
                       style={{ width: '80vw', height: '90vh' }}
                     />

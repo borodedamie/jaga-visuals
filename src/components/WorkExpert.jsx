@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { fadeOut } from "./variants";
 import logic from "../assets/logic.jpg";
@@ -21,80 +21,94 @@ import oneO from "../assets/101-Properties.jpg";
 const WorkExpert = () => {
   const scrollRef = useRef(null);
 
+  const [autoHover, setAutoHover] = useState(false);
+  const [dofHover, setDofHover] = useState(false);
+  const [jumiaHover, setJumiaHover] = useState(false);
+  const [foretHover, setForetHover] = useState(false);
+  const [wavyHover, setWavyHover] = useState(false);
+  const [nagaadHover, setNagaadHover] = useState(false);
+  const [premiumHover, setPremiumHover] = useState(false);
+  const [HoHover, setHoHover] = useState(false);
+
   return (
     <div className="mb-[10rem] ">
       <div ref={scrollRef}>
         {" "}
-        <div className="flex flex-col md:flex-row gap-[5rem] justify-center md:items-center px-5">
-          <div className="">
-            <div>
-              <div className="relative">
-                <motion.div
-                  className=""
-                  whileInView={"show"}
-                  variants={fadeOut("bottom", 0.5)}
-                  viewport={{ amount: 0.7 }}
-                  initial="hidden"
-                >
-                  <NavLink to="/logisticsbrief">
-                    <LazyLoadImage
-                      alt="Images"
-                      className="flex flex-col inset-0 object-cover w-[32rem]"
-                      src={logic}
-                      sizes="(max-width: 600px) 480px,
-         800px"
-                      srcSet={logic1}
-                    />
-                    <div className="inset-0 absolute hover:bg-blue-500 hover:bg-opacity-50 "></div>
-                  </NavLink>
-                </motion.div>
-              </div>
-              <div className="text-[black]">
-                {" "}
-                <h2 className="text-[blue] text-[14px] leading-10">
-                  ART DIRECTION | BRANDING{" "}
-                </h2>
-                <h1 className="text-[24px] hover:text-[blue]  font-bold leading-10">
-                  <NavLink to="/logisticsbrief">Autoflex Logistics Inc</NavLink>
-                </h1>
-                <p className="text-[14px] w-[18rem]">
-                  We fully branded a pioneering healthcare concept in the US
-                </p>
-              </div>
+        <div className="flex flex-col md:flex-row gap-[5%] md:items-center">
+          <div
+            onMouseEnter={() => setAutoHover(true)}
+            onMouseLeave={() => setAutoHover(false)}
+            style={{ flex: 1, paddingLeft: '10rem' }}>
+            <div className="relative">
+              <motion.div
+                whileInView={"show"}
+                variants={fadeOut("bottom", 0.5)}
+                viewport={{ amount: 0.7, once: true }}
+                initial="hidden"
+              >
+                <NavLink to="/logisticsbrief">
+                  <LazyLoadImage
+                    alt="Images"
+                    className="flex flex-col inset-0 object-cover"
+                    src={logic}
+                    //               sizes="(max-width: 600px) 480px,
+                    //  800px"
+                    srcSet={logic1}
+                    style={{ width: '80vw', height: '90vh', border: '1px solid #f2f7f2' }}
+                  />
+                  <div className={`inset-0 absolute ${autoHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`}></div>
+                </NavLink>
+              </motion.div>
+            </div>
+            <div className="text-[black] mt-[1rem]">
+              {" "}
+              <h2 className="text-[#0dfff6] tracking-widest text-[14px] leading-10">
+                ART DIRECTION | BRANDING{" "}
+              </h2>
+              <h1 className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${autoHover ? 'text-[#0dfff6]' : ''}`}>
+                <NavLink to="/logisticsbrief">Autoflex Logistics Inc</NavLink>
+              </h1>
+              <p className="text-[18px] mt-[0.5rem]">
+                We fully branded a pioneering healthcare concept in the US
+              </p>
             </div>
           </div>
-          <div>
+          <div
+            onMouseEnter={() => setDofHover(true)}
+            onMouseLeave={() => setDofHover(false)}
+            style={{ flex: 1, paddingRight: '10rem' }}>
             <div className="relative">
               <motion.div
                 className="opacity-100 hover:opacity-75 "
                 whileInView={"show"}
                 variants={fadeOut("bottom", 0.5)}
-                viewport={{ amount: 0.7 }}
+                viewport={{ amount: 0.7, once: true }}
                 initial="hidden"
               >
                 {" "}
                 <NavLink to="/dofbrief">
                   <LazyLoadImage
                     alt="Images"
-                    className="flex inset-0 object-cover flex-col w-[32rem] md:h-[26rem]"
+                    className="flex inset-0 object-cover flex-col md:h-[26rem]"
                     src={dubai}
-                    sizes="(max-width: 600px) 480px,
-         800px"
+                    //             sizes="(max-width: 600px) 480px,
+                    //  800px"
                     srcSet={dubai1}
+                    style={{ width: '50vw', height: '60vh' }}
                   />
-                  <div className="inset-0 absolute hover:bg-blue-500 hover:bg-opacity-50 "></div>
+                  <div className={`inset-0 absolute ${dofHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`}></div>
                 </NavLink>
               </motion.div>
             </div>
-            <div className="text-[black] mb-[4rem] md:mb-0">
+            <div className="text-[black] mt-[1rem] mb-[4rem] md:mb-0">
               {" "}
-              <h2 className="text-[blue]  text-[14px] leading-10">
+              <h2 className="text-[#0dfff6] tracking-widest  text-[14px] leading-10">
                 ART DIRECTION | MOTION GRAPHICS{" "}
               </h2>
-              <h1 className="text-[24px] hover:text-[blue] font-bold leading-10">
+              <h1 className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${dofHover ? 'text-[#0dfff6]' : ''}`}>
                 <NavLink to="/dofbrief">DOF Dubai </NavLink>
               </h1>
-              <p className="text-[14px] w-[18rem]">
+              <p className="text-[18px] mt-[0.5rem]">
                 We fully branded a pioneering healthcare concept in the US
               </p>
             </div>
@@ -103,52 +117,57 @@ const WorkExpert = () => {
       </div>
       <div ref={scrollRef}>
         {" "}
-        <div className="flex flex-col md:flex-row gap-[5rem] justify-center md:items-center px-5">
-          <div>
-            <div className="w-full">
-              <div className="relative">
-                <motion.div
-                  className="opacity-100 hover:opacity-75 "
-                  whileInView={"show"}
-                  variants={fadeOut("bottom", 0.5)}
-                  viewport={{ amount: 0.7 }}
-                  initial="hidden"
-                >
-                  {" "}
-                  <NavLink to="/jumiabrief">
-                    <LazyLoadImage
-                      alt="Jumia"
-                      className="flex  inset-0 object-cover flex-col w-[32rem] md:h-[26rem]"
-                      sizes="(max-width: 600px) 480px,
-           800px"
-                      srcSet={jumia1}
-                      src={jumia}
-                    />
-                    <div className="inset-0 absolute hover:bg-blue-500 hover:bg-opacity-50 "></div>
-                  </NavLink>
-                </motion.div>
-              </div>
-              <div className="text-[black] mb-[0rem] md:mb-0">
-                {" "}
-                <h2 className="text-[blue]  text-[14px] leading-10">
-                  ART DIRECTION | MOTION GRAPHICS{" "}
-                </h2>
-                <h1 className="text-[24px] hover:text-[blue] font-bold leading-10">
-                  <NavLink to="/jumiabrief">Jumia Pay App</NavLink>
-                </h1>
-                <p className="text-[14px] w-[18rem]">
-                  We fully branded a pioneering healthcare concept in the US
-                </p>
-              </div>
-            </div>
-          </div>
-          <div>
+        <div className="flex flex-col md:flex-row gap-[5%] md:items-center">
+          <div
+            onMouseEnter={() => setJumiaHover(true)}
+            onMouseLeave={() => setJumiaHover(false)}
+            style={{ flex: 1, paddingLeft: '10rem' }}>
             <div className="relative">
               <motion.div
                 className="opacity-100 hover:opacity-75 "
                 whileInView={"show"}
                 variants={fadeOut("bottom", 0.5)}
-                viewport={{ amount: 0.7 }}
+                viewport={{ amount: 0.7, once: true }}
+                initial="hidden"
+              >
+                {" "}
+                <NavLink to="/jumiabrief">
+                  <LazyLoadImage
+                    alt="Jumia"
+                    className="flex  inset-0 object-cover flex-col md:h-[26rem]"
+                    //           sizes="(max-width: 600px) 480px,
+                    //  800px"
+                    srcSet={jumia1}
+                    src={jumia}
+                    style={{ width: '50vw', height: '60vh' }}
+                  />
+                  <div className={`inset-0 absolute ${jumiaHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`}></div>
+                </NavLink>
+              </motion.div>
+            </div>
+            <div className="text-[black] mt-[1rem] mb-[0rem] md:mb-0">
+              {" "}
+              <h2 className="text-[#0dfff6] tracking-widest text-[14px] leading-10">
+                ART DIRECTION | MOTION GRAPHICS{" "}
+              </h2>
+              <h1 className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${jumiaHover ? 'text-[#0dfff6]' : ''}`}>
+                <NavLink to="/jumiabrief">Jumia Pay App</NavLink>
+              </h1>
+              <p className="text-[18px] mt-[0.5rem]">
+                We fully branded a pioneering healthcare concept in the US
+              </p>
+            </div>
+          </div>
+          <div
+            onMouseEnter={() => setForetHover(true)}
+            onMouseLeave={() => setForetHover(false)}
+            style={{ flex: 1, paddingRight: '10rem' }}>
+            <div className="relative">
+              <motion.div
+                className="opacity-100 hover:opacity-75 "
+                whileInView={"show"}
+                variants={fadeOut("bottom", 0.5)}
+                viewport={{ amount: 0.7, once: true }}
                 initial="hidden"
               >
                 {" "}
@@ -156,24 +175,25 @@ const WorkExpert = () => {
                   <LazyLoadImage
                     alt="Foret"
                     src={foret1}
-                    className="flex flex-col w-[32rem]"
-                    sizes="(max-width: 600px) 480px,
-         800px"
+                    className="flex flex-col"
+                    //             sizes="(max-width: 600px) 480px,
+                    //  800px"
                     srcSet={foret11}
+                    style={{ width: '80vw', height: '90vh' }}
                   />
-                  <div className="inset-0 absolute hover:bg-blue-500 hover:bg-opacity-50 "></div>
+                  <div className={`inset-0 absolute ${foretHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`}></div>
                 </NavLink>
               </motion.div>
             </div>
-            <div className="text-[black] mb-[4rem] md:mb-0">
+            <div className="text-[black] mt-[1rem] mb-[4rem] md:mb-0">
               {" "}
-              <h2 className="text-[blue] text-[14px] leading-10">
+              <h2 className="text-[#0dfff6] tracking-widest text-[14px] leading-10">
                 ART DIRECTION | SOCIAL MEDIA{" "}
               </h2>
-              <h1 className="text-[24px] hover:text-[blue] font-bold leading-10">
+              <h1 className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${foretHover ? 'text-[#0dfff6]' : ''}`}>
                 <NavLink to="/foretbrief">Foret Dubai</NavLink>
               </h1>
-              <p className="text-[14px] w-[18rem]">
+              <p className="text-[18px] mt-[0.5rem]">
                 We fully branded a pioneering healthcare concept in the US
               </p>
             </div>
@@ -182,52 +202,57 @@ const WorkExpert = () => {
       </div>
       <div ref={scrollRef}>
         {" "}
-        <div className="flex flex-col md:flex-row gap-[5rem] justify-center md:items-center px-5">
-          <div>
-            <div className="w-full">
-              <div className="relative">
-                <motion.div
-                  className="opacity-100 hover:opacity-75 "
-                  whileInView={"show"}
-                  variants={fadeOut("bottom", 0.5)}
-                  viewport={{ amount: 0.7 }}
-                  initial="hidden"
-                >
-                  {" "}
-                  <NavLink to="/wavybrief">
-                    <LazyLoadImage
-                      alt="Ladies talking"
-                      src={speak}
-                      className="flex inset-0 object-cover flex-col w-[32rem]"
-                      sizes="(max-width: 600px) 480px,
-         800px"
-                      srcSet={speak1}
-                    />
-                    <div className="inset-0 absolute hover:bg-blue-500 hover:bg-opacity-50 "></div>
-                  </NavLink>
-                </motion.div>
-              </div>
-              <div className="text-[black]">
-                {" "}
-                <h2 className="text-[blue]  text-[14px] leading-10">
-                  ART DIRECTION | MOTION GRAPHICS{" "}
-                </h2>
-                <h1 className="text-[24px] hover:text-[blue] font-bold leading-10">
-                  <NavLink to="/wavybrief">Wavy Beauty Inc</NavLink>
-                </h1>
-                <p className="text-[14px] w-[18rem]">
-                  We fully branded a pioneering healthcare concept in the US
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="">
+        <div className="flex flex-col md:flex-row gap-[5%] md:items-center">
+          <div
+            onMouseEnter={() => setWavyHover(true)}
+            onMouseLeave={() => setWavyHover(false)}
+            style={{ flex: 1, paddingLeft: '10rem' }}>
             <div className="relative">
               <motion.div
                 className="opacity-100 hover:opacity-75 "
                 whileInView={"show"}
                 variants={fadeOut("bottom", 0.5)}
-                viewport={{ amount: 0.7 }}
+                viewport={{ amount: 0.7, once: true }}
+                initial="hidden"
+              >
+                {" "}
+                <NavLink to="/wavybrief">
+                  <LazyLoadImage
+                    alt="Ladies talking"
+                    src={speak}
+                    className="flex inset-0 object-cover flex-col"
+                    //               sizes="(max-width: 600px) 480px,
+                    //  800px"
+                    srcSet={speak1}
+                    style={{ width: '80vw', height: '90vh' }}
+                  />
+                  <div className={`inset-0 absolute ${wavyHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`}></div>
+                </NavLink>
+              </motion.div>
+            </div>
+            <div className="text-[black] mt-[1rem]">
+              {" "}
+              <h2 className="text-[#0dfff6] tracking-widest text-[14px] leading-10">
+                ART DIRECTION | MOTION GRAPHICS{" "}
+              </h2>
+              <h1 className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${wavyHover ? 'text-[#0dfff6]' : ''}`}>
+                <NavLink to="/wavybrief">Wavy Beauty Inc</NavLink>
+              </h1>
+              <p className="text-[18px] mt-[0.5rem]">
+                We fully branded a pioneering healthcare concept in the US
+              </p>
+            </div>
+          </div>
+          <div
+            onMouseEnter={() => setNagaadHover(true)}
+            onMouseLeave={() => setNagaadHover(false)}
+            style={{ flex: 1, paddingRight: '10rem' }}>
+            <div className="relative">
+              <motion.div
+                className="opacity-100 hover:opacity-75 "
+                whileInView={"show"}
+                variants={fadeOut("bottom", 0.5)}
+                viewport={{ amount: 0.7, once: true }}
                 initial="hidden"
               >
                 {" "}
@@ -236,23 +261,24 @@ const WorkExpert = () => {
                     alt="Nagaad"
                     src={nagaad1}
                     className="flex inset-0 object-cover flex-col w-[32rem] md:h-[26rem]"
-                    sizes="(max-width: 600px) 480px,
-         800px"
+                    //             sizes="(max-width: 600px) 480px,
+                    //  800px"
                     srcSet={nagaad11}
+                    style={{ width: '50vw', height: '60vh' }}
                   />
-                  <div className="inset-0 absolute hover:bg-blue-500 hover:bg-opacity-50 "></div>
+                  <div className={`inset-0 absolute ${nagaadHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`}></div>
                 </NavLink>
               </motion.div>
             </div>
-            <div className="text-[black] mb-[4rem] md:mb-0">
+            <div className="text-[black] mt-[1rem] mb-[4rem] md:mb-0">
               {" "}
-              <h2 className="text-[blue]  text-[14px] leading-10">
+              <h2 className="text-[#0dfff6] tracking-widest text-[14px] leading-10">
                 ART DIRECTION | MOTION GRAPHICS{" "}
               </h2>
-              <h1 className="text-[24px] hover:text-[blue] font-bold leading-10">
+              <h1 className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${nagaadHover ? 'text-[#0dfff6]' : ''}`}>
                 <NavLink to="/nagaadbrief">Nagaad Organics</NavLink>
               </h1>
-              <p className="text-[14px] w-[18rem]">
+              <p className="text-[18px] mt-[0.5rem] ">
                 We fully branded a pioneering healthcare concept in the US
               </p>
             </div>
@@ -261,77 +287,83 @@ const WorkExpert = () => {
       </div>
       <div ref={scrollRef}>
         {" "}
-        <div className="flex flex-col md:flex-row gap-[5rem] justify-center md:items-center px-5">
-          <div>
-            <div className="w-full">
-              <div className="relative">
-                <motion.div
-                  className="opacity-100 hover:opacity-75 "
-                  whileInView={"show"}
-                  variants={fadeOut("bottom", 0.5)}
-                  viewport={{ amount: 0.7 }}
-                  initial="hidden"
-                >
-                  {" "}
-                  <NavLink to="/onebrief">
-                    <LazyLoadImage
-                      alt="101 Premium Properties"
-                      src={oneO}
-                      className="flex  inset-0 object-cover flex-col w-[32rem] md:h-[26rem]"
-                      sizes="(max-width: 600px) 480px,
-         800px"
-                    />
-                    <div className="inset-0 absolute hover:bg-blue-500 hover:bg-opacity-50 "></div>
-                  </NavLink>
-                </motion.div>
-              </div>
-              <div className="text-[black]">
+        <div className="flex flex-col md:flex-row gap-[5%] md:items-center">
+          <div
+            onMouseEnter={() => setPremiumHover(true)}
+            onMouseLeave={() => setPremiumHover(false)}
+            style={{ flex: 1, paddingLeft: '10rem' }}>
+            <div className="relative">
+              <motion.div
+                className="opacity-100 hover:opacity-75 "
+                whileInView={"show"}
+                variants={fadeOut("bottom", 0.5)}
+                viewport={{ amount: 0.7, once: true }}
+                initial="hidden"
+              >
                 {" "}
-                <h2 className="text-[blue]  text-[14px] leading-10">
-                  ART DIRECTION | MOTION GRAPHICS{" "}
-                </h2>
-                <h1 className="text-[24px] hover:text-[blue] font-bold leading-10">
-                  <NavLink to="/onebrief">101 Premium Properties</NavLink>
-                </h1>
-                <p className="text-[14px] w-[18rem]">
-                  We fully branded a pioneering healthcare concept in the US
-                </p>
-              </div>
+                <NavLink to="/onebrief">
+                  <LazyLoadImage
+                    alt="101 Premium Properties"
+                    src={oneO}
+                    className="flex inset-0 object-cover flex-col md:h-[26rem]"
+                    //             sizes="(max-width: 600px) 480px,
+                    //  800px"
+                    style={{ width: '50vw', height: '60vh' }}
+                  />
+                  <div className={`inset-0 absolute ${premiumHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`}></div>
+                </NavLink>
+              </motion.div>
+            </div>
+            <div className="text-[black] mt-[1rem]">
+              {" "}
+              <h2 className="text-[#0dfff6] tracking-widest text-[14px] leading-10">
+                ART DIRECTION | MOTION GRAPHICS{" "}
+              </h2>
+              <h1 className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${premiumHover ? 'text-[#0dfff6]' : ''}`}>
+                <NavLink to="/onebrief">101 Premium Properties</NavLink>
+              </h1>
+              <p className="text-[18px] mt-[0.5rem]">
+                We fully branded a pioneering healthcare concept in the US
+              </p>
             </div>
           </div>
-          <div className="">
+          <div
+            onMouseEnter={() => setHoHover(true)}
+            onMouseLeave={() => setHoHover(false)}
+            style={{ flex: 1, paddingRight: '10rem' }}>
             <div className="relative">
-            <motion.div
-              className="opacity-100 hover:opacity-75 "
-              whileInView={"show"}
-              variants={fadeOut("bottom", 0.5)}
-              viewport={{ amount: 0.7 }}
-              initial="hidden"
-            >
-              {" "}
-              <NavLink to="/hobrief">
-                <LazyLoadImage
-                  alt="HO gas"
-                  src={HO}
-                  className="flex inset-0 object-cover  flex-col w-[32rem]"
-                  sizes="(max-width: 600px) 480px,
-         800px"
-                  srcSet={HO}
-                />
-                                      <div className="inset-0 absolute hover:bg-blue-500 hover:bg-opacity-50 "></div>
+              <motion.div
+                className="opacity-100 hover:opacity-75 "
+                whileInView={"show"}
+                variants={fadeOut("bottom", 0.5)}
+                viewport={{ amount: 0.7, once: true }}
+                initial="hidden"
+              >
+                {" "}
+                <NavLink to="/hobrief">
+                  <LazyLoadImage
+                    alt="HO gas"
+                    src={HO}
+                    className="flex inset-0 object-cover  flex-col"
+        //             sizes="(max-width: 600px) 480px,
+        //  800px"
+                    srcSet={HO}
+                    style={{ width: '80vw', height: '90vh' }}
+                  />
+                  <div className={`inset-0 absolute ${HoHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`}></div>
 
-              </NavLink>
-            </motion.div>
+                </NavLink>
+              </motion.div>
             </div>
-            <div className="text-[black] mb-[2rem] md:mb-0">
+            <div className="text-[black] mt-[1rem] mb-[2rem] md:mb-0">
               {" "}
-              <h2 className="text-[blue]  text-[14px] leading-10">
+              <h2 className="text-[#0dfff6] tracking-widest text-[14px] leading-10">
                 ART DIRECTION | SOCIAL MEDIA{" "}
               </h2>
-              <h1 className="text-[24px] hover:text-[blue] font-bold leading-10">
+              <h1 className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${HoHover ? 'text-[#0dfff6]' : ''}`}>
                 <NavLink to="/hobrief">HO Gas</NavLink>
               </h1>
-              <p className="text-[14px] w-[18rem]">
+              <p className="text-[18px] mt-[0.5rem]">
                 We fully branded a pioneering healthcare concept in the US
               </p>
             </div>

@@ -7,10 +7,10 @@ import Nav from '../components/Nav';
 const Works = () => {
   return (
     <div>
-      <Nav/>
-        <Work1/>
-        <WorkExpert/>
-      <Footer/>
+      <Nav />
+      <Work1 />
+      <WorkExpert />
+      <Footer />
     </div>
   );
 }

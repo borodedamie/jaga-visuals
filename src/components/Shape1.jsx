@@ -24,8 +24,8 @@ const Shape1 = () => {
           muted
           style={{ 
             objectFit: 'cover', 
-            width: '800px', 
-            height: '700px' }}
+            width: '80vw', 
+            height: '80vh' }}
         >
           <source src={homevideo} type="video/mp4" />
         </video>
