@@ -56,16 +56,16 @@ const WorkExpert = () => {
                     srcSet={logic1}
                     style={{ width: '80vw', height: '90vh', border: '1px solid #f2f7f2' }}
                   />
-                  <div className={`inset-0 absolute ${autoHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`}></div>
+                  <div className={`inset-0 absolute ${autoHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
                 </NavLink>
               </motion.div>
             </div>
             <div className="text-[black] mt-[1rem]">
               {" "}
-              <h2 className="text-[#0dfff6] tracking-widest text-[14px] leading-10">
+              <h2 className="text-[blue] tracking-widest text-[14px] leading-10">
                 ART DIRECTION | BRANDING{" "}
               </h2>
-              <h1 className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${autoHover ? 'text-[#0dfff6]' : ''}`}>
+              <h1 className={`text-[40px] hover:text-[blue] font-extrabold ${autoHover ? 'text-[blue]' : ''}`}>
                 <NavLink to="/logisticsbrief">Autoflex Logistics Inc</NavLink>
               </h1>
               <p className="text-[18px] mt-[0.5rem]">
@@ -96,16 +96,16 @@ const WorkExpert = () => {
                     srcSet={dubai1}
                     style={{ width: '50vw', height: '60vh' }}
                   />
-                  <div className={`inset-0 absolute ${dofHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`}></div>
+                  <div className={`inset-0 absolute ${dofHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
                 </NavLink>
               </motion.div>
             </div>
             <div className="text-[black] mt-[1rem] mb-[4rem] md:mb-0">
               {" "}
-              <h2 className="text-[#0dfff6] tracking-widest  text-[14px] leading-10">
+              <h2 className="text-[blue] tracking-widest  text-[14px] leading-10">
                 ART DIRECTION | MOTION GRAPHICS{" "}
               </h2>
-              <h1 className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${dofHover ? 'text-[#0dfff6]' : ''}`}>
+              <h1 className={`text-[40px] hover:text-[blue] font-extrabold ${dofHover ? 'text-[blue]' : ''}`}>
                 <NavLink to="/dofbrief">DOF Dubai </NavLink>
               </h1>
               <p className="text-[18px] mt-[0.5rem]">
@@ -141,16 +141,16 @@ const WorkExpert = () => {
                     src={jumia}
                     style={{ width: '50vw', height: '60vh' }}
                   />
-                  <div className={`inset-0 absolute ${jumiaHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`}></div>
+                  <div className={`inset-0 absolute ${jumiaHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
                 </NavLink>
               </motion.div>
             </div>
             <div className="text-[black] mt-[1rem] mb-[0rem] md:mb-0">
               {" "}
-              <h2 className="text-[#0dfff6] tracking-widest text-[14px] leading-10">
+              <h2 className="text-[blue] tracking-widest text-[14px] leading-10">
                 ART DIRECTION | MOTION GRAPHICS{" "}
               </h2>
-              <h1 className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${jumiaHover ? 'text-[#0dfff6]' : ''}`}>
+              <h1 className={`text-[40px] hover:text-[blue] font-extrabold ${jumiaHover ? 'text-[blue]' : ''}`}>
                 <NavLink to="/jumiabrief">Jumia Pay App</NavLink>
               </h1>
               <p className="text-[18px] mt-[0.5rem]">
@@ -181,16 +181,16 @@ const WorkExpert = () => {
                     srcSet={foret11}
                     style={{ width: '80vw', height: '90vh' }}
                   />
-                  <div className={`inset-0 absolute ${foretHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`}></div>
+                  <div className={`inset-0 absolute ${foretHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
                 </NavLink>
               </motion.div>
             </div>
             <div className="text-[black] mt-[1rem] mb-[4rem] md:mb-0">
               {" "}
-              <h2 className="text-[#0dfff6] tracking-widest text-[14px] leading-10">
+              <h2 className="text-[blue] tracking-widest text-[14px] leading-10">
                 ART DIRECTION | SOCIAL MEDIA{" "}
               </h2>
-              <h1 className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${foretHover ? 'text-[#0dfff6]' : ''}`}>
+              <h1 className={`text-[40px] hover:text-[blue] font-extrabold ${foretHover ? 'text-[blue]' : ''}`}>
                 <NavLink to="/foretbrief">Foret Dubai</NavLink>
               </h1>
               <p className="text-[18px] mt-[0.5rem]">
@@ -226,16 +226,16 @@ const WorkExpert = () => {
                     srcSet={speak1}
                     style={{ width: '80vw', height: '90vh' }}
                   />
-                  <div className={`inset-0 absolute ${wavyHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`}></div>
+                  <div className={`inset-0 absolute ${wavyHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
                 </NavLink>
               </motion.div>
             </div>
             <div className="text-[black] mt-[1rem]">
               {" "}
-              <h2 className="text-[#0dfff6] tracking-widest text-[14px] leading-10">
+              <h2 className="text-[blue] tracking-widest text-[14px] leading-10">
                 ART DIRECTION | MOTION GRAPHICS{" "}
               </h2>
-              <h1 className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${wavyHover ? 'text-[#0dfff6]' : ''}`}>
+              <h1 className={`text-[40px] hover:text-[blue] font-extrabold ${wavyHover ? 'text-[blue]' : ''}`}>
                 <NavLink to="/wavybrief">Wavy Beauty Inc</NavLink>
               </h1>
               <p className="text-[18px] mt-[0.5rem]">
@@ -260,22 +260,22 @@ const WorkExpert = () => {
                   <LazyLoadImage
                     alt="Nagaad"
                     src={nagaad1}
-                    className="flex inset-0 object-cover flex-col w-[32rem] md:h-[26rem]"
+                    className="flex inset-0 object-cover flex-col md:h-[26rem]"
                     //             sizes="(max-width: 600px) 480px,
                     //  800px"
                     srcSet={nagaad11}
                     style={{ width: '50vw', height: '60vh' }}
                   />
-                  <div className={`inset-0 absolute ${nagaadHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`}></div>
+                  <div className={`inset-0 absolute ${nagaadHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
                 </NavLink>
               </motion.div>
             </div>
             <div className="text-[black] mt-[1rem] mb-[4rem] md:mb-0">
               {" "}
-              <h2 className="text-[#0dfff6] tracking-widest text-[14px] leading-10">
+              <h2 className="text-[blue] tracking-widest text-[14px] leading-10">
                 ART DIRECTION | MOTION GRAPHICS{" "}
               </h2>
-              <h1 className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${nagaadHover ? 'text-[#0dfff6]' : ''}`}>
+              <h1 className={`text-[40px] hover:text-[blue] font-extrabold ${nagaadHover ? 'text-[blue]' : ''}`}>
                 <NavLink to="/nagaadbrief">Nagaad Organics</NavLink>
               </h1>
               <p className="text-[18px] mt-[0.5rem] ">
@@ -310,16 +310,16 @@ const WorkExpert = () => {
                     //  800px"
                     style={{ width: '50vw', height: '60vh' }}
                   />
-                  <div className={`inset-0 absolute ${premiumHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`}></div>
+                  <div className={`inset-0 absolute ${premiumHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
                 </NavLink>
               </motion.div>
             </div>
             <div className="text-[black] mt-[1rem]">
               {" "}
-              <h2 className="text-[#0dfff6] tracking-widest text-[14px] leading-10">
+              <h2 className="text-[blue] tracking-widest text-[14px] leading-10">
                 ART DIRECTION | MOTION GRAPHICS{" "}
               </h2>
-              <h1 className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${premiumHover ? 'text-[#0dfff6]' : ''}`}>
+              <h1 className={`text-[40px] hover:text-[blue] font-extrabold ${premiumHover ? 'text-[blue]' : ''}`}>
                 <NavLink to="/onebrief">101 Premium Properties</NavLink>
               </h1>
               <p className="text-[18px] mt-[0.5rem]">
@@ -350,17 +350,17 @@ const WorkExpert = () => {
                     srcSet={HO}
                     style={{ width: '80vw', height: '90vh' }}
                   />
-                  <div className={`inset-0 absolute ${HoHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`}></div>
+                  <div className={`inset-0 absolute ${HoHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
 
                 </NavLink>
               </motion.div>
             </div>
             <div className="text-[black] mt-[1rem] mb-[2rem] md:mb-0">
               {" "}
-              <h2 className="text-[#0dfff6] tracking-widest text-[14px] leading-10">
+              <h2 className="text-[blue] tracking-widest text-[14px] leading-10">
                 ART DIRECTION | SOCIAL MEDIA{" "}
               </h2>
-              <h1 className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${HoHover ? 'text-[#0dfff6]' : ''}`}>
+              <h1 className={`text-[40px] hover:text-[blue] font-extrabold ${HoHover ? 'text-[blue]' : ''}`}>
                 <NavLink to="/hobrief">HO Gas</NavLink>
               </h1>
               <p className="text-[18px] mt-[0.5rem]">
