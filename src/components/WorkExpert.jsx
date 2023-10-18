@@ -20,7 +20,6 @@ import oneO from "../assets/101-Properties.jpg";
 
 const WorkExpert = () => {
   const scrollRef = useRef(null);
-
   const [autoHover, setAutoHover] = useState(false);
   const [dofHover, setDofHover] = useState(false);
   const [jumiaHover, setJumiaHover] = useState(false);

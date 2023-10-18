@@ -10,7 +10,6 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Work = () => {
   const scrollRef = useRef(null);
-
   const [autoHover, setAutoHover] = useState(false);
   const [dofHover, setDofHover] = useState(false);
   const [jumiaHover, setJumiaHover] = useState(false);
