@@ -275,6 +275,26 @@ export const carousel = [
     name: "Adewale Fayiga",
     title:'Copywriter'
   },
+  {
+    one: webdev,
+    name: "Adewale Fayiga",
+    title:'Copywriter'
+  },
+  {
+    one: webdev,
+    name: "Adewale Fayiga",
+    title:'Copywriter'
+  },
+  {
+    one: webdev,
+    name: "Adewale Fayiga",
+    title:'Copywriter'
+  },
+  {
+    one: webdev,
+    name: "Adewale Fayiga",
+    title:'Copywriter'
+  },
   
   
 ];

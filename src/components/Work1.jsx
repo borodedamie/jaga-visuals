@@ -5,23 +5,22 @@ import work1 from "../assets/work.png";
 
 const Work1 = () => {
   const line1 = "We are experts in";
-  const line2 = "bringing brands to life digitally.";
+  const line2 = "bringing brands to life digitally";
 
   return (
-      <div className="px-[10rem] pb-10 pt-10 gap-[1rem] flex flex-col md:flex-row items-center justify-center ">
+    <div className="py-20">
+      <div className="gap-[10px] md:gap-[150px] flex flex-col md:flex-row items-center justify-center ">
         <motion.div
           exit={{ x: "-100vh", opacity: 0 }}
-          style={{ flex: 1 }}
-          className="md:w-[20rem] lg:w-[35rem]">
-          <img src={work1} alt='work1' style={{ maxWidth: 'none', width: '35vw' }} />
+          className="w-fit h-fit md:w-[20rem] lg:w-[700px] flex flex-col">
+          <img src={work1} alt='work1' />
         </motion.div>
-        <div className="text-left pt-10 justify-center items-center md:w-[26.5rem] " style={{ flex: 1 }}>
-          <motion.h1
+        <div className="px-10 text-center md:text-left w-full pt-10 justify-center items-center flex flex-col md:w-[26.5rem] ">
+          <motion.h2
             variants={sentence}
             initial="hidden"
             animate="visible"
-            style={{ fontSize: '3rem' }}
-            className="text-[#3b3b70] font-bold md:text-[35px] leading-tight"
+            className="text-[#3b3b70] font-bold text-[30px] md:text-[35px] leading-10"
           >
             {line1.split("").map((char, index) => {
               return (
@@ -38,8 +37,8 @@ const Work1 = () => {
                 </motion.span>
               );
             })}
-          </motion.h1>
-          <p className="text-[18px] font-medium pb-5 pt-10 text-[#201f1f] tracking-tight">
+          </motion.h2>
+          <p className="text-[18px] font-bold pt-10 text-[#201f1f]">
             JAGA VISUALS is a progressive and insightful design agency,
             technically and creatively skilled to translate your brand into its
             best digital self. Our design and development approach creates
@@ -48,6 +47,7 @@ const Work1 = () => {
           </p>
         </div>
       </div>
+    </div>
   );
 };
 

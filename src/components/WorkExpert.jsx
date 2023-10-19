@@ -30,15 +30,14 @@ const WorkExpert = () => {
   const [HoHover, setHoHover] = useState(false);
 
   return (
-    <div className="mb-[10rem] ">
+    <div className="mb-[10rem] overflow-hidden z-0">
       <div ref={scrollRef}>
         {" "}
-        <div className="flex flex-col md:flex-row gap-[5%] md:items-center">
+        <div className="flex flex-col gap-[5%] justify-center px-10 md:flex-row md:items-center">
           <div
             onMouseEnter={() => setAutoHover(true)}
-            onMouseLeave={() => setAutoHover(false)}
-            style={{ flex: 1, paddingLeft: '10rem' }}>
-            <div className="relative">
+            onMouseLeave={() => setAutoHover(false)}>     
+                   <div className="relative">
               <motion.div
                 whileInView={"show"}
                 variants={fadeOut("bottom", 0.5)}
@@ -48,12 +47,11 @@ const WorkExpert = () => {
                 <NavLink to="/logisticsbrief">
                   <LazyLoadImage
                     alt="Images"
-                    className="flex flex-col inset-0 object-cover"
+                    className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:h-[60rem] md:w-[45rem]"
                     src={logic}
-                    //               sizes="(max-width: 600px) 480px,
-                    //  800px"
+                   
                     srcSet={logic1}
-                    style={{ width: '80vw', height: '90vh', border: '1px solid #f2f7f2' }}
+                    style={{ border: '1px solid #f2f7f2' }}
                   />
                   <div className={`inset-0 absolute ${autoHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
                 </NavLink>
@@ -73,9 +71,10 @@ const WorkExpert = () => {
             </div>
           </div>
           <div
+          className="mt-[4rem] md:mt-0"
             onMouseEnter={() => setDofHover(true)}
             onMouseLeave={() => setDofHover(false)}
-            style={{ flex: 1, paddingRight: '10rem' }}>
+>
             <div className="relative">
               <motion.div
                 className="opacity-100 hover:opacity-75 "
@@ -88,12 +87,10 @@ const WorkExpert = () => {
                 <NavLink to="/dofbrief">
                   <LazyLoadImage
                     alt="Images"
-                    className="flex inset-0 object-cover flex-col md:h-[26rem]"
+                    className="flex inset-0 object-contain md:object-cover flex-col md:h-[40rem] w-fit md:w-[45rem]"
                     src={dubai}
-                    //             sizes="(max-width: 600px) 480px,
-                    //  800px"
+                   
                     srcSet={dubai1}
-                    style={{ width: '50vw', height: '60vh' }}
                   />
                   <div className={`inset-0 absolute ${dofHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
                 </NavLink>
@@ -116,11 +113,11 @@ const WorkExpert = () => {
       </div>
       <div ref={scrollRef}>
         {" "}
-        <div className="flex flex-col md:flex-row gap-[5%] md:items-center">
+        <div className="flex flex-col justify-center gap-[5%] px-10 md:flex-row md:items-center">
           <div
             onMouseEnter={() => setJumiaHover(true)}
             onMouseLeave={() => setJumiaHover(false)}
-            style={{ flex: 1, paddingLeft: '10rem' }}>
+          >
             <div className="relative">
               <motion.div
                 className="opacity-100 hover:opacity-75 "
@@ -133,12 +130,10 @@ const WorkExpert = () => {
                 <NavLink to="/jumiabrief">
                   <LazyLoadImage
                     alt="Jumia"
-                    className="flex  inset-0 object-cover flex-col md:h-[26rem]"
-                    //           sizes="(max-width: 600px) 480px,
-                    //  800px"
+                    className="flex inset-0 object-contain md:object-cover flex-col h-fit md:h-[40rem] w-fit md:w-[45rem]"
+
                     srcSet={jumia1}
                     src={jumia}
-                    style={{ width: '50vw', height: '60vh' }}
                   />
                   <div className={`inset-0 absolute ${jumiaHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
                 </NavLink>
@@ -158,9 +153,10 @@ const WorkExpert = () => {
             </div>
           </div>
           <div
+           className="mt-[4rem] md:mt-0"
             onMouseEnter={() => setForetHover(true)}
             onMouseLeave={() => setForetHover(false)}
-            style={{ flex: 1, paddingRight: '10rem' }}>
+           >
             <div className="relative">
               <motion.div
                 className="opacity-100 hover:opacity-75 "
@@ -174,11 +170,10 @@ const WorkExpert = () => {
                   <LazyLoadImage
                     alt="Foret"
                     src={foret1}
-                    className="flex flex-col"
-                    //             sizes="(max-width: 600px) 480px,
-                    //  800px"
+                    className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:h-[60rem] md:w-[45rem]"
+
                     srcSet={foret11}
-                    style={{ width: '80vw', height: '90vh' }}
+                    
                   />
                   <div className={`inset-0 absolute ${foretHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
                 </NavLink>
@@ -201,11 +196,12 @@ const WorkExpert = () => {
       </div>
       <div ref={scrollRef}>
         {" "}
-        <div className="flex flex-col md:flex-row gap-[5%] md:items-center">
+        <div className="flex flex-col gap-[5%] justify-center px-10 md:flex-row md:items-center">
           <div
+          className="mt-[4rem] md:mt-0"
             onMouseEnter={() => setWavyHover(true)}
             onMouseLeave={() => setWavyHover(false)}
-            style={{ flex: 1, paddingLeft: '10rem' }}>
+          >
             <div className="relative">
               <motion.div
                 className="opacity-100 hover:opacity-75 "
@@ -219,11 +215,9 @@ const WorkExpert = () => {
                   <LazyLoadImage
                     alt="Ladies talking"
                     src={speak}
-                    className="flex inset-0 object-cover flex-col"
-                    //               sizes="(max-width: 600px) 480px,
-                    //  800px"
+                    className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:h-[60rem] md:w-[45rem]"
+
                     srcSet={speak1}
-                    style={{ width: '80vw', height: '90vh' }}
                   />
                   <div className={`inset-0 absolute ${wavyHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
                 </NavLink>
@@ -243,9 +237,10 @@ const WorkExpert = () => {
             </div>
           </div>
           <div
+          className="mt-[4rem] md:mt-0"
             onMouseEnter={() => setNagaadHover(true)}
             onMouseLeave={() => setNagaadHover(false)}
-            style={{ flex: 1, paddingRight: '10rem' }}>
+            >
             <div className="relative">
               <motion.div
                 className="opacity-100 hover:opacity-75 "
@@ -259,11 +254,9 @@ const WorkExpert = () => {
                   <LazyLoadImage
                     alt="Nagaad"
                     src={nagaad1}
-                    className="flex inset-0 object-cover flex-col md:h-[26rem]"
-                    //             sizes="(max-width: 600px) 480px,
-                    //  800px"
+                    className="flex inset-0 object-contain md:object-cover flex-col h-fit md:h-[40rem] w-fit md:w-[45rem]"
+
                     srcSet={nagaad11}
-                    style={{ width: '50vw', height: '60vh' }}
                   />
                   <div className={`inset-0 absolute ${nagaadHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
                 </NavLink>
@@ -286,11 +279,11 @@ const WorkExpert = () => {
       </div>
       <div ref={scrollRef}>
         {" "}
-        <div className="flex flex-col md:flex-row gap-[5%] md:items-center">
+        <div className="flex flex-col justify-center gap-[5%] px-10 md:flex-row md:items-center">
           <div
             onMouseEnter={() => setPremiumHover(true)}
             onMouseLeave={() => setPremiumHover(false)}
-            style={{ flex: 1, paddingLeft: '10rem' }}>
+>
             <div className="relative">
               <motion.div
                 className="opacity-100 hover:opacity-75 "
@@ -304,10 +297,7 @@ const WorkExpert = () => {
                   <LazyLoadImage
                     alt="101 Premium Properties"
                     src={oneO}
-                    className="flex inset-0 object-cover flex-col md:h-[26rem]"
-                    //             sizes="(max-width: 600px) 480px,
-                    //  800px"
-                    style={{ width: '50vw', height: '60vh' }}
+                    className="flex inset-0 object-contain md:object-cover flex-col h-fit md:h-[40rem] w-fit md:w-[45rem]"
                   />
                   <div className={`inset-0 absolute ${premiumHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
                 </NavLink>
@@ -327,9 +317,10 @@ const WorkExpert = () => {
             </div>
           </div>
           <div
+          className="mt-[4rem] md:mt-0"
             onMouseEnter={() => setHoHover(true)}
             onMouseLeave={() => setHoHover(false)}
-            style={{ flex: 1, paddingRight: '10rem' }}>
+           >
             <div className="relative">
               <motion.div
                 className="opacity-100 hover:opacity-75 "
@@ -343,11 +334,9 @@ const WorkExpert = () => {
                   <LazyLoadImage
                     alt="HO gas"
                     src={HO}
-                    className="flex inset-0 object-cover  flex-col"
-        //             sizes="(max-width: 600px) 480px,
-        //  800px"
+                    className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:h-[60rem] md:w-[45rem]"
+
                     srcSet={HO}
-                    style={{ width: '80vw', height: '90vh' }}
                   />
                   <div className={`inset-0 absolute ${HoHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
 
