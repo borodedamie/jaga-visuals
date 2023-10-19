@@ -9,16 +9,16 @@ const Header = () => {
   const line2 = "out of style"
 
   return (
-    <div className="pt-10 pb-20 gap-[5rem] flex flex-col md:flex-row items-center justify-center">
-      <div className="md:w-[35rem] md:h-[30rem] lg:w-[35rem] lg:h-[40rem]">
-        <img src={idea1} alt='idea1' style={{ maxWidth: 'none', width: '35vw' }}/>
+    <div className="pt-10 pb-20 gap-[5rem] flex flex-col md:flex-row items-center justify-center ">
+      <div className="w-fit h-fit md:w-[35rem] md:h-[30rem] lg:w-[35rem] lg:h-[40rem] ">
+        <img src={idea1} alt='idea1' />
       </div>
-      <div className="md:text-left">
+      <div className="text-center md:text-left ">
         <motion.h1
           variants={sentence}
           initial="hidden"
           animate="visible"
-          className="text-[blue] md:w-[30rem] font-bold text-[40px] md:text-[44px] leading-tight">
+          className="text-[blue] md:w-[30rem] font-bold text-[40px] md:text-[44px] leading-tight ">
           {line1.split("").map((char, index) => {
             return (
               <motion.span key={char + "-" + index} variants={letter}>
@@ -35,7 +35,7 @@ const Header = () => {
             )
           })}
         </motion.h1>
-        <p className="text-[22px] text-[#403e3e] font-medium pt-10 md:w-[30rem] tracking-tight">
+        <p className="text-[22px] text-[#403e3e] font-medium pt-10 md:w-[30rem] tracking-tight ">
           We're a creative design agency based in Dubai that crafts beautiful
           and original websites for brands who{" "}
           <span className="text-[blue]">refuse to blend in.</span>

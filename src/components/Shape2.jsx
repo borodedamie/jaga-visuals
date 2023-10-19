@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Shape2 = () => {
   return (
-    <div className="flex flex-col py-[10rem] mt-[30rem] md:mt-0 mx-auto md:mx-0 px-5 md:px-[10rem]">
+    <div className="flex flex-col py-[2rem] md:py-[10rem] mt-[30rem] md:mt-0 mx-auto md:mx-0 px-10 md:px-10 lg:px-[10rem]">
       <motion.p
         animate={{ opacity: 1, scale: 1 }}
         transition={{
@@ -13,7 +13,7 @@ const Shape2 = () => {
         }}
         initial={{ opacity: 0, scale: 0.5 }}
         whileHover={{ scale: 1 }}
-        className="text-[#403e3e] font-bold text-[3rem] text-left leading-tight overflow-hidden md:w-[50rem] py-10"
+        className="text-[#403e3e] font-bold text-[40px] md:text-[40px] lg:text-[50px] text-left leading-tight overflow-hidden w-fit py-10"
       >
         Our creative digital agency designs and develops bespoke websites with
         <span className="text-[blue]"> three things in mind;</span>
