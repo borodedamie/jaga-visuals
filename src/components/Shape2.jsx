@@ -13,11 +13,7 @@ const Shape2 = () => {
         }}
         initial={{ opacity: 0, scale: 0.5 }}
         whileHover={{ scale: 1 }}
-<<<<<<< HEAD
         className="text-[#403e3e] font-bold text-[2.5rem] text-left leading-tight overflow-hidden md:w-[40rem] py-10"
-=======
-        className="text-[#403e3e] font-bold text-[40px] md:text-[40px] lg:text-[50px] text-left leading-tight overflow-hidden w-fit py-10"
->>>>>>> e74fc4a60006aab287f0ada6a5945d95a7b97785
       >
         Our creative digital agency designs and develops bespoke websites with
         <span className="text-[blue]"> three things in mind;</span>
