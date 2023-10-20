@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { sentence, letter, fadeIn } from "./variants";
+import { sentence, letter } from "./variants";
 import work1 from "../assets/work.png";
 
 const Work1 = () => {
@@ -8,13 +8,14 @@ const Work1 = () => {
   const line2 = "bringing brands to life digitally";
 
   return (
-      <div className="px-[15%] pb-10 pt-10 gap-[1rem] flex flex-col md:flex-row items-center">
+      <div className="pb-10 pt-10 gap-[1rem] flex flex-col md:flex-row items-center">
         <motion.div
           exit={{ x: "-100vh", opacity: 0 }}
-          className="w-fit h-fit md:w-[20rem] lg:w-[700px] flex flex-col">
+          style={{ flex: 1, marginLeft: '15%' }}
+          className="flex flex-col">
           <img src={work1} alt='work1'  style={{ maxWidth: 'none', width: '35vw' }} />
         </motion.div>
-        <div className="px-10 text-center md:text-left pt-10 justify-center items-center flex flex-col md:w-[26.5rem] ">
+        <div className="px-10 text-center md:text-left pt-10 flex flex-col" style={{ flex: 1, marginRight: '10%' }}>
           <motion.h2
             variants={sentence}
             initial="hidden"
@@ -38,7 +39,7 @@ const Work1 = () => {
               );
             })}
           </motion.h2>
-          <p className="text-[18px] font-bold pt-10 text-[#201f1f]">
+          <p className="text-[18px] font-medium pt-10 text-[#201f1f] tracking-tight">
             JAGA VISUALS is a progressive and insightful design agency,
             technically and creatively skilled to translate your brand into its
             best digital self. Our design and development approach creates

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { sentence, letter, fadeIn } from "./variants";
+import { sentence, letter } from "./variants";
 import idea1 from "../assets/idea.png";
 
 const Header = () => {
@@ -35,7 +35,7 @@ const Header = () => {
             )
           })}
         </motion.h1>
-        <p className="text-[22px] text-[#403e3e] font-medium pt-[5%] md:w-[70%] tracking-tight ">
+        <p className="text-[22px] text-[#403e3e] font-medium pt-[5%] md:w-[80%] tracking-tight ">
           We're a creative design agency based in Dubai that crafts beautiful
           and original websites for brands who{" "}
           <span className="text-[blue]">refuse to blend in.</span>
