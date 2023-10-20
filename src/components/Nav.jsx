@@ -101,7 +101,7 @@ const Nav = () => {
         >
           <li
             onClick={handleToggle}
-            className={`mt-[5rem] md:mt-0 md:pb-0 font-bold hover:text-[#0dfff6]
+            className={`mt-[5rem] md:mt-0 md:pb-0 font-bold hover:text-[blue]
             ${
               navbar
                 ? "hover:text-[white]  list-item transform transition duration-300 ease-in-out hover:translate-x-2 delay-100 pt-[3rem] md:pt-[5rem] opacity-1  translate-y-0 leading-12 text-[50px] md:text-[70px] text-[white]"
@@ -153,7 +153,7 @@ const Nav = () => {
           </li>
 
           <li
-            className={` md:pb-0 font-bold hover:text-[#0dfff6]
+            className={` md:pb-0 font-bold hover:text-[blue]
             ${
               navbar
                 ? " hover:text-[white] list-item transform transition duration-300 ease-in-out hover:translate-x-2 opacity-1  translate-y-0 delay-250 text-[50px] md:text-[70px] leading-12"

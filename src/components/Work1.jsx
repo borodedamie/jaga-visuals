@@ -12,9 +12,9 @@ const Work1 = () => {
         <motion.div
           exit={{ x: "-100vh", opacity: 0 }}
           className="w-fit h-fit md:w-[20rem] lg:w-[700px] flex flex-col">
-          <img src={work1} alt='work1' />
+          <img src={work1} alt='work1'  style={{ maxWidth: 'none', width: '35vw' }} />
         </motion.div>
-        <div className="px-10 text-center md:text-left w-full pt-10 justify-center items-center flex flex-col md:w-[26.5rem] ">
+        <div className="px-10 text-center md:text-left pt-10 justify-center items-center flex flex-col md:w-[26.5rem] ">
           <motion.h2
             variants={sentence}
             initial="hidden"

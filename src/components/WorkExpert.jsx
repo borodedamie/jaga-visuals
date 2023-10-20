@@ -159,6 +159,7 @@ const WorkExpert = () => {
            className="mt-[4rem] md:mt-0"
             onMouseEnter={() => setForetHover(true)}
             onMouseLeave={() => setForetHover(false)}
+            style={{ flex: 1, paddingRight: '10%' }}
            >
             <div className="relative">
               <motion.div
@@ -173,7 +174,7 @@ const WorkExpert = () => {
                   <LazyLoadImage
                     alt="Foret"
                     src={foret1}
-                    className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:h-[60rem] md:w-[45rem]"
+                    className="flex inset-0 object-contain md:object-cover flex-col md:h-[60rem] md:w-[45rem]"
 
                     srcSet={foret11}
                     style={{ width: '70vw', height: '90vh' }}
