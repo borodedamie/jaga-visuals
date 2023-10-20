@@ -5,7 +5,7 @@ import Button from "./Button";
 import { motion } from "framer-motion";
 import services2 from "../assets/services.png";
 import { MdNavigateNext } from "react-icons/md";
-
+import { NavLink } from "react-dom"
 import { sentence, letter, fadeIn } from "./variants";
 
 const Service1 = () => {
