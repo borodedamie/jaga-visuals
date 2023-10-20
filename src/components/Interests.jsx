@@ -3,7 +3,7 @@ import hero from "../assets/bg.webp";
 import { NavLink } from "react-router-dom";
 const Interests = () => {
   return (
-    <div style={{ backgroundImage: `url(${hero})` }} className="flex mt-20 px-5 flex-col md:flex-row py-20 md:h-[40rem] justify-center items-center gap-[7rem]">
+    <div style={{ backgroundImage: `url(${hero})` }} className="flex mt-20 px-5 flex-col md:flex-row py-20 md:h-[40rem] justify-center items-center gap-[10%]">
       <div className="" style={{ flex: 1, marginLeft: '10%' }}>
         <h2 className="text-white text-[32px] font-bold mb-5">
           If you’ve got some cool stuff you’d like to share we’d love to see it
@@ -16,7 +16,7 @@ const Interests = () => {
           </button>
         </NavLink>
       </div>
-      <ul className="list-disc leading-[2.5rem] text-white text-[30px] font-bold " style={{ flex: 1 }}>
+      <ul className="list-disc leading-[3rem] text-white text-[30px] font-bold " style={{ flex: 1 }}>
         <p>We are interested</p>
         <li>UI & UX Designer</li>
         <li>2D & 3D Animator</li>
