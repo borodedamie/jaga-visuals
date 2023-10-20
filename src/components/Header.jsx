@@ -35,7 +35,7 @@ const Header = () => {
             )
           })}
         </motion.h1>
-        <p className="text-[22px] text-[#403e3e] font-medium pt-[5%] md:w-[85%] tracking-tight ">
+        <p className="text-[22px] text-[#403e3e] font-medium pt-[5%] md:w-[70%] tracking-tight ">
           We're a creative design agency based in Dubai that crafts beautiful
           and original websites for brands who{" "}
           <span className="text-[blue]">refuse to blend in.</span>
