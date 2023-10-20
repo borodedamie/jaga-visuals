@@ -5,7 +5,7 @@ import Button from "./Button";
 import { motion } from "framer-motion";
 import services2 from "../assets/services.png";
 import { MdNavigateNext } from "react-icons/md";
-import { NavLink } from "react-dom"
+import { NavLink } from "react-router-dom";
 import { sentence, letter, fadeIn } from "./variants";
 
 const Service1 = () => {
@@ -15,7 +15,7 @@ const Service1 = () => {
     <>
       <div className="px-[10rem] py-[10rem] gap-[1rem] flex flex-col md:flex-row items-center justify-center">
         <div className="md:w-[35rem] md:h-[20rem]" style={{ flex: 1 }}>
-          <img src={services2} alt='services' style={{ maxWidth: 'none', width: '30vw' }} />
+          <img src={services2} alt='services' style={{ maxWidth: 'none', width: '35vw' }} />
         </div>
         <div className="flex flex-col items-center md:items-start text-left justify-center md:w-[30rem]" style={{ flex: 1 }}>
           <p className="text-[20px] font-medium text-[grey]">
@@ -41,7 +41,7 @@ const Service1 = () => {
           </p>
           <div className="text-[16px] text-[grey] font-semibold flex flex-row gap-20 mx-5 md:mx-0 text-left pt-10">
             <div>
-              <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '20px', color: 'blue' }}/>Creative Design</p>
+              <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '20px', color: 'blue' }} />Creative Design</p>
               <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '20px', color: 'blue' }} />Motion Graphics</p>
               <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '20px', color: 'blue' }} />Web Development</p>
             </div>
@@ -53,7 +53,7 @@ const Service1 = () => {
           </div>
         </div>
       </div>
-      <div className="my-[10rem]" style={{ padding: "0 5%" }}>
+      <div className="my-[10rem]" style={{ margin: "0 5%" }}>
         {data.map((data1, s) => {
           return (
             <motion.div
@@ -77,12 +77,12 @@ const Service1 = () => {
         })}
       </div>
       <div className="flex flex-row items-center justify-center fixed bottom-2 right-0 md:bottom-6 md:right-5">
-                <NavLink to="/contact">
-                  <button className=" text-center text-[15px] mt-5 items-center flex rounded-full font-medium h-[4rem] text-[white] hover:text-[blue] py-3 px-5 md:py-7 md:px-10 border-[blue] bg-[blue]  hover:bg-[white] border-[0]">
-                    START YOUR PROJECT
-                  </button>
-                </NavLink>
-              </div>
+        <NavLink to="/contact">
+          <button className=" text-center text-[15px] mt-5 items-center flex rounded-full font-medium h-[4rem] text-[white] hover:text-[blue] py-3 px-5 md:py-7 md:px-10 border-[blue] bg-[blue] hover:bg-[white] border-[0]">
+            START YOUR PROJECT
+          </button>
+        </NavLink>
+      </div>
     </>
   );
 };
