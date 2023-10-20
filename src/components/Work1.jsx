@@ -8,12 +8,7 @@ const Work1 = () => {
   const line2 = "bringing brands to life digitally";
 
   return (
-<<<<<<< HEAD
       <div className="px-[15%] pb-10 pt-10 gap-[1rem] flex flex-col md:flex-row items-center">
-=======
-    <div className="py-20">
-      <div className="gap-[10px] md:gap-[150px] flex flex-col md:flex-row items-center justify-center ">
->>>>>>> e74fc4a60006aab287f0ada6a5945d95a7b97785
         <motion.div
           exit={{ x: "-100vh", opacity: 0 }}
           className="w-fit h-fit md:w-[20rem] lg:w-[700px] flex flex-col">
@@ -24,12 +19,8 @@ const Work1 = () => {
             variants={sentence}
             initial="hidden"
             animate="visible"
-<<<<<<< HEAD
             style={{ fontSize: '2rem' }}
             className="text-[#3b3b70] font-bold md:text-[35px] leading-tight"
-=======
-            className="text-[#3b3b70] font-bold text-[30px] md:text-[35px] leading-10"
->>>>>>> e74fc4a60006aab287f0ada6a5945d95a7b97785
           >
             {line1.split("").map((char, index) => {
               return (
@@ -56,7 +47,6 @@ const Work1 = () => {
           </p>
         </div>
       </div>
-    </div>
   );
 };
 
