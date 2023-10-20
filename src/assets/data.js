@@ -267,7 +267,7 @@ export const carousel = [
   {
     one: webdev,
     name: "Onaopemipo Oluborode",
-    title:'Software Developer'
+    title:'Developer'
 
   },
   {

@@ -21,7 +21,7 @@ const Team = () => {
 
   return (
     <div>
-      <div className="bg-[#1c1b1b] mt-[10%] py-[9rem] ">
+      <div className="bg-[#1c1b1b] mt-[10%] pt-[9rem] ">
         <div className="flex flex-col md:flex-row items-center justify-center gap-[3.5rem]">
           <div className="text-[white] font-[900] text-[150px] md:text-[225px]" style={{ flex: 1, marginLeft: '15%' }}>
             <div className="flex pl-3 gap-[7rem] text-[#0dfff6]">
@@ -54,7 +54,7 @@ const Team = () => {
                           src={carousel1.one}
                         />
                       </div>
-                      <div className="bg-[#34eaf7] pl-4 py-[2rem] h-[8rem] border-0 rounded-t-none rounded-b-3xl">
+                      <div className="bg-[#34eaf7] pl-4 py-[2rem] h-[7rem] border-0 rounded-t-none rounded-b-3xl">
                         <h2 className="text-[16px] text-[black] tracking-tight">
                           {carousel1.name}
                         </h2>
@@ -70,6 +70,10 @@ const Team = () => {
                 );
               })}
             </div>
+          </div>
+          <div className="glide__arrows text-[white]" data-glide-el="controls">
+            <button className="glide__arrow glide__arrow--left" data-glide-dir="<">Prev</button>
+            <button className="glide__arrow glide__arrow--right" data-glide-dir=">">Next</button>
           </div>
         </div>
 
