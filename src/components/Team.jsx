@@ -13,9 +13,9 @@ import "swiper/css/effect-fade";
 const Team = () => {
   return (
     <div>
-      <div className="bg-[#1c1b1b] mt-20 py-[9rem] ">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-0 md:gap-96">
-          <div className="text-[white] flex flex-col font-[900] text-[150px] md:text-[250px]">
+      <div className="bg-[#1c1b1b] mt-[10%] py-[9rem] ">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-[3.5rem]">
+          <div className="text-[white] font-[900] text-[150px] md:text-[225px]" style={{ flex: 1, marginLeft: '15%' }}>
             <div className="flex pl-3 gap-[7rem] text-[#0dfff6]">
               <span>T</span>
               <span>E</span>
@@ -25,8 +25,8 @@ const Team = () => {
               <span>M</span>
             </div>
           </div>
-          <div className=" flex flex-col w-fit md:w-[25vw] font-medium text-[22px] text-center md:text-left px-5">
-            <h2 className="text-white ">
+          <div className=" font-medium text-[20px] text-center md:text-left" style={{ flex: 1, marginRight: '10%' }}>
+            <h2 className="text-white md:w-[70%] tracking-tight">
               You will find our team working across Creative Web Designs, Web
               Development, Branding and Digital Marketing.
             </h2>

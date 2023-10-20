@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+
 const Artists = () => {
   return (
     <div className="my-[5%] md:px-[15%] py-20">
@@ -20,7 +21,7 @@ const Artists = () => {
         </p>
       </div>
       <div className="flex flex-row items-start justify-start mt-[1rem]">
-        <button className="text-[12px] rounded-full text-center hover:text-[white] hover:bg-[blue]  mt-5 items-center flex font-medium h-[2rem] text-[blue] px-10 py-5 border-[blue] border-[2px]">
+        <button className="text-[12px] rounded-full text-center hover:text-[white] hover:bg-[blue]  mt-5 items-center flex font-medium h-[2rem] text-[blue] px-10 py-5 border-[blue] border-[2px] tracking-wide">
           <NavLink to="/services"> VIEW OUR SERVICES</NavLink>
         </button>
       </div>
