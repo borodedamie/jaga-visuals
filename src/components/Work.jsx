@@ -104,14 +104,14 @@ const Work = () => {
                       src={dubai}
                       style={{ width: '50vw', height: '50vh' }}
                     />{" "}
+                    </motion.div>
                   </NavLink>
-
                   <div
                     className={`inset-0 absolute ${
                       dofHover ? "hover:bg-[#0dfff6] hover:bg-opacity-50" : ""
                     }`}
                   ></div>
-                </motion.div>
+                
               </div>
               <div className="text-[white] mt-[1rem] mb-[4rem] md:mb-0">
                 {" "}
