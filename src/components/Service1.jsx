@@ -76,6 +76,13 @@ const Service1 = () => {
           );
         })}
       </div>
+      <div className="flex flex-row items-center justify-center fixed bottom-2 right-0 md:bottom-6 md:right-5">
+                <NavLink to="/contact">
+                  <button className=" text-center text-[15px] mt-5 items-center flex rounded-full font-medium h-[4rem] text-[white] hover:text-[blue] py-3 px-5 md:py-7 md:px-10 border-[blue] bg-[blue]  hover:bg-[white] border-[0]">
+                    START YOUR PROJECT
+                  </button>
+                </NavLink>
+              </div>
     </>
   );
 };

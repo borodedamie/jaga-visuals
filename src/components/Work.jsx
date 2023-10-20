@@ -24,7 +24,7 @@ const Work = () => {
               <span>W</span>
               <span>O</span>
             </div>
-            <div className="flex gap-[10rem]">
+            <div className="flex gap-[5rem] md:gap-[10rem]">
               <span>R</span>
               <span>K</span>
             </div>
@@ -37,14 +37,13 @@ const Work = () => {
         </div>
         <div ref={scrollRef}>
           {" "}
-          <div className="flex flex-col gap-[5%] md:flex-row md:items-center p-10">
+          <div className="flex flex-col  gap-[5%] justify-center px-10 md:flex-row md:items-center">
             <div
               onMouseEnter={() => setAutoHover(true)}
               onMouseLeave={() => setAutoHover(false)}
               style={{ flex: 1, marginLeft: '10%' }}>
               <div>
-                <div
-                  className="relative">
+                <div className="relative">
                   <NavLink to="/logisticsbrief">
                     <motion.div
                       variants={fadeIn("top", 0.5)}
@@ -53,11 +52,17 @@ const Work = () => {
                       whileInView={"show"}
                     >
                       <LazyLoadImage
-                        className="flex inset-0 object-cover flex-col md:h-[36rem] md:w-[32rem]"
+                        className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:h-[60rem] md:w-[45rem]"
                         src={logic}
                         style={{ width: '70vw', height: '80vh' }}
                       />
-                      <div className={`inset-0 absolute ${autoHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`}></div>
+                      <div
+                        className={`inset-0 absolute ${
+                          autoHover
+                            ? "hover:bg-[#0dfff6] hover:bg-opacity-50"
+                            : ""
+                        }`}
+                      ></div>
                     </motion.div>
                   </NavLink>
                 </div>
@@ -65,7 +70,11 @@ const Work = () => {
                   <h2 className="text-[#0dfff6] tracking-widest text-[14px] leading-10">
                     ART DIRECTION | BRANDING
                   </h2>
-                  <h1 className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${autoHover ? 'text-[#0dfff6]' : ''}`}>
+                  <h1
+                    className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${
+                      autoHover ? "text-[#0dfff6]" : ""
+                    }`}
+                  >
                     <NavLink to="/logisticsbrief">
                       Autoflex Logistics Inc
                     </NavLink>
@@ -91,20 +100,29 @@ const Work = () => {
                   >
                     <LazyLoadImage
                       alt="Dubai"
-                      className="flex inset-0 object-cover  flex-col h-[30rem] md:h-[28rem] w-full md:w-[32rem]"
+                      className="flex inset-0 object-contain md:object-cover flex-col h-fit md:h-[40rem] w-fit md:w-[45rem]"
                       src={dubai}
                       style={{ width: '50vw', height: '50vh' }}
                     />{" "}
-                    <div className={`inset-0 absolute ${dofHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`}></div>
-                  </motion.div>
-                </NavLink>
+                  </NavLink>
+
+                  <div
+                    className={`inset-0 absolute ${
+                      dofHover ? "hover:bg-[#0dfff6] hover:bg-opacity-50" : ""
+                    }`}
+                  ></div>
+                </motion.div>
               </div>
               <div className="text-[white] mt-[1rem] mb-[4rem] md:mb-0">
                 {" "}
                 <h2 className="text-[#0dfff6] tracking-widest text-[14px] leading-10">
                   ART DIRECTION | MOTION GRAPHICS{" "}
                 </h2>
-                <h1 className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${dofHover ? 'text-[#0dfff6]' : ''}`}>
+                <h1
+                  className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${
+                    dofHover ? "text-[#0dfff6]" : ""
+                  }`}
+                >
                   <NavLink to="/dofbrief">DOF Dubai </NavLink>
                 </h1>
                 <p className="text-[18px] mt-[0.5rem]">
@@ -116,36 +134,47 @@ const Work = () => {
         </div>
         <div ref={scrollRef}>
           {" "}
-          <div className="flex flex-col md:flex-row gap-[5%] md:items-center">
-            <div 
+          <div className="flex flex-col justify-center gap-[5%] px-10 md:flex-row md:items-center">
+            <div
               onMouseEnter={() => setJumiaHover(true)}
               onMouseLeave={() => setJumiaHover(false)}
               style={{ flex: 1, marginLeft: '10%' }}>
               <div>
                 <div className=" relative">
-                  <NavLink to="/jumiabrief">
-                    <motion.div
-                      variants={fadeOut("bottom", 0.5)}
-                      viewport={{ amount: 0.7, once: true }}
-                      initial="hidden"
-                      whileInView={"show"}
-                    >
+                  <motion.div
+                    variants={fadeOut("bottom", 0.5)}
+                    viewport={{ amount: 0.7, once: true }}
+                    initial="hidden"
+                    whileInView={"show"}
+                  >
+                    <NavLink to="/jumiabrief">
                       <LazyLoadImage
                         alt="Jumia"
-                        className="flex inset-0 object-cover flex-col md:h-[28rem] md:w-[32rem]"
+                        className="flex inset-0 object-contain md:object-cover flex-col h-fit md:h-[40rem] w-fit md:w-[45rem]"
                         src={jumia}
                         style={{ width: '50vw', height: '50vh' }}
                       />
-                      <div className={`inset-0 absolute ${jumiaHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`} ></div>
-                    </motion.div>
-                  </NavLink>
+                    </NavLink>
+
+                    <div
+                      className={`inset-0 absolute ${
+                        jumiaHover
+                          ? "hover:bg-[#0dfff6] hover:bg-opacity-50"
+                          : ""
+                      }`}
+                    ></div>
+                  </motion.div>
                 </div>
                 <div className="text-[white] mt-[1rem] mb-[4rem] md:mb-0">
                   {" "}
                   <h2 className="text-[#0dfff6] tracking-widest text-[14px] leading-10">
                     ART DIRECTION | MOTION GRAPHICS{" "}
                   </h2>
-                  <h1 className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${jumiaHover ? 'text-[#0dfff6]' : ''}`}>
+                  <h1
+                    className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${
+                      jumiaHover ? "text-[#0dfff6]" : ""
+                    }`}
+                  >
                     <NavLink to="/jumiabrief">Jumia Pay App</NavLink>
                   </h1>
                   <p className="text-[18px] mt-[0.5rem]">
@@ -159,31 +188,39 @@ const Work = () => {
               onMouseLeave={() => setForetHover(false)}
               style={{ flex: 1, marginRight: '10%' }}>
               <div className=" relative">
-                <NavLink to="/foretbrief">
-                  {" "}
-                  <motion.div
-                    variants={fadeOut("bottom", 0.5)}
-                    viewport={{ amount: 0.7, once: true }}
-                    initial="hidden"
-                    whileInView={"show"}
-                  >
+                {" "}
+                <motion.div
+                  variants={fadeOut("bottom", 0.5)}
+                  viewport={{ amount: 0.7, once: true }}
+                  initial="hidden"
+                  whileInView={"show"}
+                >
+                  <NavLink to="/foretbrief">
                     <LazyLoadImage
-                      initial="hidden"
-                      whileInView={"show"}
-                      className="flex inset-0 object-cover flex-col md:h-[36rem] w-full md:w-[32rem]"
+                      
+                      className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:h-[60rem] md:w-[45rem]"
                       src={foret1}
                       style={{ width: '70vw', height: '80vh' }}
                     />
-                    <div className={`inset-0 absolute ${foretHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`}></div>
-                  </motion.div>
-                </NavLink>
+                  </NavLink>
+
+                  <div
+                    className={`inset-0 absolute ${
+                      foretHover ? "hover:bg-[#0dfff6] hover:bg-opacity-50" : ""
+                    }`}
+                  ></div>
+                </motion.div>
               </div>
               <div className="text-[white] mt-[1rem] mb-[4rem] md:mb-0">
                 {" "}
                 <h2 className="text-[#0dfff6] tracking-widest text-[14px] leading-10">
                   ART DIRECTION | SOCIAL MEDIA{" "}
                 </h2>
-                <h1 className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${foretHover ? 'text-[#0dfff6]' : ''}`}>
+                <h1
+                  className={`text-[40px] hover:text-[#0dfff6] font-extrabold ${
+                    foretHover ? "text-[#0dfff6]" : ""
+                  }`}
+                >
                   <NavLink to="/foretbrief">Foret Dubai</NavLink>
                 </h1>
                 <p className="text-[18px] mt-[0.5rem]">

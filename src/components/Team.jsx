@@ -14,9 +14,9 @@ const Team = () => {
   return (
     <div>
       <div className="bg-[#1c1b1b] mt-20 py-[9rem] ">
-        <div className="flex flex-col md:flex-row gap-[5rem] md:mx-44 items-center justify-center">
-          <div className="text-[white] flex flex-col font-[900] text-[120px]">
-            <div className="flex gap-[5rem] text-[#0dfff6]">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-0 md:gap-96">
+          <div className="text-[white] flex flex-col font-[900] text-[150px] md:text-[250px]">
+            <div className="flex pl-3 gap-[7rem] text-[#0dfff6]">
               <span>T</span>
               <span>E</span>
             </div>
@@ -25,7 +25,7 @@ const Team = () => {
               <span>M</span>
             </div>
           </div>
-          <div className="w-[22rem] md:w-[70rem] flex flex-col font-medium text-[30px] text-left">
+          <div className=" flex flex-col w-fit md:w-[25vw] font-medium text-[22px] text-center md:text-left px-5">
             <h2 className="text-white ">
               You will find our team working across Creative Web Designs, Web
               Development, Branding and Digital Marketing.
@@ -33,19 +33,20 @@ const Team = () => {
           </div>
         </div>
 
-        <div className="pl-5 md:pl-[5rem] pt-[3rem]">
+        <div className="pl-10 md:pl-[5rem] pt-[3rem]">
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={50}
-            slidesPerView={1.5}
+            // slidesPerView={1.5}
             loop={true}
             breakpoints={{
               0: { slidesPerView: 1 },
               320: { slidesPerView: 1 },
               640: { slidesPerView: 2 },
-              768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
+              768: { slidesPerView: 3 },
+              1024: { slidesPerView: 5 },
             }}
+            
             navigation
             pagination={{ cickable: true }}
             scrollbar={{ draggable: true }}
