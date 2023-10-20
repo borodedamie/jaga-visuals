@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import damage from "../assets/damage.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import director from "../assets/director.jpg";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+
 import web from "../assets/web1.jpg";
 import { carousel } from "../assets/data";
-import "swiper/css/navigation";
-import "swiper/css";
-import "swiper/css/effect-fade";
+
+import Glide from '@glidejs/glide';
+import '../css/glide.core.css';
+import '../css/glide.theme.css';
+
 const Team = () => {
+  useEffect(() => {
+    new Glide('.glide', {
+      perView: 4.5,
+      gap: 20
+    }).mount();
+  }, []);
+
   return (
     <div>
       <div className="bg-[#1c1b1b] mt-[10%] py-[9rem] ">
@@ -33,53 +41,38 @@ const Team = () => {
           </div>
         </div>
 
-        <div className="pl-10 md:pl-[5rem] pt-[3rem]">
-          <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
-            spaceBetween={50}
-            // slidesPerView={1.5}
-            loop={true}
-            breakpoints={{
-              0: { slidesPerView: 1 },
-              320: { slidesPerView: 1 },
-              640: { slidesPerView: 2 },
-              768: { slidesPerView: 3 },
-              1024: { slidesPerView: 5 },
-            }}
-            
-            navigation
-            pagination={{ cickable: true }}
-            scrollbar={{ draggable: true }}
-            speed={800}
-            effect={"fade"}
-          >
-            {carousel.map((carousel1, index) => {
-              return (
-                <SwiperSlide key={index}>
-                  <div className="flex flex-col h-[24rem] w-[20rem] ">
-                    <div className="">
-                      <img
-                        className="w-[20rem] border-0 rounded-b-none rounded-t-2xl "
-                        src={carousel1.one}
-                      />
-                    </div>
-                    <div className="bg-[#34eaf7] pl-4 py-2 h-[4rem] border-0 rounded-t-none rounded-b-3xl">
-                      <h2 className="text-[16px] text-[black]">
-                        {carousel1.name}
-                      </h2>
-                      <p className="text-[16px] w-full md:w-[24.5rem] text-[black]">
-                        <div className="flex flex-row items-center gap-3">
-                          <hr className="w-[1rem] bg-black border-black border-[1.5px]" />
-                          {carousel1.title}
-                        </div>
-                      </p>
+        <div className="glide" style={{ marginTop: '5%', marginBottom: '10%' }}>
+          <div className="glide__track" data-glide-el="track">
+            <div className="glide__slides" style={{ marginLeft: '10%' }}>
+              {carousel.map((carousel1, index) => {
+                return (
+                  <div className="glide__slide" key={index}>
+                    <div className="flex flex-col w-[18rem] ">
+                      <div className="">
+                        <img
+                          className="w-[20rem] border-0 rounded-b-none rounded-t-2xl"
+                          src={carousel1.one}
+                        />
+                      </div>
+                      <div className="bg-[#34eaf7] pl-4 py-[2rem] h-[8rem] border-0 rounded-t-none rounded-b-3xl">
+                        <h2 className="text-[16px] text-[black] tracking-tight">
+                          {carousel1.name}
+                        </h2>
+                        <p className="text-[16px] text-[black] tracking-tight">
+                          <div className="flex flex-row items-center gap-3">
+                            <hr className="w-[1rem] bg-black border-black border-[1.5px]" />
+                            {carousel1.title}
+                          </div>
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
+                );
+              })}
+            </div>
+          </div>
         </div>
+
         <LazyLoadImage
           className="w-full mt-[5rem]"
           src={damage}
