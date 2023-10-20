@@ -19,7 +19,7 @@ const Work = () => {
     <div>
       <div className="bg-[#1c1b1b] mt-20 py-[9rem]">
         <div className="flex flex-col md:flex-row gap-[10rem] md:mx-60">
-          <div className="text-[white] flex flex-col font-bold text-[200px]" style={{ flex: 1 }}>
+          <div className="text-[white] flex flex-col font-bold text-[170px]" style={{ flex: 1 }}>
             <div className="flex gap-[5rem]">
               <span>W</span>
               <span>O</span>
@@ -29,7 +29,7 @@ const Work = () => {
               <span>K</span>
             </div>
           </div>
-          <div className="font-bold text-[70px] text-center md:text-left mt-[20rem]" style={{ flex: 1 }}>
+          <div className="font-bold text-[60px] text-center md:text-left mt-[10rem]" style={{ flex: 1 }}>
             <h2 className="text-[#0dfff6]">
               Shit-hot work for hot-shot brands
             </h2>
@@ -41,7 +41,7 @@ const Work = () => {
             <div
               onMouseEnter={() => setAutoHover(true)}
               onMouseLeave={() => setAutoHover(false)}
-              style={{ flex: 1, paddingLeft: '10rem' }}>
+              style={{ flex: 1, marginLeft: '10%' }}>
               <div>
                 <div
                   className="relative">
@@ -55,7 +55,7 @@ const Work = () => {
                       <LazyLoadImage
                         className="flex inset-0 object-cover flex-col md:h-[36rem] md:w-[32rem]"
                         src={logic}
-                        style={{ width: '80vw', height: '90vh' }}
+                        style={{ width: '70vw', height: '80vh' }}
                       />
                       <div className={`inset-0 absolute ${autoHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`}></div>
                     </motion.div>
@@ -79,7 +79,7 @@ const Work = () => {
             <div
               onMouseEnter={() => setDofHover(true)}
               onMouseLeave={() => setDofHover(false)}
-              style={{ flex: 1, paddingRight: '10rem' }}>
+              style={{ flex: 1, marginRight: '10%' }}>
               <div
                 className="relative">
                 <NavLink to="/dofbrief">
@@ -93,7 +93,7 @@ const Work = () => {
                       alt="Dubai"
                       className="flex inset-0 object-cover  flex-col h-[30rem] md:h-[28rem] w-full md:w-[32rem]"
                       src={dubai}
-                      style={{ width: '50vw', height: '60vh' }}
+                      style={{ width: '50vw', height: '50vh' }}
                     />{" "}
                     <div className={`inset-0 absolute ${dofHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`}></div>
                   </motion.div>
@@ -120,7 +120,7 @@ const Work = () => {
             <div 
               onMouseEnter={() => setJumiaHover(true)}
               onMouseLeave={() => setJumiaHover(false)}
-              style={{ flex: 1, paddingLeft: '10rem' }}>
+              style={{ flex: 1, marginLeft: '10%' }}>
               <div>
                 <div className=" relative">
                   <NavLink to="/jumiabrief">
@@ -134,7 +134,7 @@ const Work = () => {
                         alt="Jumia"
                         className="flex inset-0 object-cover flex-col md:h-[28rem] md:w-[32rem]"
                         src={jumia}
-                        style={{ width: '50vw', height: '60vh' }}
+                        style={{ width: '50vw', height: '50vh' }}
                       />
                       <div className={`inset-0 absolute ${jumiaHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`} ></div>
                     </motion.div>
@@ -157,7 +157,7 @@ const Work = () => {
             <div
               onMouseEnter={() => setForetHover(true)}
               onMouseLeave={() => setForetHover(false)}
-              style={{ flex: 1, paddingRight: '10rem' }}>
+              style={{ flex: 1, marginRight: '10%' }}>
               <div className=" relative">
                 <NavLink to="/foretbrief">
                   {" "}
@@ -172,7 +172,7 @@ const Work = () => {
                       whileInView={"show"}
                       className="flex inset-0 object-cover flex-col md:h-[36rem] w-full md:w-[32rem]"
                       src={foret1}
-                      style={{ width: '80vw', height: '90vh' }}
+                      style={{ width: '70vw', height: '80vh' }}
                     />
                     <div className={`inset-0 absolute ${foretHover ? 'hover:bg-[#0dfff6] hover:bg-opacity-50' : ''}`}></div>
                   </motion.div>

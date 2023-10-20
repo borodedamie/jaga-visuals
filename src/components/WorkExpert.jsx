@@ -37,7 +37,7 @@ const WorkExpert = () => {
           <div
             onMouseEnter={() => setAutoHover(true)}
             onMouseLeave={() => setAutoHover(false)}
-            style={{ flex: 1, paddingLeft: '10rem' }}>
+            style={{ flex: 1, paddingLeft: '10%' }}>
             <div className="relative">
               <motion.div
                 whileInView={"show"}
@@ -53,7 +53,7 @@ const WorkExpert = () => {
                     //               sizes="(max-width: 600px) 480px,
                     //  800px"
                     srcSet={logic1}
-                    style={{ width: '80vw', height: '90vh', border: '1px solid #f2f7f2' }}
+                    style={{ width: '70vw', height: '90vh', border: '1px solid #f2f7f2' }}
                   />
                   <div className={`inset-0 absolute ${autoHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
                 </NavLink>
@@ -75,7 +75,7 @@ const WorkExpert = () => {
           <div
             onMouseEnter={() => setDofHover(true)}
             onMouseLeave={() => setDofHover(false)}
-            style={{ flex: 1, paddingRight: '10rem' }}>
+            style={{ flex: 1, paddingRight: '10%' }}>
             <div className="relative">
               <motion.div
                 className="opacity-100 hover:opacity-75 "
@@ -93,7 +93,7 @@ const WorkExpert = () => {
                     //             sizes="(max-width: 600px) 480px,
                     //  800px"
                     srcSet={dubai1}
-                    style={{ width: '50vw', height: '60vh' }}
+                    style={{ width: '50vw', height: '50vh' }}
                   />
                   <div className={`inset-0 absolute ${dofHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
                 </NavLink>
@@ -120,7 +120,7 @@ const WorkExpert = () => {
           <div
             onMouseEnter={() => setJumiaHover(true)}
             onMouseLeave={() => setJumiaHover(false)}
-            style={{ flex: 1, paddingLeft: '10rem' }}>
+            style={{ flex: 1, paddingLeft: '10%' }}>
             <div className="relative">
               <motion.div
                 className="opacity-100 hover:opacity-75 "
@@ -138,7 +138,7 @@ const WorkExpert = () => {
                     //  800px"
                     srcSet={jumia1}
                     src={jumia}
-                    style={{ width: '50vw', height: '60vh' }}
+                    style={{ width: '50vw', height: '50vh' }}
                   />
                   <div className={`inset-0 absolute ${jumiaHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
                 </NavLink>
@@ -178,7 +178,7 @@ const WorkExpert = () => {
                     //             sizes="(max-width: 600px) 480px,
                     //  800px"
                     srcSet={foret11}
-                    style={{ width: '80vw', height: '90vh' }}
+                    style={{ width: '70vw', height: '90vh' }}
                   />
                   <div className={`inset-0 absolute ${foretHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
                 </NavLink>
@@ -205,7 +205,7 @@ const WorkExpert = () => {
           <div
             onMouseEnter={() => setWavyHover(true)}
             onMouseLeave={() => setWavyHover(false)}
-            style={{ flex: 1, paddingLeft: '10rem' }}>
+            style={{ flex: 1, paddingLeft: '10%' }}>
             <div className="relative">
               <motion.div
                 className="opacity-100 hover:opacity-75 "
@@ -223,7 +223,7 @@ const WorkExpert = () => {
                     //               sizes="(max-width: 600px) 480px,
                     //  800px"
                     srcSet={speak1}
-                    style={{ width: '80vw', height: '90vh' }}
+                    style={{ width: '70vw', height: '90vh' }}
                   />
                   <div className={`inset-0 absolute ${wavyHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
                 </NavLink>
@@ -245,7 +245,7 @@ const WorkExpert = () => {
           <div
             onMouseEnter={() => setNagaadHover(true)}
             onMouseLeave={() => setNagaadHover(false)}
-            style={{ flex: 1, paddingRight: '10rem' }}>
+            style={{ flex: 1, paddingRight: '10%' }}>
             <div className="relative">
               <motion.div
                 className="opacity-100 hover:opacity-75 "
@@ -263,7 +263,7 @@ const WorkExpert = () => {
                     //             sizes="(max-width: 600px) 480px,
                     //  800px"
                     srcSet={nagaad11}
-                    style={{ width: '50vw', height: '60vh' }}
+                    style={{ width: '50vw', height: '50vh' }}
                   />
                   <div className={`inset-0 absolute ${nagaadHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
                 </NavLink>
@@ -290,7 +290,7 @@ const WorkExpert = () => {
           <div
             onMouseEnter={() => setPremiumHover(true)}
             onMouseLeave={() => setPremiumHover(false)}
-            style={{ flex: 1, paddingLeft: '10rem' }}>
+            style={{ flex: 1, paddingLeft: '10%' }}>
             <div className="relative">
               <motion.div
                 className="opacity-100 hover:opacity-75 "
@@ -307,7 +307,7 @@ const WorkExpert = () => {
                     className="flex inset-0 object-cover flex-col md:h-[26rem]"
                     //             sizes="(max-width: 600px) 480px,
                     //  800px"
-                    style={{ width: '50vw', height: '60vh' }}
+                    style={{ width: '50vw', height: '50vh' }}
                   />
                   <div className={`inset-0 absolute ${premiumHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
                 </NavLink>
@@ -329,7 +329,7 @@ const WorkExpert = () => {
           <div
             onMouseEnter={() => setHoHover(true)}
             onMouseLeave={() => setHoHover(false)}
-            style={{ flex: 1, paddingRight: '10rem' }}>
+            style={{ flex: 1, paddingRight: '10%' }}>
             <div className="relative">
               <motion.div
                 className="opacity-100 hover:opacity-75 "
@@ -347,7 +347,7 @@ const WorkExpert = () => {
         //             sizes="(max-width: 600px) 480px,
         //  800px"
                     srcSet={HO}
-                    style={{ width: '80vw', height: '90vh' }}
+                    style={{ width: '70vw', height: '90vh' }}
                   />
                   <div className={`inset-0 absolute ${HoHover ? 'hover:bg-[blue] hover:bg-opacity-25' : ''}`}></div>
 

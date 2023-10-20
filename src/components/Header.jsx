@@ -9,7 +9,7 @@ const Header = () => {
   const line2 = "out of style"
 
   return (
-    <div className="pt-10 pb-20 gap-[5rem] flex flex-col md:flex-row items-center justify-center">
+    <div className="pt-10 pb-20 gap-[1rem] flex flex-col md:flex-row items-center justify-center">
       <div className="md:w-[35rem] md:h-[30rem] lg:w-[35rem] lg:h-[40rem]">
         <img src={idea1} alt='idea1' style={{ maxWidth: 'none', width: '35vw' }}/>
       </div>

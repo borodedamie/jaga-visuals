@@ -8,7 +8,7 @@ const Work1 = () => {
   const line2 = "bringing brands to life digitally.";
 
   return (
-      <div className="px-[10rem] pb-10 pt-10 gap-[1rem] flex flex-col md:flex-row items-center justify-center ">
+      <div className="px-[15%] pb-10 pt-10 gap-[1rem] flex flex-col md:flex-row items-center">
         <motion.div
           exit={{ x: "-100vh", opacity: 0 }}
           style={{ flex: 1 }}
@@ -20,7 +20,7 @@ const Work1 = () => {
             variants={sentence}
             initial="hidden"
             animate="visible"
-            style={{ fontSize: '3rem' }}
+            style={{ fontSize: '2rem' }}
             className="text-[#3b3b70] font-bold md:text-[35px] leading-tight"
           >
             {line1.split("").map((char, index) => {

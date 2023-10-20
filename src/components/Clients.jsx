@@ -60,7 +60,7 @@ const Clients = () => {
           <LazyLoadImage src={premium} />
         </div>
       </div>
-      <button className="mt-[2rem] text-center mb-[13rem] items-center flex mx-auto rounded-full font-medium h-[3rem] text-[#0dfff6] hover:bg-[#0dfff6] hover:text-[white] p-5 border-[#0dfff6] border-[2px]">
+      <button className="mt-[2rem] text-center mb-[13rem] items-center flex mx-auto rounded-full font-medium h-[3rem] text-[blue] hover:bg-[blue] hover:text-[white] p-5 border-[blue] border-[2px]">
         VIEW ALL BLOG POSTS
       </button>
     </div>
