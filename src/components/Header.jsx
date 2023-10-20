@@ -13,7 +13,7 @@ const Header = () => {
       <div className="" style={{ flex: 1, marginLeft: '15%' }}>
         <img src={idea1} alt='idea1' style={{ maxWidth: 'none', width: '35vw' }}/>
       </div>
-      <div className="text-center md:text-left " style={{ flex: 1, marginRight: '10%' }}>
+      <div className="text-center md:text-left" style={{ flex: 1, marginRight: '10%' }}>
         <motion.h1
           variants={sentence}
           initial="hidden"

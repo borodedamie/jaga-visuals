@@ -10,12 +10,12 @@ const Agency1 = () => {
 
   return (
     <div>
-      <div className="gap-[4rem] flex flex-col md:flex-row items-center justify-center" style={{ paddingLeft: "15%", paddingRight: "10%", paddingTop: "5%", paddingBottom: "10%" }}>
-        <div className="md:w-[20rem] flex flex-col" style={{ flex: 1 }}>
+      <div className="pt-10 pb-[10%] gap-[2rem] flex flex-col md:flex-row items-center justify-center" >
+        <div className="" style={{ flex: 1, marginLeft: '15%' }}>
           <img src={agency1} alt="agency1" style={{ maxWidth: 'none', width: '35vw' }} />
         </div>
-        <div className="text-left flex flex-col md:w-[26.5rem] " style={{ flex: 1 }}>
-          <motion.h2
+        <div className="text-center md:text-left" style={{ flex: 1, marginRight: '10%' }}>
+          <motion.h1
             variants={sentence}
             initial="hidden"
             animate="visible"
@@ -36,8 +36,8 @@ const Agency1 = () => {
                 </motion.span>
               );
             })}
-          </motion.h2>
-          <p className="text-[20px] font-medium pt-10 text-[#201f1f]">
+          </motion.h1>
+          <p className="text-[20px] font-medium pt-[5%] text-[#201f1f] md:w-[75%] tracking-tight">
             Because it should never just be work, it should be a{" "}
             <span className="text-[blue]">work of art</span>
           </p>
