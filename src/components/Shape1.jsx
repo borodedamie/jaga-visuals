@@ -11,32 +11,30 @@ const Shape1 = () => {
 
   return (
     <div
-      style={{ backgroundImage: `url(${hero})`, paddingTop: "5rem" }}
-      className="px-[2rem] md:px-[10rem] h-[37rem] lg:h-screen py-[7rem] md:py-0 mt-10 flex-none md:flex flex-col md:flex-row lg:flex-row md:max-w-[100%] md:gap-20 justify-center text-left items-center bg-cover bg-center"
+    
+      style={{ backgroundImage: `url(${hero})`}}
+      className="px-5 md:px-[10rem] h-[37rem] lg:h-screen md:py-[5rem] py-[4rem] mt-10 flex-none md:flex flex-col md:flex-row lg:flex-row md:max-w-[100%] md:gap-20 justify-center text-left items-center bg-cover bg-center "
     >
       <div style={{ flex: 1 }}>
         <video
           ref={videoRef}
-          className="w-fit h-[28rem] lg:w-[80vh] object-cover lg:h-[80vh] mb-20"
+          className="w-fit h-[28rem] lg:w-[70vh] object-cover lg:h-[70vh] mb-20"
           loop
           autoPlay
           muted
-          style={{ 
-            objectFit: 'cover', 
-            width: '70vw', 
-            height: '70vh' }}
+         
         >
           <source src={homevideo} type="video/mp4" />
         </video>
       </div>
       <div
-        className="w-full md:w-[35rem] lg:w-[30rem] md:mx-0 md:pt-0 flex flex-col justify-center"
+        className="w-full md:w-[35rem] lg:w-[30rem] md:mx-0 pt-[3rem] md:pt-0 flex flex-col justify-center"
         style={{ flex: 1 }}
       >
-        <h1 className="text-[black] md:text-[white] font-bold text-[50px] leading-tight">
+        <h1 className="text-[black] md:text-[white] font-bold text-[36px] md:text-[50px] leading-tight">
           Making brands a <br /> damn site better
         </h1>
-        <p className="text-[18px] text-[grey] md:text-[white] font-medium pt-10">
+        <p className="text-[17px] text-[grey] md:text-[white] font-normal pt-10">
           Let's face it, first impressions matter. Your website's an opportunity
           to wow your audience, so why waste it with bad design? Because brands
           win new fans when they're brave enough to go beyond their creative

@@ -10,16 +10,16 @@ const Agency1 = () => {
 
   return (
     <div>
-      <div className="pt-10 pb-[10%] gap-[2rem] flex flex-col md:flex-row items-center justify-center" >
-        <div className="" style={{ flex: 1, marginLeft: '15%' }}>
-          <img src={agency1} alt="agency1" style={{ maxWidth: 'none', width: '35vw' }} />
+      <div className="pt-10 pb-[10%] gap-[2rem] flex flex-col lg:flex-row items-center justify-center" >
+        <div className="ml-0 lg:ml-[15%]" >
+          <img src={agency1} alt="agency1" className="w-fit lg:w-[35vw]" />
         </div>
-        <div className="text-center md:text-left" style={{ flex: 1, marginRight: '10%' }}>
+        <div className="text-center lg:text-left mr-0  lg:mr-[10%] " >
           <motion.h1
             variants={sentence}
             initial="hidden"
             animate="visible"
-            className="text-[#282860] font-bold text-[40px] leading-tight"
+            className="text-[#282860] px-[2rem] md:px-0 font-extrabold text-[50px] md:text-[50px] leading-tight"
           >
             {line1.split("").map((char, index) => {
               return (
@@ -37,9 +37,9 @@ const Agency1 = () => {
               );
             })}
           </motion.h1>
-          <p className="text-[20px] font-medium pt-[5%] text-[#201f1f] md:w-[75%] tracking-tight">
+          <p className="text-[20px] font-medium pt-[5%] text-[#201f1f] w-full px-5 md:px-0 lg:w-[75%] tracking-tight">
             Because it should never just be work, it should be a{" "}
-            <span className="text-[blue]">work of art</span>
+            <span className="text-[blue]">work of art.</span>
           </p>
         </div>
       </div>
