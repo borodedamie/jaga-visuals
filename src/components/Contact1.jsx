@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BiLogoFacebook } from "react-icons/bi";
 import { AiFillYoutube } from "react-icons/ai";
+
 const Contact1 = () => {
+  const [isEmailHovered, setIsEmailHovered] = useState(false);
+  const [isCopied, setIsCopied] = useState(false);
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText('hello@jagavisuals.com');
+    setIsCopied(true);
+    setTimeout(() => setIsCopied(false), 2000)
+  };
+
   return (
-    <div className="flex lg:pt-0 flex-col lg:flex-row justify-center items-center my-[2rem] lg:items-start gap-[2rem] lg:gap-[10rem]">
+    <div className="flex flex-col lg:flex-row justify-center items-center gap-[2rem] lg:gap-[10rem] h-[70vh]">
       <div className="flex flex-col">
         <div>
-          <h1 className="text-[blue] text-[35px] font-bold ">
+          <h1 className="text-[blue] text-[40px] font-bold mb-[1rem]">
             Let's create magic
           </h1>{" "}
           <p className="text-[25px] font-bold">
@@ -15,19 +25,37 @@ const Contact1 = () => {
           </p>
         </div>
         <div>
-          <h2 className="text-[25px] font-bold pt-10">Contact us</h2>
-          <p className="text-[blue] text-[25px] font-bold">
+          <h2 className="text-[25px] font-bold pt-[1rem]">Contact us</h2>
+          <p
+            onClick={copyToClipboard}
+            className={`text-[blue] text-[30px] font-bold cursor-pointer ${isEmailHovered ? 'ishovered' : ''}`}
+            onMouseEnter={() => setIsEmailHovered(true)}
+            onMouseLeave={() => {
+              setIsEmailHovered(false);
+              setIsCopied(false);
+            }}>
             hello@jagavisuals.com
           </p>
-          <div className="gap-3 pb-3 lg:pb-16 pt-5 flex flex-row">
-            <div className="bg-[#5b5959] rounded-full border flex h-[2rem] w-[2rem] items-center text-center justify-center">
+          <div style={{ height: '10px' }}>
+            {isEmailHovered && isCopied && <p className="text-[blue] font-bold text-[18px]">Copied!</p>}
+            {isEmailHovered && !isCopied && (
+              <p
+                onClick={copyToClipboard}
+                className="text-[blue] font-bold text-[18px] cursor-pointer"
+              >
+                Copy to clipboard...
+              </p>
+            )}
+          </div>
+          <div className="mt-[1rem] gap-3 lg:pb-16 pt-5 flex flex-row">
+            <div className="bg-[#5b5959] rounded-full border flex h-[3rem] w-[3rem] items-center text-center justify-center">
               <BiLogoFacebook className="text-white text-[25px]" />
             </div>
-            <div className="bg-[#5b5959] rounded-full border flex h-[2rem] w-[2rem] items-center text-center justify-center">
+            <div className="bg-[#5b5959] rounded-full border flex h-[3rem] w-[3rem] items-center text-center justify-center">
               <AiOutlineInstagram className="text-white text-[25px]" />
             </div>
 
-            <div className="bg-[#5b5959] rounded-full border flex h-[2rem] w-[2rem] items-center text-center justify-center">
+            <div className="bg-[#5b5959] rounded-full border flex h-[3rem] w-[3rem] items-center text-center justify-center">
               <AiFillYoutube className="text-white text-[25px]" />
             </div>
           </div>
@@ -66,7 +94,7 @@ const Contact1 = () => {
           <div className="flex flex-row justify-end">
             <button
               type="submit"
-              className="border-[2px] hover:text-[white] hover:bg-[blue]  items-center cursor-pointer font-bold w-[10rem] h-[2.5rem] flex text-[14px] text-center justify-center rounded-[2rem] border-[blue]"
+              className="border-[2px] hover:text-[white] hover:bg-[blue] items-center cursor-pointer font-bold tracking-widest w-[12rem] h-[3.5rem] flex text-[14px] text-center justify-center rounded-[2rem] border-[blue]"
             >
               SUBMIT
             </button>
