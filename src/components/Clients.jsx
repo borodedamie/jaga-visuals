@@ -46,7 +46,7 @@ const Clients = () => {
         <LazyLoadImage className="w-[7rem] h-[7rem]" src={nagaad} />
         <LazyLoadImage className="w-[7rem] h-[7rem]" src={fortune} />
       </motion.div>
-      <div className="flex flex-col pb-5 md:flex-row justify-center items-end gap-20">
+      <div className="flex flex-col pb-5 md:flex-row justify-center items-end gap-[1.5rem]">
         <div className="flex w-full md:w-[25rem] flex-col">
           <h2 className="font-bold text-[38px] pb-[2rem] text-[#403e3e]">Latest Articles</h2>
           <div className="border bg-[black] h-fit">
