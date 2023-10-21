@@ -48,14 +48,14 @@ const Contact1 = () => {
             )}
           </div>
           <div className="mt-[1rem] gap-3 lg:pb-16 pt-5 flex flex-row">
-            <div className="bg-[#5b5959] rounded-full border flex h-[3rem] w-[3rem] items-center text-center justify-center">
-              <BiLogoFacebook className="text-white text-[25px]" />
+            <div className="cursor-pointer bg-[#5b5959] rounded-full border flex h-[3rem] w-[3rem] items-center text-center justify-center">
+              <BiLogoFacebook className="text-white text-[25px]"/>
             </div>
-            <div className="bg-[#5b5959] rounded-full border flex h-[3rem] w-[3rem] items-center text-center justify-center">
+            <div className="cursor-pointer bg-[#5b5959] rounded-full border flex h-[3rem] w-[3rem] items-center text-center justify-center">
               <AiOutlineInstagram className="text-white text-[25px]" />
             </div>
 
-            <div className="bg-[#5b5959] rounded-full border flex h-[3rem] w-[3rem] items-center text-center justify-center">
+            <div className="cursor-pointer bg-[#5b5959] rounded-full border flex h-[3rem] w-[3rem] items-center text-center justify-center">
               <AiFillYoutube className="text-white text-[25px]" />
             </div>
           </div>
