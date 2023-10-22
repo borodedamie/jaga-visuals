@@ -11,17 +11,16 @@ const Work1 = () => {
       <div className="pb-10 pt-10 gap-[1rem] flex flex-col md:flex-row items-center">
         <motion.div
           exit={{ x: "-100vh", opacity: 0 }}
-          style={{ flex: 1, marginLeft: '15%' }}
-          className="flex flex-col">
-          <img src={work1} alt='work1'  style={{ maxWidth: 'none', width: '35vw' }} />
+          className="flex flex-col ml-0 md:ml-[15%]">
+          <img src={work1} alt='work1' className="w-fit  lg:w-[35vw]"/>
         </motion.div>
-        <div className="px-10 text-center md:text-left pt-10 flex flex-col" style={{ flex: 1, marginRight: '10%' }}>
+        <div className="hidden md:flex px-10 text-center md:text-left pt-10 flex-col" style={{ flex: 1, marginRight: '10%' }}>
           <motion.h2
             variants={sentence}
             initial="hidden"
             animate="visible"
             style={{ fontSize: '2rem' }}
-            className="text-[#3b3b70] font-bold md:text-[35px] leading-tight"
+            className=" text-[#3b3b70] font-bold md:text-[35px] leading-tight"
           >
             {line1.split("").map((char, index) => {
               return (

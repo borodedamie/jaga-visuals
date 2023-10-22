@@ -3,27 +3,27 @@ import hero from "../assets/bg.webp";
 import { NavLink } from "react-router-dom";
 const Interests = () => {
   return (
-    <div style={{ backgroundImage: `url(${hero})` }} className="flex mt-20 px-5 flex-col md:flex-row py-20 md:h-[40rem] justify-center items-center gap-[10%]">
-      <div className="" style={{ flex: 1, marginLeft: '10%' }}>
+    <div style={{ backgroundImage: `url(${hero})` }} className="flex bg-cover h-[100vh] mt-20 flex-col px-5 md:px-0 md:flex-row py-20  justify-center items-start md:items-center gap-[10%]">
+      <div className="flex-1 ml-0  md:ml-[10%]" >
         <h2 className="text-white text-[32px] font-bold mb-5">
           If you’ve got some cool stuff you’d like to share we’d love to see it
           even if there isn’t a fit right now
         </h2>
-        <NavLink to="/contact" className="w-[15rem] hover:bg-white text-[white] hover:text-black text-center items-center flex justify-center rounded-full h-[3rem] border-[white] border-[2px] ">
+        <NavLink to="/contact" className="w-[10rem] my-5 md:my-0 md:w-[15rem] hover:bg-white text-[white] hover:text-black text-center items-center flex justify-center rounded-full h-[3rem] border-[white] border-[2px] ">
           {" "}
           <button className=" font-medium   ">
             GET IN TOUCH
           </button>
         </NavLink>
       </div>
-      <ul className="list-disc leading-[3rem] text-white text-[30px] font-bold " style={{ flex: 1 }}>
-        <p>We are interested</p>
-        <li>UI & UX Designer</li>
-        <li>2D & 3D Animator</li>
-        <li>Photography</li>
-        <li>Illustrator</li>
-        <li>Creative Strategy</li>
-        <li>Copywriting</li>
+      <ul className="list-disc leading-[3rem] px-5 md:px-0 text-[30px] font-bold " style={{ flex: 1 }}>
+        <p className="text-white ">We are interested</p>
+        <li className="text-[#2b2525] ">UI & UX Designer</li>
+        <li className="text-[#2b2525] ">2D & 3D Animator</li>
+        <li className="text-[#2b2525] ">Photography</li>
+        <li className="text-[#2b2525] ">Illustrator</li>
+        <li className="text-[#2b2525] ">Creative Strategy</li>
+        <li className="text-[#2b2525] ">Copywriting</li>
       </ul>
     </div>
   );

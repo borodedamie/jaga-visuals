@@ -29,6 +29,7 @@
     white-space: normal;
     user-select: none;
     -webkit-touch-callout: none;
+    margin-bottom: 4rem;
     -webkit-tap-highlight-color: transparent; }
     .glide__slide a {
       user-select: none;
@@ -43,3 +44,5 @@
     user-select: none; }
   .glide--rtl {
     direction: rtl; }
+
+    

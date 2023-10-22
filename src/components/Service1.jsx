@@ -13,12 +13,12 @@ const Service1 = () => {
 
   return (
     <>
-      <div className="px-[10rem] py-[10rem] gap-[1rem] flex flex-col md:flex-row items-center justify-center">
-        <div className="md:w-[35rem] md:h-[20rem]" style={{ flex: 1 }}>
-          <img src={services2} alt='services' style={{ maxWidth: 'none', width: '35vw' }} />
+      <div className="px-5 md:px-[10rem] py-[10rem] gap-[1rem] flex flex-col md:flex-col lg:flex-row items-center justify-center">
+        <div className="" style={{ flex: 1 }}>
+          <img src={services2} alt='services' className="w-fit  lg:w-[35vw]"/>
         </div>
-        <div className="flex flex-col items-center md:items-start text-left justify-center md:w-[30rem]" style={{ flex: 1 }}>
-          <p className="text-[20px] font-medium text-[grey]">
+        <div className="flex flex-1 flex-col items-start justify-center text-center lg:text-left w-full md:w-[30rem]" >
+          <p className="text-[18px] lg:text-[23px] font-medium text-[grey]">
             Crafting{" "}
             <motion.span
               variants={sentence}
@@ -39,21 +39,21 @@ const Service1 = () => {
             do, take a look at our full range of digital creative agency
             services.
           </p>
-          <div className="text-[16px] text-[grey] font-semibold flex flex-row gap-20 mx-5 md:mx-0 text-left pt-10">
+          <div className="text-[20px] text-[grey] font-semibold hidden lg:flex flex-col md:flex-row gap-0 md:gap-20 text-left pt-10">
             <div>
-              <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '20px', color: 'blue' }} />Creative Design</p>
-              <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '20px', color: 'blue' }} />Motion Graphics</p>
-              <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '20px', color: 'blue' }} />Web Development</p>
+              <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '24px', color: 'blue' }} />Creative Design</p>
+              <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '24px', color: 'blue' }} />Motion Graphics</p>
+              <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '24px', color: 'blue' }} />Web Development</p>
             </div>
             <div>
-              <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '20px', color: 'blue' }} />Branding</p>
-              <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '20px', color: 'blue' }} />Digital Marketing</p>
-              <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '20px', color: 'blue' }} />Social Media Management</p>
+              <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '24px', color: 'blue' }} />Branding</p>
+              <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '24px', color: 'blue' }} />Digital Marketing</p>
+              <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '24px', color: 'blue' }} />Social Media Management</p>
             </div>
           </div>
         </div>
       </div>
-      <div className="my-[10rem]" style={{ margin: "0 5%" }}>
+      <div className="my-0 mx-0 md:mx-[5%] " >
         {data.map((data1, s) => {
           return (
             <motion.div
@@ -61,8 +61,8 @@ const Service1 = () => {
               viewport={{ once: true, amount: 0.7 }}
               initial="hidden"
               whileInView={"show"}
-              className="flex flex-col md:flex-row mx-5 md:mx-20 justify-center gap-[3rem] items-center my-[10%]">
-              <div key={s} style={{ flex: 1 }}>
+              className="flex flex-col max-w-fit md:max-w-[100%] w-fit md:w-[100%] max-h-[100%] h-[100%] md:flex-row px-5 md:px-20 justify-center gap-[3rem] items-center my-[10%]">
+              <div key={s} style={{ flex: 1 }} className="max-w-fit md:max-w-[50%] w-[100%] max-h-[50%] h-[100%]">
                 <h2 className="text-[40px] font-bold text-[#26316c]">
                   {data1.title}
                 </h2>
@@ -71,7 +71,7 @@ const Service1 = () => {
                 </p>
                 <Button />
               </div>
-              <LazyLoadImage src={data1.design} className="rounded-2xl" style={{ flex: 1, width: '35vw', height: '60vh' }} />
+              <LazyLoadImage src={data1.design} className="rounded-2xl max-h-[50%] h-[100%] max-w-fit md:max-w-[50%] w-[100%] md:h-[60vh]" />
             </motion.div>
           );
         })}
