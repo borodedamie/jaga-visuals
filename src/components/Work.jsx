@@ -19,13 +19,13 @@ const Work = () => {
     <div>
       <div className="bg-[#1c1b1b] mt-20 py-[9rem]">
         <div className="flex flex-col md:flex-row mb-[4rem] md:mb-0 gap-0 md:gap-[10rem] mx-0 md:mx-60">
-          <div className="text-[white] flex flex-col font-bold justify-center items-center md:items-start text-[120px] md:text-[170px]" style={{ flex: 1 }}>
+          <div className="text-[white] flex flex-col font-bold justify-center items-center md:items-start text-[120px] md:text-[150px]" style={{ flex: 1 }}>
             <div className="flex gap-[5rem]">
               <span>W</span>
               <span>O</span>
             </div>
-            <div className="flex gap-[7rem] md:gap-[10rem]">
-              <span>R</span>
+            <div className="flex gap-[7rem] md:gap-[8rem]">
+              <span style={{ paddingLeft: '1rem' }}>R</span>
               <span>K</span>
             </div>
           </div>
@@ -53,7 +53,7 @@ const Work = () => {
                       whileInView={"show"}
                     >
                       <LazyLoadImage
-                        className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[80vh]"
+                        className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[90vh]"
                         src={logic}
                       />
                       <div
@@ -71,7 +71,7 @@ const Work = () => {
                     ART DIRECTION | BRANDING
                   </h2>
                   <h1
-                    className={`text-[40px] hover:text-[#0dfff6] font-[700] ${
+                    className={`text-[35px] hover:text-[#0dfff6] font-[700] ${
                       autoHover ? "text-[#0dfff6]" : ""
                     }`}
                   >
@@ -120,7 +120,7 @@ const Work = () => {
                   ART DIRECTION | MOTION GRAPHICS{" "}
                 </h2>
                 <h1
-                  className={`text-[40px] hover:text-[#0dfff6] font-[700]  ${
+                  className={`text-[35px] hover:text-[#0dfff6] font-[700]  ${
                     dofHover ? "text-[#0dfff6]" : ""
                   }`}
                 >
@@ -173,7 +173,7 @@ const Work = () => {
                     ART DIRECTION | MOTION GRAPHICS{" "}
                   </h2>
                   <h1
-                    className={`text-[40px] hover:text-[#0dfff6] font-[700] ${
+                    className={`text-[35px] hover:text-[#0dfff6] font-[700] ${
                       jumiaHover ? "text-[#0dfff6]" : ""
                     }`}
                   >
@@ -201,7 +201,7 @@ const Work = () => {
                   <NavLink to="/foretbrief">
                     <LazyLoadImage
                       
-                      className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[80vh]"
+                      className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[90vh]"
                       src={foret1}
                     />
                   </NavLink>
@@ -219,7 +219,7 @@ const Work = () => {
                   ART DIRECTION | SOCIAL MEDIA{" "}
                 </h2>
                 <h1
-                  className={`text-[40px] hover:text-[#0dfff6] font-[700] ${
+                  className={`text-[35px] hover:text-[#0dfff6] font-[700] ${
                     foretHover ? "text-[#0dfff6]" : ""
                   }`}
                 >

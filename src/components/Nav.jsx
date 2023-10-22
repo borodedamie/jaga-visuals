@@ -95,7 +95,7 @@ const Nav = () => {
         <ul
           className={`flex flex-row   ${
             navbar
-              ? "flex-col absolute top-[5rem] left-10 md:top-[0] md:left-[14rem] pl-0 md:pl-[9rem] h-full md:h-[100vh] pt-0 md:pt-[9rem] translate-y-0 transition-safelist transform"
+              ? "flex-col absolute top-[5rem] left-10 md:top-[0] md:left-[10rem] pl-0 md:pl-[9rem] h-full md:h-[100vh] pt-0 md:pt-[4rem] translate-y-0 transition-safelist transform"
               : "items-center gap-10 "
           }`}
         >
@@ -104,8 +104,8 @@ const Nav = () => {
             className={`mt-[5rem] md:mt-0 md:pb-0 font-bold hover:text-[blue]
             ${
               navbar
-                ? "hover:text-[white]  list-item transform transition duration-300 ease-in-out hover:translate-x-2 delay-100 pt-[3rem] md:pt-[5rem] opacity-1  translate-y-0 leading-12 text-[50px] md:text-[70px] text-[white]"
-                : "hidden md:flex text-[30px] "
+                ? "hover:text-[white]  list-item transform transition duration-300 ease-in-out hover:translate-x-2 delay-100 pt-[3rem] md:pt-[5rem] opacity-1  translate-y-0 leading- text-[50px] md:text-[70px] text-[white]"
+                : "hidden md:flex text-[20px] "
             }`}
           >
             <NavLink to="/works">Work</NavLink>
@@ -115,18 +115,18 @@ const Nav = () => {
             className={`text-[40px] md:pb-0 font-bold group relative flex w-0 md:w-full flex-row
         ${
           navbar
-            ? " list-item transform transition duration-300 ease-in-out hover:translate-x-2 text-[50px] md:text-[70px] gap-5 hover:text-[white] opacity-1  translate-y-0  delay-150 leading-12"
+            ? " list-item transform transition duration-300 ease-in-out hover:translate-x-2 text-[40px] md:text-[70px] gap-5 hover:text-[white] opacity-1  translate-y-0  delay-150 leading-12"
             : "hidden text-[20px]"
         }`}
           >
             <NavLink to="/services">Services</NavLink>
-            <div className="hidden md:block w-full md:invisible relative md:absolute md:text-[30px] md:bottom-[-15rem] left-0 md:left-[40rem] md:group-hover:visible ">
-              <NavLink to="/services">Creative Design</NavLink>
-              <NavLink to="/services">Branding</NavLink>
-              <NavLink to="/services">Motion Graphics</NavLink>
-              <NavLink to="/services">Web Development</NavLink>
-              <NavLink to="/services">Social Media Management</NavLink>
-              <NavLink to="/services">Digital Marketing</NavLink>
+            <div className="hidden md:block w-full md:invisible relative md:absolute md:text-[30px] md:bottom-[-15rem] left-0 md:left-[25rem] md:group-hover:visible">
+              <p><NavLink to="/services">Creative Design</NavLink></p>
+              <p><NavLink to="/services">Branding</NavLink></p>
+              <p><NavLink to="/services">Motion Graphics</NavLink></p>
+              <p><NavLink to="/services">Web Development</NavLink></p>
+              <p><NavLink to="/services">Social Media Management</NavLink></p>
+              <p><NavLink to="/services">Digital Marketing</NavLink></p>
             </div>
           </li>
           <li
@@ -157,7 +157,7 @@ const Nav = () => {
             ${
               navbar
                 ? " hover:text-[white] list-item transform transition duration-300 ease-in-out hover:translate-x-2 opacity-1  translate-y-0 delay-250 text-[50px] md:text-[70px] leading-12"
-                : "hidden md:flex text-[30px]"
+                : "hidden md:flex text-[20px]"
             }`}
           >
             <NavLink to="/contact">Contact</NavLink>
@@ -190,14 +190,14 @@ const Nav = () => {
                 : "hidden text-[20px]"
             }`}
           >
-            <div className="flex flex-row items-center gap-5 justify-center">
-              <h2 className="text-[white] font-bold text-[25px]">
+            <div className="flex flex-row items-center gap-10 justify-center">
+              <h2 className="text-[white] my-0 mx-0 font-bold text-[25px]">
                 Don't be Shy
               </h2>
-              <hr className="border-3 h-[8rem] w-[2px] bg-[white] " />
+              <hr className="border-3 h-[8rem] w-[1px] bg-[white] " />
               <div className="flex flex-row items-center justify-center">
                 <NavLink to="/contact">
-                  <button className=" text-center  text-[15px] mt-5 items-center flex rounded-full font-medium h-[2rem] text-[white] hover:text-[blue] py-7 px-10 border-[black] bg-[black] opacity-[0.5] hover:opacity-100 hover:bg-[white] border-[0]">
+                  <button className=" text-center  text-[14px] mt-5 items-center flex rounded-full font-medium h-[3rem] text-[white] hover:text-[blue] py-7 px-10 border-[black] bg-[black] opacity-[0.5] hover:opacity-100 hover:bg-[white] border-[0]">
                     START YOUR PROJECT
                   </button>
                 </NavLink>

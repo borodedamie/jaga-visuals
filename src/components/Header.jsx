@@ -18,7 +18,7 @@ const Header = () => {
           variants={sentence}
           initial="hidden"
           animate="visible"
-          className="text-[blue] md:w-[90%] font-[700] text-[40px] md:text-[44px] leading-tight ">
+          className="text-[blue] md:w-[90%] font-[700] text-[35px] md:text-[38px] leading-tight ">
           {line1.split("").map((char, index) => {
             return (
               <motion.span key={char + "-" + index} variants={letter}>
@@ -35,7 +35,7 @@ const Header = () => {
             )
           })}
         </motion.h1>
-        <p className="text-[18px] md:text-[22px] px-5 md:px-0 text-[#403e3e] font-medium pt-[5%] md:w-[80%] tracking-tight ">
+        <p className="text-[18px] md:text-[20px] px-5 md:px-0 text-[#403e3e] font-medium pt-[5%] md:w-[80%] tracking-tight ">
           We're a creative design agency based in Dubai that crafts beautiful
           and original websites for brands who{" "}
           <span className="text-[blue]">refuse to blend in.</span>

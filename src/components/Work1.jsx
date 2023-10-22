@@ -14,7 +14,7 @@ const Work1 = () => {
           className="flex flex-col ml-0 md:ml-[15%]">
           <img src={work1} alt='work1' className="w-fit  lg:w-[35vw]"/>
         </motion.div>
-        <div className="hidden md:flex px-10 text-center md:text-left pt-10 flex-col" style={{ flex: 1, marginRight: '10%' }}>
+        <div className="hidden md:flex px-10 text-center md:text-left flex-col" style={{ flex: 1, marginRight: '10%' }}>
           <motion.h2
             variants={sentence}
             initial="hidden"
@@ -38,7 +38,7 @@ const Work1 = () => {
               );
             })}
           </motion.h2>
-          <p className="text-[18px] font-medium pt-10 text-[#201f1f] tracking-tight">
+          <p className="text-[16px] font-medium pt-10 text-[#201f1f] tracking-tight">
             JAGA VISUALS is a progressive and insightful design agency,
             technically and creatively skilled to translate your brand into its
             best digital self. Our design and development approach creates

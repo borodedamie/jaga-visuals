@@ -18,12 +18,12 @@ const Interests = () => {
       </div>
       <ul className="list-disc leading-[3rem] px-5 md:px-0 text-[30px] font-bold " style={{ flex: 1 }}>
         <p className="text-white ">We are interested</p>
-        <li className="text-[#2b2525] ">UI & UX Designer</li>
-        <li className="text-[#2b2525] ">2D & 3D Animator</li>
-        <li className="text-[#2b2525] ">Photography</li>
-        <li className="text-[#2b2525] ">Illustrator</li>
-        <li className="text-[#2b2525] ">Creative Strategy</li>
-        <li className="text-[#2b2525] ">Copywriting</li>
+        <li className="text-[white] ">UI & UX Designer</li>
+        <li className="text-[white] ">2D & 3D Animator</li>
+        <li className="text-[white] ">Photography</li>
+        <li className="text-[white] ">Illustrator</li>
+        <li className="text-[white] ">Creative Strategy</li>
+        <li className="text-[white] ">Copywriting</li>
       </ul>
     </div>
   );

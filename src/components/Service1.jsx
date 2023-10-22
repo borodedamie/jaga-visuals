@@ -39,7 +39,7 @@ const Service1 = () => {
             do, take a look at our full range of digital creative agency
             services.
           </p>
-          <div className="text-[20px] text-[grey] font-semibold hidden lg:flex flex-col md:flex-row gap-0 md:gap-20 text-left pt-10">
+          <div className="text-[18px] text-[grey] font-semibold hidden lg:flex flex-col md:flex-row gap-0 md:gap-20 text-left pt-10">
             <div>
               <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '24px', color: 'blue' }} />Creative Design</p>
               <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '24px', color: 'blue' }} />Motion Graphics</p>

@@ -20,7 +20,7 @@ const Career1 = () => {
             variants={sentence}
             initial="hidden"
             animate="visible"
-            className="text-[#3b3b70] px-[5rem] md:px-0 w-full md:w-[78%] font-[800] md:font-[700] text-[33px] md:text-[55px] leading-tight"
+            className="text-[#3b3b70] px-[5rem] md:px-0 w-full md:w-[78%] font-[800] md:font-[700] text-[33px] md:text-[40px] leading-tight"
           >
             {line1.split("").map((char, index) => {
               return (

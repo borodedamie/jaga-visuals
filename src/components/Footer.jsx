@@ -9,7 +9,7 @@ import { AiOutlineYoutube } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div className="py-10 px-10 md:px-[8rem] md:pb-0 md:pt-20 font-bold flex flex-col md:flex-row justify-between text-[white] h-fit md:h-[37rem] bg-[#1c1b1b]">
+    <div className="py-10 px-10 md:px-[5%] md:pb-0 md:pt-20 font-bold flex flex-col md:flex-row justify-between text-[white] h-fit md:h-[37rem] bg-[#1c1b1b]">
       <div className="flex flex-row gap-[10rem] justify-center">
         <div className="text-[18px] flex flex-col leading-[3rem]">
           <NavLink className="text-[white] hover:text-[#0dfff6]" to="/">
