@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Shape2 = () => {
   return (
-    <div className="flex flex-col py-0 md:py-[10rem] mt-[20rem]  md:mt-0 mx-auto md:mx-0 px-5 md:px-10 overflow-hidden lg:px-[10rem]">
+    <div className="flex flex-col py-0 md:py-[10rem] mt-[20rem]  md:mt-0 mx-auto md:mx-0 px-5 md:px-10 overflow-hidden lg:px-[10rem] white-background">
       <motion.p
         animate={{ opacity: 1, scale: 1 }}
         transition={{

@@ -9,7 +9,7 @@ const Header = () => {
   const line2 = "out of style"
 
   return (
-    <div className="pt-10 pb-20 gap-[1rem] overflow-hidden flex flex-col md:flex-row items-center ">
+    <div className="pt-10 pb-20 gap-[1rem] overflow-hidden flex flex-col md:flex-row items-center white-background">
       <div className="flex-1 max-w-none ml-0 md:ml-[15%]" >
         <img src={idea1} alt='idea1' className="w-fit md:w-[35vw]"/>
       </div>
@@ -18,7 +18,7 @@ const Header = () => {
           variants={sentence}
           initial="hidden"
           animate="visible"
-          className="text-[blue] md:w-[90%] font-[700] text-[35px] md:text-[38px] leading-tight ">
+          className="text-[blue] font-[700] text-[35px] md:text-[50px] leading-tight ">
           {line1.split("").map((char, index) => {
             return (
               <motion.span key={char + "-" + index} variants={letter}>

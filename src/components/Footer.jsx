@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import youtube from "../assets/youtube-01.png";
 
 import { BiLogoFacebook, BiLogoInstagram } from "react-icons/bi";
 import { LiaLinkedinIn } from "react-icons/lia";
@@ -61,19 +60,19 @@ const Footer = () => {
       <div className="text-[18px] order-first md:order-last flex flex-col text-center md:text-right leading-10">
         <h1 className="text-[18px] text-[#0dfff6] font-semibold">FOLLOW</h1>
         <div className="gap-3 pb-3 md:pb-16 pt-5 flex flex-row justify-center md:justify-end">
-          <div className="hover:border-[#0dfff6] p-2 md:p-0  rounded-full border flex h-[2.5rem] w-[2.5rem] items-center text-center justify-center">
+          <div className="hover:border-[#0dfff6] p-2 md:p-0  rounded-full border flex h-[2.5rem] w-[2.5rem] items-center text-center justify-center cursor-pointer">
             <BiLogoFacebook className="text-white hover:text-[#0dfff6] text-[25px]" />
           </div>
-          <div className="hover:border-[#0dfff6] p-2 md:p-0  rounded-full border flex h-[2.5rem] w-[2.5rem] items-center text-center justify-center">
+          <div className="hover:border-[#0dfff6] p-2 md:p-0  rounded-full border flex h-[2.5rem] w-[2.5rem] items-center text-center justify-center cursor-pointer">
             <BiLogoInstagram className="text-white hover:text-[#0dfff6] text-[25px]" />
           </div>
-          <div className="hover:border-[#0dfff6] p-2 md:p-0 rounded-full border flex h-[2.5rem] w-[2.5rem] items-center text-center justify-center">
+          <div className="hover:border-[#0dfff6] p-2 md:p-0 rounded-full border flex h-[2.5rem] w-[2.5rem] items-center text-center justify-center cursor-pointer">
             <LiaLinkedinIn className="text-white hover:text-[#0dfff6] text-[25px]" />
           </div>
           <div className="hover:border-[#0dfff6] p-2 md:p-0 rounded-full border flex  h-[2.5rem] w-[2.5rem] items-center text-center justify-center cursor-pointer">
             <BiLogoWhatsapp className="text-white hover:text-[#0dfff6] text-[25px]" />
           </div>
-          <div className="hover:border-[#0dfff6] p-2 md:p-0 rounded-full border flex  h-[2.5rem] w-[2.5rem] items-center text-center justify-center">
+          <div className="hover:border-[#0dfff6] p-2 md:p-0 rounded-full border flex  h-[2.5rem] w-[2.5rem] items-center text-center justify-center cursor-pointer">
             <AiOutlineYoutube className="text-white hover:text-[#0dfff6] text-[25px]" />
           </div>
         </div>

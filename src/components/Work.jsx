@@ -39,10 +39,10 @@ const Work = () => {
           {" "}
           <div className="flex flex-col gap-[5%] justify-center px-0 md:px-10 md:flex-row md:items-center">
             <div
-            className="ml-5 mr-5 md:mr-0 md md:ml-[10%] flex-1"
+              className="ml-5 mr-5 md:mr-0 md md:ml-[10%] flex-1"
               onMouseEnter={() => setAutoHover(true)}
               onMouseLeave={() => setAutoHover(false)}
-              >
+            >
               <div>
                 <div className="relative">
                   <NavLink to="/logisticsbrief">
@@ -57,11 +57,10 @@ const Work = () => {
                         src={logic}
                       />
                       <div
-                        className={`inset-0 absolute ${
-                          autoHover
+                        className={`inset-0 absolute ${autoHover
                             ? "hover:bg-[#0dfff6] hover:bg-opacity-50"
                             : ""
-                        }`}
+                          }`}
                       ></div>
                     </motion.div>
                   </NavLink>
@@ -71,9 +70,8 @@ const Work = () => {
                     ART DIRECTION | BRANDING
                   </h2>
                   <h1
-                    className={`text-[35px] hover:text-[#0dfff6] font-[700] ${
-                      autoHover ? "text-[#0dfff6]" : ""
-                    }`}
+                    className={`text-[35px] hover:text-[#0dfff6] font-[700] ${autoHover ? "text-[#0dfff6]" : ""
+                      }`}
                   >
                     <NavLink to="/logisticsbrief">
                       Autoflex Logistics Inc
@@ -86,13 +84,13 @@ const Work = () => {
               </div>
             </div>
             <div
-                        className="ml-5 mr-5 md:ml-0 md:mr-[10%] flex-1"
+              className="ml-5 mr-5 md:ml-0 md:mr-[10%] flex-1"
 
               onMouseEnter={() => setDofHover(true)}
               onMouseLeave={() => setDofHover(false)}
-              >
+            >
               <div
-                className="relative">
+                className="relative" style={{ cursor: 'pointer' }}>
                 <NavLink to="/dofbrief">
                   <motion.div
                     variants={fadeOut("bottom", 0.5)}
@@ -105,14 +103,13 @@ const Work = () => {
                       className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:w-[50vw] md:h-[50vh]"
                       src={dubai}
                     />{" "}
-                    </motion.div>
-                  </NavLink>
-                  <div
-                    className={`inset-0 absolute ${
-                      dofHover ? "hover:bg-[#0dfff6] hover:bg-opacity-50" : ""
+                  </motion.div>
+                </NavLink>
+                <div
+                  className={`inset-0 absolute ${dofHover ? "hover:bg-[#0dfff6] hover:bg-opacity-50" : ""
                     }`}
-                  ></div>
-                
+                ></div>
+
               </div>
               <div className="text-[white] mt-[1rem] mb-[4rem] md:mb-0">
                 {" "}
@@ -120,9 +117,8 @@ const Work = () => {
                   ART DIRECTION | MOTION GRAPHICS{" "}
                 </h2>
                 <h1
-                  className={`text-[35px] hover:text-[#0dfff6] font-[700]  ${
-                    dofHover ? "text-[#0dfff6]" : ""
-                  }`}
+                  className={`text-[35px] hover:text-[#0dfff6] font-[700]  ${dofHover ? "text-[#0dfff6]" : ""
+                    }`}
                 >
                   <NavLink to="/dofbrief">DOF Dubai </NavLink>
                 </h1>
@@ -137,13 +133,13 @@ const Work = () => {
           {" "}
           <div className="flex flex-col justify-center px-0 md:px-10 gap-[5%] md:flex-row md:items-center">
             <div
-                                    className="ml-5 mr-5 md:mr-0 md:ml-[10%] flex-1"
+              className="ml-5 mr-5 md:mr-0 md:ml-[10%] flex-1"
 
               onMouseEnter={() => setJumiaHover(true)}
               onMouseLeave={() => setJumiaHover(false)}
-              >
+            >
               <div>
-                <div className=" relative">
+                <div className=" relative" style={{ cursor: 'pointer' }}>
                   <motion.div
                     variants={fadeOut("bottom", 0.5)}
                     viewport={{ amount: 0.7, once: true }}
@@ -159,11 +155,10 @@ const Work = () => {
                     </NavLink>
 
                     <div
-                      className={`inset-0 absolute ${
-                        jumiaHover
+                      className={`inset-0 absolute ${jumiaHover
                           ? "hover:bg-[#0dfff6] hover:bg-opacity-50"
                           : ""
-                      }`}
+                        }`}
                     ></div>
                   </motion.div>
                 </div>
@@ -173,9 +168,8 @@ const Work = () => {
                     ART DIRECTION | MOTION GRAPHICS{" "}
                   </h2>
                   <h1
-                    className={`text-[35px] hover:text-[#0dfff6] font-[700] ${
-                      jumiaHover ? "text-[#0dfff6]" : ""
-                    }`}
+                    className={`text-[35px] hover:text-[#0dfff6] font-[700] ${jumiaHover ? "text-[#0dfff6]" : ""
+                      }`}
                   >
                     <NavLink to="/jumiabrief">Jumia Pay App</NavLink>
                   </h1>
@@ -189,8 +183,8 @@ const Work = () => {
               onMouseEnter={() => setForetHover(true)}
               onMouseLeave={() => setForetHover(false)}
               className="ml-5 mr-5 md:ml-0 md md:mr-[10%] flex-1"
-              >
-              <div className=" relative">
+            >
+              <div className=" relative" style={{ cursor: 'pointer' }}>
                 {" "}
                 <motion.div
                   variants={fadeOut("bottom", 0.5)}
@@ -200,16 +194,15 @@ const Work = () => {
                 >
                   <NavLink to="/foretbrief">
                     <LazyLoadImage
-                      
+
                       className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[90vh]"
                       src={foret1}
                     />
                   </NavLink>
 
                   <div
-                    className={`inset-0 absolute ${
-                      foretHover ? "hover:bg-[#0dfff6] hover:bg-opacity-50" : ""
-                    }`}
+                    className={`inset-0 absolute ${foretHover ? "hover:bg-[#0dfff6] hover:bg-opacity-50" : ""
+                      }`}
                   ></div>
                 </motion.div>
               </div>
@@ -219,9 +212,8 @@ const Work = () => {
                   ART DIRECTION | SOCIAL MEDIA{" "}
                 </h2>
                 <h1
-                  className={`text-[35px] hover:text-[#0dfff6] font-[700] ${
-                    foretHover ? "text-[#0dfff6]" : ""
-                  }`}
+                  className={`text-[35px] hover:text-[#0dfff6] font-[700] ${foretHover ? "text-[#0dfff6]" : ""
+                    }`}
                 >
                   <NavLink to="/foretbrief">Foret Dubai</NavLink>
                 </h1>

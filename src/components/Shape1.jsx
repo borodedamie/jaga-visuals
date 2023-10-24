@@ -2,8 +2,14 @@ import React, { useEffect, useRef } from "react";
 import hero from "../assets/bg.webp";
 import homevideo from "../assets/homevideo.mp4";
 import { NavLink } from "react-router-dom";
+import useWhiteBackground from '../hooks/useWhiteBackground';
+
 const Shape1 = () => {
+  const isWhiteBackground = useWhiteBackground();
+  console.log(isWhiteBackground);
+
   const videoRef = useRef(null);
+
   useEffect(() => {
     const video = videoRef.current;
     video.play();
@@ -11,8 +17,7 @@ const Shape1 = () => {
 
   return (
     <div
-    
-      style={{ backgroundImage: `url(${hero})`}}
+      style={{ backgroundImage: `url(${hero})` }}
       className="px-5 md:px-[10rem] h-[37rem] lg:h-screen md:py-[5rem] py-[4rem] mt-10 flex-none md:flex flex-col md:flex-row lg:flex-row md:max-w-[100%] md:gap-20 justify-center text-left items-center bg-cover bg-center "
     >
       <div style={{ flex: 1 }}>
@@ -22,7 +27,7 @@ const Shape1 = () => {
           loop
           autoPlay
           muted
-         
+
         >
           <source src={homevideo} type="video/mp4" />
         </video>
@@ -43,7 +48,7 @@ const Shape1 = () => {
       </div>
       <div className="flex flex-row z-10 items-center justify-center fixed bottom-2 right-0 md:bottom-6 md:right-5">
         <NavLink to="/contact">
-          <button className=" text-center text-[15px] mt-5 items-center flex rounded-full font-medium h-[4rem] text-[white] hover:text-[blue] py-3 px-5 md:py-7 md:px-10 border-[blue] bg-[blue]  hover:bg-[white] border-[0]">
+          <button className={`text-center text-[13px] mt-5 items-center flex rounded-full font-medium h-[3rem] text-[white] hover:text-[blue] py-3 px-5 md:py-7 md:px-10  ${isWhiteBackground ? 'hover:border-[blue] bg-[blue] hover:bg-[white]' : 'border-[white] bg-[blue] hover:bg-[white]'}`}>
             START YOUR PROJECT
           </button>
         </NavLink>
