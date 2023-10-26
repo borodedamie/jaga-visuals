@@ -25,6 +25,9 @@ const WorkExpert = () => {
   const [jumiaHover, setJumiaHover] = useState(false);
   const [premiumHover, setPremiumHover] = useState(false);
   const [HoHover, setHoHover] = useState(false);
+  const [foretHover, setForetHover] = useState(false);
+  const [wavyHover, setWavyHover] = useState(false);
+  const [nagaadHover, setNagaadHover] = useState(false);
 
   return (
     <div className="mb-[10rem] overflow-hidden z-0">
