@@ -12,7 +12,7 @@ const Work1 = () => {
         <motion.div
           exit={{ x: "-100vh", opacity: 0 }}
           className="flex flex-col ml-0 md:ml-[15%]">
-          <img src={work1} alt='work1' className="w-fit  lg:w-[35vw]"/>
+          <img src={work1} alt='work1' className="w-fit lg:w-[35vw]"/>
         </motion.div>
         <div className="hidden md:flex px-10 text-center md:text-left flex-col" style={{ flex: 1, marginRight: '10%' }}>
           <motion.h2
@@ -20,7 +20,7 @@ const Work1 = () => {
             initial="hidden"
             animate="visible"
             style={{ fontSize: '2rem' }}
-            className=" text-[#3b3b70] font-bold md:text-[35px] leading-tight"
+            className=" text-[#3b3b70] font-bold text-[50px] leading-tight"
           >
             {line1.split("").map((char, index) => {
               return (

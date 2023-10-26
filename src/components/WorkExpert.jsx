@@ -23,9 +23,6 @@ const WorkExpert = () => {
   const [autoHover, setAutoHover] = useState(false);
   const [dofHover, setDofHover] = useState(false);
   const [jumiaHover, setJumiaHover] = useState(false);
-  const [foretHover, setForetHover] = useState(false);
-  const [wavyHover, setWavyHover] = useState(false);
-  const [nagaadHover, setNagaadHover] = useState(false);
   const [premiumHover, setPremiumHover] = useState(false);
   const [HoHover, setHoHover] = useState(false);
 

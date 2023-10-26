@@ -109,7 +109,7 @@ const Nav = () => {
             onClick={handleToggle}
             className={`text-[40px] md:pb-0 font-bold group relative flex w-0 md:w-full flex-row
         ${navbar
-                ? " list-item transform transition duration-300 ease-in-out hover:translate-x-2 text-[40px] md:text-[70px] gap-5 hover:text-[white] opacity-1  translate-y-0  delay-150 leading-12"
+                ? " list-item transform transition duration-300 ease-in-out hover:translate-x-2 text-[40px] md:text-[70px] gap-5 hover:text-[white] opacity-1 translate-y-0 delay-150 leading-[3rem]"
                 : "hidden text-[20px]"
               }`}
           >
@@ -127,7 +127,7 @@ const Nav = () => {
             onClick={handleToggle}
             className={` md:pb-0 font-bold  
         ${navbar
-                ? " list-item transform transition duration-300 ease-in-out hover:translate-x-2 text-[50px] md:text-[70px] hover:text-[white] opacity-1  translate-y-0 t delay-200 leading-12"
+                ? " list-item transform transition duration-300 ease-in-out hover:translate-x-2 text-[50px] md:text-[70px] hover:text-[white] opacity-1 translate-y-0 delay-200 leading-12"
                 : "hidden text-[20px]"
               }`}
           >
@@ -137,7 +137,7 @@ const Nav = () => {
             onClick={handleToggle}
             className={` md:pb-0 font-bold 
         ${navbar
-                ? " text-[50px] md:text-[70px]  list-item transform transition duration-300 ease-in-out hover:translate-x-2 hover:text-[white] opacity-1  translate-y-0 delay-200 leading-12"
+                ? " text-[50px] md:text-[70px]  list-item transform transition duration-300 ease-in-out hover:translate-x-2 hover:text-[white] opacity-1  translate-y-0 delay-200 leading-[3rem]"
                 : "hidden text-[20px]"
               }`}
           >

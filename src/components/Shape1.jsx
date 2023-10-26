@@ -36,7 +36,7 @@ const Shape1 = () => {
         className="w-full md:w-[35rem] lg:w-[30rem] md:mx-0 pt-[3rem] md:pt-0 flex flex-col justify-center"
         style={{ flex: 1 }}
       >
-        <h1 className="text-[black] md:text-[white] font-bold text-[35px] md:text-[40px] leading-tight">
+        <h1 className="text-[black] md:text-[white] font-bold text-[35px] md:text-[50px] leading-tight">
           Making brands a <br /> damn site better
         </h1>
         <p className="text-[17px] text-[grey] md:text-[white] font-normal pt-10">
