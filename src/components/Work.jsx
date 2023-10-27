@@ -72,7 +72,7 @@ const Work = () => {
                     </motion.div>
                   </NavLink>
                 </div>
-                <div className="text-[white] mt-[1rem] mb-0 md:mb-[4rem] md:mb-0">
+                <div className="text-[white] mt-[1rem] mb-0 md:mb-[4rem] ">
                   <h2 className="text-[#0dfff6] tracking-widest text-[14px] leading-10">
                     ART DIRECTION | BRANDING
                   </h2>
