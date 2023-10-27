@@ -16,6 +16,7 @@ import JumiaBrief from "./pages/JumiaBrief";
 import OneBrief from "./pages/OneBrief";
 import HOBrief from "./pages/HOBrief";
 import LogisticsBrief from "./pages/LogisticsBrief";
+import PondasBrief from "./pages/PondasBrief";
 function App() {
   return (
     <BrowserRouter>
@@ -35,7 +36,10 @@ function App() {
         <Route path="jumiabrief" element={<JumiaBrief />} />
         <Route path="hobrief" element={<HOBrief />} />
         <Route path="onebrief" element={<OneBrief />} />
+        <Route path="pondasbrief" element={<PondasBrief />} />
 
+
+        
       </Routes>
     </BrowserRouter>
   );

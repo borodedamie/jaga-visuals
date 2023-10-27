@@ -64,8 +64,11 @@ const Footer = () => {
             <BiLogoFacebook className="text-white hover:text-[#0dfff6] text-[25px]" />
           </div>
           <div className="hover:border-[#0dfff6] p-2 md:p-0  rounded-full border flex h-[2.5rem] w-[2.5rem] items-center text-center justify-center cursor-pointer">
-            <BiLogoInstagram className="text-white hover:text-[#0dfff6] text-[25px]" />
+            <a href="https://www.instagram.com/jaga-visuals/">
+              <BiLogoInstagram className="text-white hover:text-[#0dfff6] text-[25px]" />
+            </a>
           </div>
+
           <div className="hover:border-[#0dfff6] p-2 md:p-0 rounded-full border flex h-[2.5rem] w-[2.5rem] items-center text-center justify-center cursor-pointer">
             <LiaLinkedinIn className="text-white hover:text-[#0dfff6] text-[25px]" />
           </div>
@@ -73,7 +76,9 @@ const Footer = () => {
             <BiLogoWhatsapp className="text-white hover:text-[#0dfff6] text-[25px]" />
           </div>
           <div className="hover:border-[#0dfff6] p-2 md:p-0 rounded-full border flex  h-[2.5rem] w-[2.5rem] items-center text-center justify-center cursor-pointer">
-            <AiOutlineYoutube className="text-white hover:text-[#0dfff6] text-[25px]" />
+            <a href="https://www.youtube.com/@jagavisuals/videos">
+              <AiOutlineYoutube className="text-white hover:text-[#0dfff6] text-[25px]" />
+            </a>
           </div>
         </div>
         <div className="text-center md:text-right">

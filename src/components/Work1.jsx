@@ -14,13 +14,13 @@ const Work1 = () => {
           className="flex flex-col ml-0 md:ml-[15%]">
           <img src={work1} alt='work1' className="w-fit lg:w-[35vw]"/>
         </motion.div>
-        <div className="hidden md:flex px-10 text-center md:text-left flex-col" style={{ flex: 1, marginRight: '10%' }}>
+        <div className="hidden md:flex px-10 text-center md:text-left flex-col mr-0 md:mr-[10%] flex-1" >
           <motion.h2
             variants={sentence}
             initial="hidden"
             animate="visible"
-            style={{ fontSize: '2rem' }}
-            className=" text-[#3b3b70] font-bold text-[50px] leading-tight"
+
+            className=" text-[#282860]  font-bold text-[40px] md:text-[50px] leading-tight w-0 md:w-[26rem]"
           >
             {line1.split("").map((char, index) => {
               return (

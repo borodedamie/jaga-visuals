@@ -30,12 +30,22 @@
     user-select: none;
     -webkit-touch-callout: none;
     margin-bottom: 4rem;
+    align-items: center;
     -webkit-tap-highlight-color: transparent; }
     .glide__slide a {
       user-select: none;
       -webkit-user-drag: none;
       -moz-user-select: none;
       -ms-user-select: none; }
+
+
+
+      .glide__slide__background  {
+        width: 100%;
+    height: 100%;
+      } 
+
+      
   .glide__arrows {
     -webkit-touch-callout: none;
     user-select: none; }
@@ -45,4 +55,65 @@
   .glide--rtl {
     direction: rtl; }
 
+    
+
+
+    .glide1 {
+      position: relative;
+      width: 100%;
+      box-sizing: border-box; }
+      .glide1 * {
+        box-sizing: inherit; }
+      .glide1__track {
+        overflow: hidden; }
+      .glide1__slides {
+        position: relative;
+        width: 100%;
+        list-style: none;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        touch-action: pan-Y;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+        display: flex;
+        flex-wrap: nowrap;
+        will-change: transform; }
+        .glide1__slides--dragging {
+          user-select: none; }
+      .glide1__slide {
+        width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        white-space: normal;
+        user-select: none;
+        -webkit-touch-callout: none;
+        margin-bottom: 4rem;
+        align-items: center;
+        -webkit-tap-highlight-color: transparent; }
+        .glide1__slide a {
+          user-select: none;
+          -webkit-user-drag: none;
+          -moz-user-select: none;
+          -ms-user-select: none; }
+    
+    
+    
+          .glide1__slide__background  {
+            width: 100%;
+        height: 100%;
+          } 
+    
+          
+      .glide1__arrows {
+        -webkit-touch-callout: none;
+        user-select: none; }
+      .glide1__bullets {
+        -webkit-touch-callout: none;
+        user-select: none; }
+      .glide1--rtl {
+        direction: rtl; }
+    
+        
     

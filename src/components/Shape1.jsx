@@ -36,10 +36,10 @@ const Shape1 = () => {
         className="w-full md:w-[35rem] lg:w-[30rem] md:mx-0 pt-[3rem] md:pt-0 flex flex-col justify-center"
         style={{ flex: 1 }}
       >
-        <h1 className="text-[black] md:text-[white] font-bold text-[35px] md:text-[50px] leading-tight">
+        <h1 className="text-[black] md:text-[white]  font-bold text-[35px] md:text-[50px] lg:text-[80px] leading-tight">
           Making brands a <br /> damn site better
         </h1>
-        <p className="text-[17px] text-[grey] md:text-[white] font-normal pt-10">
+        <p className="text-[17px] text-[grey] md:text-[white] mb-0 md:mb-32 lg:mb-32 font-normal pt-10">
           Let's face it, first impressions matter. Your website's an opportunity
           to wow your audience, so why waste it with bad design? Because brands
           win new fans when they're brave enough to go beyond their creative

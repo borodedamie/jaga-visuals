@@ -4,10 +4,10 @@ import { NavLink } from "react-router-dom";
 const Artists = () => {
   return (
     <div className="my-[5%] px-5 md:px-[15%] py-20">
-      <h2 className="text-[35px] font-bold text-[blue] leading-tight">
+      <h2 className="text-[35px] md:text-[45px] font-bold text-[blue] leading-tight">
         Artists by nature.
       </h2>
-      <h2 className="text-[35px] font-bold text-[blue] leading-tight">Rebels by choice.</h2>
+      <h2 className="text-[35px] md:text-[45px] font-bold text-[blue] leading-tight">Rebels by choice.</h2>
       <div className="w-full md:w-[75%]">
         <p className="text-[20px] mt-[1.5rem]">
           We're a team of talented creatives who live and breathe great design.

@@ -9,7 +9,7 @@ import Footer from '../components/Footer'
 
 const Home1 = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden overflow-y-auto'>
       <Nav/>
       <Header/>
       <Shape1/>
