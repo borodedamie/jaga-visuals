@@ -59,7 +59,7 @@ const Work = () => {
                       whileInView={"show"}
                     >
                       <LazyLoadImage
-                        className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[80vh]"
+                        className="flex w-fit inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[80vh]"
                         src={logic}
                       />
                       <div
@@ -106,7 +106,7 @@ const Work = () => {
                   >
                     <LazyLoadImage
                       alt="Dubai"
-                      className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:w-[50vw] md:h-[50vh]"
+                      className="flex w-fit inset-0 object-contain md:object-cover flex-col md:w-[50vw] md:h-[50vh]"
                       src={dubai}
                     />{" "}
                     <div
@@ -156,7 +156,7 @@ const Work = () => {
                   >
                       <LazyLoadImage
                         alt="Jumia"
-                        className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:w-[50vw] md:h-[50vh]"
+                        className="flex w-fit inset-0 object-contain md:object-cover flex-col md:w-[50vw] md:h-[50vh]"
                         src={jumia}
                       />
 
@@ -205,7 +205,7 @@ const Work = () => {
                   whileInView={"show"}
                 >
                     <LazyLoadImage
-                      className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[80vh]"
+                      className="flex w-fit inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[80vh]"
                       src={foret1}
                     />
 
