@@ -85,7 +85,7 @@ const Work = () => {
                       Autoflex Logistics Inc
                     </NavLink>
                   </h1>
-                  <p className="text-[18px] mt-[0.5rem]">
+                  <p className="text-[18px] mt-[0.5rem] mb-[1rem] md:mb-0">
                     We fully branded a pioneering healthcare concept in the US
                   </p>
                 </div>
@@ -129,7 +129,7 @@ const Work = () => {
                 >
                   <NavLink to="/dofbrief">DOF Dubai </NavLink>
                 </h1>
-                <p className="text-[18px] mt-[0.5rem]">
+                <p className="text-[18px] mt-[0.5rem] mb-[1rem] md:mb-0">
                   We fully branded a pioneering healthcare concept in the US
                 </p>
               </div>
@@ -183,7 +183,7 @@ const Work = () => {
                   >
                     <NavLink to="/jumiabrief">Jumia Pay App</NavLink>
                   </h1>
-                  <p className="text-[18px] mt-[0.5rem]">
+                  <p className="text-[18px] mt-[0.5rem] mb-[1rem] md:mb-0">
                     We fully branded a pioneering healthcare concept in the US
                   </p>
                 </div>
@@ -218,7 +218,7 @@ const Work = () => {
                 </NavLink>
 
               </div>
-              <div className="text-[white] mt-[1rem] mb-[4rem] md:mb-0">
+              <div className="text-[white] mt-[1rem]">
                 {" "}
                 <h2 className="text-[#0dfff6] tracking-widest text-[14px] leading-10">
                   ART DIRECTION | SOCIAL MEDIA{" "}
@@ -230,7 +230,7 @@ const Work = () => {
                 >
                   <NavLink to="/foretbrief">Foret Dubai</NavLink>
                 </h1>
-                <p className="text-[18px] mt-[0.5rem]">
+                <p className="text-[18px] mt-[0.5rem] mb-[1rem] md:mb-0">
                   We fully branded a pioneering healthcare concept in the US
                 </p>
               </div>

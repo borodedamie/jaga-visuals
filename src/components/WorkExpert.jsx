@@ -58,7 +58,7 @@ const WorkExpert = () => {
                 <NavLink to="/logisticsbrief">
                   <LazyLoadImage
                     alt="Images"
-                    className="flex w-fit h-fit border border-1 border-[#f2f7f2] inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[90vh]"
+                    className="flex w-fit border border-1 border-[#f2f7f2] inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[90vh]"
                     src={logic}
                     srcSet={logic1}
                   />
@@ -82,7 +82,7 @@ const WorkExpert = () => {
               >
                 <NavLink to="/logisticsbrief">Autoflex Logistics Inc</NavLink>
               </h1>
-              <p className="text-[18px] mt-[0.5rem]">
+              <p className="text-[18px] mt-[0.5rem] mb-[1rem] md:mb-0">
                 We fully branded a pioneering healthcare concept in the US
               </p>
             </div>
@@ -104,7 +104,7 @@ const WorkExpert = () => {
                 <NavLink to="/dofbrief">
                   <LazyLoadImage
                     alt="Images"
-                    className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:w-[50vw] md:h-[50vh]"
+                    className="flex w-fit inset-0 object-contain md:object-cover flex-col md:w-[50vw] md:h-[50vh]"
                     src={dubai}
                     srcSet={dubai1}
                   />
@@ -128,7 +128,7 @@ const WorkExpert = () => {
               >
                 <NavLink to="/dofbrief">DOF Dubai </NavLink>
               </h1>
-              <p className="text-[18px] mt-[0.5rem]">
+              <p className="text-[18px] mt-[0.5rem] mb-[1rem] md:mb-0">
                 We fully branded a pioneering healthcare concept in the US
               </p>
             </div>
@@ -155,7 +155,7 @@ const WorkExpert = () => {
                 <NavLink to="/jumiabrief">
                   <LazyLoadImage
                     alt="Jumia"
-                    className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:w-[50vw] md:h-[50vh]"
+                    className="flex w-fit inset-0 object-contain md:object-cover flex-col md:w-[50vw] md:h-[50vh]"
                     srcSet={jumia1}
                     src={jumia}
                   />
@@ -179,7 +179,7 @@ const WorkExpert = () => {
               >
                 <NavLink to="/jumiabrief">Jumia Pay App</NavLink>
               </h1>
-              <p className="text-[18px] mt-[0.5rem]">
+              <p className="text-[18px] mt-[0.5rem] mb-[1rem] md:mb-0">
                 We fully branded a pioneering healthcare concept in the US
               </p>
             </div>
@@ -202,7 +202,7 @@ const WorkExpert = () => {
                   <LazyLoadImage
                     alt="Foret"
                     src={foret1}
-                    className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[90vh]"
+                    className="flex w-fit inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[90vh]"
                     srcSet={foret11}
                   />
                   <div
@@ -225,7 +225,7 @@ const WorkExpert = () => {
               >
                 <NavLink to="/foretbrief">Foret Dubai</NavLink>
               </h1>
-              <p className="text-[18px] mt-[0.5rem]">
+              <p className="text-[18px] mt-[0.5rem] mb-[1rem] md:mb-0">
                 We fully branded a pioneering healthcare concept in the US
               </p>
             </div>
@@ -253,7 +253,7 @@ const WorkExpert = () => {
                   <LazyLoadImage
                     alt="Ladies talking"
                     src={speak}
-                    className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[90vh]"
+                    className="flex w-fit inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[90vh]"
                     srcSet={speak1}
                   />
                   <div
@@ -276,7 +276,7 @@ const WorkExpert = () => {
               >
                 <NavLink to="/wavybrief">Wavy Beauty Inc</NavLink>
               </h1>
-              <p className="text-[18px] mt-[0.5rem]">
+              <p className="text-[18px] mt-[0.5rem] mb-[1rem] md:mb-0">
                 We fully branded a pioneering healthcare concept in the US
               </p>
             </div>
@@ -299,7 +299,7 @@ const WorkExpert = () => {
                   <LazyLoadImage
                     alt="Nagaad"
                     src={nagaad1}
-                    className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:w-[50vw] md:h-[50vh]"
+                    className="flex w-fit inset-0 object-contain md:object-cover flex-col md:w-[50vw] md:h-[50vh]"
                     srcSet={nagaad11}
                   />
                   <div
@@ -322,7 +322,7 @@ const WorkExpert = () => {
               >
                 <NavLink to="/nagaadbrief">Nagaad Organics</NavLink>
               </h1>
-              <p className="text-[18px] mt-[0.5rem] ">
+              <p className="text-[18px] mt-[0.5rem] mb-[1rem] md:mb-0">
                 We fully branded a pioneering healthcare concept in the US
               </p>
             </div>
@@ -350,7 +350,7 @@ const WorkExpert = () => {
                   <LazyLoadImage
                     alt="101 Premium Properties"
                     src={oneO}
-                    className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:w-[50vw] md:h-[50vh]"
+                    className="flex w-fit inset-0 object-contain md:object-cover flex-col md:w-[50vw] md:h-[50vh]"
                   />
                   <div
                     className={`inset-0 absolute ${
@@ -372,7 +372,7 @@ const WorkExpert = () => {
               >
                 <NavLink to="/onebrief">101 Premium Properties</NavLink>
               </h1>
-              <p className="text-[18px] mt-[0.5rem]">
+              <p className="text-[18px] mt-[0.5rem] mb-[1rem] md:mb-0">
                 We fully branded a pioneering healthcare concept in the US
               </p>
             </div>
@@ -395,7 +395,7 @@ const WorkExpert = () => {
                   <LazyLoadImage
                     alt="HO gas"
                     src={HO}
-                    className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[90vh]"
+                    className="flex w-fit inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[90vh]"
                     srcSet={HO}
                   />
                   <div
@@ -418,7 +418,7 @@ const WorkExpert = () => {
               >
                 <NavLink to="/hobrief">HO Gas</NavLink>
               </h1>
-              <p className="text-[18px] mt-[0.5rem]">
+              <p className="text-[18px] mt-[0.5rem] mb-[1rem] md:mb-0">
                 We fully branded a pioneering healthcare concept in the US
               </p>
             </div>
@@ -439,13 +439,13 @@ const WorkExpert = () => {
               viewport={{ amount: 0.7, once: true }}
               initial="hidden"
             >
-              <NavLink to="/logisticsbrief">
+              <NavLink to="/pondasbrief">
                 <div style={{ flex: 1 }} className="flex inset-0  flex-col">
                 
                     <video
                     
                     ref={videoRef}
-                    className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[90vh]"
+                    className="flex w-fit inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[90vh]"
                     loop
                     autoPlay
                     muted
@@ -485,7 +485,7 @@ const WorkExpert = () => {
             >
               <NavLink to="/logisticsbrief">Ponda Tribe</NavLink>
             </h1>
-            <p className="text-[18px] mt-[0.5rem]">
+            <p className="text-[18px] mt-[0.5rem] mb-[1rem] md:mb-0">
               We fully branded a pioneering healthcare concept in the US
             </p>
           </div>
