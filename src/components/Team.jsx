@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import damage from "../assets/damage.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -9,39 +9,31 @@ import { BsArrowRight } from "react-icons/bs";
 import Glide from "@glidejs/glide";
 import "../css/glide.core.css";
 import "../css/glide.theme.css";
+import Carousel1 from "./Carousel1";
+import Carousel2 from "./Carousel2";
 
 const Team = () => {
-  // const [isFirstSlide, setIsFirstSlide] = useState(true);
-  // const [isLastSlide, setIsLastSlide] = useState(false);
-
   useEffect(() => {
-    const glide = new Glide(".glide", {
+    new Glide(".glide", {
       perView: 5,
       breakpoints: {
-        420: {
-          perView: 1,
+        420:{
+          perView: 1, 
+
         },
         768: {
-          perView: 2,
+          perView: 2, 
         },
         1024: {
           perView: 3,
         },
         1280: {
-          perView: 5,
+          perView: 5, 
         },
       },
       gap: 10,
-    });
-
-    // glide.on('run.after', () => {
-    //   setIsFirstSlide(glide.index === 0);
-    //   setIsLastSlide(glide.index === glide.length - 1);
-    // });
-
-    glide.mount();
+    }).mount();
   }, []);
-
 
   return (
     <div>
@@ -65,65 +57,10 @@ const Team = () => {
           </div>
         </div>
 
-        <div className="glide" style={{ marginTop: "5%", marginBottom: "10%" }}>
-          <div className="glide__track" data-glide-el="track">
-            <div className="glide__slides" style={{ marginLeft: "10%" }}>
-              {carousel.map((carousel1, index) => {
-                return (
-                  <div className="glide__slide" key={index}>
-                    <div className="flex flex-col w-[18rem] ">
-                      <div className="">
-                        <img
-                          className="w-[20rem] border-0 rounded-b-none rounded-t-2xl"
-                          src={carousel1.one}
-                        />
-                      </div>
-                      <div className="bg-[#34eaf7] pl-4 py-[2rem] h-[7rem] border-0 rounded-t-none rounded-b-3xl">
-                        <h2 className="text-[16px] text-[black] tracking-tight">
-                          {carousel1.name}
-                        </h2>
-                        <p className="text-[16px] text-[black] tracking-tight">
-                          <div className="flex flex-row items-center gap-3">
-                            <hr className="w-[1rem] bg-black border-black border-[1.5px]" />
-                            {carousel1.title}
-                          </div>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-          <div
-            className="glide__arrows text-[white] pl-[1rem] md:pl-[5rem] lg:pl-[10rem]"
-            data-glide-el="controls"
-          >
-            <button
-              className="glide__arrow1 glide__arrow--left"
-              data-glide-dir="<"
-              style={{ borderColor: '#34eaf7' }}
-              // disabled={isFirstSlide}
-            >
-              <BsArrowLeft className=" text-[30px]" />
-            </button>
-            <button
-              className="glide__arrow1 glide__arrow--right"
-              data-glide-dir=">"
-              style={{ borderColor: '#34eaf7' }}
-              // disabled={isLastSlide}
-            >
-              <BsArrowRight className=" text-[30px]" />
-            </button>
-          </div>
-        </div>
-
-        <LazyLoadImage
-          className="w-full mt-[5rem]"
-          src={damage}
-          alt="Herosection"
-        />
+        <Carousel1/>
       </div>
+      <Carousel2/>
+
     </div>
   );
 };

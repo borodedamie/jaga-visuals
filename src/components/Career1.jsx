@@ -10,7 +10,7 @@ const Career1 = () => {
 
   return (
     <div className="">
-      <div className="pt-10 pb-20 gap-[1rem] flex flex-col md:flex-row lg:flex-row items-center">
+      <div className="pt-10 pb-20 gap-[1rem] flex flex-col md:flex-row lg:flex-row items-center ">
       <div className="flex-1 max-w-none ml-0 md:ml-[15%]" >
         <img src={join1} alt='join1' className="w-fit md:w-[35vw]"/>
       </div>
@@ -20,7 +20,7 @@ const Career1 = () => {
             variants={sentence}
             initial="hidden"
             animate="visible"
-            className="text-[#3b3b70] px-[5rem] md:px-0 w-full font-[800] md:font-[700] text-[33px] md:text-[50px] leading-tight"
+            className="text-[#282860] px-[5rem] md:px-0 w-full font-[800] md:font-[700] text-[33px] md:text-[50px] leading-tight"
           >
             {line1.split("").map((char, index) => {
               return (

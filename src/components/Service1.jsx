@@ -24,7 +24,7 @@ const Service1 = () => {
               variants={sentence}
               initial="hidden"
               animate="visible"
-              className="text-[blue]"
+              className="text-[#282860]"
             >
               {line1.split("").map((char, index) => {
                 return (

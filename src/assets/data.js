@@ -28,6 +28,11 @@ import third1 from '../assets/jaga3.jpg'
 import fourth1 from '../assets/jaga4.jpg'
 import fifth1 from '../assets/jaga5.jpg'
 import sixth1 from '../assets/jaga6.jpg'
+import trust from '../assets/trust.jpg'
+import make from '../assets/make.jpg'
+import journey from '../assets/journey.jpg'
+import onyx from '../assets/Onyx.jpg'
+import poorima from '../assets/Poorima.jpg'
 export const data = [
   {
     title: "Creative Design",
@@ -276,13 +281,13 @@ export const carousel = [
     title:'Copywriter'
   },
   {
-    one: webdev,
-    name: "Adewale Fayiga",
-    title:'Copywriter'
+    one: poorima,
+    name: "Poorima",
+    title:'Designer'
   },
   {
-    one: webdev,
-    name: "Adewale Fayiga",
+    one: onyx,
+    name: "Onyx",
     title:'Copywriter'
   },
   {
@@ -297,4 +302,26 @@ export const carousel = [
   },
   
   
+];
+
+
+export const carousel1 = [
+  {
+    one: journey,
+    header: "Journey to the future",
+    paragraph:'An expansive environment that will engage all the senses'
+
+  },
+  {
+    one: make,
+    header: "Make it beautiful, thoughtful and impactful",
+    paragraph:"As artist, it's our job to ensure every website we design is stunning to look at, seemless to navigate and successful in its purpose. "
+
+  },
+  {
+    one: trust,
+    header: "Trust our people and process",
+    paragraph:'We trade hierarchy for trust and politics for processes, allowing talent to flourish and new ideas to come to life through creative autonomy.'
+  },
+ 
 ];

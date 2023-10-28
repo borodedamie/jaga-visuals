@@ -7,12 +7,19 @@ const BriefDOF = () => {
   return (
     <div className="px-5 md:px-20 ">
       <div className="flex flex-col gap-5 md:gap-10 px-5 md:px-20 py-20 items-center">
-
         {urlsDOF.map((urlD, b) => {
           return (
             <div key={b}>
-
-              <iframe className="rounded-3xl h-[20rem] w-[20rem] md:w-[47rem] md:h-[28rem] border" src={urlD.urlH} />
+              <video
+                loop
+                autoPlay
+                muted
+                mutedcontrols
+                className="rounded-3xl h-[20rem] w-[20rem] md:w-[47rem] md:h-[28rem] border"
+              >
+                <source src={urlD.urlH} />
+              </video>
+              
             </div>
           );
         })}
@@ -22,8 +29,8 @@ const BriefDOF = () => {
         <div className="flex">
           <p className="flex items-end text-left font-medium text-[16px] w-[60vw]">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, velit
-            dolores? Fuga omnis odit eligendi quaerat repellat ex architecto nobis
-            facilis, veniam ullam dolores quo necessitatibus quas deleniti
+            dolores? Fuga omnis odit eligendi quaerat repellat ex architecto
+            nobis facilis, veniam ullam dolores quo necessitatibus quas deleniti
             distinctio ab minima sapiente! Iusto odit, molestias reprehenderit
             harum debitis cum
           </p>
@@ -31,9 +38,7 @@ const BriefDOF = () => {
       </div>
 
       <Related />
-
     </div>
-
   );
 };
 
