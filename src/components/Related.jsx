@@ -15,19 +15,20 @@ const Related = () => {
   const [foretHover, setForetHover] = useState(false);
 
   return (
-    <div className="px-[10%]">
-      <h2 className="text-[black] font-bold text-[35px] my-[5%]">
+    <div className="px-[2rem] lg:px-[7rem] flex flex-col">
+      <h2 className="text-[black] font-bold text-[35px] md:text-[45px] my-[5%]">
         Related Projects
       </h2>
       <div ref={scrollRef}>
         {" "}
-        <div className="flex flex-col md:flex-row gap-[5rem] justify-center md:justify-start md:items-center">
+        <div className="flex flex-col md:flex-row justify-center items-center md:items-start md:justify-between gap-5 md:gap-10 mb-[7%]">
           <div
+          className=""
             onMouseEnter={() => setJumiaHover(true)}
             onMouseLeave={() => setJumiaHover(false)}
           >
             <div>
-              <div className="relative">
+              <div className="relative w-[20rem] h-[20rem] md:w-[40vw] md:h-fit">
                 <NavLink to="/jumiabrief">
                   <motion.div
                     className="opacity-100 hover:opacity-75 "
@@ -38,7 +39,7 @@ const Related = () => {
                   >
                     <LazyLoadImage
                       alt="Jumia"
-                      className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:w-[30vw] md:h-[50vh]"
+                      className="flex inset-0 object-contain md:object-cover flex-col w-[20rem] h-[20rem] md:w-[40vw] md:h-fit "
                       srcSet={jumia1}
                       src={jumia}
                     />
@@ -57,7 +58,7 @@ const Related = () => {
                   ART DIRECTION | MOTION GRAPHICS{" "}
                 </h2>
                 <h1
-                  className={`text-[35px] hover:text-[blue] font-[700] ${
+                  className={`text-[25px] md:text-[35px] hover:text-[blue] font-[700] ${
                     jumiaHover ? "text-[blue]" : ""
                   }`}
                 >
@@ -71,7 +72,7 @@ const Related = () => {
             onMouseEnter={() => setForetHover(true)}
             onMouseLeave={() => setForetHover(false)}
           >
-            <div className="relative">
+            <div className="relative w-[20rem] h-[20rem] md:w-[40vw] md:h-fit">
               <NavLink to="/foretbrief">
                 <motion.div
                   className="opacity-100 hover:opacity-75 "
@@ -82,9 +83,8 @@ const Related = () => {
                 >
                   <LazyLoadImage
                     src={foret1}
-                    className="flex w-fit h-fit inset-0 object-contain md:object-cover flex-col md:w-[30vw] md:h-[50vh]"
-                    sizes="(max-width: 600px) 480px,
-         800px"
+                    className="flex inset-0 object-contain md:object-cover flex-col w-[20rem] h-[20rem] md:w-[40vw] md:h-fit"
+                   
                     srcSet={foret11}
                   />
                   <div
@@ -101,7 +101,7 @@ const Related = () => {
                 ART DIRECTION | SOCIAL MEDIA{" "}
               </h2>
               <h1
-                className={`text-[35px] hover:text-[blue] font-[700] ${
+                className={`text-[25px] md:text-[35px] hover:text-[blue] font-[700] ${
                   foretHover ? "text-[blue]" : ""
                 }`}
               >
@@ -110,12 +110,12 @@ const Related = () => {
             </div>
           </div>
         </div>
-        <div className="flex pt-20 pb-40 flex-row items-center gap-10 justify-center md:justify-center">
-          <h2 className="text-[blue] font-bold text-[30px]">Don't be Shy</h2>
-          <hr className="border-3 h-[4rem] w-0.5 bg-[#7979cf]" />
+        <div className="flex pt-20 pb-40 flex-col md:flex-row items-center gap-10 justify-center lg:justify-center">
+          <h2 className="text-[blue] font-bold text-[30px] md:text-[45px] ">Don't be Shy</h2>
+          <hr className="hidden md:flex border-3 h-[5rem] w-0.5 bg-[#7979cf]" />
           <div className="flex flex-row items-center justify-center">
             <NavLink to="/contact">
-              <button className="text-[12px] text-center items-center flex rounded-full font-medium h-[2rem] text-[white] p-5 border-[blue] bg-[blue] border-[2px] hover:bg-[white] hover:text-[blue] hover:border-[blue]">
+              <button className="text-[12px] justify-center items-center md:text-[25px] text-center flex rounded-full font-medium h-[2rem] md:h-[4rem] lg:h-[5rem] text-[white] p-5 border-[blue] w-fit md:w-[25rem] lg:w-[25rem] xl:w-[30rem] bg-[blue] border-[2px] hover:bg-[white] hover:text-[blue] hover:border-[blue]">
                 START YOUR PROJECT
               </button>
             </NavLink>

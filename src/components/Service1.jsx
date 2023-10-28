@@ -15,9 +15,9 @@ const Service1 = () => {
     <>
       <div className="px-5 md:px-[10rem] py-[10rem] gap-[1rem] flex flex-col md:flex-col lg:flex-row items-center justify-center">
         <div className="" style={{ flex: 1 }}>
-          <img src={services2} alt='services' className="w-fit  lg:w-[35vw]"/>
+          <img src={services2} alt="services" className="w-fit  lg:w-[35vw]" />
         </div>
-        <div className="flex flex-1 flex-col items-start justify-center text-center lg:text-left w-full md:w-[30rem]" >
+        <div className="flex flex-1 flex-col items-start justify-center text-center lg:text-left w-full md:w-[30rem]">
           <p className="text-[18px] lg:text-[23px] font-medium text-[grey]">
             Crafting{" "}
             <motion.span
@@ -41,19 +41,37 @@ const Service1 = () => {
           </p>
           <div className="text-[18px] text-[grey] font-semibold hidden lg:flex flex-col md:flex-row gap-0 md:gap-20 text-left pt-10">
             <div>
-              <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '24px', color: 'blue' }} />Creative Design</p>
-              <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '24px', color: 'blue' }} />Motion Graphics</p>
-              <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '24px', color: 'blue' }} />Web Development</p>
+              <p className="flex items-center">
+                <MdNavigateNext className="text-[20px] md:text-[24px] text-[blue]" />
+                Creative Design
+              </p>
+              <p className="flex items-center">
+                <MdNavigateNext className="text-[20px] md:text-[24px] text-[blue]" />
+                Motion Graphics
+              </p>
+              <p className="flex items-center">
+                <MdNavigateNext className="text-[20px] md:text-[24px] text-[blue]" />
+                Web Development
+              </p>
             </div>
             <div>
-              <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '24px', color: 'blue' }} />Branding</p>
-              <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '24px', color: 'blue' }} />Digital Marketing</p>
-              <p style={{ display: 'flex', alignItems: 'center' }}><MdNavigateNext style={{ fontSize: '24px', color: 'blue' }} />Social Media Management</p>
+              <p className="flex items-center">
+                <MdNavigateNext className="text-[20px] md:text-[24px] text-[blue]" />
+                Branding
+              </p>
+              <p className="flex items-center">
+                <MdNavigateNext className="text-[20px] md:text-[24px] text-[blue]" />
+                Digital Marketing
+              </p>
+              <p className="flex items-center">
+                <MdNavigateNext className="text-[20px] md:text-[24px] text-[blue]" />
+                Social Media Management
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div className="my-0 mx-0 md:mx-[5%] " >
+      <div className="my-0 mx-0 md:mx-[5%] ">
         {data.map((data1, s) => {
           return (
             <motion.div
@@ -61,9 +79,14 @@ const Service1 = () => {
               viewport={{ once: true, amount: 0.7 }}
               initial="hidden"
               whileInView={"show"}
-              className="flex flex-col max-w-fit md:max-w-[100%] w-fit md:w-[100%] max-h-[100%] h-[100%] md:flex-row px-5 md:px-20 justify-center gap-[3rem] items-center my-[10%]">
-              <div key={s} style={{ flex: 1 }} className="max-w-fit md:max-w-[50%] w-[100%] max-h-[50%] h-[100%]">
-                <h2 className="text-[40px] font-bold text-[#26316c]">
+              className="flex flex-col max-w-fit md:max-w-[100%] w-fit md:w-[100%] max-h-[100%] h-[100%] md:flex-row px-5 md:px-20 justify-center gap-[3rem] items-center my-[10%]"
+            >
+              <div
+                key={s}
+                style={{ flex: 1 }}
+                className="max-w-fit md:max-w-[50%] w-[100%] max-h-[50%] h-[100%]"
+              >
+                <h2 className="text-[22px] md:text-[40px] font-bold text-[#26316c]">
                   {data1.title}
                 </h2>
                 <p className="text-[18px] font-medium text-[grey] leading-8 py-5">
@@ -71,7 +94,10 @@ const Service1 = () => {
                 </p>
                 <Button />
               </div>
-              <LazyLoadImage src={data1.design} className="rounded-2xl max-h-[50%] h-[100%] max-w-fit md:max-w-[50%] w-[100%] md:h-[60vh]" />
+              <LazyLoadImage
+                src={data1.design}
+                className="rounded-2xl max-h-[50%] h-[100%] max-w-fit md:max-w-[50%] w-[100%] md:h-fit lg:h-[60vh]"
+              />
             </motion.div>
           );
         })}
