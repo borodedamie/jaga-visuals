@@ -12,7 +12,7 @@ const BriefL = () => {
     <div>
       <div className="flex flex-col items-center justify-center">
         <img
-          className="w-fit h-fit xl:w-[80vw] lg:h-[80vh]"
+          className=""
           src={auto}
           alt="NagaadThumbnail"
         />
