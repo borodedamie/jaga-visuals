@@ -1,35 +1,61 @@
 import React from "react";
-import { imagesL } from "../assets/data";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import auto from "../assets/auto1.png";
+import king from "../assets/Frankincese.png";
+import right from "../assets/right.png";
+import cut from "../assets/cut.png";
+import deal from "../assets/deal.png";
+import { NavLink } from "react-router-dom";
+import word from "../assets/word.png";
 
 const BriefL = () => {
   return (
-    <div className="px-5 md:px-20 ">
-      <div className="flex flex-col justify-around gap-5 w-full p-20 md:px-20 ">
-      <h2 className="font-bold text-[75px] text-[blue]">The Brief</h2>
-      <div className="flex items-end justify-end">
-        <p className="flex items-end text-left font-medium text-[30px] w-[50rem]">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, velit
-          dolores? Fuga omnis odit eligendi quaerat repellat ex architecto nobis
-          facilis, veniam ullam dolores quo necessitatibus quas deleniti
-          distinctio ab minima sapiente! Iusto odit, molestias reprehenderit
-          harum debitis cum
-        </p>
+    <div>
+      <div className="flex flex-col items-center justify-center">
+        <img
+          className="w-fit h-fit xl:w-[80vw] lg:h-[80vh]"
+          src={auto}
+          alt="NagaadThumbnail"
+        />
+          <h1 className="text-[30px] md:text-[70px] xl:text-[80px] px-5 xl:px-0 text-[#464444] font-extrabold">
+            Autoflex Logistics Inc
+          </h1>
       </div>
-      </div>
-      
-      <div className="flex flex-col gap-5 md:gap-10 px-5 md:px-20 py-20 items-center">
-      
-      {imagesL.map((imagesL1, g) => {
-        return (
-          <div key={g} className="flex flex-col md:flex-row gap-5 md:gap-10 ">
-            <LazyLoadImage className="w-[20rem] h-[20rem]" src={imagesL1.one}/>
-            <LazyLoadImage className="w-[20rem] h-[20rem]" src={imagesL1.two}/>
 
-          </div>
-        );
-      })}
-    </div>
+      <div className="flex flex-col px-[1rem] md:px-[10.5rem] mt-[2rem] md:mt-[10rem]">
+        <h2 className="text-[blue] text-[35px] md:text-[75px] font-bold">
+          The Brief
+        </h2>
+        <p className="text-[22px] md:text-[50px] lg:text-[35px] text-[#797070]">
+          Shipping & Transport
+        </p>
+        <br />
+        <span className="text-[22px] md:text-[50px] lg:text-[35px] text-[#797070]">
+          AutoFlex Logistics is an American multimodal transportation services
+          and logistic specilist on truckloads and less than truckloads. We are
+          here to make a change and meet your transportation requirements
+          through our dedication, determination and work ethic, to build ever
+          lasting relationships, deliver the service we promised, and always be
+          fair and honest.
+          <br />
+          <br />
+          Good sound business principles are placed as the foundation of the
+          company to make it grow and become successful.
+        </span>
+      </div>
+
+      <img src={right} />
+      <img src={cut} />
+
+      <img src={deal} />
+      <img src={word} />
+
+      <div className="flex flex-row z-10 items-center justify-center fixed bottom-2 right-0 md:bottom-6 md:right-5">
+        <NavLink to="/contact">
+          <button className=" text-center text-[13px] mt-5 items-center flex rounded-full font-medium h-[3rem] text-[white] hover:text-[blue] py-3 px-5 md:py-7 md:px-10 border-[blue] bg-[blue]  hover:bg-[white] hover:border-[blue]">
+            START YOUR PROJECT
+          </button>
+        </NavLink>
+      </div>
     </div>
   );
 };

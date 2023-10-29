@@ -45,12 +45,12 @@ const Work = () => {
           {" "}
           <div className="flex flex-col gap-0 lg:gap-[5%] justify-center px-0 lg:px-10 lg:flex-row lg:items-center">
             <div
-              className="ml-5 mr-5 lg:mr-0 lg:ml-[10%] flex-1"
+              className="ml-5 mr-5 lg:mr-0 lg:ml-[10%] flex-1 mb-[3rem] lg:mb-0"
               onMouseEnter={() => setAutoHover(true)}
               onMouseLeave={() => setAutoHover(false)}
             >
               <div>
-                <div className="relative">
+                <div className="relative ">
                   <NavLink to="/logisticsbrief">
                     <motion.div
                       variants={fadeIn("top", 0.5)}
@@ -92,7 +92,7 @@ const Work = () => {
               </div>
             </div>
             <div
-              className="ml-5 mr-5 lg:ml-0 lg:mr-[10%] flex-1"
+              className="ml-5 mr-5 lg:ml-0 lg:mr-[10%] flex-1 mb-[2rem] lg:mb-0"
               onMouseEnter={() => setDofHover(true)}
               onMouseLeave={() => setDofHover(false)}
             >
@@ -140,7 +140,7 @@ const Work = () => {
           {" "}
           <div className="flex flex-col justify-center px-0 lg:px-10 gap-0 lg:gap-[5%] lg:flex-row lg:items-center">
             <div
-              className="ml-5 mr-5 lg:mr-0 lg:ml-[10%] flex-1"
+              className="ml-5 mr-5 lg:mr-0 lg:ml-[10%] flex-1 mb-[2rem] lg:mb-0"
               onMouseEnter={() => setJumiaHover(true)}
               onMouseLeave={() => setJumiaHover(false)}
             >
@@ -171,7 +171,7 @@ const Work = () => {
                   </NavLink>
 
                 </div>
-                <div className="text-[white] mt-[1rem] mb-[4rem] lg:mb-0">
+                <div className="text-[white] mt-[1rem] mb-0 lg:mb-[4rem]">
                   {" "}
                   <h2 className="text-[#0dfff6] tracking-widest text-[14px] leading-10">
                     ART DIRECTION | MOTION GRAPHICS{" "}

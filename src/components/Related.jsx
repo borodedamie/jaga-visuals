@@ -112,10 +112,10 @@ const Related = () => {
         </div>
         <div className="flex pt-20 pb-40 flex-col md:flex-row items-center gap-10 justify-center lg:justify-center">
           <h2 className="text-[blue] font-bold text-[30px] md:text-[45px] ">Don't be Shy</h2>
-          <hr className="hidden md:flex border-3 h-[5rem] w-0.5 bg-[#7979cf]" />
+          <hr className="hidden md:flex border-3 h-[7rem] w-[.3rem] bg-[blue]" />
           <div className="flex flex-row items-center justify-center">
             <NavLink to="/contact">
-              <button className="text-[12px] justify-center items-center md:text-[25px] text-center flex rounded-full font-medium h-[2rem] md:h-[4rem] lg:h-[5rem] text-[white] p-5 border-[blue] w-fit md:w-[25rem] lg:w-[25rem] xl:w-[30rem] bg-[blue] border-[2px] hover:bg-[white] hover:text-[blue] hover:border-[blue]">
+              <button className="text-[12px] justify-center items-center md:text-[25px] text-center flex rounded-full font-medium h-[2rem] md:h-[4rem] lg:h-[5rem] text-[white] p-5 border-[blue] w-fit md:w-[20rem] lg:w-[20rem] xl:w-[30rem] bg-[blue] border-[2px] hover:bg-[white] hover:text-[blue] hover:border-[blue]">
                 START YOUR PROJECT
               </button>
             </NavLink>

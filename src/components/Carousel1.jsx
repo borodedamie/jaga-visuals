@@ -24,7 +24,7 @@ const Carousel1 = () => {
           perView: 5,
         },
       },
-      gap: 10,
+      gap: 20,
     }).mount();
   }, []);
   return (

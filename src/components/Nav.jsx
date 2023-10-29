@@ -91,15 +91,15 @@ const Nav = () => {
 
         <ul
           className={`flex flex-row   ${navbar
-              ? "flex-col absolute top-[5rem] left-10 md:top-[0] md:left-[10rem] pl-0 md:pl-[9rem] h-full md:h-[100vh] pt-0 md:pt-[4rem] translate-y-0 transition-safelist transform"
+              ? "flex-col absolute top-[5rem] left-10 lg:top-[3rem] lg:left-[10rem] pl-0 lg:pl-[7rem] xl:pl-[15rem] h-full md:h-[100vh] pt-0 lg:pt-[0rem] xl:pt-[5rem] 2xl:pt-[10rem] translate-y-0 transition-safelist transform"
               : "items-center gap-10 "
             }`}
         >
           <li
             onClick={handleToggle}
-            className={`mt-[5rem] md:mt-0 md:pb-0 font-bold hover:text-[blue]
+            className={`mt-[5rem] py-0 md:mt-0 xl:py-[2rem] font-bold hover:text-[blue]
             ${navbar
-                ? "hover:text-[white]  list-item transform transition duration-300 ease-in-out hover:translate-x-2 delay-100 pt-[3rem] md:pt-[5rem] opacity-1  translate-y-0 leading- text-[50px] md:text-[70px] text-[white]"
+                ? "hover:text-[white]  list-item transform transition duration-300 ease-in-out hover:translate-x-2 delay-100 pt-[3rem] md:pt-[5rem] pb-[0] opacity-1  translate-y-0 leading- text-[50px] md:text-[70px] text-[white]"
                 : "hidden md:flex text-[20px] "
               }`}
           >
@@ -107,7 +107,7 @@ const Nav = () => {
           </li>
           <li
             onClick={handleToggle}
-            className={`text-[40px] md:pb-0 font-bold group relative flex w-0 md:w-full flex-row
+            className={`text-[40px] xl:pb-[2rem] font-bold group relative flex w-0 md:w-full flex-row
         ${navbar
                 ? " list-item transform transition duration-300 ease-in-out hover:translate-x-2 text-[40px] md:text-[70px] gap-5 hover:text-[white] opacity-1 translate-y-0 delay-150 leading-[3rem]"
                 : "hidden text-[20px]"
@@ -125,7 +125,7 @@ const Nav = () => {
           </li>
           <li
             onClick={handleToggle}
-            className={` md:pb-0 font-bold  
+            className={` xl:pb-[2rem]  font-bold  
         ${navbar
                 ? " list-item transform transition duration-300 ease-in-out hover:translate-x-2 text-[50px] md:text-[70px] hover:text-[white] opacity-1 translate-y-0 delay-200 leading-12"
                 : "hidden text-[20px]"
@@ -135,9 +135,9 @@ const Nav = () => {
           </li>
           <li
             onClick={handleToggle}
-            className={` md:pb-0 font-bold 
+            className={` xl:pb-[2rem]  font-bold 
         ${navbar
-                ? " text-[50px] md:text-[70px]  list-item transform transition duration-300 ease-in-out hover:translate-x-2 hover:text-[white] opacity-1  translate-y-0 delay-200 leading-[3rem]"
+                ? " text-[50px]  md:text-[70px]  list-item transform transition duration-300 ease-in-out hover:translate-x-2 hover:text-[white] opacity-1  translate-y-0 delay-200 leading-[3rem]"
                 : "hidden text-[20px]"
               }`}
           >
@@ -145,7 +145,7 @@ const Nav = () => {
           </li>
 
           <li
-            className={` md:pb-0 font-bold hover:text-[blue]
+            className={` xl:pb-0 font-bold hover:text-[blue]
             ${navbar
                 ? " hover:text-[white] list-item transform transition duration-300 ease-in-out hover:translate-x-2 opacity-1  translate-y-0 delay-250 text-[50px] md:text-[70px] leading-12"
                 : "hidden md:flex text-[20px]"
