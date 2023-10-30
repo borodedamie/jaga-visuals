@@ -8,19 +8,19 @@ const Work1 = () => {
   const line2 = "bringing brands to life digitally";
 
   return (
-      <div className="pb-10 pt-10 gap-[1rem] flex flex-col md:flex-row items-center">
+      <div className="pb-10 pt-10 gap-[1rem] flex flex-col lg:flex-row items-center">
         <motion.div
           exit={{ x: "-100vh", opacity: 0 }}
-          className="flex flex-col ml-0 md:ml-[15%]">
+          className="flex flex-col ml-0 lg:ml-[15%]">
           <img src={work1} alt='work1' className="w-fit lg:w-[35vw]"/>
         </motion.div>
-        <div className="hidden md:flex px-10 text-center md:text-left flex-col mr-0 md:mr-[10%] flex-1" >
+        <div className="hidden lg:flex px-10 text-center lg:text-left flex-col mr-0 lg:mr-[10%] flex-1" >
           <motion.h2
             variants={sentence}
             initial="hidden"
             animate="visible"
 
-            className=" text-[#282860]  font-bold text-[40px] md:text-[50px] leading-tight w-0 md:w-[26rem]"
+            className=" text-[#282860]  font-bold text-[40px] lg:text-[50px] leading-tight w-0 lg:w-[26rem]"
           >
             {line1.split("").map((char, index) => {
               return (

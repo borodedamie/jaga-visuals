@@ -31,6 +31,11 @@ import sixth1 from '../assets/jaga6.jpg'
 import trust from '../assets/trust.jpg'
 import make from '../assets/make.jpg'
 import journey from '../assets/journey.jpg'
+import journey1 from '../assets/journey1.jpg'
+import any2 from '../assets/trust1.jpg'
+
+import make1 from '../assets/make1.jpg'
+
 import onyx from '../assets/Onyx.jpg'
 import poorima from '../assets/Poorima.jpg'
 export const data = [
@@ -308,18 +313,23 @@ export const carousel = [
 export const carousel1 = [
   {
     one: journey,
+    two: journey1,
     header: "Journey to the future",
     paragraph:'An expansive environment that will engage all the senses'
 
   },
   {
     one: make,
+    two: make1,
+
     header: "Make it beautiful, thoughtful and impactful",
     paragraph:"As artist, it's our job to ensure every website we design is stunning to look at, seemless to navigate and successful in its purpose. "
 
   },
   {
     one: trust,
+    two: any2,
+
     header: "Trust our people and process",
     paragraph:'We trade hierarchy for trust and politics for processes, allowing talent to flourish and new ideas to come to life through creative autonomy.'
   },

@@ -2,7 +2,7 @@ import React from "react";
 import { urlsDOF } from "../assets/data";
 import Related from "./Related";
 import ReactPlayer from "react-player";
-
+import { NavLink } from "react-router-dom";
 const BriefDOF = () => {
   return (
     <div className="px-5 md:px-20 ">
@@ -36,7 +36,13 @@ const BriefDOF = () => {
           </p>
         </div>
       </div>
-
+      <div className="flex flex-row z-10 items-center justify-center fixed bottom-2 right-0 md:bottom-6 md:right-5">
+        <NavLink to="/contact">
+          <button className=" text-center text-[13px] mt-5 items-center flex rounded-full font-medium h-[3rem] text-[white] hover:text-[blue] py-3 px-5 md:py-7 md:px-10 border-[blue] bg-[blue]  hover:bg-[white] hover:border-[blue]">
+            START YOUR PROJECT
+          </button>
+        </NavLink>
+      </div>
       <Related />
     </div>
   );

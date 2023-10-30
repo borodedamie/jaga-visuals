@@ -42,9 +42,9 @@ const WorkExpert = () => {
     <div className="mb-[10rem] overflow-hidden z-0">
       <div ref={scrollRef}>
         {" "}
-        <div className="flex flex-col gap-[5%] justify-center px-0 md:px-10 md:flex-row md:items-center">
+        <div className="flex flex-col gap-[5%] justify-center px-0 lg:px-10 lg:flex-row lg:items-center">
           <div
-            className="ml-5 mr-5 md:mr-0 md md:ml-[10%] flex-1"
+            className="ml-5 mr-5 lg:mr-0 lg lg:ml-[10%] flex-1"
             onMouseEnter={() => setAutoHover(true)}
             onMouseLeave={() => setAutoHover(false)}
           >
@@ -58,7 +58,7 @@ const WorkExpert = () => {
                 <NavLink to="/logisticsbrief">
                   <LazyLoadImage
                     alt="Images"
-                    className="flex w-fit border border-1 border-[#f2f7f2] inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[90vh]"
+                    className="flex w-fit border border-1 border-[#f2f7f2] inset-0 object-contain lg:object-cover flex-col lg:w-[70vw] lg:h-[90vh]"
                     src={logic}
                     srcSet={logic1}
                   />
@@ -76,19 +76,19 @@ const WorkExpert = () => {
                 ART DIRECTION | BRANDING{" "}
               </h2>
               <h1
-                className={`text-[35px] hover:text-[blue] font-[700] ${
+                className={`text-[25px] md:text-[35px] hover:text-[blue] font-[700] ${
                   autoHover ? "text-[blue]" : ""
                 }`}
               >
                 <NavLink to="/logisticsbrief">Autoflex Logistics Inc</NavLink>
               </h1>
-              <p className="text-[18px] mt-[0.5rem] mb-[1rem] md:mb-0">
+              <p className="text-[18px] mt-[0.5rem] mb-[1rem] lg:mb-0">
                 We fully branded a pioneering healthcare concept in the US
               </p>
             </div>
           </div>
           <div
-            className="ml-5 mr-5 md:ml-0 md:mr-[10%] flex-1"
+            className="ml-5 mr-5 lg:ml-0 lg:mr-[10%] flex-1"
             onMouseEnter={() => setDofHover(true)}
             onMouseLeave={() => setDofHover(false)}
           >
@@ -104,7 +104,7 @@ const WorkExpert = () => {
                 <NavLink to="/dofbrief">
                   <LazyLoadImage
                     alt="Images"
-                    className="flex w-fit inset-0 object-contain md:object-cover flex-col md:w-[50vw] md:h-[50vh]"
+                    className="flex w-fit inset-0 object-contain lg:object-cover flex-col lg:w-[50vw] lg:h-[50vh]"
                     src={dubai}
                     srcSet={dubai1}
                   />
@@ -116,19 +116,19 @@ const WorkExpert = () => {
                 </NavLink>
               </motion.div>
             </div>
-            <div className="text-[black] mt-[1rem] mb-[4rem] md:mb-0">
+            <div className="text-[black] mt-[1rem] mb-[4rem] lg:mb-0">
               {" "}
               <h2 className="text-[blue] tracking-widest  text-[14px] leading-10">
                 ART DIRECTION | MOTION GRAPHICS{" "}
               </h2>
               <h1
-                className={`text-[35px] hover:text-[blue] font-[700] ${
+                className={`text-[25px] md:text-[35px] hover:text-[blue] font-[700] ${
                   dofHover ? "text-[blue]" : ""
                 }`}
               >
                 <NavLink to="/dofbrief">DOF Dubai </NavLink>
               </h1>
-              <p className="text-[18px] mt-[0.5rem] mb-[1rem] md:mb-0">
+              <p className="text-[18px] mt-[0.5rem] mb-[1rem] lg:mb-0">
                 We fully branded a pioneering healthcare concept in the US
               </p>
             </div>
@@ -137,11 +137,11 @@ const WorkExpert = () => {
       </div>
       <div ref={scrollRef}>
         {" "}
-        <div className="flex flex-col justify-center px-0 md:px-10 gap-[5%] md:flex-row md:items-center">
+        <div className="flex flex-col justify-center px-0 lg:px-10 gap-[5%] lg:flex-row lg:items-center">
           <div
             onMouseEnter={() => setJumiaHover(true)}
             onMouseLeave={() => setJumiaHover(false)}
-            className="ml-5 mr-5 md:mr-0 md:ml-[10%] flex-1"
+            className="ml-5 mr-5 lg:mr-0 lg:ml-[10%] flex-1"
           >
             <div className="relative">
               <motion.div
@@ -155,7 +155,7 @@ const WorkExpert = () => {
                 <NavLink to="/jumiabrief">
                   <LazyLoadImage
                     alt="Jumia"
-                    className="flex w-fit inset-0 object-contain md:object-cover flex-col md:w-[50vw] md:h-[50vh]"
+                    className="flex w-fit inset-0 object-contain lg:object-cover flex-col lg:w-[50vw] lg:h-[50vh]"
                     srcSet={jumia1}
                     src={jumia}
                   />
@@ -167,25 +167,25 @@ const WorkExpert = () => {
                 </NavLink>
               </motion.div>
             </div>
-            <div className="text-[black] mt-[1rem] mb-[0rem] md:mb-0">
+            <div className="text-[black] mt-[1rem] mb-[0rem] lg:mb-0">
               {" "}
               <h2 className="text-[blue] tracking-widest text-[14px] leading-10">
                 ART DIRECTION | MOTION GRAPHICS{" "}
               </h2>
               <h1
-                className={`text-[35px] hover:text-[blue] font-[700] ${
+                className={`text-[25px] md:text-[35px] hover:text-[blue] font-[700] ${
                   jumiaHover ? "text-[blue]" : ""
                 }`}
               >
                 <NavLink to="/jumiabrief">Jumia Pay App</NavLink>
               </h1>
-              <p className="text-[18px] mt-[0.5rem] mb-[1rem] md:mb-0">
+              <p className="text-[18px] mt-[0.5rem] mb-[1rem] lg:mb-0">
                 We fully branded a pioneering healthcare concept in the US
               </p>
             </div>
           </div>
           <div
-            className="ml-5 mr-5 md:ml-0 md md:mr-[10%] flex-1"
+            className="ml-5 mr-5 lg:ml-0 lg lg:mr-[10%] flex-1"
             onMouseEnter={() => setForetHover(true)}
             onMouseLeave={() => setForetHover(false)}
           >
@@ -202,7 +202,7 @@ const WorkExpert = () => {
                   <LazyLoadImage
                     alt="Foret"
                     src={foret1}
-                    className="flex w-fit inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[90vh]"
+                    className="flex w-fit inset-0 object-contain lg:object-cover flex-col lg:w-[70vw] lg:h-[90vh]"
                     srcSet={foret11}
                   />
                   <div
@@ -213,19 +213,19 @@ const WorkExpert = () => {
                 </NavLink>
               </motion.div>
             </div>
-            <div className="text-[black] mt-[1rem] mb-[4rem] md:mb-0">
+            <div className="text-[black] mt-[1rem] mb-[4rem] lg:mb-0">
               {" "}
               <h2 className="text-[blue] tracking-widest text-[14px] leading-10">
                 ART DIRECTION | SOCIAL MEDIA{" "}
               </h2>
               <h1
-                className={`text-[35px] hover:text-[blue] font-[700] ${
+                className={`text-[25px] md:text-[35px] hover:text-[blue] font-[700] ${
                   foretHover ? "text-[blue]" : ""
                 }`}
               >
                 <NavLink to="/foretbrief">Foret Dubai</NavLink>
               </h1>
-              <p className="text-[18px] mt-[0.5rem] mb-[1rem] md:mb-0">
+              <p className="text-[18px] mt-[0.5rem] mb-[1rem] lg:mb-0">
                 We fully branded a pioneering healthcare concept in the US
               </p>
             </div>
@@ -234,9 +234,9 @@ const WorkExpert = () => {
       </div>
       <div ref={scrollRef}>
         {" "}
-        <div className="flex flex-col gap-[5%] justify-center px-0 md:px-10 md:flex-row md:items-center">
+        <div className="flex flex-col gap-[5%] justify-center px-0 lg:px-10 lg:flex-row lg:items-center">
           <div
-            className="ml-5 mr-5 md:mr-0 md md:ml-[10%] flex-1"
+            className="ml-5 mr-5 lg:mr-0 lg lg:ml-[10%] flex-1"
             onMouseEnter={() => setWavyHover(true)}
             onMouseLeave={() => setWavyHover(false)}
           >
@@ -253,7 +253,7 @@ const WorkExpert = () => {
                   <LazyLoadImage
                     alt="Ladies talking"
                     src={speak}
-                    className="flex w-fit inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[90vh]"
+                    className="flex w-fit inset-0 object-contain lg:object-cover flex-col lg:w-[70vw] lg:h-[90vh]"
                     srcSet={speak1}
                   />
                   <div
@@ -270,19 +270,19 @@ const WorkExpert = () => {
                 ART DIRECTION | MOTION GRAPHICS{" "}
               </h2>
               <h1
-                className={`text-[35px] hover:text-[blue] font-[700] ${
+                className={`text-[25px] md:text-[35px] hover:text-[blue] font-[700] ${
                   wavyHover ? "text-[blue]" : ""
                 }`}
               >
                 <NavLink to="/wavybrief">Wavy Beauty Inc</NavLink>
               </h1>
-              <p className="text-[18px] mt-[0.5rem] mb-[1rem] md:mb-0">
+              <p className="text-[18px] mt-[0.5rem] mb-[1rem] lg:mb-0">
                 We fully branded a pioneering healthcare concept in the US
               </p>
             </div>
           </div>
           <div
-            className="ml-5 mr-5 md:ml-0 md:mr-[10%] flex-1"
+            className="ml-5 mr-5 lg:ml-0 lg:mr-[10%] flex-1"
             onMouseEnter={() => setNagaadHover(true)}
             onMouseLeave={() => setNagaadHover(false)}
           >
@@ -299,7 +299,7 @@ const WorkExpert = () => {
                   <LazyLoadImage
                     alt="Nagaad"
                     src={nagaad1}
-                    className="flex w-fit inset-0 object-contain md:object-cover flex-col md:w-[50vw] md:h-[50vh]"
+                    className="flex w-fit inset-0 object-contain lg:object-cover flex-col lg:w-[50vw] lg:h-[50vh]"
                     srcSet={nagaad11}
                   />
                   <div
@@ -310,19 +310,19 @@ const WorkExpert = () => {
                 </NavLink>
               </motion.div>
             </div>
-            <div className="text-[black] mt-[1rem] mb-[4rem] md:mb-0">
+            <div className="text-[black] mt-[1rem] mb-[4rem] lg:mb-0">
               {" "}
               <h2 className="text-[blue] tracking-widest text-[14px] leading-10">
                 ART DIRECTION | MOTION GRAPHICS{" "}
               </h2>
               <h1
-                className={`text-[35px] hover:text-[blue] font-[700] ${
+                className={`text-[25px] md:text-[35px] hover:text-[blue] font-[700] ${
                   nagaadHover ? "text-[blue]" : ""
                 }`}
               >
                 <NavLink to="/nagaadbrief">Nagaad Organics</NavLink>
               </h1>
-              <p className="text-[18px] mt-[0.5rem] mb-[1rem] md:mb-0">
+              <p className="text-[18px] mt-[0.5rem] mb-[1rem] lg:mb-0">
                 We fully branded a pioneering healthcare concept in the US
               </p>
             </div>
@@ -331,11 +331,11 @@ const WorkExpert = () => {
       </div>
       <div ref={scrollRef}>
         {" "}
-        <div className="flex flex-col justify-center px-0 md:px-10 gap-[5%] md:flex-row md:items-center">
+        <div className="flex flex-col justify-center px-0 lg:px-10 gap-[5%] lg:flex-row lg:items-center">
           <div
             onMouseEnter={() => setPremiumHover(true)}
             onMouseLeave={() => setPremiumHover(false)}
-            className="ml-5 mr-5 md:mr-0 md:ml-[10%] flex-1"
+            className="ml-5 mr-5 lg:mr-0 lg:ml-[10%] flex-1"
           >
             <div className="relative">
               <motion.div
@@ -350,7 +350,7 @@ const WorkExpert = () => {
                   <LazyLoadImage
                     alt="101 Premium Properties"
                     src={oneO}
-                    className="flex w-fit inset-0 object-contain md:object-cover flex-col md:w-[50vw] md:h-[50vh]"
+                    className="flex w-fit inset-0 object-contain lg:object-cover flex-col lg:w-[50vw] lg:h-[50vh]"
                   />
                   <div
                     className={`inset-0 absolute ${
@@ -366,19 +366,19 @@ const WorkExpert = () => {
                 ART DIRECTION | MOTION GRAPHICS{" "}
               </h2>
               <h1
-                className={`text-[35px] hover:text-[blue] font-[700] ${
+                className={`text-[25px] md:text-[35px] hover:text-[blue] font-[700] ${
                   premiumHover ? "text-[blue]" : ""
                 }`}
               >
                 <NavLink to="/onebrief">101 Premium Properties</NavLink>
               </h1>
-              <p className="text-[18px] mt-[0.5rem] mb-[1rem] md:mb-0">
+              <p className="text-[18px] mt-[0.5rem] mb-[1rem] lg:mb-0">
                 We fully branded a pioneering healthcare concept in the US
               </p>
             </div>
           </div>
           <div
-            className="ml-5 mr-5 md:ml-0 md md:mr-[10%] flex-1"
+            className="ml-5 mr-5 lg:ml-0 lg lg:mr-[10%] flex-1"
             onMouseEnter={() => setHoHover(true)}
             onMouseLeave={() => setHoHover(false)}
           >
@@ -395,7 +395,7 @@ const WorkExpert = () => {
                   <LazyLoadImage
                     alt="HO gas"
                     src={HO}
-                    className="flex w-fit inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[90vh]"
+                    className="flex w-fit inset-0 object-contain lg:object-cover flex-col lg:w-[70vw] lg:h-[90vh]"
                     srcSet={HO}
                   />
                   <div
@@ -406,19 +406,19 @@ const WorkExpert = () => {
                 </NavLink>
               </motion.div>
             </div>
-            <div className="text-[black] mt-[1rem] mb-[2rem] md:mb-0">
+            <div className="text-[black] mt-[1rem] mb-[2rem] lg:mb-0">
               {" "}
               <h2 className="text-[blue] tracking-widest text-[14px] leading-10">
                 ART DIRECTION | SOCIAL MEDIA{" "}
               </h2>
               <h1
-                className={`text-[35px] hover:text-[blue] font-[700] ${
+                className={`text-[25px] md:text-[35px] hover:text-[blue] font-[700] ${
                   HoHover ? "text-[blue]" : ""
                 }`}
               >
                 <NavLink to="/hobrief">HO Gas</NavLink>
               </h1>
-              <p className="text-[18px] mt-[0.5rem] mb-[1rem] md:mb-0">
+              <p className="text-[18px] mt-[0.5rem] mb-[1rem] lg:mb-0">
                 We fully branded a pioneering healthcare concept in the US
               </p>
             </div>
@@ -426,9 +426,9 @@ const WorkExpert = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-[5%] justify-center px-0 md:px-10 md:flex-row md:items-center">
+      <div className="flex flex-col gap-[5%] justify-center px-0 lg:px-10 lg:flex-row lg:items-center">
         <div
-          className="ml-5 mr-5 md:mr-0 md md:ml-[10%] flex-1"
+          className="ml-5 mr-5 lg:mr-0 lg lg:ml-[10%] flex-1"
           onMouseEnter={() => setPondaHover(true)}
           onMouseLeave={() => setPondaHover(false)}
         >
@@ -445,7 +445,7 @@ const WorkExpert = () => {
                     <video
                     
                     ref={videoRef}
-                    className="flex w-fit inset-0 object-contain md:object-cover flex-col md:w-[70vw] md:h-[90vh]"
+                    className="flex w-fit inset-0 object-contain lg:object-cover flex-col lg:w-[70vw] lg:h-[90vh]"
                     loop
                     autoPlay
                     muted
@@ -479,26 +479,26 @@ const WorkExpert = () => {
               ART DIRECTION | BRANDING{" "}
             </h2>
             <h1
-              className={`text-[35px] hover:text-[blue] font-[700] ${
+              className={`text-[25px] md:text-[35px] hover:text-[blue] font-[700] ${
                 pondaHover ? "text-[blue]" : ""
               }`}
             >
               <NavLink to="/logisticsbrief">Ponda Tribe</NavLink>
             </h1>
-            <p className="text-[18px] mt-[0.5rem] mb-[1rem] md:mb-0">
+            <p className="text-[18px] mt-[0.5rem] mb-[1rem] lg:mb-0">
               We fully branded a pioneering healthcare concept in the US
             </p>
           </div>
         </div>
         <div
-          className="ml-5 mr-5 md:ml-0 md:mr-[10%] flex-1"
+          className="ml-5 mr-5 lg:ml-0 lg:mr-[10%] flex-1"
           onMouseEnter={() => setDofHover(true)}
           onMouseLeave={() => setDofHover(false)}
         ></div>
       </div>
-      <div className="flex flex-row z-10 items-center justify-center fixed bottom-2 right-0 md:bottom-6 md:right-5">
+      <div className="flex flex-row z-10 items-center justify-center fixed bottom-2 right-0 lg:bottom-6 lg:right-5">
         <NavLink to="/contact">
-          <button className=" text-center text-[15px] mt-5 items-center flex rounded-full font-medium h-[4rem] text-[white] hover:text-[blue] py-3 px-5 md:py-7 md:px-10 border-[blue] bg-[blue]  hover:bg-[white] border-[0]">
+          <button className=" text-center text-[15px] mt-5 items-center flex rounded-full font-medium h-[4rem] text-[white] hover:text-[blue] py-3 px-5 lg:py-7 lg:px-10 border-[blue] bg-[blue]  hover:bg-[white] border-[0]">
             START YOUR PROJECT
           </button>
         </NavLink>

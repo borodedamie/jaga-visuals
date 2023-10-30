@@ -3,9 +3,9 @@ import hero from "../assets/bg.webp";
 import { NavLink } from "react-router-dom";
 const Interests = () => {
   return (
-    <div style={{ backgroundImage: `url(${hero})` }} className="flex bg-cover h-[100vh] mt-20 flex-col px-5 md:px-0 md:flex-row py-20  justify-center items-start md:items-start gap-[10%]">
-      <div className="flex-1 ml-0  md:ml-[10%]" >
-        <h2 className="text-white text-[40px] font-bold mb-5">
+    <div style={{ backgroundImage: `url(${hero})` }} className="flex pt-[2rem] md:pt-[10rem] bg-cover h-[100vh] mt-20 flex-col px-5 md:px-0 md:flex-row py-20 justify-center items-start md:items-start gap-[10%]">
+      <div className="flex-1 ml-0  md:ml-[10%] " >
+        <h2 className="text-white text-[30px] md:text-[40px] font-bold mb-5">
           If you’ve got some cool stuff you’d like to share we’d love to see it
           even if there isn’t a fit right now
         </h2>

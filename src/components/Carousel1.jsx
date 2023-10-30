@@ -24,14 +24,14 @@ const Carousel1 = () => {
           perView: 5,
         },
       },
-      gap: 10,
+      gap: 20,
     }).mount();
   }, []);
   return (
     <div>
       <div className="glide" style={{ paddingTop: "5%", paddingBottom: "10%" }}>
         <div className="glide__track" data-glide-el="track">
-          <div className="glide__slides" style={{ marginLeft: "4%" }}>
+          <div className="glide__slides" style={{ marginLeft: "6%" }}>
             {carousel.map((carousel1, index) => {
               return (
                 <div className="glide__slide" key={index}>
@@ -60,7 +60,7 @@ const Carousel1 = () => {
           </div>
         </div>
         <div
-          className="glide__arrows text-[white] pl-[1rem] md:pl-[5rem] lg:pl-[10rem]"
+          className="glide__arrows text-[white] ml-[6%]"
           data-glide-el="controls"
         >
           <button

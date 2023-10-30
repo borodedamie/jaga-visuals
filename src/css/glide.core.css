@@ -89,7 +89,7 @@
         white-space: normal;
         user-select: none;
         -webkit-touch-callout: none;
-        margin-bottom: 4rem;
+        /* margin-bottom: 4rem; */
         align-items: center;
         -webkit-tap-highlight-color: transparent; }
         .glide1__slide a {
