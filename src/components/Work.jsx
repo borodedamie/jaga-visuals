@@ -17,7 +17,7 @@ const Work = () => {
 
   return (
     <div>
-      <div className="bg-[#1c1b1b] mt-20 py-[9rem]">
+      <div className="bg-[#1c1b1b] mt-20 pt-[3rem] md:pt-[9rem] pb-[9rem] md:pb-[9rem]">
         <div className="flex flex-col md:flex-col lg:flex-row mb-[4rem] md:mb-0 gap-0 md:gap-[2rem] lg:gap-[10rem] mx-0 lg:mx-60">
           <div
             className="text-[white] flex flex-col font-bold justify-center items-center lg:items-start text-[120px] md:text-[170px]"

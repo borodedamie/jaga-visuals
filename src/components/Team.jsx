@@ -18,14 +18,14 @@ const Team = () => {
       perView: 5,
       breakpoints: {
         420:{
-          perView: 1, 
+          perView: 1.5, 
 
         },
         768: {
-          perView: 2, 
+          perView: 2.5, 
         },
         1024: {
-          perView: 3,
+          perView: 3.5,
         },
         1280: {
           perView: 5, 

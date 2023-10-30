@@ -33,7 +33,7 @@ const Related = () => {
                   <motion.div
                     className="opacity-100 hover:opacity-75 "
                     variants={fadeOut("bottom", 0.5)}
-                    viewport={{ amount: 0.7 }}
+                    viewport={{ amount: 0.7, once: true }}
                     initial="hidden"
                     whileInView={"show"}
                   >
@@ -77,7 +77,7 @@ const Related = () => {
                 <motion.div
                   className="opacity-100 hover:opacity-75 "
                   variants={fadeOut("bottom", 0.5)}
-                  viewport={{ amount: 0.7 }}
+                  viewport={{ amount: 0.7, once: true }}
                   initial="hidden"
                   whileInView={"show"}
                 >

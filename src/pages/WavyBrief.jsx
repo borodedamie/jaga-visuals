@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import BriefW from '../components/BriefW';
+import Related from '../components/Related';
 
 
 const WavyBrief = () => {
@@ -9,6 +10,7 @@ const WavyBrief = () => {
     <div>
       <Nav/>
       <BriefW/>
+      <Related/>
       <Footer/>
     </div>
   );
