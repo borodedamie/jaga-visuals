@@ -11,7 +11,7 @@ import vitamin from "../assets/vitamin.png";
 const BriefNagaad = () => {
   return (
     <div>
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center ">
         <img
           className=""
           src={organic}
@@ -24,10 +24,10 @@ const BriefNagaad = () => {
           <p className="text-[25px] md:text-[50px] font-Roboto">Since 1940</p>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row px-[1rem] md:px-[4rem] justify-center items-center md:items-end lg:items-center xl:items-end max-w-[100%] w-[100%] gap-0 md:gap-[10rem] pt-[2rem] md:pt-[10rem]">
+      <div className="flex flex-col  lg:flex-row px-[1rem] md:px-[4rem] justify-center items-center md:items-end lg:items-center xl:items-end max-w-[100%] w-[100%] gap-0 md:gap-[10rem] pt-[2rem] md:pt-[10rem]">
         <div className="flex flex-col max-w-fit w-fit lg:max-w-[65%] lg:w-[100%] ">
-          <h2 className="text-[blue] text-[35px] md:text-[65px] font-bold">The Brief</h2>
-          <p className="text-[22px] md:text-[50px] lg:text-[35px] text-[#797070]">
+        <h2 className="text-[blue] text-[35px] md:text-[50px] font-bold">The Brief</h2>
+          <p className="text-[20px] text-[#797070]">
             Nagaad Resins and Gums (Nagaad Gums) started in the late 1940s as a
             family business in rural Somalia. Focused on sustainable resin and
             gum harvesting, it empowered communities, conserved the environment,

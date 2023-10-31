@@ -18,7 +18,7 @@ const Team = () => {
       perView: 4.5,
       breakpoints: {
         420:{
-          perView: 1, 
+          perView: 1.5, 
         },
         540: {
           perView: 1.5, 

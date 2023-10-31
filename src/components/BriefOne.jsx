@@ -20,14 +20,13 @@ const BriefOne = () => {
       </div>
 
       <div className="flex flex-col px-[1rem] md:px-[10.5rem] mt-[2rem] md:mt-[10rem]">
-        <h2 className="text-[blue] text-[35px] md:text-[75px] font-bold">
-          The Brief
-        </h2>
-        <p className="text-[22px] md:text-[50px] lg:text-[35px] text-[#797070]">
+      <h2 className="text-[blue] text-[35px] md:text-[50px] font-bold">The Brief</h2>
+
+        <p className="text-[20px] text-[#797070]">
           101 Premium Properties Live in #Turkiye
         </p>
         <br />
-        <span className="text-[22px] md:text-[50px] lg:text-[35px] text-[#797070]">
+        <span className="text-[20px] text-[#797070]">
           Dubai Property Show providing Turks with the best Real Estate
           Investment options in Dubai.
           <br />

@@ -24,9 +24,9 @@ const BriefDOF = () => {
         })}
       </div>
       <div className="flex flex-col justify-around gap-5 w-full px-5 md:pl-[10%] ">
-      <h2 className="text-[blue] text-[35px] md:text-[65px] font-bold">The Brief</h2>
+      <h2 className="text-[blue] text-[35px] md:text-[50px] font-bold">The Brief</h2>
         <div className="flex">
-          <p className="flex items-end text-left font-medium text-[22px] md:text-[50px] lg:text-[35px] w-[100vw] xl:w-[60vw] text-[#797070]">
+          <p className="text-[20px] text-[#797070] flex items-end text-left w-[100vw] xl:w-[60vw]">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, velit
             dolores? Fuga omnis odit eligendi quaerat repellat ex architecto
             nobis facilis, veniam ullam dolores quo necessitatibus quas deleniti

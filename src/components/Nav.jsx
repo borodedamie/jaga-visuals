@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { BiMenuAltRight } from "react-icons/bi";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { ImCancelCircle } from "react-icons/im";
 import { BiLogoInstagram } from "react-icons/bi";
 import { BiLogoWhatsapp } from "react-icons/bi";
 import { AiOutlineYoutube } from "react-icons/ai";
-import youtube from "../assets/youtube-01.png";
 import { MdClose } from "react-icons/md";
 import logo from "../assets/logo.jpg";
 import logoWhite from "../assets/Jaga Visuals logo-white.png";
@@ -22,13 +20,13 @@ const Nav = () => {
       className={`top-0 flex flex-row justify-between overflow-hidden
     ${navbar
           ? "pl-10 mx-0 bg-[blue] z-20 h-[100vh] absolute transform translate-y-0 transition-safelist w-full duration-400 ease-in flex flex-col justify-start items-start text-[#1f1f61] "
-          : "transform items-center flex flex-row -translate-y-0 transition-safelist text-[black] gap-[1.5rem] justify-center"
+          : "transform  items-center flex flex-row -translate-y-0 transition-safelist text-[black] gap-[1.5rem] justify-between"
         }`}
     >
       <div className="flex justify-between items-center">
         <NavLink to="/">
           <LazyLoadImage
-            className={`flex 
+            className={`flex
           ${navbar ? "hidden" : "flex pl-10 pt-10 w-[8rem] h-[8rem] "}`}
             src={logo}
             alt="Logo"
@@ -57,12 +55,12 @@ const Nav = () => {
               >
                 <a href="https://www.instagram.com/jaga-visuals/">
                   {" "}
-                  <BiLogoInstagram className="text-[white] text-[25px]" />
+                  <BiLogoInstagram className="cursor-pointer text-[white] text-[25px]" />
                 </a>
               </li>
               <li
                 onClick={handleToggle}
-                className={` rounded-full  w-[40px] h-[40px] border flex items-center text-center justify-center
+                className={` rounded-full hover:text-[white]  w-[40px] h-[40px] border flex items-center text-center justify-center
         ${navbar
                     ? "flex  text-[80px] hover:text-[white] transition-all duration-300 ease-in-out delay-150"
                     : "hidden text-[20px]"
@@ -70,7 +68,7 @@ const Nav = () => {
               >
                 <a href="https://www.instagram.com/jaga-visuals/">
                   {" "}
-                  <BiLogoWhatsapp className="text-[white] text-[25px]" />
+                  <BiLogoWhatsapp className="cursor-pointer  text-[white] text-[25px]" />
                 </a>
               </li>
               <li
@@ -81,8 +79,9 @@ const Nav = () => {
                     : "hidden"
                   }`}
               >
-                <a href="https://www.youtube.com/@jagavisuals">
-                  <AiOutlineYoutube className="text-white hover:text-[white] text-[25px]" />
+                <a href="https://www.youtube.com/@jagavisuals/">
+                  {" "}
+                  <AiOutlineYoutube className="cursor-pointer text-white  text-[25px]" />
                 </a>
               </li>
             </div>
@@ -90,9 +89,9 @@ const Nav = () => {
         </div>
 
         <ul
-          className={`flex flex-row   ${navbar
-              ? "flex-col absolute top-[5rem] left-10 lg:top-[3rem] lg:left-[10rem] pl-0 lg:pl-[7rem] xl:pl-[15rem] h-full md:h-[100vh] pt-0 lg:pt-[0rem] xl:pt-[5rem] 2xl:pt-[10rem] translate-y-0 transition-safelist transform"
-              : "items-center gap-10 "
+          className={`flex flex-row right-0    ${navbar
+              ? "flex-col fixed top-[5rem] left-10 lg:top-[3rem] lg:left-[10rem] pl-0 lg:pl-[7rem] xl:pl-[15rem] h-full md:h-[100vh] pt-0 lg:pt-[0rem] xl:pt-[5rem] 2xl:pt-[10rem] translate-y-0 transition-safelist transform"
+              : "items-center  gap-10 "
             }`}
         >
           <li
