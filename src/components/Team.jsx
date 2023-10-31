@@ -15,23 +15,25 @@ import Carousel2 from "./Carousel2";
 const Team = () => {
   useEffect(() => {
     new Glide(".glide", {
-      perView: 5,
+      perView: 4.5,
       breakpoints: {
         420:{
+          perView: 1, 
+        },
+        540: {
           perView: 1.5, 
-
         },
         768: {
           perView: 2.5, 
         },
         1024: {
-          perView: 3.5,
+          perView: 2.5,
         },
         1280: {
-          perView: 5, 
+          perView: 4, 
         },
       },
-      gap: 10,
+      gap: 20,
     }).mount();
   }, []);
 
