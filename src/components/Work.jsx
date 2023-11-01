@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { fadeOut, fadeIn } from "./variants";
-import logic from "../assets/Autoflex-Logistics-01-01.jpg";
-import dubai from "../assets/dubai.jpg";
+import logic from "../assets/Autoflex-Logistics-01-01.webp";
+import dubai from "../assets/dubai.webp";
 import jumia from "../assets/jumia1.webp";
 import foret1 from "../assets/foret1.webp";
 import { NavLink } from "react-router-dom";

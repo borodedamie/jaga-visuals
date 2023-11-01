@@ -1,19 +1,19 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { fadeOut } from "./variants";
-import jva from "../assets/damage.jpg";
-import premium from "../assets/premium.jpg";
-import client from "../assets/clients.jpg";
-import fortune from "../assets/Fortune.png";
-import Auto from "../assets/Autoflex.png";
-import foret from "../assets/Foret.png";
-import livevend from "../assets/Livevend.png";
-import kitchen from "../assets/Kitchenji.png";
-import jumia from "../assets/Jumia.png";
-import wavy from "../assets/Wavy.png";
-import nagaad from "../assets/Nagaad.png";
-import one from "../assets/one.png";
-import immerse from "../assets/immerse.png";
+import jva from "../assets/damage.webp";
+import premium from "../assets/premium.webp";
+import client from "../assets/clients.webp";
+import fortune from "../assets/Fortune.webp";
+import Auto from "../assets/Autoflex.webp";
+import foret from "../assets/Foret.webp";
+import livevend from "../assets/Livevend.webp";
+import kitchen from "../assets/Kitchenji.webp";
+import jumia from "../assets/Jumia.webp";
+import wavy from "../assets/Wavy.webp";
+import nagaad from "../assets/Nagaad.webp";
+import one from "../assets/one.webp";
+import immerse from "../assets/immerse.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Clients = () => {

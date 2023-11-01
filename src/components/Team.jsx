@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import damage from "../assets/damage.jpg";
+import damage from "../assets/damage.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { carousel } from "../assets/data";

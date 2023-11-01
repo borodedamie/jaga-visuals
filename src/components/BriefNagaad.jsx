@@ -1,12 +1,12 @@
 import React from "react";
-import organic from "../assets/organic.png";
-import king from "../assets/Frankincese.png";
-import secret from "../assets/ssecret.png";
-import smile1 from "../assets/smile1.png";
-import start from "../assets/start.png";
+import organic from "../assets/organic.webp";
+import king from "../assets/Frankincese.webp";
+import secret from "../assets/ssecret.webp";
+import smile1 from "../assets/smile1.webp";
+import start from "../assets/start.webp";
 import { NavLink } from "react-router-dom";
-import perfume from "../assets/cream.png";
-import vitamin from "../assets/vitamin.png";
+import perfume from "../assets/cream.webp";
+import vitamin from "../assets/vitamin.webp";
 
 const BriefNagaad = () => {
   return (

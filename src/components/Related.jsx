@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
-import jumia1 from "../assets/jumia-mobile.jpg";
+import jumia1 from "../assets/jumia-mobile.webp";
 import jumia from "../assets/jumia1.webp";
-import foret11 from "../assets/foret-mobile.jpg";
+import foret11 from "../assets/foret-mobile.webp";
 import foret1 from "../assets/foret1.webp";
 import { motion } from "framer-motion";
 import { fadeOut } from "./variants";

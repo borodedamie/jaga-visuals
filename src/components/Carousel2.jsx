@@ -6,12 +6,12 @@ import { BsArrowRight } from "react-icons/bs";
 import Glide from "@glidejs/glide";
 import "../css/glide.core.css";
 import "../css/glide.theme.css";
-import journey from "../assets/journey.jpg";
-import journey1 from "../assets/journey1.jpg";
-import make from "../assets/make.jpg";
-import make1 from "../assets/make1.jpg";
-import trust1 from "../assets/trust1.jpg";
-import trust from "../assets/trust.jpg";
+import journey from "../assets/journey.webp";
+import journey1 from "../assets/journey1.webp";
+import make from "../assets/make.webp";
+import make1 from "../assets/make1.webp";
+import trust1 from "../assets/trust1.webp";
+import trust from "../assets/trust.webp";
 
 const Carousel2 = () => {
   useEffect(() => {

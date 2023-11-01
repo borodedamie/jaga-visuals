@@ -1,11 +1,10 @@
 import React from "react";
-import auto from "../assets/auto1.png";
-import king from "../assets/Frankincese.png";
-import right from "../assets/right.png";
-import cut from "../assets/cut.png";
-import deal from "../assets/deal.png";
+import auto from "../assets/auto1.webp";
+import right from "../assets/right.webp";
+import cut from "../assets/cut.webp";
+import deal from "../assets/deal.webp";
 import { NavLink } from "react-router-dom";
-import word from "../assets/word.png";
+import word from "../assets/word.webp";
 
 const BriefL = () => {
   return (

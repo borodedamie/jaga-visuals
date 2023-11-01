@@ -1,9 +1,9 @@
 import React from "react";
-import one from "../assets/01.png";
-import days from "../assets/2days.png";
-import forte from "../assets/forte.png";
-import smart from "../assets/smart.png";
-import show from "../assets/show.png";
+import one from "../assets/01.webp";
+import days from "../assets/2days.webp";
+import forte from "../assets/forte.webp";
+import smart from "../assets/smart.webp";
+import show from "../assets/show.webp";
 import { NavLink } from "react-router-dom";
 const BriefOne = () => {
   return (

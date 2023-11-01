@@ -6,8 +6,8 @@ import { BiLogoInstagram } from "react-icons/bi";
 import { BiLogoWhatsapp } from "react-icons/bi";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
-import logo from "../assets/logo.jpg";
-import logoWhite from "../assets/Jaga Visuals logo-white.png";
+import logo from "../assets/logo.webp";
+import logoWhite from "../assets/Jaga Visuals logo-white.webp";
 
 const Nav = () => {
   const [navbar, setNavbar] = useState(false);

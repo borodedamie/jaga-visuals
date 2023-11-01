@@ -3,7 +3,7 @@ import { data } from "../assets/data";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Button from "./Button";
 import { motion } from "framer-motion";
-import services2 from "../assets/services.png";
+import services2 from "../assets/services.webp";
 import { MdNavigateNext } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { sentence, letter, fadeIn } from "./variants";

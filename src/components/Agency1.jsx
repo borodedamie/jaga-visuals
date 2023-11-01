@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import agency1 from "../assets/agency.png";
+import agency1 from "../assets/agency.webp";
 import promo from '../assets/promo.mp4'
 import { sentence, letter } from "./variants";
 import { NavLink } from "react-router-dom";

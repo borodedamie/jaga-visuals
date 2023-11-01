@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { sentence, letter } from "./variants";
-import idea1 from "../assets/idea.png";
+import idea1 from "../assets/idea.webp";
 
 const Header = () => {
 
