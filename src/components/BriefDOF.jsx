@@ -1,6 +1,5 @@
 import React from "react";
 import { urlsDOF } from "../assets/data";
-import Related from "./Related";
 import ReactPlayer from "react-player";
 import { NavLink } from "react-router-dom";
 const BriefDOF = () => {
@@ -25,9 +24,9 @@ const BriefDOF = () => {
         })}
       </div>
       <div className="flex flex-col justify-around gap-5 w-full px-5 md:pl-[10%] ">
-        <h2 className="font-bold text-[40px] text-[blue]">The Brief</h2>
+      <h2 className="text-[blue] text-[35px] md:text-[50px] font-bold">The Brief</h2>
         <div className="flex">
-          <p className="flex items-end text-left font-medium text-[16px] w-[60vw]">
+          <p className="text-[20px] text-[#797070] flex items-end text-left w-[100vw] xl:w-[60vw]">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, velit
             dolores? Fuga omnis odit eligendi quaerat repellat ex architecto
             nobis facilis, veniam ullam dolores quo necessitatibus quas deleniti
@@ -43,7 +42,6 @@ const BriefDOF = () => {
           </button>
         </NavLink>
       </div>
-      <Related />
     </div>
   );
 };

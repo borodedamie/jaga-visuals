@@ -35,7 +35,7 @@ const Carousel1 = () => {
             {carousel.map((carousel1, index) => {
               return (
                 <div className="glide__slide" key={index}>
-                  <div className="flex flex-col w-[18rem] ">
+                  <div className="flex flex-col w-[15rem] md:w-[18rem] ">
                     <div className="">
                       <img
                         className="w-[20rem] border-0 rounded-b-none rounded-t-2xl"

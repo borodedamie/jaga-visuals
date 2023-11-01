@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
-import jumia1 from "../assets/jumia-mobile.jpg";
+import jumia1 from "../assets/jumia-mobile.webp";
 import jumia from "../assets/jumia1.webp";
-import foret11 from "../assets/foret-mobile.jpg";
+import foret11 from "../assets/foret-mobile.webp";
 import foret1 from "../assets/foret1.webp";
 import { motion } from "framer-motion";
 import { fadeOut } from "./variants";
@@ -15,7 +15,21 @@ const Related = () => {
   const [foretHover, setForetHover] = useState(false);
 
   return (
-    <div className="px-[2rem] lg:px-[7rem] flex flex-col">
+    <div className="px-[2rem] pb-[3rem] md:pb-[5rem] lg:px-[7rem] flex flex-col">
+      <div className="flex pt-[4rem] md:pt-[15rem] pb-20 md:pb-30 flex-col md:flex-row items-center gap-10 justify-center lg:justify-center">
+        <h2 className="text-[blue] font-bold text-[30px] md:text-[45px] ">
+          Don't be Shy
+        </h2>
+        <hr className="hidden md:flex border-3 h-[7rem] w-[.3rem] bg-[blue]" />
+        <div className="flex flex-row items-center justify-center">
+          <NavLink to="/contact">
+            <button className="text-[12px] justify-center items-center md:text-[25px] text-center flex rounded-full font-medium h-[2rem] md:h-[4rem] lg:h-[5rem] text-[white] p-5 border-[blue] w-fit md:w-[20rem] lg:w-[20rem] xl:w-[30rem] bg-[blue] border-[2px] hover:bg-[white] hover:text-[blue] hover:border-[blue]">
+              START YOUR PROJECT
+            </button>
+          </NavLink>
+        </div>
+      </div>
+
       <h2 className="text-[black] font-bold text-[35px] md:text-[45px] my-[5%]">
         Related Projects
       </h2>
@@ -23,7 +37,7 @@ const Related = () => {
         {" "}
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start md:justify-between gap-5 md:gap-10 mb-[7%]">
           <div
-          className=""
+            className=""
             onMouseEnter={() => setJumiaHover(true)}
             onMouseLeave={() => setJumiaHover(false)}
           >
@@ -33,7 +47,7 @@ const Related = () => {
                   <motion.div
                     className="opacity-100 hover:opacity-75 "
                     variants={fadeOut("bottom", 0.5)}
-                    viewport={{ amount: 0.7 }}
+                    viewport={{ amount: 0.7, once: true }}
                     initial="hidden"
                     whileInView={"show"}
                   >
@@ -77,14 +91,13 @@ const Related = () => {
                 <motion.div
                   className="opacity-100 hover:opacity-75 "
                   variants={fadeOut("bottom", 0.5)}
-                  viewport={{ amount: 0.7 }}
+                  viewport={{ amount: 0.7, once: true }}
                   initial="hidden"
                   whileInView={"show"}
                 >
                   <LazyLoadImage
                     src={foret1}
                     className="flex inset-0 object-contain md:object-cover flex-col w-[20rem] h-[20rem] md:w-[40vw] md:h-fit"
-                   
                     srcSet={foret11}
                   />
                   <div
@@ -110,19 +123,7 @@ const Related = () => {
             </div>
           </div>
         </div>
-        <div className="flex pt-20 pb-40 flex-col md:flex-row items-center gap-10 justify-center lg:justify-center">
-          <h2 className="text-[blue] font-bold text-[30px] md:text-[45px] ">Don't be Shy</h2>
-          <hr className="hidden md:flex border-3 h-[7rem] w-[.3rem] bg-[blue]" />
-          <div className="flex flex-row items-center justify-center">
-            <NavLink to="/contact">
-              <button className="text-[12px] justify-center items-center md:text-[25px] text-center flex rounded-full font-medium h-[2rem] md:h-[4rem] lg:h-[5rem] text-[white] p-5 border-[blue] w-fit md:w-[20rem] lg:w-[20rem] xl:w-[30rem] bg-[blue] border-[2px] hover:bg-[white] hover:text-[blue] hover:border-[blue]">
-                START YOUR PROJECT
-              </button>
-            </NavLink>
-          </div>
-        </div>
       </div>
-      
     </div>
   );
 };

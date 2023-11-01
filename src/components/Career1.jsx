@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { sentence, letter, fadeIn } from "./variants";
-import join1 from "../assets/join.png";
+import join1 from "../assets/join.webp";
 import { NavLink } from "react-router-dom";
 
 const Career1 = () => {

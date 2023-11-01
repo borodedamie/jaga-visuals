@@ -2,14 +2,12 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { BiMenuAltRight } from "react-icons/bi";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { ImCancelCircle } from "react-icons/im";
 import { BiLogoInstagram } from "react-icons/bi";
 import { BiLogoWhatsapp } from "react-icons/bi";
 import { AiOutlineYoutube } from "react-icons/ai";
-import youtube from "../assets/youtube-01.png";
 import { MdClose } from "react-icons/md";
-import logo from "../assets/logo.jpg";
-import logoWhite from "../assets/Jaga Visuals logo-white.png";
+import logo from "../assets/logo.webp";
+import logoWhite from "../assets/Jaga Visuals logo-white.webp";
 
 const Nav = () => {
   const [navbar, setNavbar] = useState(false);
@@ -22,13 +20,13 @@ const Nav = () => {
       className={`top-0 flex flex-row justify-between overflow-hidden
     ${navbar
           ? "pl-10 mx-0 bg-[blue] z-20 h-[100vh] absolute transform translate-y-0 transition-safelist w-full duration-400 ease-in flex flex-col justify-start items-start text-[#1f1f61] "
-          : "transform items-center flex flex-row -translate-y-0 transition-safelist text-[black] gap-[1.5rem] justify-center"
+          : "transform  items-center flex flex-row -translate-y-0 transition-safelist text-[black] gap-[1.5rem] justify-between"
         }`}
     >
       <div className="flex justify-between items-center">
         <NavLink to="/">
           <LazyLoadImage
-            className={`flex 
+            className={`flex
           ${navbar ? "hidden" : "flex pl-10 pt-10 w-[8rem] h-[8rem] "}`}
             src={logo}
             alt="Logo"
@@ -57,12 +55,12 @@ const Nav = () => {
               >
                 <a href="https://www.instagram.com/jaga-visuals/">
                   {" "}
-                  <BiLogoInstagram className="text-[white] text-[25px]" />
+                  <BiLogoInstagram className="cursor-pointer text-[white] text-[25px]" />
                 </a>
               </li>
               <li
                 onClick={handleToggle}
-                className={` rounded-full  w-[40px] h-[40px] border flex items-center text-center justify-center
+                className={` rounded-full hover:text-[white]  w-[40px] h-[40px] border flex items-center text-center justify-center
         ${navbar
                     ? "flex  text-[80px] hover:text-[white] transition-all duration-300 ease-in-out delay-150"
                     : "hidden text-[20px]"
@@ -70,7 +68,7 @@ const Nav = () => {
               >
                 <a href="https://www.instagram.com/jaga-visuals/">
                   {" "}
-                  <BiLogoWhatsapp className="text-[white] text-[25px]" />
+                  <BiLogoWhatsapp className="cursor-pointer  text-[white] text-[25px]" />
                 </a>
               </li>
               <li
@@ -81,8 +79,9 @@ const Nav = () => {
                     : "hidden"
                   }`}
               >
-                <a href="https://www.youtube.com/@jagavisuals">
-                  <AiOutlineYoutube className="text-white hover:text-[white] text-[25px]" />
+                <a href="https://www.youtube.com/@jagavisuals/">
+                  {" "}
+                  <AiOutlineYoutube className="cursor-pointer text-white  text-[25px]" />
                 </a>
               </li>
             </div>
@@ -90,14 +89,14 @@ const Nav = () => {
         </div>
 
         <ul
-          className={`flex flex-row   ${navbar
-              ? "flex-col absolute top-[5rem] left-10 lg:top-[3rem] lg:left-[10rem] pl-0 lg:pl-[7rem] xl:pl-[15rem] h-full md:h-[100vh] pt-0 lg:pt-[0rem] xl:pt-[5rem] 2xl:pt-[10rem] translate-y-0 transition-safelist transform"
-              : "items-center gap-10 "
+          className={`flex flex-row right-0    ${navbar
+              ? "flex-col fixed top-[5rem] left-10 lg:top-[3rem] lg:left-[10rem] pl-0 lg:pl-[7rem] xl:pl-[15rem] h-full md:h-[100vh] pt-0 lg:pt-[0rem] xl:pt-[5rem] 2xl:pt-[10rem] translate-y-0 transition-safelist transform"
+              : "items-center  gap-10 "
             }`}
         >
           <li
             onClick={handleToggle}
-            className={`mt-[5rem] py-0 md:mt-0 xl:py-[2rem] font-bold hover:text-[blue]
+            className={`mt-[5rem] py-0 md:mt-0 xl:py-[.5rem] font-bold hover:text-[blue]
             ${navbar
                 ? "hover:text-[white]  list-item transform transition duration-300 ease-in-out hover:translate-x-2 delay-100 pt-[3rem] md:pt-[5rem] pb-[0] opacity-1  translate-y-0 leading- text-[50px] md:text-[70px] text-[white]"
                 : "hidden md:flex text-[20px] "
@@ -107,7 +106,7 @@ const Nav = () => {
           </li>
           <li
             onClick={handleToggle}
-            className={`text-[40px] xl:pb-[2rem] font-bold group relative flex w-0 md:w-full flex-row
+            className={`text-[40px] xl:pb-[.5rem] font-bold group relative flex w-0 md:w-full flex-row
         ${navbar
                 ? " list-item transform transition duration-300 ease-in-out hover:translate-x-2 text-[40px] md:text-[70px] gap-5 hover:text-[white] opacity-1 translate-y-0 delay-150 leading-[3rem]"
                 : "hidden text-[20px]"
@@ -125,7 +124,7 @@ const Nav = () => {
           </li>
           <li
             onClick={handleToggle}
-            className={` xl:pb-[2rem]  font-bold  
+            className={` xl:pb-[.5rem]  font-bold  
         ${navbar
                 ? " list-item transform transition duration-300 ease-in-out hover:translate-x-2 text-[50px] md:text-[70px] hover:text-[white] opacity-1 translate-y-0 delay-200 leading-12"
                 : "hidden text-[20px]"
@@ -135,7 +134,7 @@ const Nav = () => {
           </li>
           <li
             onClick={handleToggle}
-            className={` xl:pb-[2rem]  font-bold 
+            className={` xl:pb-[.5rem]  font-bold 
         ${navbar
                 ? " text-[50px]  md:text-[70px]  list-item transform transition duration-300 ease-in-out hover:translate-x-2 hover:text-[white] opacity-1  translate-y-0 delay-200 leading-[3rem]"
                 : "hidden text-[20px]"
@@ -186,7 +185,7 @@ const Nav = () => {
               <hr className="border-3 h-[8rem] w-[1px] bg-[white] " />
               <div className="flex flex-row items-center justify-center">
                 <NavLink to="/contact">
-                  <button className=" text-center  text-[14px] mt-5 items-center flex rounded-full font-medium h-[3rem] text-[white] hover:text-[blue] py-7 px-10 border-[black] bg-[black] opacity-[0.5] hover:opacity-100 hover:bg-[white] border-[0]">
+                  <button className=" text-center  text-[14px] items-center flex rounded-full font-medium h-[3rem] text-[white] hover:text-[blue] py-7 px-10 border-[black] bg-[black] opacity-[0.5] hover:opacity-100 hover:bg-[white] border-[0]">
                     START YOUR PROJECT
                   </button>
                 </NavLink>

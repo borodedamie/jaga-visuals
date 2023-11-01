@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { urls } from "../assets/data";
 import ReactPlayer from "react-player";
 import { NavLink } from "react-router-dom";
-import Related from "./Related";
 
 const BriefW = () => {
   const [currentVideo, setCurrentVideo] = useState(null);
@@ -15,11 +14,11 @@ const BriefW = () => {
     setCurrentVideo(videoUrl);
   };
   return (
-    <div className="px-5 md:px-[10%] pt-[5%]">
+    <div className="pt-[5%]">
       <div className="flex flex-col justify-around gap-5 w-full px-5 md:pl-[10%] ">
-        <h2 className="font-bold text-[40px] text-[blue]">The Brief</h2>
+      <h2 className="text-[blue] text-[35px] md:text-[50px] font-bold">The Brief</h2>
         <div className="flex">
-          <p className="flex items-end text-left font-medium text-[16px] w-[60vw]">
+        <p className="flex items-end text-left text-[20px] text-[#797070] w-[100vw] xl:w-[60vw]">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, velit
             dolores? Fuga omnis odit eligendi quaerat repellat ex architecto nobis
             facilis, veniam ullam dolores quo necessitatibus quas deleniti
@@ -38,7 +37,7 @@ const BriefW = () => {
                 playing={currentVideo === url1.url22}
                 onPause={handleVideoPause}
                 onPlay={() => handleVideoPlay(url1.url22)}
-                width="60vw"
+                width="70vw"
                 height="65vh"
                 className="rounded-3xl object-fill"
               />
@@ -53,7 +52,6 @@ const BriefW = () => {
           </button>
         </NavLink>
       </div>
-      <Related />
 
     </div>
 

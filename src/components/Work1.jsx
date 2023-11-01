@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { sentence, letter } from "./variants";
-import work1 from "../assets/work.png";
+import work1 from "../assets/work.webp";
 
 const Work1 = () => {
   const line1 = "We are experts in";

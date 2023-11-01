@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { fadeOut, fadeIn } from "./variants";
-import logic from "../assets/Autoflex-Logistics-01-01.jpg";
-import dubai from "../assets/dubai.jpg";
+import logic from "../assets/Autoflex-Logistics-01-01.webp";
+import dubai from "../assets/dubai.webp";
 import jumia from "../assets/jumia1.webp";
 import foret1 from "../assets/foret1.webp";
 import { NavLink } from "react-router-dom";
@@ -17,7 +17,7 @@ const Work = () => {
 
   return (
     <div>
-      <div className="bg-[#1c1b1b] mt-20 py-[9rem]">
+      <div className="bg-[#1c1b1b] mt-20 pt-[3rem] md:pt-[9rem] pb-[9rem] md:pb-[9rem]">
         <div className="flex flex-col md:flex-col lg:flex-row mb-[4rem] md:mb-0 gap-0 md:gap-[2rem] lg:gap-[10rem] mx-0 lg:mx-60">
           <div
             className="text-[white] flex flex-col font-bold justify-center items-center lg:items-start text-[120px] md:text-[170px]"

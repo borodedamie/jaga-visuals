@@ -3,7 +3,7 @@ import { data } from "../assets/data";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Button from "./Button";
 import { motion } from "framer-motion";
-import services2 from "../assets/services.png";
+import services2 from "../assets/services.webp";
 import { MdNavigateNext } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { sentence, letter, fadeIn } from "./variants";
@@ -13,9 +13,9 @@ const Service1 = () => {
 
   return (
     <>
-      <div className="px-5 md:px-[10rem] py-[10rem] gap-[1rem] flex flex-col md:flex-col lg:flex-row items-center justify-center">
+      <div className="px-5 md:px-[10rem] py-[3rem] md:py-[10rem] gap-[1rem] flex flex-col md:flex-col lg:flex-row items-center justify-center">
         <div className="" style={{ flex: 1 }}>
-          <img src={services2} alt="services" className="w-fit  lg:w-[35vw]" />
+          <img src={services2} alt="services" className="w-fit lg:w-[35vw]" />
         </div>
         <div className="flex flex-1 flex-col items-start justify-center text-center lg:text-left w-full md:w-[30rem]">
           <p className="text-[18px] lg:text-[23px] font-medium text-[grey]">

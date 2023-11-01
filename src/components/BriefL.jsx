@@ -1,11 +1,10 @@
 import React from "react";
-import auto from "../assets/auto1.png";
-import king from "../assets/Frankincese.png";
-import right from "../assets/right.png";
-import cut from "../assets/cut.png";
-import deal from "../assets/deal.png";
+import auto from "../assets/auto1.webp";
+import right from "../assets/right.webp";
+import cut from "../assets/cut.webp";
+import deal from "../assets/deal.webp";
 import { NavLink } from "react-router-dom";
-import word from "../assets/word.png";
+import word from "../assets/word.webp";
 
 const BriefL = () => {
   return (
@@ -22,14 +21,13 @@ const BriefL = () => {
       </div>
 
       <div className="flex flex-col px-[1rem] md:px-[10.5rem] mt-[2rem] md:mt-[10rem]">
-        <h2 className="text-[blue] text-[35px] md:text-[75px] font-bold">
-          The Brief
-        </h2>
-        <p className="text-[22px] md:text-[50px] lg:text-[35px] text-[#797070]">
+      <h2 className="text-[blue] text-[35px] md:text-[50px] font-bold">The Brief</h2>
+
+        <p className="text-[22px] md:text-[20px] text-[#797070]">
           Shipping & Transport
         </p>
         <br />
-        <span className="text-[22px] md:text-[50px] lg:text-[35px] text-[#797070]">
+        <span className="text-[20px] text-[#797070]">
           AutoFlex Logistics is an American multimodal transportation services
           and logistic specilist on truckloads and less than truckloads. We are
           here to make a change and meet your transportation requirements
