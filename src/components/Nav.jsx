@@ -185,7 +185,7 @@ const Nav = () => {
               <hr className="border-3 h-[8rem] w-[1px] bg-[white] " />
               <div className="flex flex-row items-center justify-center">
                 <NavLink to="/contact">
-                  <button className=" text-center  text-[14px] mt-5 items-center flex rounded-full font-medium h-[3rem] text-[white] hover:text-[blue] py-7 px-10 border-[black] bg-[black] opacity-[0.5] hover:opacity-100 hover:bg-[white] border-[0]">
+                  <button className=" text-center  text-[14px] items-center flex rounded-full font-medium h-[3rem] text-[white] hover:text-[blue] py-7 px-10 border-[black] bg-[black] opacity-[0.5] hover:opacity-100 hover:bg-[white] border-[0]">
                     START YOUR PROJECT
                   </button>
                 </NavLink>
