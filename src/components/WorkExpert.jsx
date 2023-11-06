@@ -17,7 +17,7 @@ import speak1 from "../assets/wavy-beauty-mobile.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import HO from "../assets/gas.webp";
 import oneO from "../assets/101-Properties.webp";
-import pandas from "../assets/tribe.mp4";
+import pandas from "../assets/ponda.mp4";
 import useWhiteBackground from "../hooks/useWhiteBackground";
 
 const WorkExpert = () => {
