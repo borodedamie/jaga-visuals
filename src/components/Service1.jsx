@@ -7,9 +7,12 @@ import services2 from "../assets/services.webp";
 import { MdNavigateNext } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { sentence, letter, fadeIn } from "./variants";
+import useWhiteBackground from '../hooks/useWhiteBackground';
 
 const Service1 = () => {
-  const line1 = "standout websites and branding ";
+  const line1 = "extraordinary websites and branding ";
+  const isWhiteBackground = useWhiteBackground();
+  console.log(isWhiteBackground);
 
   return (
     <>
@@ -19,7 +22,7 @@ const Service1 = () => {
         </div>
         <div className="flex flex-1 flex-col items-start justify-center text-center lg:text-left w-full md:w-[30rem]">
           <p className="text-[18px] lg:text-[23px] font-medium text-[grey]">
-            Crafting{" "}
+            We create{" "}
             <motion.span
               variants={sentence}
               initial="hidden"
@@ -34,10 +37,7 @@ const Service1 = () => {
                 );
               })}
             </motion.span>
-            using sound strategic thinking and eye-catching digital, that
-            creates instant impact and sparks emotion. To really see what we can
-            do, take a look at our full range of digital creative agency
-            services.
+            through a tapestry of strategic brilliance and visually arresting digital artistry, igniting immediate impressions and kindling profound emotions. To reeally see the depth of our craft, explore the comprehensive spectrum of services offered by our digital creative agency.
           </p>
           <div className="text-[18px] text-[grey] font-semibold hidden lg:flex flex-col md:flex-row gap-0 md:gap-20 text-left pt-10">
             <div>
@@ -96,15 +96,15 @@ const Service1 = () => {
               </div>
               <LazyLoadImage
                 src={data1.design}
-                className="rounded-2xl max-h-[50%] h-[100%] max-w-fit md:max-w-[50%] w-[100%] md:h-fit lg:h-[60vh]"
+                className="rounded-2xl  h-[100%] max-w-fit max-h-fit w-[100%] md:max-w-[50%] md:h-fit lg:h-[60vh]"
               />
             </motion.div>
           );
         })}
       </div>
-      <div className="flex flex-row items-center justify-center fixed bottom-2 right-0 md:bottom-6 md:right-5">
+      <div className="flex flex-row z-10 items-center justify-center fixed bottom-2 right-0 md:bottom-6 md:right-5">
         <NavLink to="/contact">
-          <button className=" text-center text-[15px] mt-5 items-center flex rounded-full font-medium h-[4rem] text-[white] hover:text-[blue] py-3 px-5 md:py-7 md:px-10 border-[blue] bg-[blue] hover:bg-[white] border-[0]">
+          <button className={`text-center text-[12px] mt-5 items-center flex rounded-full font-medium h-[3rem] text-[white] hover:text-[blue] py-3 px-5 md:py-7 md:px-10  ${isWhiteBackground ? 'hover:border-[blue] bg-[blue] hover:bg-[white]' : 'border-[white] bg-[blue] hover:bg-[white]'}`}>
             START YOUR PROJECT
           </button>
         </NavLink>

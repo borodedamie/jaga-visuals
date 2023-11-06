@@ -2,11 +2,11 @@ import logic from "../assets/logic.webp";
 import dubai from "../assets/dubai.webp";
 import jumia from "../assets/jumia1.webp";
 import foret1 from "../assets/foret1.webp";
-import creative from "../assets/creative.webp";
+import creative from "../assets/creative (2).webp";
 import branding from "../assets/branding.webp";
 import web from "../assets/web.webp";
 import webdev from "../assets/web1.webp";
-
+import web1 from "../assets/web1 (2).webp"
 import director from '../assets/director.webp'
 import motion from "../assets/motion.gif";
 import dofvideo from '../assets/dof1video.mp4'
@@ -67,7 +67,7 @@ export const data = [
     title: "Web Development",
     paragraph:
       "We’ll build your site to suit your specific needs, creating the custom functions to make it faster and more secure.",
-    design: web,
+    design: web1,
   },
   {
     title: "Social Media Management",
@@ -268,43 +268,29 @@ export const imagesF = [
 export const carousel = [
   {
     one: director,
-    name: "Jeffrey Ighagha",
-    title:'Design Director'
+    name: "Jeffrey",
+    title:'Creative Director'
 
   },
   
-  
+  {
+    one: poorima,
+    name: "Poornima",
+    title:'Media Coach & Client Relations'
+  },
   {
     one: webdev,
-    name: "Onaopemipo Oluborode",
+    name: "Onaopemipo",
     title:'Developer'
 
   },
   {
-    one: webdev,
-    name: "Adewale Fayiga",
-    title:'Copywriter'
-  },
-  {
-    one: poorima,
-    name: "Poorima",
-    title:'Designer'
-  },
-  {
     one: onyx,
-    name: "Onyx",
-    title:'Copywriter'
+    name: "Nuain",
+    title:'Brand Director'
   },
-  {
-    one: webdev,
-    name: "Adewale Fayiga",
-    title:'Copywriter'
-  },
-  {
-    one: webdev,
-    name: "Adewale Fayiga",
-    title:'Copywriter'
-  },
+ 
+
   
   
 ];

@@ -12,12 +12,12 @@ const Artists = () => {
         <p className="text-[20px] mt-[1.5rem]">
           We're a team of talented creatives who live and breathe great design.
           We're not just designers who take instructions, we're artists who take
-          inspiration from the wider creative world of music, film and the arts.
+          inspiration from the creative world of music, film and the arts.
         </p>
         <p className="text-[20px] mt-[1rem]">
-          By soaking up culture, sharing new ideas and staying on theh
+          By soaking up culture, sharing new ideas and staying on the
           pulse of the latest trends, we develop brands, design websites and deliver campaigns that
-          break the mould, and fight back against boring.
+          break the bounds, and fight back the user.
         </p>
       </div>
       <div className="flex flex-row items-start justify-start mt-[1rem]">

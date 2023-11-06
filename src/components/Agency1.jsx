@@ -6,8 +6,7 @@ import { sentence, letter } from "./variants";
 import { NavLink } from "react-router-dom";
 
 const Agency1 = () => {
-  const line1 = "Proudly signing every";
-  const line2 = "piece";
+  const line1 = "Every work of ours is a masterpiece";
 
   return (
     <div>
@@ -15,12 +14,12 @@ const Agency1 = () => {
         <div className="ml-0 lg:ml-[15%]" >
           <img src={agency1} alt="agency1" className="w-fit lg:w-[35vw]" />
         </div>
-        <div className="text-center lg:text-left mr-0  lg:mr-[10%] " >
+        <div className="text-center w-[100%] md1:w-[70%] md:w-[100%] lg:md:w-[30%] lg:text-left mr-0  lg:mr-[10%] " >
           <motion.h1
             variants={sentence}
             initial="hidden"
             animate="visible"
-            className="text-[#282860] px-[2rem] lg:px-0 font-extrabold text-[50px] lg:text-[50px] leading-tight"
+            className="text-[#282860] px-[2rem] md1:px-0 font-extrabold text-[50px] lg:text-[50px] leading-tight"
           >
             {line1.split("").map((char, index) => {
               return (
@@ -30,13 +29,7 @@ const Agency1 = () => {
               );
             })}
             <br />
-            {line2.split("").map((char, index) => {
-              return (
-                <motion.span key={char + "-" + index} variants={letter}>
-                  {char}
-                </motion.span>
-              );
-            })}
+            
           </motion.h1>
           <p className="text-[20px] font-medium pt-[5%] text-[#201f1f] w-full px-5 lg:px-0 lg:w-[75%] tracking-tight">
             Because it should never just be work, it should be a{" "}

@@ -29,7 +29,7 @@ const Carousel2 = () => {
             <div className="flex flex-col ">
               <img srcSet={journey} src={journey1} className="h-[100%] bg-cover" />
               <div className="flex absolute flex-col z-1 md:top-[5vw] items-center justify-center lg:items-start lg:justify-start w-full py-[1vw] lg:py-0">
-                <h2 className="text-[22px] text-center pl-0 lg:pl-[5vw] xl:pl-[5vw] 2xl:pl-[23vw] pr-0 lg:pr-[10vw] xl:pr-[45rem] pt-0 lg:pt-[0vw]xl:pt-[0] 2xl:pt-[14rem] lg:text-left leading-[2rem] md:leading-[5rem] lg:leading-[6rem] md1:text-[30px]  lg:text-[80px] text-[#34eaf7] font-bold">
+                <h2 className="text-[22px] text-center pl-0 lg:pl-[5vw] xl:pl-[5vw] 2xl:pl-[23vw] pr-0 lg:pr-[10vw] xl:pr-[45rem] pt-0 lg:pt-[0vw] xl:pt-[0] 2xl:pt-[14rem] lg:text-left leading-[2rem] lg:leading-[6rem] md1:text-[30px]  lg:text-[80px] text-[#34eaf7] font-bold">
                   Journey to
                   <br />
                   the future
@@ -46,8 +46,8 @@ const Carousel2 = () => {
               <img src={make1} srcSet={make} className=" bg-cover" />
 
               <div className="flex absolute md:top-[5vw] flex-col w-full items-center justify-center lg:items-start lg:justify-start  py-[1vw] lg:py-0">
-                <h2 className="text-center lg:text-left text-[22px] md1:text-[25px] md:text-[30px] lg:text-[80px] leading-[1.5rem] md1:leading-[2rem] md:leading-[6rem] w-fit pl-0 lg:pl-[5vw] xl:pl-[5vw] 2xl:pl-[23vw] pr-0 lg:pr-[10vw] xl:pr-[25rem] 2xl:pr-[45rem] pt-0 lg:pt-[0vw] xl:pt-[0] 2xl:pt-[14rem] text-[#34eaf7] font-bold">
-                  Make it beautiful, thoughtful and impactful
+                <h2 className="text-center lg:text-left text-[22px] md1:text-[25px] md:text-[30px] lg:text-[80px] leading-[2rem] lg:leading-[6rem] w-fit pl-0 lg:pl-[5vw] xl:pl-[5vw] 2xl:pl-[23vw] pr-0 lg:pr-[10vw] xl:pr-[25rem] 2xl:pr-[45rem] pt-0 lg:pt-[0vw] xl:pt-[0] 2xl:pt-[14rem] text-[#34eaf7] font-bold">
+               Make it beautiful,<br/> thoughtful and <br/>  impactful
                 </h2>
                 <p className="text-center lg:text-left text-[16px] md1:text-[18px] md:text-[25px] w-fit pl-0 lg:pl-[30vw] xl:pl-[50vw] pt-0 lg:pt-[2rem] xl:pt-[5rem] pr-0 lg:pr-[25rem] xl:pr-[15rem] 2xl:pr-[25rem] text-[white]">
                   As artist, it's our job to ensure every website we design is
@@ -63,7 +63,7 @@ const Carousel2 = () => {
               <img src={trust1} srcSet={trust} className=" bg-cover" />
 
               <div className="flex absolute md:top-[5vw]  flex-col w-full items-center justify-center lg:items-start lg:justify-start  py-[1vw] lg:py-0">
-                <h2 className="text-center lg:text-left text-[22px] md1:text-[25px] md:text-[30px] lg:text-[80px] leading-[1.5rem] md1:leading-[2rem] md:leading-[3rem] xl:leading-[6rem] w-fit pl-0 lg:pl-[5vw] xl:pl-[5vw] 2xl:pl-[23vw] pr-0 lg:pr-[10vw] xl:pr-[45rem] pt-0 lg:pt-[0vw] xl:pt-[0] 2xl:pt-[14rem]  text-[#34eaf7] font-bold">
+                <h2 className="text-center lg:text-left text-[22px] md1:text-[25px] md:text-[30px] lg:text-[80px] leading-[1.5rem] md:leading-[1.5rem] xl:leading-[6rem] w-fit pl-0 lg:pl-[5vw] xl:pl-[5vw] 2xl:pl-[23vw] pr-0 lg:pr-[10vw] xl:pr-[45rem] pt-0 lg:pt-[0vw] xl:pt-[0] 2xl:pt-[14rem]  text-[#34eaf7] font-bold">
                   Trust our people <br />
                   and process{" "}
                 </h2>

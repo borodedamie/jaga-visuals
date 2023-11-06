@@ -5,6 +5,7 @@ import logic from "../assets/logic.webp";
 import logic1 from "../assets/Autoflex-Logistics-01-01.webp";
 import dubai from "../assets/dubai.webp";
 import dubai1 from "../assets/DOP-Dubai-mobile.webp";
+import { NavLink } from "react-router-dom";
 import foret11 from "../assets/foret-mobile.webp";
 import nagaad11 from "../assets/Nagaad-Organics.webp";
 import jumia1 from "../assets/jumia-mobile.webp";
@@ -14,11 +15,11 @@ import nagaad1 from "../assets/nagaad1.webp";
 import speak from "../assets/speak.webp";
 import speak1 from "../assets/wavy-beauty-mobile.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import HO from "../assets/HO-GAS-mobile.webp";
-import { NavLink } from "react-router-dom";
+import HO from "../assets/gas.webp";
 import oneO from "../assets/101-Properties.webp";
-import pandas from "../assets/ponda.mp4";
-import pandasmobile from "../assets/pandasmobile.mp4";
+import pandas from "../assets/tribe.mp4";
+import useWhiteBackground from "../hooks/useWhiteBackground";
+
 const WorkExpert = () => {
   const scrollRef = useRef(null);
   const [autoHover, setAutoHover] = useState(false);
@@ -37,6 +38,7 @@ const WorkExpert = () => {
     const video = videoRef.current;
     video.play();
   }, []);
+  const isWhiteBackground = useWhiteBackground();
 
   return (
     <div className="mb-[10rem] overflow-hidden z-0">
@@ -298,9 +300,8 @@ const WorkExpert = () => {
                 <NavLink to="/nagaadbrief">
                   <LazyLoadImage
                     alt="Nagaad"
-                    src={nagaad1}
+                    src={nagaad11}
                     className="flex w-fit inset-0 object-contain lg:object-cover flex-col lg:w-[50vw] lg:h-[50vh]"
-                    srcSet={nagaad11}
                   />
                   <div
                     className={`inset-0 absolute ${
@@ -331,11 +332,12 @@ const WorkExpert = () => {
       </div>
       <div ref={scrollRef}>
         {" "}
-        <div className="flex flex-col justify-center px-0 lg:px-10 gap-[5%] lg:flex-row lg:items-center">
+        <div className="flex flex-col gap-[5%] justify-center px-0 lg:px-10 lg:flex-row lg:items-center">
+         
           <div
+            className="ml-5 mr-5 lg:mr-0 lg:ml-[10%] flex-1"
             onMouseEnter={() => setPremiumHover(true)}
             onMouseLeave={() => setPremiumHover(false)}
-            className="ml-5 mr-5 lg:mr-0 lg:ml-[10%] flex-1"
           >
             <div className="relative">
               <motion.div
@@ -348,9 +350,9 @@ const WorkExpert = () => {
                 {" "}
                 <NavLink to="/onebrief">
                   <LazyLoadImage
-                    alt="101 Premium Properties"
-                    src={oneO}
+                    alt="01 Premium Properties"
                     className="flex w-fit inset-0 object-contain lg:object-cover flex-col lg:w-[50vw] lg:h-[50vh]"
+                    src={oneO}
                   />
                   <div
                     className={`inset-0 absolute ${
@@ -360,14 +362,14 @@ const WorkExpert = () => {
                 </NavLink>
               </motion.div>
             </div>
-            <div className="text-[black] mt-[1rem]">
+            <div className="text-[black] mt-[1rem] mb-[0rem]  lg:mb-0">
               {" "}
-              <h2 className="text-[blue] tracking-widest text-[14px] leading-10">
+              <h2 className="text-[blue] tracking-widest  text-[14px] leading-10">
                 ART DIRECTION | MOTION GRAPHICS{" "}
               </h2>
               <h1
                 className={`text-[25px] md:text-[35px] hover:text-[blue] font-[700] ${
-                  premiumHover ? "text-[blue]" : ""
+                  dofHover ? "text-[blue]" : ""
                 }`}
               >
                 <NavLink to="/onebrief">101 Premium Properties</NavLink>
@@ -396,7 +398,6 @@ const WorkExpert = () => {
                     alt="HO gas"
                     src={HO}
                     className="flex w-fit inset-0 object-contain lg:object-cover flex-col lg:w-[70vw] lg:h-[90vh]"
-                    srcSet={HO}
                   />
                   <div
                     className={`inset-0 absolute ${
@@ -441,29 +442,21 @@ const WorkExpert = () => {
             >
               <NavLink to="/pondasbrief">
                 <div style={{ flex: 1 }} className="flex inset-0  flex-col">
-                
-                    <video
-                    
+                  <video
                     ref={videoRef}
                     className="flex w-fit inset-0 object-contain lg:object-cover flex-col lg:w-[70vw] lg:h-[90vh]"
                     loop
                     autoPlay
                     muted
-                    mutedcontrols>
-                      <source
-                        src={pandas}
-                        type="video/mp4"
-                        media="(min-width: 768px)"
-                      />
-                      <source
-                        src={pandasmobile}
-                        type="video/mp4"
-                        media="(max-width: 767px)"
-                      />
-                      Your browser does not support the video tag.
-                    </video>
-
+                    mutedcontrols
+                  >
+                    <source
+                      src={pandas}
+                      type="video/mp4"
+                    />
                     
+                  </video>
+
                   <div
                     className={`inset-0 absolute ${
                       pondaHover ? "hover:bg-[blue] hover:bg-opacity-25" : ""
@@ -496,9 +489,15 @@ const WorkExpert = () => {
           onMouseLeave={() => setDofHover(false)}
         ></div>
       </div>
-      <div className="flex flex-row z-10 items-center justify-center fixed bottom-2 right-0 lg:bottom-6 lg:right-5">
+      <div className="flex flex-row z-10 items-center justify-center fixed bottom-2 right-0 md:bottom-6 md:right-5">
         <NavLink to="/contact">
-          <button className=" text-center text-[15px] mt-5 items-center flex rounded-full font-medium h-[4rem] text-[white] hover:text-[blue] py-3 px-5 lg:py-7 lg:px-10 border-[blue] bg-[blue]  hover:bg-[white] border-[0]">
+          <button
+            className={`text-center text-[12px] mt-5 items-center flex rounded-full font-medium h-[3rem] text-[white] hover:text-[blue] py-3 px-5 md:py-7 md:px-10  ${
+              isWhiteBackground
+                ? "hover:border-[blue] bg-[blue] hover:bg-[white]"
+                : "border-[white] bg-[blue] hover:bg-[white]"
+            }`}
+          >
             START YOUR PROJECT
           </button>
         </NavLink>

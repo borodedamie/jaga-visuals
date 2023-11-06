@@ -16,14 +16,14 @@ const Related = () => {
 
   return (
     <div className="px-[2rem] pb-[3rem] md:pb-[5rem] lg:px-[7rem] flex flex-col">
-      <div className="flex pt-[4rem] md:pt-[15rem] pb-20 md:pb-30 flex-col md:flex-row items-center gap-10 justify-center lg:justify-center">
+       <div className="flex pt-[4rem] md:pt-[15rem] pb-20 md:pb-30 flex-col md:flex-row items-center gap-10 justify-center lg:justify-center">
         <h2 className="text-[blue] font-bold text-[30px] md:text-[45px] ">
-          Don't be Shy
+          Let's create magic
         </h2>
         <hr className="hidden md:flex border-3 h-[7rem] w-[.3rem] bg-[blue]" />
         <div className="flex flex-row items-center justify-center">
           <NavLink to="/contact">
-            <button className="text-[12px] justify-center items-center md:text-[25px] text-center flex rounded-full font-medium h-[2rem] md:h-[4rem] lg:h-[5rem] text-[white] p-5 border-[blue] w-fit md:w-[20rem] lg:w-[20rem] xl:w-[30rem] bg-[blue] border-[2px] hover:bg-[white] hover:text-[blue] hover:border-[blue]">
+            <button className="text-[14px] px-10 justify-center items-center text-center flex rounded-full font-medium h-[4rem] text-[white] border-[blue] py-5 w-fit bg-[blue] border-[2px] hover:bg-[white] hover:text-[blue] hover:border-[blue]">
               START YOUR PROJECT
             </button>
           </NavLink>
