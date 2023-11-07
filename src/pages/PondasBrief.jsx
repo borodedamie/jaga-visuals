@@ -1,14 +1,14 @@
 import React from 'react';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
-import BriefHO from '../components/BriefHO';
+import BriefPonda from '../components/BriefPonda';
 
 
 const PondasBrief = () => {
   return (
     <div>
       <Nav/>
-      <BriefHO/>
+      <BriefPonda/>
       <Footer/>
     </div>
   );

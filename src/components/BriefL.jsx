@@ -1,21 +1,25 @@
 import React from "react";
-import auto from "../assets/auto1.webp";
-import right from "../assets/right.webp";
+import auto from "../assets/Autoflex-Logistics-Inc--Jaga-Visuals.webp";
+import right from "../assets/Image-2.webp";
 import cut from "../assets/cut.webp";
 import deal from "../assets/deal.webp";
 import { NavLink } from "react-router-dom";
 import word from "../assets/word.webp";
+import useWhiteBackground from '../hooks/useWhiteBackground';
 
 const BriefL = () => {
+  const isWhiteBackground = useWhiteBackground();
+  console.log(isWhiteBackground);
+
   return (
     <div>
       <div className="flex flex-col items-center justify-center">
         <img
-          className=""
+          className="mt-[3rem]"
           src={auto}
-          alt="NagaadThumbnail"
+          alt="AutoThumbnail"
         />
-          <h1 className="text-[30px] md:text-[70px] xl:text-[80px] px-5 xl:px-0 text-[#464444] font-extrabold">
+          <h1 className="text-[30px] md:text-[70px] px-5 xl:px-0 text-[black] font-bold">
             Autoflex Logistics Inc
           </h1>
       </div>
@@ -40,16 +44,16 @@ const BriefL = () => {
           company to make it grow and become successful.
         </span>
       </div>
-
-      <img src={right} />
-      <img src={cut} />
+<div className="px-[2rem] md:px-[10rem]">
+      <img className="py-[1rem]" src={right} />
+      <img  src={cut} />
 
       <img src={deal} />
-      <img src={word} />
-
+      <img  src={word} />
+      </div>
       <div className="flex flex-row z-10 items-center justify-center fixed bottom-2 right-0 md:bottom-6 md:right-5">
         <NavLink to="/contact">
-          <button className=" text-center text-[13px] mt-5 items-center flex rounded-full font-medium h-[3rem] text-[white] hover:text-[blue] py-3 px-5 md:py-7 md:px-10 border-[blue] bg-[blue]  hover:bg-[white] hover:border-[blue]">
+          <button className={`text-center text-[12px] mt-5 items-center flex rounded-full font-medium h-[3rem] text-[white] hover:text-[blue] py-3 px-5 md:py-7 md:px-10  ${isWhiteBackground ? 'hover:border-[blue] bg-[blue] hover:bg-[white]' : 'border-[white] bg-[blue] hover:bg-[white]'}`}>
             START YOUR PROJECT
           </button>
         </NavLink>
