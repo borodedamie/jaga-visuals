@@ -21,7 +21,7 @@ const Service1 = () => {
           <img src={services2} alt="services" className="w-fit lg:w-[35vw]" />
         </div>
         <div className="flex flex-1 flex-col items-start justify-center text-center lg:text-left w-full md:w-[30rem]">
-          <p className="text-[18px] lg:text-[23px] font-medium text-[grey]">
+          <p className="text-[18px] md:text-[23px] font-medium text-[grey]">
             We create{" "}
             <motion.span
               variants={sentence}
@@ -39,7 +39,7 @@ const Service1 = () => {
             </motion.span>
             through a tapestry of strategic brilliance and visually arresting digital artistry, igniting immediate impressions and kindling profound emotions. To reeally see the depth of our craft, explore the comprehensive spectrum of services offered by our digital creative agency.
           </p>
-          <div className="text-[18px] text-[grey] font-semibold hidden lg:flex flex-col md:flex-row gap-0 md:gap-20 text-left pt-10">
+          <div className="text-[18px] md:text-[23px] text-[grey] font-semibold hidden lg:flex flex-col md:flex-row gap-0 md:gap-20 text-left pt-10">
             <div>
               <p className="flex items-center">
                 <MdNavigateNext className="text-[20px] md:text-[24px] text-[blue]" />
@@ -96,7 +96,7 @@ const Service1 = () => {
               </div>
               <LazyLoadImage
                 src={data1.design}
-                className="rounded-2xl  h-[100%] max-w-fit max-h-fit w-[100%] md:max-w-[50%] md:h-fit lg:h-[60vh]"
+                className="rounded-2xl  h-[100%] max-w-fit max-h-fit w-[100%] md:max-w-[50%] md:h-fit lg:h-[50%]"
               />
             </motion.div>
           );

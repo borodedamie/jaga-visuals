@@ -90,7 +90,7 @@ const Nav = () => {
 
         <ul
           className={`flex flex-row right-0    ${navbar
-              ? "flex-col fixed top-[5rem] left-10 lg:top-[12rem] lg:left-[10rem] pl-0 lg:pl-[7rem] xl:pl-[15rem] h-full md:h-[100vh]  translate-y-0 transition-safelist transform"
+              ? "flex-col fixed top-[5rem] left-10 lg:top-[9rem] lg:left-[10rem] pl-0 lg:pl-[7rem] xl:pl-[15rem] h-full md:h-[100vh]  translate-y-0 transition-safelist transform"
               : "items-center  gap-10 "
             }`}
         >

@@ -30,7 +30,7 @@ const Career1 = () => {
             })}
             <br />
           </motion.h2>
-          <p className="text-[18px] flex items-center justify-center mx-auto lg:mx-0 lg:justify-start lg:items-start text-center px-0 lg:text-start font-medium pt-10 w-[20rem] lg:w-[30rem] text-[#201f1f]">
+          <p className="text-[18px] md:text-[23px] flex items-center justify-center mx-auto lg:mx-0 lg:justify-start lg:items-start text-center px-0 lg:text-start font-medium pt-10 w-[20rem] lg:w-[100%] text-[#201f1f]">
           JAGA VISUALS comprises of talented creatives dedicated to delivering
           outputs of the highest quality tailored to each client's vision.
         </p>

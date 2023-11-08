@@ -14,7 +14,7 @@ const Contact1 = () => {
   };
 
   return (
-    <div className="flex mx-5 md:mx-0 pt-[2rem] md:pt-0 flex-col lg:flex-row justify-center items-center gap-[2rem] lg:gap-[5rem] xl:gap-[10rem] h-fit lg:h-[70vh]">
+    <div className="flex mx-5 md:mx-0 pt-[2rem] md:pt-0 flex-col lg:flex-row justify-center items-center gap-[2rem] lg:gap-[5rem] xl:gap-[10rem] h-fit lg:h-[90vh]">
       <div className="flex flex-col">
         <div>
           <h1 className="text-[blue] text-[35px] md:text-[40px]  font-bold mb-[1rem]">

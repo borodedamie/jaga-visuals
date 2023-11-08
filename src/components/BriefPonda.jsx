@@ -30,7 +30,9 @@ const BriefPonda = () => {
           ref={videoRef}
           loop
           autoPlay
-          controls        >
+          muted 
+          controls  
+          className="w-[100%] object-cover h-[100%]"      >
           <source src={pandas} type="video/mp4" />
         </video>
 

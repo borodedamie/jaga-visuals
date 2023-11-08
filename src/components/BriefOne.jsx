@@ -3,12 +3,9 @@ import one from "../assets/01.webp";
 import one1 from "../assets/Jaga---101-premium-properties (1).webp";
 import forte from "../assets/Jaga---101-premium-properties-1 (2).webp";
 import smart from "../assets/smart.webp";
-import beach from "../assets/Jaga---101-premium-properties-2.webp";
 import turky from "../assets/Jaga---101-premium-properties-5.webp";
 import second from "../assets/Jaga---101-premium-properties-4.webp";
 
-import real from "../assets/Jaga---101-premium-properties-6.webp";
-import view from "../assets/Jaga---101-premium-properties-3.webp";
 import { NavLink } from "react-router-dom";
 import useWhiteBackground from "../hooks/useWhiteBackground";
 
@@ -44,20 +41,13 @@ const BriefOne = () => {
           the talent and true passion for Real Estate Industry.
         </span>
       </div>
-      <div className="pl-[3rem] md:pl-[5rem] lg:pl-[12rem] pr-[3rem] md:pr-[5rem] lg:pr-[10rem]">
+      <div className="pl-[3rem] md:pl-[5rem] lg:pl-[10rem] pr-[3rem] md:pr-[5rem] lg:pr-[10rem]">
         <img src={one1} />
         <img src={forte} />
       </div>
-      <div className="px-[3rem] md:px-[5rem] lg:px-[12rem] hidden lg:block  gap-4 md:gap-8 columns-2 ">
-        <img className="h-fit md:h-[50rem] w-full aspect-square" src={beach} />
-        <img
-          className="h-fit md:h-[50rem] pt-[1rem] md:pt-[2rem] w-full"
-          src={view}
-        />
-        <img className="h-fit md:h-[100rem] w-full" src={real} />
-      </div>
-      <img className=" flex lg:hidden px-[2brem] md:px-[5rem] " src={smart} />
-      <div className="flex px-[3rem] md:px-[5rem] lg:px-[12rem]  flex-col  md:flex-row w-[100%] gap-4 mt-[2rem]">
+     
+      <img className=" flex w-[100vw] px-[2rem] md:px-[5rem] lg:px-[10rem] " src={smart} />
+      <div className="flex px-[3rem] md:px-[5rem] lg:px-[10rem]  flex-col  md:flex-row w-[100%] gap-4 mt-[2rem]">
         <img className="w-[100%] md:w-[50%]" src={turky} />
         <img className="w-[100%] md:w-[50%]" src={second} />
       </div>

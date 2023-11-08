@@ -17,7 +17,7 @@ const Header = () => {
           variants={sentence}
           initial="hidden"
           animate="visible"
-          className="text-[#282860] w-[70%] mx-auto md:mx-0 md:w-[80%] font-[700] text-[40px] md:text-[50px] leading-tight "
+          className="text-[#282860] w-[70%] mx-auto md:mx-0 lg:w-[90%] font-[700] text-[40px] md:text-[50px] leading-tight "
         >
           {line1.split("").map((char, index) => {
             return (
@@ -29,7 +29,7 @@ const Header = () => {
           <br />
          
         </motion.h1>
-        <p className="text-[18px] md:text-[22px] px-5 md:px-0 text-[#403e3e] font-medium pt-[5%] md:w-[80%] tracking-tight ">
+        <p className="text-[18px] md:text-[23px] px-5 md:px-0 text-[#403e3e] font-medium pt-[5%] md:w-[100%] tracking-tight ">
           We're an innovative web design agency nestled in the vibrant heart of
           Dubai. Our expertise lies in meticulously creating exquisite and
           distinctive websites that resonate with brands{" "}
