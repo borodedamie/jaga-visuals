@@ -16,7 +16,7 @@ const Related = () => {
 
   return (
     <div className="px-[2rem] pb-[3rem] md:pb-[5rem] lg:px-[7rem] flex flex-col">
-       <div className="flex pt-[4rem] md:pt-[15rem] pb-20 md:pb-30 flex-col md:flex-row items-center gap-10 justify-center lg:justify-center">
+       <div className="flex pt-[4rem] md:pt-[10rem] pb-20 md:pb-[15rem] flex-col md:flex-row items-center gap-10 justify-center lg:justify-center">
         <h2 className="text-[blue] font-bold text-[30px] md:text-[45px] ">
           Let's create magic
         </h2>

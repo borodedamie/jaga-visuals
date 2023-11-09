@@ -39,7 +39,7 @@ const Shape1 = () => {
         Making brands a <br /> damn site better
 
         </h1>
-        <p className="text-[17px] text-[grey] md:text-[white] font-normal pt-10">
+        <p className="text-[18px] md:text-[23px] text-[grey] md:text-[white] font-normal pt-10">
           Let's face it, first impressions matter. Your website's an opportunity
           to wow your audience, so why ruin that chance with bad design? Because brands
           win new fans when they're brave enough to go beyond their creative

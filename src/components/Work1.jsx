@@ -19,7 +19,7 @@ const Work1 = () => {
           variants={sentence}
           initial="hidden"
           animate="visible"
-          className=" text-[#282860]  font-bold text-[40px] lg:text-[50px] leading-tight "
+          className=" text-[#282860] font-bold text-[40px] lg:text-[50px] leading-tight "
         >
           {line1.split("").map((char, index) => {
             return (
@@ -30,7 +30,7 @@ const Work1 = () => {
           })}
           <br />
         </motion.h2>
-        <p className="text-[16px] font-medium pt-10 text-[#201f1f] tracking-tight">
+        <p className="text-[18px] md:text-[23px] font-medium pt-10 text-[#201f1f] tracking-tight">
           JAGA VISUALS is a visionary and insightful design agency, meticulously
           blending technical prowess with creative finesse to metamorphose your
           brand into its paramount digital embodiment. Our innovative
