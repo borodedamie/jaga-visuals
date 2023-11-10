@@ -19,6 +19,8 @@ import HO from "../assets/gas.webp";
 import oneO from "../assets/101-Properties.webp";
 import pandas from "../assets/ponda.mp4";
 import useWhiteBackground from "../hooks/useWhiteBackground";
+import onemobile from '../assets/Jaga-Visuals---101-Premium-Properties (2).webp'
+import HOmobile from '../assets/Jaga VisualsHO-GAS-011.webp'
 
 const WorkExpert = () => {
   const scrollRef = useRef(null);
@@ -352,7 +354,7 @@ const WorkExpert = () => {
                   <LazyLoadImage
                     alt="01 Premium Properties"
                     className="flex w-fit inset-0 object-contain lg:object-cover flex-col lg:w-[50vw] lg:h-[50vh]"
-                    src={oneO}
+                    src={onemobile}
                   />
                   <div
                     className={`inset-0 absolute ${
@@ -396,7 +398,7 @@ const WorkExpert = () => {
                 <NavLink to="/hobrief">
                   <LazyLoadImage
                     alt="HO gas"
-                    src={HO}
+                    src={HOmobile}
                     className="flex w-fit inset-0 object-contain lg:object-cover flex-col lg:w-[70vw] lg:h-[90vh]"
                   />
                   <div
@@ -489,7 +491,7 @@ const WorkExpert = () => {
           onMouseLeave={() => setDofHover(false)}
         ></div>
       </div>
-      <div className="flex flex-row z-10 items-center justify-center fixed bottom-2 right-0 md:bottom-6 md:right-5">
+      <div className="flex flex-row z-10 items-center justify-center fixed bottom-2 right-5 md:bottom-6 md:right-5">
         <NavLink to="/contact">
           <button
             className={`text-center text-[12px] mt-5 items-center flex rounded-full font-medium h-[3rem] text-[white] hover:text-[blue] py-3 px-5 md:py-7 md:px-10  ${
