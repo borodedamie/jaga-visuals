@@ -25,21 +25,13 @@ const Footer = () => {
           <NavLink className="text-[white] hover:text-[#0dfff6]" to="/agency">
             Agency
           </NavLink>
-          <NavLink className="text-[white] hover:text-[#0dfff6]" to="/blog">
-            Blog
+          <NavLink className="text-[white] hover:text-[#0dfff6]" to="/career">
+            Careers
           </NavLink>
           <NavLink className="text-[white] hover:text-[#0dfff6]" to="/contact">
             Contact
           </NavLink>
-          <NavLink className="text-[white] hover:text-[#0dfff6]" to="/faqs">
-            FAQs
-          </NavLink>
-          <NavLink
-            className="text-[white] hover:text-[#0dfff6]"
-            to="/privacy_policy"
-          >
-            Privacy Policy{" "}
-          </NavLink>
+          
         </div>
         <div className="text-[18px] leading-10">
           <h1 className="text-[#0dfff6] tracking-widest font-semibold">

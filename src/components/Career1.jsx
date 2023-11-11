@@ -47,7 +47,7 @@ const Career1 = () => {
         </p>
       </div>
 
-      <div className="flex flex-row z-0 items-center justify-center fixed bottom-2 right-0 lg:bottom-6 lg:right-5">
+      <div className="flex flex-row z-0 items-center justify-center fixed bottom-2 right-5 lg:bottom-6 lg:right-5">
         <NavLink to="/contact">
           <button className=" text-center text-[15px] mt-5 items-center flex rounded-full font-medium h-[4rem] text-[white] hover:text-[blue] py-3 px-5 lg:py-7 lg:px-10 border-[blue] bg-[blue]  hover:bg-[white] border-[0]">
             START YOUR PROJECT
