@@ -25,7 +25,7 @@ const Contact1 = () => {
     event.preventDefault(); // Prevents the default form submission behavior
 
     // Email validation
-    const isGmail = /\b@gmail\.com$/i.test(email);
+    const isGmail = /\b@\.com$/i.test(email);
 
     if (!isGmail) {
       console.error("Enter a valid Gmail address:", email);
