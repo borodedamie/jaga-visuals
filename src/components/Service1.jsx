@@ -41,29 +41,29 @@ const Service1 = () => {
           </p>
           <div className="text-[18px] md:text-[23px] text-[grey] font-semibold hidden lg:flex flex-col md:flex-row gap-0 md:gap-20 text-left pt-10">
             <div>
-              <p className="flex items-center">
+              <p className="flex items-start">
                 <MdNavigateNext className="text-[20px] md:text-[24px] text-[blue]" />
                 Creative Design
               </p>
-              <p className="flex items-center">
+              <p className="flex items-start">
                 <MdNavigateNext className="text-[20px] md:text-[24px] text-[blue]" />
                 Motion Graphics
               </p>
-              <p className="flex items-center">
+              <p className="flex items-start">
                 <MdNavigateNext className="text-[20px] md:text-[24px] text-[blue]" />
                 Web Development
               </p>
             </div>
             <div>
-              <p className="flex items-center">
+              <p className="flex items-start">
                 <MdNavigateNext className="text-[20px] md:text-[24px] text-[blue]" />
                 Branding
               </p>
-              <p className="flex items-center">
+              <p className="flex items-start">
                 <MdNavigateNext className="text-[20px] md:text-[24px] text-[blue]" />
                 Digital Marketing
               </p>
-              <p className="flex items-center">
+              <p className="flex items-start">
                 <MdNavigateNext className="text-[20px] md:text-[24px] text-[blue]" />
                 Social Media Management
               </p>
