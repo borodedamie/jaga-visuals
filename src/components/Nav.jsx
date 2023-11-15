@@ -53,7 +53,7 @@ const Nav = () => {
                     : "hidden text-[20px]"
                   }`}
               >
-                <a href="https://www.instagram.com/jaga-visuals/">
+                <a href="https://www.instagram.com/jaga.visuals/">
                   {" "}
                   <BiLogoInstagram className="cursor-pointer text-[white] text-[25px]" />
                 </a>
@@ -66,7 +66,7 @@ const Nav = () => {
                     : "hidden text-[20px]"
                   }`}
               >
-                <a href="https://www.instagram.com/jaga-visuals/">
+                <a href="https://www.linkedin.com/company/jaga-visuals/">
                   {" "}
                   <LiaLinkedinIn className="cursor-pointer  text-[white] text-[25px]" />
                 </a>
