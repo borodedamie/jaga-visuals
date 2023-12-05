@@ -56,12 +56,13 @@ const Footer = () => {
         <div className="gap-3 pb-3 md:pb-16 pt-5 flex flex-row justify-center md:justify-end">
           
           <div className="hover:border-[#0dfff6] p-2 md:p-0  rounded-full border flex h-[2.5rem] w-[2.5rem] items-center text-center justify-center cursor-pointer">
-            <a href="https://www.instagram.com/jaga-visuals/">
+            <a href="https://www.instagram.com/jaga.visuals/">
               <BiLogoInstagram className="text-white hover:text-[#0dfff6] text-[25px]" />
             </a>
           </div>
 
           <div className="hover:border-[#0dfff6] p-2 md:p-0 rounded-full border flex h-[2.5rem] w-[2.5rem] items-center text-center justify-center cursor-pointer">
+            <a href ="https://www.linkedin.com/company/jaga-visuals/"></a>
             <LiaLinkedinIn className="text-white hover:text-[#0dfff6] text-[25px]" />
           </div>
           

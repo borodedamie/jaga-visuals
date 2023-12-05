@@ -1,11 +1,9 @@
 import React from "react";
 import one from "../assets/01.webp";
-import one1 from "../assets/Jaga---101-premium-properties (1).webp";
-import forte from "../assets/Jaga---101-premium-properties-1 (2).webp";
+import one1 from "../assets/Jaga-Visuals---101-premium-properties3.webp";
+import forte from "../assets/Jaga-Visuals---101-premium-propertiesa.webp";
 import smart from "../assets/smart.webp";
-import turky from "../assets/Jaga---101-premium-properties-5.webp";
-import second from "../assets/Jaga---101-premium-properties-4.webp";
-
+import turky from "../assets/Jaga-Visuals---101-premium-properties1a.webp";
 import { NavLink } from "react-router-dom";
 import useWhiteBackground from "../hooks/useWhiteBackground";
 
@@ -41,16 +39,15 @@ const BriefOne = () => {
           the talent and true passion for Real Estate Industry.
         </span>
       </div>
-      <div className="pl-[3rem] md:pl-[5rem] lg:pl-[10rem] pr-[3rem] md:pr-[5rem] lg:pr-[10rem]">
+      <div className="pl-0 xl:pl-[2rem] lg:pl-[4rem] pr-0 xl:pr-[2rem]  lg:pr-[4rem]">
         <img src={one1} />
+      </div>
+      <div className="pl-[2rem] md:pl-[5rem] lg:pl-[10rem] pr-[2rem] md:pr-[5rem] lg:pr-[10rem]">
         <img src={forte} />
       </div>
      
       <img className=" flex w-[100vw] px-[2rem] md:px-[5rem] lg:px-[10rem] " src={smart} />
-      <div className="flex px-[3rem] md:px-[5rem] lg:px-[10rem]  flex-col  md:flex-row w-[100%] gap-4 mt-[2rem]">
-        <img className="w-[100%] md:w-[50%]" src={turky} />
-        <img className="w-[100%] md:w-[50%]" src={second} />
-      </div>
+        <img className="pl-[2rem] md:pl-[5rem] lg:pl-[10rem] pr-[2rem] md:pr-[5rem] lg:pr-[10rem]" src={turky} />
 
       <div className="flex flex-row z-10 items-center justify-center fixed bottom-2 right-0 md:bottom-6 md:right-5">
         <NavLink to="/contact">

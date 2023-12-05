@@ -46,10 +46,10 @@ const Carousel2 = () => {
     <div className="glide1">
       <div className="glide1__track" data-glide-el="track">
         <div className="glide1__slides mb-0">
-          <div className="glide1__slide relative">
+          <div className="glide1__slide relative h-[100vh]">
             <div className="flex flex-col ">
               {screenWidth <= 767 ? (
-                <img  src={journey1} alt="Mobile Image" />
+                <img src={journey1} alt="Mobile Image" />
               ) : (
                 <img src={journey} alt="Desktop Image" />
               )}
@@ -69,7 +69,7 @@ const Carousel2 = () => {
           <div className="glide1__slide relative">
             <div className="flex flex-col ">
             {screenWidth <= 767 ? (
-                <img  src={make1} alt="Mobile Image" />
+                <img src={make1} alt="Mobile Image" />
               ) : (
                 <img src={make} alt="Desktop Image" />
               )}
@@ -89,7 +89,7 @@ const Carousel2 = () => {
           <div className="glide1__slide relative ">
             <div className="flex flex-col ">
             {screenWidth <= 767 ? (
-                <img  src={trust1} alt="Mobile Image" />
+                <img src={trust1} alt="Mobile Image" />
               ) : (
                 <img src={trust} alt="Desktop Image" />
               )}
@@ -109,7 +109,7 @@ const Carousel2 = () => {
         </div>
       </div>
       <div
-        className="glide1__arrows ml-[6%]  absolute bottom-[12vw] md:bottom-[5vw] lg:bottom-[5vw] justify-center items-center text-center md:items-end sm:right-[29vw] md:right-[40vw] lg:right-[5rem] xl:right-[12.5rem]  text-[white] md:pl-[5rem] lg:pl-[10rem]"
+        className="glide1__arrows ml-[6%]  absolute bottom-[4vw] md:bottom-[5vw] lg:bottom-[5vw] justify-center items-center text-center md:items-end sm:right-[35vw] md:right-[40vw] lg:right-[5rem] xl:right-[12.5rem]  text-[white] md:pl-[5rem] lg:pl-[10rem]"
         data-glide-el="controls"
       >
         <button
@@ -117,14 +117,14 @@ const Carousel2 = () => {
           data-glide-dir="<"
           style={{ borderColor: "#34eaf7" }}
         >
-          <BsArrowLeft className=" text-[30px]" />
+          <BsArrowLeft className=" text-[20px]" />
         </button>
         <button
           className="glide1__arrow1 glide1__arrow--right1"
           data-glide-dir=">"
           style={{ borderColor: "#34eaf7" }}
         >
-          <BsArrowRight className=" text-[30px]" />
+          <BsArrowRight className=" text-[20px]" />
         </button>
       </div>
     </div>
