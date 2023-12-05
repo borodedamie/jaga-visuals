@@ -18,16 +18,21 @@ const Nav = () => {
   return (
     <nav
       className={`top-0 flex flex-row justify-between overflow-hidden
-    ${navbar
-          ? "pl-10 mx-0 bg-[blue] z-20 h-[100vh] absolute transform translate-y-0 transition-safelist w-full duration-400 ease-in flex flex-col justify-start items-start text-[#1f1f61] "
-          : "transform  items-center flex flex-row -translate-y-0 transition-safelist text-[black] gap-[1.5rem] justify-between"
-        }`}
+    ${
+      navbar
+        ? "pl-10 mx-0 bg-[blue] z-20 h-[100vh] absolute transform translate-y-0 transition-safelist w-full duration-400 ease-in flex flex-col justify-start items-start text-[#1f1f61] "
+        : "transform  items-center flex flex-row -translate-y-0 transition-safelist text-[black] gap-[1.5rem] justify-between"
+    }`}
     >
       <div className="flex justify-between items-center">
         <NavLink to="/">
           <LazyLoadImage
             className={`flex
-          ${navbar ? "hidden" : "flex pl-5 pt-10 w-[7rem] h-[8rem] md:pl-10 md:w-[8rem] md:h-[8rem] "}`}
+          ${
+            navbar
+              ? "hidden"
+              : "flex pl-5 pt-10 w-[7rem] h-[8rem] md:pl-10 md:w-[8rem] md:h-[8rem] "
+          }`}
             src={logo}
             alt="Logo"
           />
@@ -48,10 +53,11 @@ const Nav = () => {
               <li
                 onClick={handleToggle}
                 className={`rounded-full border w-[40px] h-[40px] flex items-center text-center justify-center
-        ${navbar
-                    ? "flex text-[80px] hover:text-[white] transition-all duration-300 ease-in-out delay-150"
-                    : "hidden text-[20px]"
-                  }`}
+        ${
+          navbar
+            ? "flex text-[80px] hover:text-[white] transition-all duration-300 ease-in-out delay-150"
+            : "hidden text-[20px]"
+        }`}
               >
                 <a href="https://www.instagram.com/jaga.visuals/">
                   {" "}
@@ -61,10 +67,11 @@ const Nav = () => {
               <li
                 onClick={handleToggle}
                 className={` rounded-full hover:text-[white]  w-[40px] h-[40px] border flex items-center text-center justify-center
-        ${navbar
-                    ? "flex  text-[80px] hover:text-[white] transition-all duration-300 ease-in-out delay-150"
-                    : "hidden text-[20px]"
-                  }`}
+        ${
+          navbar
+            ? "flex  text-[80px] hover:text-[white] transition-all duration-300 ease-in-out delay-150"
+            : "hidden text-[20px]"
+        }`}
               >
                 <a href="https://www.linkedin.com/company/jaga-visuals/">
                   {" "}
@@ -74,10 +81,11 @@ const Nav = () => {
               <li
                 onClick={handleToggle}
                 className={`flex w-[40px] rounded-full border h-[40px] items-center text-center justify-center
-        ${navbar
-                    ? "flex text-[80px] hover:text-[white] transition-all duration-300 ease-in-out delay-150"
-                    : "hidden"
-                  }`}
+        ${
+          navbar
+            ? "flex text-[80px] hover:text-[white] transition-all duration-300 ease-in-out delay-150"
+            : "hidden"
+        }`}
               >
                 <a href="https://www.youtube.com/@jagavisuals/">
                   {" "}
@@ -89,72 +97,90 @@ const Nav = () => {
         </div>
 
         <ul
-          className={`flex flex-row right-0    ${navbar
+          className={`flex flex-row right-0    ${
+            navbar
               ? "flex-col fixed top-[2rem] left-10 lg:top-[5rem] lg:left-[10rem] pl-0 lg:pl-[7rem] xl:pl-[15rem] h-full md:h-[100vh]  translate-y-0 transition-safelist transform"
               : "items-center  gap-10 "
-            }`}
+          }`}
         >
           <li
             onClick={handleToggle}
             className={`mt-[5rem] py-0 md:mt-0 font-bold hover:text-[blue]
-            ${navbar
+            ${
+              navbar
                 ? "hover:text-[white] xl:pb-[.5rem]   list-item transform transition duration-300 ease-in-out hover:translate-x-2 delay-100 pt-[3rem] md:pt-[5rem] pb-[0] opacity-1  translate-y-0 leading- text-[50px] md:text-[80px] text-[white]"
                 : "hidden md:flex text-[20px] "
-              }`}
+            }`}
           >
             <NavLink to="/works">Work</NavLink>
           </li>
           <li
             onClick={handleToggle}
             className={`text-[40px] font-bold group relative flex w-0 md:w-full flex-row
-        ${navbar
-                ? " list-item xl:pb-[.5rem]  transform transition duration-300 ease-in-out hover:translate-x-2 text-[40px] md:text-[80px] gap-5 hover:text-[white] opacity-1 translate-y-0 delay-150 leading-[3rem]"
-                : "hidden text-[20px]"
-              }`}
+        ${
+          navbar
+            ? " list-item xl:pb-[.5rem]  transform transition duration-300 ease-in-out hover:translate-x-2 text-[40px] md:text-[80px] gap-5 hover:text-[white] opacity-1 translate-y-0 delay-150 leading-[3rem]"
+            : "hidden text-[20px]"
+        }`}
           >
-            <NavLink to="/services" className="text-[50px] md:text-[80px]">Services</NavLink>
+            <NavLink to="/services" className="text-[50px] md:text-[80px] leading-[1rem] md:leading-0">
+              Services
+            </NavLink>
             <div className="hidden md:block w-full md:invisible relative md:absolute md:text-[30px] md:bottom-[-15rem] left-0 md:left-[25rem] md:group-hover:visible">
-              <p><NavLink to="/services">Creative Design</NavLink></p>
-              <p><NavLink to="/services">Branding</NavLink></p>
-              <p><NavLink to="/services">Motion Graphics</NavLink></p>
-              <p><NavLink to="/services">Web Development</NavLink></p>
-              <p><NavLink to="/services">Social Media Management</NavLink></p>
-              <p><NavLink to="/services">Digital Marketing</NavLink></p>
+              <p>
+                <NavLink to="/services">Creative Design</NavLink>
+              </p>
+              <p>
+                <NavLink to="/services">Branding</NavLink>
+              </p>
+              <p>
+                <NavLink to="/services">Motion Graphics</NavLink>
+              </p>
+              <p>
+                <NavLink to="/services">Web Development</NavLink>
+              </p>
+              <p>
+                <NavLink to="/services">Social Media Management</NavLink>
+              </p>
+              <p>
+                <NavLink to="/services">Digital Marketing</NavLink>
+              </p>
             </div>
           </li>
           <li
             onClick={handleToggle}
             className={`  font-bold  
-        ${navbar
-                ? " list-item transform xl:pb-[.5rem]  transition duration-300 ease-in-out hover:translate-x-2 text-[50px] md:text-[80px] hover:text-[white] opacity-1 translate-y-0 delay-200 leading-12"
-                : "hidden text-[20px]"
-              }`}
+        ${
+          navbar
+            ? " list-item transform xl:pb-[.5rem]  transition duration-300 ease-in-out hover:translate-x-2 text-[50px] md:text-[80px] hover:text-[white] opacity-1 translate-y-0 delay-200 leading-[3.5rem]  md:leading-[7rem]"
+            : "hidden text-[20px] pt-0"
+        }`}
           >
             <NavLink to="/agency">Agency</NavLink>
           </li>
           <li
             onClick={handleToggle}
             className={` font-bold hover:text-[blue]
-            ${navbar
-                    ? "text-[50px]  xl:pb-[2.3rem]   md:text-[80px]  list-item transform transition duration-300 ease-in-out hover:translate-x-2 hover:text-[white] opacity-1  translate-y-0 delay-200 leading-[3rem]"
-                    : "hidden md:flex text-[20px]"
-                  }`}
+            ${
+              navbar
+                ? "text-[50px]  xl:pb-[2.3rem]   md:text-[80px]  list-item transform transition duration-300 ease-in-out hover:translate-x-2 hover:text-[white] opacity-1  translate-y-0 delay-200 leading-[3rem]"
+                : "hidden md:flex text-[20px]"
+            }`}
           >
             <NavLink to="/contact">Contact</NavLink>
           </li>
-         
+
           <li
             onClick={handleToggle}
             className={`  font-bold 
-        ${navbar
-                ? " text-[50px] pt-[.7rem] md:pt-[2rem] xl:pt-[.7rem]  xl:pb-[.5rem]  md:text-[80px]  list-item transform transition duration-300 ease-in-out hover:translate-x-2 hover:text-[white] opacity-1  translate-y-0 delay-200 leading-[3rem]"
-                : "hidden text-[20px]"
-              }`}
+        ${
+          navbar
+            ? " text-[50px] pt-[.7rem] md:pt-[2rem] xl:pt-[.7rem]  xl:pb-[.5rem]  md:text-[80px]  list-item transform transition duration-300 ease-in-out hover:translate-x-2 hover:text-[white] opacity-1  translate-y-0 delay-200 leading-[3rem]"
+            : "hidden text-[20px]"
+        }`}
           >
             <NavLink to="/career">Careers</NavLink>
           </li>
-
-         
 
           <div className="flex flex-row justify-around gap-[30rem] w-full items-center"></div>
         </ul>
@@ -168,20 +194,22 @@ const Nav = () => {
               <MdClose className="absolute top-14 right-2 md:right-6 transition-all duration-1000 ease-out text-[white] text-[55px]" />
             ) : (
               <BiMenuAltRight
-                className={`absolute pl-5 md:relative flex text-[40px] top-12 md:top-0 right-5 md:right-10 text-[black] ${navbar ? "hidden" : "flex w-[5rem] h-[5rem]"
-                  }`}
+                className={`absolute pl-5 md:relative flex text-[40px] top-12 md:top-0 right-5 md:right-10 text-[black] ${
+                  navbar ? "hidden" : "flex w-[5rem] h-[5rem]"
+                }`}
                 style={{ color: "#403e3e" }}
               />
             )}
           </div>
           <div
             className={`hidden flex-row justify-between items-center right-2 relative md:absolute bottom-0 md:bottom-10
-            ${navbar
+            ${
+              navbar
                 ? "hidden md:flex text-[20px] hover:text-[white] transition-all duration-300 ease-in-out delay-150"
                 : "hidden text-[20px]"
-              }`}
+            }`}
           >
-             <div className="flex flex-row items-center gap-10 justify-center">
+            <div className="flex flex-row items-center gap-10 justify-center">
               <h2 className="text-[white] my-0 mx-0 font-bold text-[25px]">
                 Don't be Shy
               </h2>
