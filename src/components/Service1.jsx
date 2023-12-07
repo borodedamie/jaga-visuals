@@ -11,8 +11,8 @@ import useWhiteBackground from '../hooks/useWhiteBackground';
 
 const Service1 = () => {
   const line1 = "extraordinary websites and branding ";
+
   const isWhiteBackground = useWhiteBackground();
-  console.log(isWhiteBackground);
 
   return (
     <>
@@ -57,7 +57,7 @@ const Service1 = () => {
                 <MdNavigateNext className="text-[20px] md:text-[24px] text-[blue]" />
                 Motion Graphics
               </p>
-              <p className="flex items-start">
+              <p className="flex items-center">
                 <MdNavigateNext className="text-[20px] md:text-[24px] text-[blue]" />
                 Web Development
               </p>
@@ -71,7 +71,7 @@ const Service1 = () => {
                 <MdNavigateNext className="text-[20px] md:text-[24px] text-[blue]" />
                 Digital Marketing
               </p>
-              <p className="flex items-start">
+              <p className="flex items-center">
                 <MdNavigateNext className="text-[20px] md:text-[24px] text-[blue]" />
                 Social Media Management
               </p>
@@ -82,31 +82,55 @@ const Service1 = () => {
       <div className="my-0 mx-0 md:mx-[5%] ">
         {data.map((data1, s) => {
           return (
-            <motion.div
-              variants={fadeIn("right", 0.5)}
-              viewport={{ once: true, amount: 0.7 }}
-              initial="hidden"
-              whileInView={"show"}
-              className="flex flex-col max-w-fit md:max-w-[100%] w-fit md:w-[100%] max-h-[100%] h-[100%] md:flex-row px-5 md:px-20 justify-center gap-[3rem] items-center my-[10%]"
-            >
-              <div
+            window.innerWidth > 768 ? (
+              <motion.div
                 key={s}
-                style={{ flex: 1 }}
-                className="max-w-fit md:max-w-[50%] w-[100%] max-h-[50%] h-[100%]"
+                variants={fadeIn("right", 0.5)}
+                viewport={{ once: true, amount: 0.7 }}
+                initial="hidden"
+                whileInView={"show"}
+                className="flex flex-col max-w-fit md:max-w-[100%] w-fit md:w-[100%] max-h-[100%] h-[100%] md:flex-row px-5 md:px-20 justify-center gap-[3rem] items-center my-[10%]"
               >
-                <h2 className="text-[22px] md:text-[40px] font-bold text-[#26316c]">
-                  {data1.title}
-                </h2>
-                <p className="text-[18px] font-medium text-[grey] leading-8 py-5">
-                  {data1.paragraph}
-                </p>
-                <Button />
+                <div
+                  style={{ flex: 1 }}
+                  className="max-w-fit md:max-w-[50%] w-[100%] max-h-[50%] h-[100%]"
+                >
+                  <h2 className="text-[22px] md:text-[40px] font-bold text-[#26316c]">
+                    {data1.title}
+                  </h2>
+                  <p className="text-[18px] font-medium text-[grey] leading-8 py-5">
+                    {data1.paragraph}
+                  </p>
+                  <Button />
+                </div>
+                <LazyLoadImage
+                  src={data1.design}
+                  className="rounded-2xl  h-[100%] max-w-fit max-h-fit w-[100%] md:max-w-[50%] md:h-fit lg:h-[50%]"
+                />
+              </motion.div>
+            ) : (
+              <div
+                className="flex flex-col max-w-fit md:max-w-[100%] w-fit md:w-[100%] max-h-[100%] h-[100%] md:flex-row px-5 md:px-20 justify-center gap-[3rem] items-center my-[10%]"
+              >
+                <div
+                  key={s}
+                  style={{ flex: 1 }}
+                  className="max-w-fit md:max-w-[50%] w-[100%] max-h-[50%] h-[100%]"
+                >
+                  <h2 className="text-[22px] md:text-[40px] font-bold text-[#26316c]">
+                    {data1.title}
+                  </h2>
+                  <p className="text-[18px] font-medium text-[grey] leading-8 py-5">
+                    {data1.paragraph}
+                  </p>
+                  <Button />
+                </div>
+                <LazyLoadImage
+                  src={data1.design}
+                  className="rounded-2xl  h-[100%] max-w-fit max-h-fit w-[100%] md:max-w-[50%] md:h-fit lg:h-[50%]"
+                />
               </div>
-              <LazyLoadImage
-                src={data1.design}
-                className="rounded-2xl  h-[100%] max-w-fit max-h-fit w-[100%] md:max-w-[50%] md:h-fit lg:h-[50%]"
-              />
-            </motion.div>
+            )
           );
         })}
       </div>

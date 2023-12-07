@@ -24,11 +24,7 @@ const Clients = () => {
       <h1 className="text-[#403e3e] text-left my-20 md:text-center font-bold text-[60px]">
         Our Clients
       </h1>
-      <motion.div
-        variants={fadeOut("bottom", 0.2)}
-        viewport={{ amount: 0.7, once: true }}
-        initial="hidden"
-        whileInView={"show"}
+      <div
         className="grid md:w-[70%] px-0 mb-[2rem] md:mb-[13rem] items-center justify-center mx-auto md:px-20 grid-cols-2 md:grid-cols-5 gap-8"
       >
         <LazyLoadImage className="w-[7rem] h-[7rem]" src={wavy} />
@@ -45,7 +41,7 @@ const Clients = () => {
         <LazyLoadImage className="w-[7rem] h-[7rem]" src={livevend} />
         <LazyLoadImage className="w-[7rem] h-[7rem]" src={nagaad} />
         <LazyLoadImage className="w-[7rem] h-[7rem]" src={fortune} />
-      </motion.div>
+      </div>
       <div className="flex flex-col pb-5 md:flex-row justify-center items-end gap-[1.5rem]">
         <div className="flex w-full md:w-[25rem] flex-col">
           <h2 className="font-bold text-[38px] pb-[2rem] text-[#403e3e]">Latest Articles</h2>
@@ -64,6 +60,7 @@ const Clients = () => {
         VIEW ALL BLOG POSTS
       </button>
     </div>
+
   );
 };
 

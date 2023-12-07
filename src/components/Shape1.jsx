@@ -6,7 +6,6 @@ import useWhiteBackground from '../hooks/useWhiteBackground';
 
 const Shape1 = () => {
   const isWhiteBackground = useWhiteBackground();
-  console.log(isWhiteBackground);
 
   const videoRef = useRef(null);
 
