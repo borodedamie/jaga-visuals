@@ -18,34 +18,42 @@ const Service1 = () => {
     <>
       <div className="px-5 md:px-[10rem] py-[3rem] md:py-[10rem] gap-[1rem] flex flex-col md:flex-col lg:flex-row items-center justify-center">
         <div className="" style={{ flex: 1 }}>
-          <img src={services2} alt="services" className="w-fit lg:w-[35vw]" />
+          <LazyLoadImage
+            src={services2}
+            className="w-fit lg:w-[35vw]"
+          />
         </div>
         <div className="flex flex-1 flex-col items-start justify-center text-center lg:text-left w-full md:w-[30rem]">
           <p className="text-[18px] md:text-[23px] font-medium text-[grey]">
             We create{" "}
-            <motion.span
-              variants={sentence}
-              initial="hidden"
-              animate="visible"
-              className="text-[#282860]"
-            >
-              {line1.split("").map((char, index) => {
-                return (
-                  <motion.span key={char + "-" + index} variants={letter}>
-                    {char}
-                  </motion.span>
-                );
-              })}
-            </motion.span>
-            through a tapestry of strategic brilliance and visually arresting digital artistry, igniting immediate impressions and kindling profound emotions. To reeally see the depth of our craft, explore the comprehensive spectrum of services offered by our digital creative agency.
+            {window.innerWidth > 768 ? (
+              <motion.span
+                variants={sentence}
+                initial="hidden"
+                animate="visible"
+                className="text-[#282860]"
+              >
+                {line1.split("").map((char, index) => {
+                  return (
+                    <motion.span key={char + "-" + index} variants={letter}>
+                      {char}
+                    </motion.span>
+                  );
+                })}
+              </motion.span>
+            ) : (
+              <span className="text-[#282860]">{line1}</span>
+            )}
+            through a tapestry of strategic brilliance and visually arresting digital artistry, igniting immediate impressions and kindling profound emotions. To really see the depth of our craft, explore the comprehensive spectrum of services offered by our digital creative agency.
           </p>
+
           <div className="text-[18px] md:text-[23px] text-[grey] font-semibold hidden lg:flex flex-col md:flex-row gap-0 md:gap-20 text-left pt-10">
             <div>
-              <p className="flex items-start">
+              <p className="flex items-center">
                 <MdNavigateNext className="text-[20px] md:text-[24px] text-[blue]" />
                 Creative Design
               </p>
-              <p className="flex items-start">
+              <p className="flex items-center">
                 <MdNavigateNext className="text-[20px] md:text-[24px] text-[blue]" />
                 Motion Graphics
               </p>
@@ -55,11 +63,11 @@ const Service1 = () => {
               </p>
             </div>
             <div>
-              <p className="flex items-start">
+              <p className="flex items-center">
                 <MdNavigateNext className="text-[20px] md:text-[24px] text-[blue]" />
                 Branding
               </p>
-              <p className="flex items-start">
+              <p className="flex items-center">
                 <MdNavigateNext className="text-[20px] md:text-[24px] text-[blue]" />
                 Digital Marketing
               </p>

@@ -12,7 +12,7 @@ const Shape1 = () => {
 
   useEffect(() => {
     const video = videoRef.current;
-    video.play();
+    video.play().catch(error => console.log(error));
   }, []);
 
   return (
@@ -27,6 +27,7 @@ const Shape1 = () => {
           loop
           autoPlay
           muted
+          playsInline
         >
           <source src={homevideo} type="video/mp4" />
         </video>

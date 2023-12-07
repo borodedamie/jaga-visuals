@@ -38,7 +38,7 @@ const WorkExpert = () => {
 
   useEffect(() => {
     const video = videoRef.current;
-    video.play();
+    video.play().catch(error => console.log(error));
   }, []);
   const isWhiteBackground = useWhiteBackground();
 
@@ -451,6 +451,7 @@ const WorkExpert = () => {
                     autoPlay
                     muted
                     mutedcontrols
+                    playsInline
                   >
                     <source
                       src={pandas}
