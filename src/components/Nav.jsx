@@ -8,20 +8,32 @@ import { AiOutlineYoutube } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 import logo from "../assets/logo.webp";
 import logoWhite from "../assets/Jaga Visuals logo-white.webp";
-
+import '../css/main.css'
 const Nav = () => {
   const [navbar, setNavbar] = useState(false);
-  const handleToggle = () => {
+  const openToggle = () => {
     setNavbar(!navbar);
-  };
+    // const backgroundElement1 = document.querySelector('nav');
+    // if (backgroundElement1) {
+    //   backgroundElement1.classList.add('bg-slide-in');
+    // } 
+   };
+  
+  const closeToggle = () => {
+    setNavbar(!navbar);
+    const backgroundElement = document.querySelector('close');
+    if (backgroundElement) {
+      backgroundElement.classList.add('.bg-slide-out');
+    }  };
+
 
   return (
     <nav
       className={`top-0 flex flex-row justify-between overflow-hidden
     ${
       navbar
-        ? "pl-10 mx-0 bg-[blue] z-20 h-[100vh] absolute transform translate-y-0 transition-safelist w-full duration-400 ease-in flex flex-col justify-start items-start text-[#1f1f61] "
-        : "transform  items-center flex flex-row -translate-y-0 transition-safelist text-[black] gap-[1.5rem] justify-between"
+        ? "pl-10 mx-0 bg-[blue] bg-slide-in transition-opacity duration-300 ease-in top-0 left-0 p-4 z-20 h-[100vh] absolute transform w-full duration-400 flex flex-col justify-start items-start text-[#1f1f61] "
+        : "transform items-center flex flex-row text-[black]  gap-[1.5rem] justify-between"
     }`}
     >
       <div className="flex justify-between items-center">
@@ -51,11 +63,11 @@ const Nav = () => {
           <div className=" flex  flex-row justify-between items-center ">
             <div className="flex flex-row gap-5 pb-10 pl-3">
               <li
-                onClick={handleToggle}
+                onClick={openToggle}
                 className={`rounded-full border w-[40px] h-[40px] flex items-center text-center justify-center
         ${
           navbar
-            ? "flex text-[80px] hover:text-[white] transition-all duration-300 ease-in-out delay-150"
+            ? "flex text-[80px] hover:text-[white] "
             : "hidden text-[20px]"
         }`}
               >
@@ -65,11 +77,11 @@ const Nav = () => {
                 </a>
               </li>
               <li
-                onClick={handleToggle}
+                onClick={openToggle}
                 className={` rounded-full hover:text-[white]  w-[40px] h-[40px] border flex items-center text-center justify-center
         ${
           navbar
-            ? "flex  text-[80px] hover:text-[white] transition-all duration-300 ease-in-out delay-150"
+            ? "flex  text-[80px] hover:text-[white]"
             : "hidden text-[20px]"
         }`}
               >
@@ -79,11 +91,11 @@ const Nav = () => {
                 </a>
               </li>
               <li
-                onClick={handleToggle}
+                onClick={openToggle}
                 className={`flex w-[40px] rounded-full border h-[40px] items-center text-center justify-center
         ${
           navbar
-            ? "flex text-[80px] hover:text-[white] transition-all duration-300 ease-in-out delay-150"
+            ? "flex text-[80px] hover:text-[white] "
             : "hidden"
         }`}
               >
@@ -99,23 +111,24 @@ const Nav = () => {
         <ul
           className={`flex flex-row right-0    ${
             navbar
-              ? "flex-col fixed top-[2rem] left-10 lg:top-[5rem] lg:left-[10rem] pl-0 lg:pl-[7rem] xl:pl-[15rem] h-full md:h-[100vh]  translate-y-0 transition-safelist transform"
+              ? "flex-col fixed top-[2rem] left-10 lg:top-[5rem] lg:left-[10rem] pl-0 lg:pl-[7rem] xl:pl-[15rem] h-full md:h-[100vh]"
               : "items-center  gap-10 "
           }`}
         >
           <li
-            onClick={handleToggle}
+            onClick={openToggle}
             className={`mt-[5rem] py-0 md:mt-0 font-bold hover:text-[blue]
             ${
               navbar
                 ? "hover:text-[white] xl:pb-[.5rem]   list-item transform transition duration-300 ease-in-out hover:translate-x-2 delay-100 pt-[3rem] md:pt-[5rem] pb-[0] opacity-1  translate-y-0 leading- text-[50px] md:text-[80px] text-[white]"
                 : "hidden md:flex text-[20px] "
             }`}
+            
           >
             <NavLink to="/works">Work</NavLink>
           </li>
           <li
-            onClick={handleToggle}
+            onClick={openToggle}
             className={`text-[40px] font-bold group relative flex w-0 md:w-full flex-row
         ${
           navbar
@@ -123,7 +136,10 @@ const Nav = () => {
             : "hidden text-[20px]"
         }`}
           >
-            <NavLink to="/services" className="text-[50px] md:text-[80px] leading-[1rem] md:leading-0">
+            <NavLink
+              to="/services"
+              className="text-[50px] md:text-[80px] leading-[1rem] md:leading-0"
+            >
               Services
             </NavLink>
             <div className="hidden md:block w-full md:invisible relative md:absolute md:text-[30px] md:bottom-[-15rem] left-0 md:left-[25rem] md:group-hover:visible">
@@ -148,7 +164,7 @@ const Nav = () => {
             </div>
           </li>
           <li
-            onClick={handleToggle}
+            onClick={openToggle}
             className={`  font-bold  
         ${
           navbar
@@ -159,7 +175,7 @@ const Nav = () => {
             <NavLink to="/agency">Agency</NavLink>
           </li>
           <li
-            onClick={handleToggle}
+            onClick={openToggle}
             className={` font-bold hover:text-[blue]
             ${
               navbar
@@ -171,7 +187,7 @@ const Nav = () => {
           </li>
 
           <li
-            onClick={handleToggle}
+            onClick={openToggle}
             className={`  font-bold 
         ${
           navbar
@@ -187,13 +203,13 @@ const Nav = () => {
 
         <div className="flex justify-between items-end flex-col">
           <div
-            onClick={handleToggle}
-            className="flex flex-row justify-between text-[black] text-[40px] cursor-pointer "
+            className="flex flex-row bg-slide-out justify-between text-[black] text-[40px] cursor-pointer "
           >
             {navbar ? (
-              <MdClose className="absolute top-14 right-2 md:right-6 transition-all duration-1000 ease-out text-[white] text-[55px]" />
+              <MdClose onClick={closeToggle}  className={`absolute top-14  right-2 md:right-6 transition-all duration-1000 ease-out text-[white] text-[55px] ${navbar ? 'nav': 'close'}`}/>
             ) : (
               <BiMenuAltRight
+              onClick={openToggle}
                 className={`absolute pl-5 md:relative flex text-[40px] top-12 md:top-0 right-5 md:right-10 text-[black] ${
                   navbar ? "hidden" : "flex w-[5rem] h-[5rem]"
                 }`}

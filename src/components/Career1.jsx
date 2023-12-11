@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { sentence, letter, fadeIn } from "./variants";
+import { sentence, letter} from "./variants";
 import join1 from "../assets/join.webp";
 import { NavLink } from "react-router-dom";
 
@@ -15,21 +15,32 @@ const Career1 = () => {
         </div>
 
         <div className="text-center flex-1 justify-center lg:justify-start items-center lg:items-start lg:text-left mr-0 lg:mr-[10%]">
-          <motion.h2
-            variants={sentence}
-            initial="hidden"
-            animate="visible"
+          {window.innerWidth>768? (
+             <motion.h2
+             variants={sentence}
+             initial="hidden"
+             animate="visible"
+             className="text-[#282860] px-[4rem] lg:px-0 font-[800] lg:font-[700] text-[33px] lg:text-[50px] leading-tight w-[100%] md:w-[100%]"
+           >
+             {line1.split("").map((char, index) => {
+               return (
+                 <motion.span key={char + "-" + index} variants={letter}>
+                   {char}
+                 </motion.span>
+               );
+             })}
+             <br />
+           </motion.h2>
+          ):(
+            <h2
+            
             className="text-[#282860] px-[4rem] lg:px-0 font-[800] lg:font-[700] text-[33px] lg:text-[50px] leading-tight w-[100%] md:w-[100%]"
           >
-            {line1.split("").map((char, index) => {
-              return (
-                <motion.span key={char + "-" + index} variants={letter}>
-                  {char}
-                </motion.span>
-              );
-            })}
+            {line1}
             <br />
-          </motion.h2>
+          </h2>
+          ) }
+         
           <p className="text-[18px] md:text-[23px] flex items-center justify-center mx-auto lg:mx-0 lg:justify-start lg:items-start text-center px-0 lg:text-start font-medium pt-10 w-[20rem] lg:w-[100%] text-[#201f1f]">
           JAGA VISUALS comprises of talented creatives dedicated to delivering
           outputs of the highest quality tailored to each client's vision.

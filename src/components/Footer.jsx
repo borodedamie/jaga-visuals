@@ -1,9 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import { BiLogoFacebook, BiLogoInstagram } from "react-icons/bi";
+import { BiLogoInstagram } from "react-icons/bi";
 import { LiaLinkedinIn } from "react-icons/lia";
-import { BiLogoWhatsapp } from "react-icons/bi";
 import { AiOutlineYoutube } from "react-icons/ai";
 
 const Footer = () => {

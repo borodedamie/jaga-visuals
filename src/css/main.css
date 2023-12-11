@@ -3,5 +3,33 @@
 @tailwind utilities;
 
 .ishovered {
-    color: black;
+  color: black;
 }
+
+@keyframes slideIn {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100%);
+    }
+  }
+  
+  /* Add these styles for the sliding animation */
+  .bg-slide-in {
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  .bg-slide-out {
+    animation: slideOut 2s ease-in-out;
+  }
+  

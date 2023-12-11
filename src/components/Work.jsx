@@ -1,6 +1,4 @@
 import React, { useRef, useState } from "react";
-import { motion } from "framer-motion";
-import { fadeOut, fadeIn } from "./variants";
 import logic from "../assets/Autoflex-Logistics-01-01.webp";
 import dubai from "../assets/dubai.webp";
 import jumia from "../assets/jumia1.webp";
@@ -52,11 +50,8 @@ const Work = () => {
               <div>
                 <div className="relative ">
                   <NavLink to="/logisticsbrief">
-                    <motion.div
-                      variants={fadeIn("top", 0.5)}
-                      viewport={{ amount: 0.7, once: true }}
-                      initial="hidden"
-                      whileInView={"show"}
+                    <div
+                      
                     >
                       <LazyLoadImage
                         className="flex w-fit inset-0 object-contain lg:object-cover flex-col lg:w-[70vw] lg:h-[80vh]"
@@ -69,7 +64,7 @@ const Work = () => {
                             : ""
                         }`}
                       ></div>
-                    </motion.div>
+                    </div>
                   </NavLink>
                 </div>
                 <div className="text-[white] mt-[1rem] mb-0 lg:mb-[4rem] ">
@@ -98,11 +93,8 @@ const Work = () => {
             >
               <div className="relative">
                 <NavLink to="/dofbrief">
-                  <motion.div
-                    variants={fadeOut("bottom", 0.5)}
-                    viewport={{ amount: 0.7, once: true }}
-                    initial="hidden"
-                    whileInView={"show"}
+                  <div
+                    
                   >
                     <LazyLoadImage
                       alt="Dubai"
@@ -114,7 +106,7 @@ const Work = () => {
                         dofHover ? "hover:bg-[#0dfff6] hover:bg-opacity-50" : ""
                       }`}
                     ></div>
-                  </motion.div>
+                  </div>
                 </NavLink>
               </div>
               <div className="text-[white] mt-[1rem] mb-0 lg:mb-[4rem]">
@@ -148,11 +140,8 @@ const Work = () => {
                 <div className=" relative">
                 <NavLink to="/jumiabrief">
 
-                  <motion.div
-                    variants={fadeOut("bottom", 0.5)}
-                    viewport={{ amount: 0.7, once: true }}
-                    initial="hidden"
-                    whileInView={"show"}
+                  <div
+                   
                   >
                       <LazyLoadImage
                         alt="Jumia"
@@ -167,7 +156,7 @@ const Work = () => {
                           : ""
                       }`}
                     ></div>
-                  </motion.div>
+                  </div>
                   </NavLink>
 
                 </div>
@@ -198,11 +187,8 @@ const Work = () => {
                 {" "}
                 <NavLink to="/foretbrief">
 
-                <motion.div
-                  variants={fadeOut("bottom", 0.5)}
-                  viewport={{ amount: 0.7, once: true }}
-                  initial="hidden"
-                  whileInView={"show"}
+                <div
+                 
                 >
                     <LazyLoadImage
                       className="flex w-fit inset-0 object-contain lg:object-cover flex-col lg:w-[70vw] lg:h-[80vh]"
@@ -214,7 +200,7 @@ const Work = () => {
                       foretHover ? "hover:bg-[#0dfff6] hover:bg-opacity-50" : ""
                     }`}
                   ></div>
-                </motion.div>
+                </div>
                 </NavLink>
 
               </div>

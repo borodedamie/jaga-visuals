@@ -3,8 +3,6 @@ import jumia1 from "../assets/jumia-mobile.webp";
 import jumia from "../assets/jumia1.webp";
 import foret11 from "../assets/foret-mobile.webp";
 import foret1 from "../assets/foret1.webp";
-import { motion } from "framer-motion";
-import { fadeOut } from "./variants";
 import { NavLink } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -44,12 +42,9 @@ const Related = () => {
             <div>
               <div className="relative w-[20rem] h-[20rem] md:w-[40vw] md:h-fit">
                 <NavLink to="/jumiabrief">
-                  <motion.div
+                  <div
                     className="opacity-100 hover:opacity-75 "
-                    variants={fadeOut("bottom", 0.5)}
-                    viewport={{ amount: 0.7, once: true }}
-                    initial="hidden"
-                    whileInView={"show"}
+                    
                   >
                     <LazyLoadImage
                       alt="Jumia"
@@ -62,7 +57,7 @@ const Related = () => {
                         jumiaHover ? "hover:bg-[blue] hover:bg-opacity-25" : ""
                       }`}
                     ></div>
-                  </motion.div>
+                  </div>
                 </NavLink>
               </div>
 
@@ -88,12 +83,9 @@ const Related = () => {
           >
             <div className="relative w-[20rem] h-[20rem] md:w-[40vw] md:h-fit">
               <NavLink to="/foretbrief">
-                <motion.div
+                <div
                   className="opacity-100 hover:opacity-75 "
-                  variants={fadeOut("bottom", 0.5)}
-                  viewport={{ amount: 0.7, once: true }}
-                  initial="hidden"
-                  whileInView={"show"}
+                  
                 >
                   <LazyLoadImage
                     src={foret1}
@@ -105,7 +97,7 @@ const Related = () => {
                       foretHover ? "hover:bg-[blue] hover:bg-opacity-25" : ""
                     }`}
                   ></div>
-                </motion.div>
+                </div>
               </NavLink>
             </div>
             <div className="text-[black]">

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import services2 from "../assets/services.webp";
 import { MdNavigateNext } from "react-icons/md";
 import { NavLink } from "react-router-dom";
-import { sentence, letter, fadeIn } from "./variants";
+import { sentence, letter } from "./variants";
 import useWhiteBackground from '../hooks/useWhiteBackground';
 
 const Service1 = () => {
@@ -83,12 +83,9 @@ const Service1 = () => {
         {data.map((data1, s) => {
           return (
             window.innerWidth > 768 ? (
-              <motion.div
+              <div
                 key={s}
-                variants={fadeIn("right", 0.5)}
-                viewport={{ once: true, amount: 0.7 }}
-                initial="hidden"
-                whileInView={"show"}
+                
                 className="flex flex-col max-w-fit md:max-w-[100%] w-fit md:w-[100%] max-h-[100%] h-[100%] md:flex-row px-5 md:px-20 justify-center gap-[3rem] items-center my-[10%]"
               >
                 <div
@@ -107,7 +104,7 @@ const Service1 = () => {
                   src={data1.design}
                   className="rounded-2xl  h-[100%] max-w-fit max-h-fit w-[100%] md:max-w-[50%] md:h-fit lg:h-[50%]"
                 />
-              </motion.div>
+              </div>
             ) : (
               <div
                 className="flex flex-col max-w-fit md:max-w-[100%] w-fit md:w-[100%] max-h-[100%] h-[100%] md:flex-row px-5 md:px-20 justify-center gap-[3rem] items-center my-[10%]"
