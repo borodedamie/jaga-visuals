@@ -23,7 +23,7 @@ const Shape2 = () => {
             Thoughts
           </h2>
           <p className="text-[#464545] text-[18px] font-medium w-full">
-            As a Design design agency, we love to deliver meaningful design that
+            As a Design agency, we love to deliver meaningful design that
             build trust with your target audience.
           </p>
         </div>
