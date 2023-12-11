@@ -53,11 +53,8 @@ const WorkExpert = () => {
             onMouseLeave={() => setAutoHover(false)}
           >
             <div className="relative">
-              <motion.div
-                whileInView={"show"}
-                variants={fadeOut("bottom", 0.5)}
-                viewport={{ amount: 0.7, once: true }}
-                initial="hidden"
+              <div
+               
               >
                 <NavLink to="/logisticsbrief">
                   <LazyLoadImage
@@ -72,7 +69,7 @@ const WorkExpert = () => {
                     }`}
                   ></div>
                 </NavLink>
-              </motion.div>
+              </div>
             </div>
             <div className="text-[black] mt-[1rem]">
               {" "}
@@ -97,12 +94,9 @@ const WorkExpert = () => {
             onMouseLeave={() => setDofHover(false)}
           >
             <div className="relative">
-              <motion.div
+              <div
                 className="opacity-100 hover:opacity-75 "
-                whileInView={"show"}
-                variants={fadeOut("bottom", 0.5)}
-                viewport={{ amount: 0.7, once: true }}
-                initial="hidden"
+                
               >
                 {" "}
                 <NavLink to="/dofbrief">
@@ -118,7 +112,7 @@ const WorkExpert = () => {
                     }`}
                   ></div>
                 </NavLink>
-              </motion.div>
+              </div>
             </div>
             <div className="text-[black] mt-[1rem] mb-[4rem] lg:mb-0">
               {" "}
@@ -148,12 +142,9 @@ const WorkExpert = () => {
             className="ml-5 mr-5 lg:mr-0 lg:ml-[10%] flex-1"
           >
             <div className="relative">
-              <motion.div
+              <div
                 className="opacity-100 hover:opacity-75 "
-                whileInView={"show"}
-                variants={fadeOut("bottom", 0.5)}
-                viewport={{ amount: 0.7, once: true }}
-                initial="hidden"
+                
               >
                 {" "}
                 <NavLink to="/jumiabrief">
@@ -169,7 +160,7 @@ const WorkExpert = () => {
                     }`}
                   ></div>
                 </NavLink>
-              </motion.div>
+              </div>
             </div>
             <div className="text-[black] mt-[1rem] mb-[0rem] lg:mb-0">
               {" "}
@@ -194,12 +185,9 @@ const WorkExpert = () => {
             onMouseLeave={() => setForetHover(false)}
           >
             <div className="relative">
-              <motion.div
+              <div
                 className="opacity-100 hover:opacity-75 "
-                whileInView={"show"}
-                variants={fadeOut("bottom", 0.5)}
-                viewport={{ amount: 0.7, once: true }}
-                initial="hidden"
+                
               >
                 {" "}
                 <NavLink to="/foretbrief">
@@ -215,7 +203,7 @@ const WorkExpert = () => {
                     }`}
                   ></div>
                 </NavLink>
-              </motion.div>
+              </div>
             </div>
             <div className="text-[black] mt-[1rem] mb-[4rem] lg:mb-0">
               {" "}
@@ -245,12 +233,9 @@ const WorkExpert = () => {
             onMouseLeave={() => setWavyHover(false)}
           >
             <div className="relative">
-              <motion.div
+              <div
                 className="opacity-100 hover:opacity-75 "
-                whileInView={"show"}
-                variants={fadeOut("bottom", 0.5)}
-                viewport={{ amount: 0.7, once: true }}
-                initial="hidden"
+               
               >
                 {" "}
                 <NavLink to="/wavybrief">
@@ -266,7 +251,7 @@ const WorkExpert = () => {
                     }`}
                   ></div>
                 </NavLink>
-              </motion.div>
+              </div>
             </div>
             <div className="text-[black] mt-[1rem]">
               {" "}
@@ -291,12 +276,9 @@ const WorkExpert = () => {
             onMouseLeave={() => setNagaadHover(false)}
           >
             <div className="relative">
-              <motion.div
+              <div
                 className="opacity-100 hover:opacity-75 "
-                whileInView={"show"}
-                variants={fadeOut("bottom", 0.5)}
-                viewport={{ amount: 0.7, once: true }}
-                initial="hidden"
+                
               >
                 {" "}
                 <NavLink to="/nagaadbrief">
@@ -311,7 +293,7 @@ const WorkExpert = () => {
                     }`}
                   ></div>
                 </NavLink>
-              </motion.div>
+              </div>
             </div>
             <div className="text-[black] mt-[1rem] mb-[4rem] lg:mb-0">
               {" "}
@@ -342,12 +324,9 @@ const WorkExpert = () => {
             onMouseLeave={() => setPremiumHover(false)}
           >
             <div className="relative">
-              <motion.div
+              <div
                 className="opacity-100 hover:opacity-75 "
-                whileInView={"show"}
-                variants={fadeOut("bottom", 0.5)}
-                viewport={{ amount: 0.7, once: true }}
-                initial="hidden"
+                
               >
                 {" "}
                 <NavLink to="/onebrief">
@@ -362,7 +341,7 @@ const WorkExpert = () => {
                     }`}
                   ></div>
                 </NavLink>
-              </motion.div>
+              </div>
             </div>
             <div className="text-[black] mt-[1rem] mb-[0rem]  lg:mb-0">
               {" "}
@@ -387,12 +366,9 @@ const WorkExpert = () => {
             onMouseLeave={() => setHoHover(false)}
           >
             <div className="relative">
-              <motion.div
+              <div
                 className="opacity-100 hover:opacity-75 "
-                whileInView={"show"}
-                variants={fadeOut("bottom", 0.5)}
-                viewport={{ amount: 0.7, once: true }}
-                initial="hidden"
+                
               >
                 {" "}
                 <NavLink to="/hobrief">
@@ -407,7 +383,7 @@ const WorkExpert = () => {
                     }`}
                   ></div>
                 </NavLink>
-              </motion.div>
+              </div>
             </div>
             <div className="text-[black] mt-[1rem] mb-[2rem] lg:mb-0">
               {" "}
@@ -436,11 +412,8 @@ const WorkExpert = () => {
           onMouseLeave={() => setPondaHover(false)}
         >
           <div className="relative">
-            <motion.div
-              whileInView={"show"}
-              variants={fadeOut("bottom", 0.5)}
-              viewport={{ amount: 0.7, once: true }}
-              initial="hidden"
+            <div
+             
             >
               <NavLink to="/pondasbrief">
                 <div style={{ flex: 1 }} className="flex inset-0  flex-col">
@@ -466,7 +439,7 @@ const WorkExpert = () => {
                   ></div>
                 </div>
               </NavLink>
-            </motion.div>
+            </div>
           </div>
           <div className="text-[black] mt-[1rem]">
             {" "}
