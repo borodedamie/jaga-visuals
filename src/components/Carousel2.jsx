@@ -120,7 +120,7 @@ const Carousel2 = () => {
           <BsArrowLeft className=" text-[20px]" />
         </button>
         <button
-          className="glide1__arrow1 glide1__arrow--right1"
+          className="glide1__arrow1 glide1__arrow--r35ht1"
           data-glide-dir=">"
           style={{ borderColor: "#34eaf7" }}
         >

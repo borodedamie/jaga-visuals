@@ -5,8 +5,8 @@ module.exports = {
     extend: {
       transitionProperty: {
         height: "60vh",
-        safelist: "animate-[fade-in-up_1s_ease-in-out]",
-        transform: "translateY(-50%)",
+        transform: "-translateY(10%)",
+        
       },
 
       screens: {
@@ -16,6 +16,9 @@ module.exports = {
         lg: "1024px",
         xl: "1280px",
         "2xl": "1536px",
+      },
+      '.transition-all': {
+        transition: 'all 0.5s ease 0.4s',
       },
       variants: {
         extend: {
