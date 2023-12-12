@@ -11,20 +11,10 @@ import logoWhite from "../assets/Jaga Visuals logo-white.webp";
 import '../css/main.css'
 const Nav = () => {
   const [navbar, setNavbar] = useState(false);
-  const openToggle = () => {
+  const handleToggle = () => {
     setNavbar(!navbar);
-    // const backgroundElement1 = document.querySelector('nav');
-    // if (backgroundElement1) {
-    //   backgroundElement1.classList.add('bg-slide-in');
-    // } 
    };
   
-  const closeToggle = () => {
-    setNavbar(!navbar);
-    const backgroundElement = document.querySelector('close');
-    if (backgroundElement) {
-      backgroundElement.classList.add('.bg-slide-out');
-    }  };
 
 
   return (
@@ -63,7 +53,7 @@ const Nav = () => {
           <div className=" flex  flex-row justify-between items-center ">
             <div className="flex flex-row gap-5 pb-10 pl-3">
               <li
-                onClick={openToggle}
+                onClick={handleToggle}
                 className={`rounded-full border w-[40px] h-[40px] flex items-center text-center justify-center
         ${
           navbar
@@ -77,7 +67,7 @@ const Nav = () => {
                 </a>
               </li>
               <li
-                onClick={openToggle}
+                onClick={handleToggle}
                 className={` rounded-full hover:text-[white]  w-[40px] h-[40px] border flex items-center text-center justify-center
         ${
           navbar
@@ -91,7 +81,7 @@ const Nav = () => {
                 </a>
               </li>
               <li
-                onClick={openToggle}
+                onClick={handleToggle}
                 className={`flex w-[40px] rounded-full border h-[40px] items-center text-center justify-center
         ${
           navbar
@@ -116,7 +106,7 @@ const Nav = () => {
           }`}
         >
           <li
-            onClick={openToggle}
+            onClick={handleToggle}
             className={`mt-[5rem] py-0 md:mt-0 font-bold hover:text-[blue]
             ${
               navbar
@@ -128,7 +118,7 @@ const Nav = () => {
             <NavLink to="/works">Work</NavLink>
           </li>
           <li
-            onClick={openToggle}
+            onClick={handleToggle}
             className={`text-[40px] font-bold group relative flex w-0 md:w-full flex-row
         ${
           navbar
@@ -164,7 +154,7 @@ const Nav = () => {
             </div>
           </li>
           <li
-            onClick={openToggle}
+            onClick={handleToggle}
             className={`  font-bold  
         ${
           navbar
@@ -175,7 +165,7 @@ const Nav = () => {
             <NavLink to="/agency">Agency</NavLink>
           </li>
           <li
-            onClick={openToggle}
+            onClick={handleToggle}
             className={` font-bold hover:text-[blue]
             ${
               navbar
@@ -187,7 +177,7 @@ const Nav = () => {
           </li>
 
           <li
-            onClick={openToggle}
+            onClick={handleToggle}
             className={`  font-bold 
         ${
           navbar
@@ -203,13 +193,13 @@ const Nav = () => {
 
         <div className="flex justify-between items-end flex-col">
           <div
-            className="flex flex-row bg-slide-out justify-between text-[black] text-[40px] cursor-pointer "
+            className="flex flex-row justify-between text-[black] text-[40px] cursor-pointer "
           >
             {navbar ? (
-              <MdClose onClick={closeToggle}  className={`absolute top-14  right-2 md:right-6 transition-all duration-1000 ease-out text-[white] text-[55px] ${navbar ? 'nav': 'close'}`}/>
+              <MdClose onClick={handleToggle}  className='absolute top-14  right-2 md:right-6 transition-all duration-1000 ease-out text-[white] text-[55px]'/>
             ) : (
               <BiMenuAltRight
-              onClick={openToggle}
+              onClick={handleToggle}
                 className={`absolute pl-5 md:relative flex text-[40px] top-12 md:top-0 right-5 md:right-10 text-[black] ${
                   navbar ? "hidden" : "flex w-[5rem] h-[5rem]"
                 }`}
