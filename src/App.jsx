@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from "react";
 import "../src/css/main.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import loader from './assets/loader.svg'
 
 const Home1 = lazy(() => import("./pages/Home1"));
 const Works = lazy(() => import("./pages/Works"));
@@ -24,21 +25,13 @@ function App() {
     <BrowserRouter>
       <Suspense
         fallback={
-          <div>
-            <div>
-              <iframe
-                src="https://giphy.com/embed/jAYUbVXgESSti"
-                width="480"
-                height="270"
-                frameBorder="0"
-                allowFullScreen
-              ></iframe>
-             
-            </div>
+          <div className="flex flex-row justify-center items-center w-[100%] max-w-[100%] h-[100vh] my-auto place-content-center justify-items-center" >
+             <img className="flex flex-row justify-center items-center w-fit max-w-[100%] place-content-center"  src={loader} alt='loading-gif'/>
           </div>
         }
       >
         <ScrollToTop />
+
         <Routes>
           <Route path="/" index element={<Home1 />} />
           <Route path="/works" element={<Works />} />
