@@ -36,12 +36,12 @@ const Footer = () => {
           <h1 className="text-[#0dfff6] tracking-widest font-semibold">
             OFFICES
           </h1>
-          <p
+          {/* <p
             className="text-[white] hover:text-[#0dfff6]"
             style={{ cursor: "pointer" }}
           >
             Nigeria
-          </p>
+          </p> */}
           <p
             className="text-[white] hover:text-[#0dfff6]"
             style={{ cursor: "pointer" }}
