@@ -9,6 +9,7 @@ const Career = () => {
       <Nav/>
       <Career1/>
       <Interests/>
+      
       <Footer/>
     </div>
   );
