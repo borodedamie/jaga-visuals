@@ -1,51 +1,72 @@
 import React, { useState, useRef } from "react";
 import { AiOutlineInstagram } from "react-icons/ai";
+import 'react-toastify/dist/ReactToastify.css';
 import { BiLogoFacebook } from "react-icons/bi";
 import { AiFillYoutube } from "react-icons/ai";
-import { FaFileInvoice } from "react-icons/fa";
+import { ToastContainer, toast } from "react-toastify";
 
 const Contact1 = () => {
   const [isEmailHovered, setIsEmailHovered] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
-  const [isSelected, setIsSelected] = useState(true);
-  const [fileName, setFileName] = useState(null);
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
   const [error, setError] = useState();
-  const fileInputRef = useRef(null);
   const copyToClipboard = () => {
     navigator.clipboard.writeText("hello@jagavisuals.com");
     setIsCopied(true);
     setTimeout(() => setIsCopied(false), 2000);
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault(); // Prevents the default form submission behavior
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+  });
 
-    // Email validation
-    const isGmail = /@.*\./.test(email);
-    if (!isGmail) {
-      console.error("Enter a valid Gmail address:", email);
-      setError("Please enter a valid Gmail address");
-      return; // Stop further processing if the email is not valid
-    } else {
-      setError(null); // Reset the error if the email is valid
-    }
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form Data:", formData);
 
-    // Proceed with the form submission or other logic
-    console.log("Form submitted successfully");
-    console.log(firstName + " " + lastName);
-    console.log(email);
-    console.log("selected", fileName);
+    fetch("https://formsubmit.co/ajax/hello@jagavisuals.com", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        console.log("Response Data:", data);
+        // Display success toast notification
+        toast.success("Form submitted successfully!");
+        // Clear form data after successful submission
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          message: "",
+        });
+      })
+      .catch((error) => {
+        console.error("Error during form submission:", error);
+        // Display error toast notification
+        toast.error("Failed to submit form. Please try again later.");
+      });
   };
 
-  const handleFileChange = (event) => {
-    const selectedFile = event.target.files[0];
-    setIsSelected(true);
-    setFileName(selectedFile.name);
-  };
+  
 
   return (
     <div className="flex mx-5 md:mx-0 pt-[2rem] md:pt-0 pb-[5rem] md:pb-[4rem] flex-col lg:flex-row justify-center items items-center md:items-stretch md:px-[15vw] lg:px-[5vw] lg:items-center gap-[2rem] lg:gap-[5rem] xl:gap-[10rem] h-fit lg:h-[90vh]">
@@ -110,46 +131,41 @@ const Contact1 = () => {
             <input
               className="border-b-2 font-medium border-[#5b5959] leading-10"
               placeholder="First Name"
-              value={firstName}
-              onChange={(e) => setFirstName(e.target.value)}
+              id="first-name"
+              name="firstName"
+              required
+              value={formData.firstName}
+              onChange={handleInputChange}
             />
             <input
               className="border-b-2  font-medium border-[#5b5959] leading-10"
               placeholder="Last Name"
-              value={lastName}
-              onChange={(e) => setLastName(e.target.value)}
+              id="last-name"
+              name="lastName"
+              required
+              value={formData.lastName}
+              onChange={handleInputChange}
             />
           </div>
           <input
             className="border-b-2 font-medium mb-5 border-[#5b5959] leading-10"
-            placeholder="Email"
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
-            required
+            value={formData.email}
+            onChange={handleInputChange}
+            type="email"
+            id="email"
+            name="email"
           />
           {error && <p className="text-red-500">{error}</p>}
-          <label className="relative flex flex-row justify-between cursor-pointer border-b-2 font-medium mb-5 border-[#5b5959] leading-10">
-            <input
-              type="file"
-              ref={fileInputRef}
-              onChange={handleFileChange}
-              className="hidden"
-            />
-
-            {fileName ? (
-              <p>{fileName}</p>
-            ) : (
-              <p className="text-[grey]">Upload File [pdf, jpeg, docx, ppt]</p>
-            )}
-            <FaFileInvoice className="text-[25px]" />
-          </label>
 
           <input
             className="border-2 font-medium mt-3 mb-5 border-[#5b5959] leading-10"
             type="text"
-            value={message}
             placeholder="Message"
-            onChange={(e) => setMessage(e.target.value)}
+            id="message"
+            name="message"
+            required=""
+            value={formData.message}
+            onChange={handleInputChange}
           />
           <div className="flex flex-row justify-end">
             <button
@@ -159,6 +175,18 @@ const Contact1 = () => {
               SUBMIT
             </button>
           </div>
+          <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+          />
         </form>
       </div>
     </div>
